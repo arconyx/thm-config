@@ -29,8 +29,6 @@
     bat.enable = true;
     direnv.enable = true;
     fd.enable = true;
-    firefox.enable = true; # TODO: move custom config for tab bar and stuff into here
-    home-manager.enable = true; # Let home Manager install and manage itself.
 
     bash = {
       enable = true;
