@@ -2,7 +2,7 @@
 
 {
   services.restic.backups.backblaze = {
-    repository = "s3:https://s3.us-west-004.backblazeb2.com/arc-restic-backup-bucket";
+    repository = "s3:https://s3.us-west-004.backblazeb2.com/thm-restic-backup-bucket";
     # Environment file contains
     # AWS_ACCESS_KEY_ID=unquotedIdString
     # AWS_SECRET_ACCESS_KEY=unquotedKeyString
