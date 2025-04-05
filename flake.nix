@@ -42,6 +42,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.arc = import ./home/arc.nix;
+            home-manager.users.fishynz = import ./home/common.nix;
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix

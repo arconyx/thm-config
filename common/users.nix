@@ -12,5 +12,12 @@
       ];
       uid = 1000;
     };
+    fishynz = {
+      isNormalUser = true;
+      description = "fishynz";
+      extraGroups = [
+        "networkmanager"
+      ];
+    };
   };
 }
