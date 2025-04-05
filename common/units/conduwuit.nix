@@ -7,11 +7,8 @@
     settings = {
       global = {
         server_name = "thehivemind.gay";
-        address = [
-          "100.109.89.107"
-          "fd7a:115c:a1e0::de01:596c"
-        ];
-        port = "8008";
+        address = ''["100.109.89.107", "fd7a:115c:a1e0::de01:596c"]'';
+        port = 8008;
         database_backend = "rocksdb";
         database_backup_path = "/srv/conduwuit-db-backups";
         database_backups_to_keep = 3;
