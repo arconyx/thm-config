@@ -14,6 +14,7 @@
     extraSetFlags = [
       "--ssh"
       "--webclient"
+      "--accept-dns=false"
     ];
   };
 }
