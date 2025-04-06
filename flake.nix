@@ -13,6 +13,10 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0-3.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # matrix stuff
     conduwuit = {
       url = "github:girlbossceo/conduwuit";
@@ -29,6 +33,7 @@
       self,
       nixpkgs,
       home-manager,
+      lix-module,
       ooye,
       conduwuit,
       ...
@@ -52,6 +57,7 @@
           ./common/common.nix
           ./hosts/hive/configuration.nix
 
+          lix-module.nixosModules.default
           ooye.modules.default
 
           # make home-manager as a module of nixos
