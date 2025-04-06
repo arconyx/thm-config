@@ -15,4 +15,7 @@
       "--accept-dns=false"
     ];
   };
+
+  # Don't disconnect ssh mid update
+  systemd.services.tailscaled.restartIfChanged = false;
 }

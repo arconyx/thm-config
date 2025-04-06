@@ -13,12 +13,18 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # ooye nix config
+    ooye = {
+      url = "git+https://cgit.rory.gay/nix/OOYE-module.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     {
       nixpkgs,
       home-manager,
+      ooye,
       ...
     }@inputs:
     {
@@ -33,6 +39,8 @@
         modules = [
           ./common/common.nix
           ./hosts/hive/configuration.nix
+
+          ooye.modules.default
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
