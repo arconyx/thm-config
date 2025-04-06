@@ -26,20 +26,26 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       home-manager,
       ooye,
+      conduwuit,
       ...
-    }@inputs:
+    }:
+    let
+      revision = self.shortRev or self.dirtyShortRev or self.lastModified or "unknown";
+    in
     {
       # nixosConfigurations.HOSTNAME = ...
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
 
-        # The `specialArgs` parameter passes the
-        # non-default nixpkgs instances to other nix modules
         specialArgs = {
-          inherit inputs;
+          # Should probably use an overlay or something to add these to nixpkgs
+          ooyepkgs = ooye.packages.${system};
+          conduwuitpkgs = conduwuit.packages.${system};
+          inherit revision;
         };
 
         modules = [
@@ -60,7 +66,7 @@
 
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
-            home-manager.extraSpecialArgs = specialArgs;
+            # home-manager.extraSpecialArgs = specialArgs;
           }
         ];
       };

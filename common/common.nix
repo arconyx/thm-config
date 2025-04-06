@@ -1,5 +1,5 @@
 {
-  inputs,
+  revision,
   ...
 }:
 
@@ -16,11 +16,7 @@
   ];
 
   # label generations by git commit hash
-  system.configurationRevision =
-    let
-      self = inputs.self;
-    in
-    self.shortRev or self.dirtyShortRev or self.lastModified or "unknown";
+  system.configurationRevision = revision;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

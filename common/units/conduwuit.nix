@@ -1,13 +1,14 @@
 {
   config,
-  inputs,
+  ooyepkgs,
+  conduwuitpkgs,
   pkgs,
   lib,
   ...
 }:
 
 let
-  ooye = inputs.ooye.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (
+  ooye = ooyepkgs.default.overrideAttrs (
     finalAttrs: prevAttrs: {
       version = "3";
 
@@ -38,7 +39,7 @@ in
   # Matrix homeserver
   services.matrix-conduit = {
     enable = true;
-    package = inputs.conduwuit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    package = conduwuitpkgs.default;
     settings = {
       global = {
         server_name = "thehivemind.gay";
