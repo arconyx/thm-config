@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  conduwuit,
+  pkgs,
+  ...
+}:
 
 {
   imports = [ ./caddy.nix ];
@@ -6,7 +11,7 @@
   # Matrix homeserver
   services.matrix-conduit = {
     enable = true;
-    package = pkgs.conduwuit;
+    package = conduwuit.conduwuit;
     settings = {
       global = {
         server_name = "thehivemind.gay";
@@ -15,7 +20,7 @@
         database_backend = "rocksdb";
         database_backup_path = "/srv/conduwuit-db-backups"; # TODO: Test permissions
         database_backups_to_keep = 3;
-        new_user_display_suffix = "🐝";
+        new_user_displayname_suffix = "🐝";
         allow_registration = true;
         registration_token_file = "/run/credentials/conduit.service/reg_token";
         allow_encryption = true;

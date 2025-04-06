@@ -13,7 +13,11 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # ooye nix config
+    # matrix stuff
+    conduwuit = {
+      url = "github:girlbossceo/conduwuit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     ooye = {
       url = "git+https://cgit.rory.gay/nix/OOYE-module.git";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,6 +28,7 @@
     {
       nixpkgs,
       home-manager,
+      conduwuit,
       ooye,
       ...
     }@inputs:
@@ -34,7 +39,7 @@
 
         # The `specialArgs` parameter passes the
         # non-default nixpkgs instances to other nix modules
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs conduwuit; };
 
         modules = [
           ./common/common.nix
