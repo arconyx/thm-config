@@ -88,13 +88,13 @@
     ];
     serviceConfig = {
       LoadCredential = [
-        "matrix-ooye-registration:/var/lib/matrix-ooye/registration.yaml"
+        # "matrix-ooye-registration:/var/lib/matrix-ooye/registration.yaml"
         "reg_token:/etc/conduwuit/reg_token"
       ];
-      ExecStartPre = [
-        "+${pkgs.coreutils}/bin/cp /run/credentials/conduit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
-        "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
-      ];
+      # ExecStartPre = [
+      #   "+${pkgs.coreutils}/bin/cp /run/credentials/conduit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
+      #   "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
+      # ];
       ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
     };
   };
