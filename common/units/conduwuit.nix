@@ -13,11 +13,11 @@
         address = ''["127.0.0.1", "::1"]'';
         port = 8008;
         database_backend = "rocksdb";
-        database_backup_path = "/srv/conduwuit-db-backups";
+        database_backup_path = "/srv/conduwuit-db-backups"; # TODO: Test permissions
         database_backups_to_keep = 3;
         new_user_display_suffix = "🐝";
         allow_registration = true;
-        registration_token_file = "/etc/conduwuit/reg_token";
+        registration_token_file = "/run/credentials/conduit.service/reg_token";
         allow_encryption = true;
         # We can't enable federation because we don't have e2e in the group
         # and leaking information to third party homeservers is icky.
@@ -57,13 +57,19 @@
     appserviceId = "ooye";
     homeserver = "http://localhost:${builtins.toString config.services.matrix-conduit.settings.global.port}";
     homeserverName = "thehivemind.gay";
-    discordTokenPath = "/etc/ooye/discord-token";
-    discordClientSecretPath = "/etc/ooye/discord-client-secret";
+    discordTokenPath = "/run/credentials/matrix-ooye.service/discord-token";
+    discordClientSecretPath = "/run/credentials/matrix-ooye.service/discord-client-secret";
     enableSynapseIntegration = false;
     # Web client defaults to http://localhost:{socket}
     socket = "6693";
   };
 
+  systemd.services.matrix-ooye.serviceConfig.LoadCredential = [
+    "discord-token:/etc/ooye/discord-token"
+    "discord-client-secret:/etc/ooye/discord-client-secret"
+  ];
+
+  # Add ooye integration and access to config
   systemd.services.conduit = {
     after = [
       "matrix-ooye-pre-start.service"
@@ -76,10 +82,11 @@
     serviceConfig = {
       LoadCredential = [
         "matrix-ooye-registration:/var/lib/matrix-ooye/registration.yaml"
+        "reg_token:/etc/conduwuit/reg_token"
       ];
       ExecStartPre = [
-        "+${pkgs.coreutils}/bin/cp /run/credentials/matrix-conduwuit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}/ooye-registration.yaml"
-        "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}/ooye-registration.yaml"
+        "+${pkgs.coreutils}/bin/cp /run/credentials/conduit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
+        "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
       ];
     };
   };
