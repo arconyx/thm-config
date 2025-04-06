@@ -95,7 +95,7 @@
         "+${pkgs.coreutils}/bin/cp /run/credentials/conduit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
         "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
       ];
-      ExecStart = "${config.services.matrix-conduit.package}/bin/conduwuit";
+      ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
     };
   };
 
