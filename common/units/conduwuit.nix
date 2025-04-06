@@ -93,7 +93,7 @@ in
     discordClientSecretPath = "/etc/ooye/discord-client-secret";
     enableSynapseIntegration = false;
     socket = "6693";
-    bridgeOrigin = "https://hive.tail564508.ts.net/ooye";
+    bridgeOrigin = "https://hive.tail564508.ts.net:8009";
     package = ooye;
   };
 
@@ -109,27 +109,21 @@ in
     ];
     serviceConfig = {
       LoadCredential = [
-        # "matrix-ooye-registration:/var/lib/matrix-ooye/registration.yaml"
         "reg_token:/etc/conduwuit/reg_token"
       ];
-      # ExecStartPre = [
-      #   "+${pkgs.coreutils}/bin/cp /run/credentials/conduit.service/matrix-ooye-registration ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
-      #   "+${pkgs.coreutils}/bin/chown conduit:conduit ${config.services.matrix-conduit.settings.global.database_path}ooye-registration.yaml"
-      # ];
       ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
     };
   };
 
   # Proxy everything
-  services.caddy.virtualHosts."hive.tail564508.ts.net".extraConfig = ''
-        # ooye media server
-        encode gzip
-    	  handle_path /ooye/* {
-          reverse_proxy :${config.services.matrix-ooye.socket} 
-        }
-
-        # conduwuit
-        reverse_proxy [::1]:${builtins.toString config.services.matrix-conduit.settings.global.port}
-  '';
+  services.caddy.virtualHosts = {
+    "hive.tail564508.ts.net".extraConfig = ''
+      # conduwuit
+      reverse_proxy [::1]:${builtins.toString config.services.matrix-conduit.settings.global.port}
+    '';
+    "https://hive.tail564508.ts.net:8009".extraConfig = ''
+      reverse_proxy :${config.services.matrix-ooye.socket} 
+    '';
+  };
 
 }
