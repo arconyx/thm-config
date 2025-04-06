@@ -28,7 +28,6 @@
     {
       nixpkgs,
       home-manager,
-      conduwuit,
       ooye,
       ...
     }@inputs:
@@ -39,7 +38,9 @@
 
         # The `specialArgs` parameter passes the
         # non-default nixpkgs instances to other nix modules
-        specialArgs = { inherit inputs conduwuit; };
+        specialArgs = {
+          inherit inputs;
+        };
 
         modules = [
           ./common/common.nix

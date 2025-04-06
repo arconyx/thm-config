@@ -1,17 +1,24 @@
 {
   config,
-  conduwuit,
+  inputs,
   pkgs,
+  lib,
   ...
 }:
 
 {
   imports = [ ./caddy.nix ];
 
+  # binary cache for conduwuit
+  nix.settings.substituters = lib.mkAfter [ "https://attic.kennel.juneis.dog/conduwuit" ];
+  nix.settings.trusted-public-keys = lib.mkAfter [
+    "conduwuit:BbycGUgTISsltcmH0qNjFR9dbrQNYgdIAcmViSGoVTE="
+  ];
+
   # Matrix homeserver
   services.matrix-conduit = {
     enable = true;
-    package = conduwuit.conduwuit;
+    package = inputs.conduwuit.packages.${pkgs.stdenv.hostPlatform.system}.default;
     settings = {
       global = {
         server_name = "thehivemind.gay";
