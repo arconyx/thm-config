@@ -92,8 +92,8 @@ in
     discordTokenPath = "/etc/ooye/discord-token";
     discordClientSecretPath = "/etc/ooye/discord-client-secret";
     enableSynapseIntegration = false;
-    # Web client defaults to http://localhost:{socket}
     socket = "6693";
+    bridgeOrigin = "https://hive.tail564508.ts.net/ooye";
     package = ooye;
   };
 
@@ -124,7 +124,9 @@ in
   services.caddy.virtualHosts."hive.tail564508.ts.net".extraConfig = ''
         # ooye media server
         encode gzip
-    	  reverse_proxy /ooye/* [::1]:${config.services.matrix-ooye.socket} 
+    	  handle_path /ooye/* {
+          reverse_proxy :${config.services.matrix-ooye.socket} 
+        }
 
         # conduwuit
         reverse_proxy [::1]:${builtins.toString config.services.matrix-conduit.settings.global.port}
