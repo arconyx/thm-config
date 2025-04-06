@@ -10,7 +10,7 @@
     settings = {
       global = {
         server_name = "thehivemind.gay";
-        address = ''["127.0.0.1", "::1"]'';
+        address = "::1";
         port = 8008;
         database_backend = "rocksdb";
         database_backup_path = "/srv/conduwuit-db-backups"; # TODO: Test permissions
