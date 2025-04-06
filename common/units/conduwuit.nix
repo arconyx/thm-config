@@ -57,17 +57,12 @@
     appserviceId = "ooye";
     homeserver = "http://localhost:${builtins.toString config.services.matrix-conduit.settings.global.port}";
     homeserverName = "thehivemind.gay";
-    discordTokenPath = "/run/credentials/matrix-ooye.service/discord-token";
-    discordClientSecretPath = "/run/credentials/matrix-ooye.service/discord-client-secret";
+    discordTokenPath = "/etc/ooye/discord-token";
+    discordClientSecretPath = "/etc/ooye/discord-client-secret";
     enableSynapseIntegration = false;
     # Web client defaults to http://localhost:{socket}
     socket = "6693";
   };
-
-  systemd.services.matrix-ooye.serviceConfig.LoadCredential = [
-    "discord-token:/etc/ooye/discord-token"
-    "discord-client-secret:/etc/ooye/discord-client-secret"
-  ];
 
   # Add ooye integration and access to config
   systemd.services.conduit = {
