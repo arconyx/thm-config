@@ -64,7 +64,7 @@
     socket = "6693";
   };
 
-  systemd.services.matrix-conduit = {
+  systemd.services.conduit = {
     after = [
       "matrix-ooye-pre-start.service"
       "network-online.target"
