@@ -6,6 +6,26 @@
   ...
 }:
 
+let
+  ooye = inputs.ooye.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (
+    finalAttrs: prevAttrs: {
+      version = "3";
+
+      src = prevAttrs.src.override {
+        rev = "f7ba176a7e37e13950490422def3e5386ed3dd40";
+        sha256 = "fPAJuWVclFMslc0SaaCwcQTuD1oJE+AbPU9FDmUtuns=";
+      };
+
+      npmDepsHash = "sha256-pSyEhTnBY++FETfrkAy7wXqu36u8nD6pUMuOfl2dII4=";
+
+      npmDeps = pkgs.fetchNpmDeps {
+        inherit (finalAttrs) src;
+        name = "${finalAttrs.pname}-${finalAttrs.version}-npm-deps";
+        hash = finalAttrs.npmDepsHash;
+      };
+    }
+  );
+in
 {
   imports = [ ./caddy.nix ];
 
@@ -74,6 +94,7 @@
     enableSynapseIntegration = false;
     # Web client defaults to http://localhost:{socket}
     socket = "6693";
+    package = ooye;
   };
 
   # Add ooye integration and access to config
