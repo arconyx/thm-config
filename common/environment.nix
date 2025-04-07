@@ -2,8 +2,7 @@
 
 {
   imports = [
-    ./units/backup.nix
-    ./units/conduwuit.nix
+    ./../units/backup.nix
   ];
 
   # services

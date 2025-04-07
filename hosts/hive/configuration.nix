@@ -5,6 +5,8 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     # ./nvidia.nix
+
+    ./../../units/conduwuit.nix
   ];
 
   networking.hostName = "hive"; # Define your hostname.
