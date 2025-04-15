@@ -30,6 +30,10 @@
       url = "github:boinkor-net/tsnsrv";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-minecraft = {
+      url = "github:Infinidoge/nix-minecraft";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -41,6 +45,7 @@
       ooye,
       conduwuit,
       tsnsrv,
+      nix-minecraft,
       ...
     }:
     let
@@ -79,6 +84,11 @@
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
             # home-manager.extraSpecialArgs = specialArgs;
+          }
+
+          nix-minecraft.nixosModules.minecraft-servers
+          {
+            nixpkgs.overlays = [ nix-minecraft.overlay ];
           }
         ];
       };
