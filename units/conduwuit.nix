@@ -85,6 +85,10 @@ in
   # Discord bridging with out of your element
   # This doesn't support end to bridge encryption so our rooms
   # will have to be unencrypted and unfederated :(
+  # Ooye supports setting a password to secure the add bot to server page but it
+  # isn't supported by the outdated nixos module.
+  # It is set as a private bot on Discord though, so Discord should
+  # restrict adding to to servers to the owner.
   services.matrix-ooye = {
     enable = true;
     appserviceId = "ooye";
@@ -94,7 +98,7 @@ in
     discordClientSecretPath = "/etc/ooye/discord-client-secret";
     enableSynapseIntegration = false;
     socket = "6693";
-    bridgeOrigin = "https://hive.tail564508.ts.net:8009";
+    bridgeOrigin = "https://matrix-ooye.tail564508.ts.net";
     package = ooye;
   };
 
@@ -122,9 +126,25 @@ in
       # conduwuit
       reverse_proxy [::1]:${builtins.toString config.services.matrix-conduit.settings.global.port}
     '';
-    "https://hive.tail564508.ts.net:8009".extraConfig = ''
-      reverse_proxy :${config.services.matrix-ooye.socket} 
-    '';
+  };
+
+  # Proxy via tailscale funnels
+  # We'll probably do the same with the matrix server itself once we've got it working for ooye.
+  services.tsnsrv = {
+    enable = true;
+    defaults = {
+      authKeyPath = "/etc/tsnsrv/client.secret";
+      ephemeral = true;
+      tsnetVerbose = true;
+      tags = [ "tag:tsnsrv" ];
+    };
+    services = {
+      matrix-ooye = {
+        funnel = false; # disabled while we're doing the inital testing
+        suppressWhois = true; # we won't be using the info anyway
+        toURL = "http://localhost:${config.services.matrix-ooye.socket}";
+      };
+    };
   };
 
 }

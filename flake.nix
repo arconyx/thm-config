@@ -26,6 +26,10 @@
       url = "git+https://cgit.rory.gay/nix/OOYE-module.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    tsnsrv = {
+      url = "github:boinkor-net/tsnsrv";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -36,6 +40,7 @@
       lix-module,
       ooye,
       conduwuit,
+      tsnsrv,
       ...
     }:
     let
@@ -59,6 +64,7 @@
 
           lix-module.nixosModules.default
           ooye.modules.default
+          tsnsrv.nixosModules.default
 
           # make home-manager as a module of nixos
           # so that home-manager configuration will be deployed automatically when executing `nixos-rebuild switch`
