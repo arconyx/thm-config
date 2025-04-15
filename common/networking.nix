@@ -3,6 +3,12 @@
 {
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.nameservers = [
+    "8.8.8.8"
+    "1.1.1.1"
+    "8.8.4.4"
+    "1.0.0.1"
+  ];
 
   # Firewall is enabled by default but we'll be explicit
   networking.firewall.enable = true;
