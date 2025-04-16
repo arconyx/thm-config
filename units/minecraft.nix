@@ -2,7 +2,7 @@
 let
   modpack = pkgs.fetchPackwizModpack {
     url = "https://github.com/ArcOnyx/thm-modpack/raw/9da543eba034bd0a2d1b9e43ed69df40bfad9ddc/pack.toml";
-    packHash = "sha256-L5RiSktqtSQBDecVfGj1iDaXV+E90zrNEcf4jtsg+wk=";
+    packHash = "sha256-B/VmS4A//gqXdVAQNHGytq0ZWksT2NyJDTnLFBvSfxk=";
   };
 in
 {
