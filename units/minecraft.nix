@@ -28,7 +28,7 @@ in
       serverProperties = {
         level-seed = "thehivemind";
         gamemode = "survival";
-        enable-command-block = "false";
+        enable-command-blocks = true;
         motd = "Test server";
         difficulty = "hard";
         allow-flight = "true";
@@ -57,4 +57,6 @@ in
     deleteMissing = true;
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
+
+  users.users.arc.extraGroups = [ "minecraft" ];
 }
