@@ -1,7 +1,7 @@
 { pkgs, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/main/pack.toml";
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/cd6b32647f63935f5ad734d22f24bd92fb9fa92c/pack.toml";
     packHash = "sha256-Nc2VwAeYa687btVgaQdHAmYel3pkBUmOBjock8/Z7aI=";
   };
 in
@@ -19,10 +19,24 @@ in
       enable = true;
       package = pkgs.fabricServers.fabric-1_20_1;
       autoStart = true;
-      operators.ArcOnyx = {
-        uuid = "36322fea-3925-4ee1-a160-1f068e7cef44";
-        level = 4;
-        bypassesPlayerLimit = true;
+      operators = {
+        ArcOnyx = {
+          uuid = "36322fea-3925-4ee1-a160-1f068e7cef44";
+          level = 4;
+          bypassesPlayerLimit = true;
+        };
+        Qyila = {
+          uuid = "9aba3284-1e93-4e49-a8f4-73a9fbe2a3e3";
+          level = 3;
+        };
+        Sithisilith = {
+          uuid = "b4807d95-aaf5-4654-b226-a2d278a71553";
+          level = 2;
+        };
+        FISHYNZ_ = {
+          uuid = "53a2148c-0690-4aa0-b75a-2072d78a772a";
+          level = 2;
+        };
       };
       jvmOpts = "-Xms6144M -Xmx8192M";
       serverProperties = {
