@@ -28,7 +28,7 @@ in
       serverProperties = {
         level-seed = "thehivemind";
         gamemode = "survival";
-        enable-command-blocks = true;
+        enable-command-block = true;
         motd = "Test server";
         difficulty = "hard";
         allow-flight = "true";
