@@ -1,4 +1,10 @@
 { pkgs, ... }:
+let
+  modpack = pkgs.fetchPackwizModpack {
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/9da543eba034bd0a2d1b9e43ed69df40bfad9ddc/pack.toml";
+    packHash = "sha256-L5RiSktqtSQBDecVfGj1iDaXV+E90zrNEcf4jtsg+wk=";
+  };
+in
 {
   services.minecraft-servers = {
     enable = true;
@@ -9,7 +15,7 @@
       tmux.enable = false;
       systemd-socket.enable = true;
     };
-    servers.fabric = {
+    servers.magic = {
       enable = true;
       package = pkgs.fabricServers.fabric-1_20_1;
       autoStart = true;
@@ -32,6 +38,23 @@
         enforce-whitelist = true;
         spawn-protection = 0;
       };
+      symlinks = {
+        "mods" = "${modpack}/mods";
+      };
+      files = {
+        "config" = "${modpack}/config";
+      };
     };
+  };
+
+  services.cloudflare-dyndns = {
+    enable = true;
+    frequency = "*:0/15";
+    domains = [
+      "mc.thehivemind.gay"
+    ];
+    proxied = false; # no point trying to proxy minecraft
+    deleteMissing = true;
+    apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 }
