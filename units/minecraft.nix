@@ -1,8 +1,8 @@
 { pkgs, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/18fad2856ad9455b9da0d083e594376c99044ac8/pack.toml";
-    packHash = "sha256-fVzQiT5F9AosgivFn1VZP6qXfypBxxKRoiOmOFY/jCA=";
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/edff699f52c89d8820ed31afc79c88bf7224e79f/pack.toml";
+    packHash = "sha256-Nc2VwAeYa687btVgaQdHAmYel3pkBUmOBjock8/Z7aI=";
   };
 in
 {
