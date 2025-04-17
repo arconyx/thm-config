@@ -12,6 +12,7 @@
 
   # Firewall is enabled by default but we'll be explicit
   networking.firewall.enable = true;
+  services.resolved.enable = true;
 
   services.tailscale = {
     enable = true;

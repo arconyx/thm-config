@@ -80,7 +80,7 @@ in
   # };
 
   # Conduwuit docs: Avoid using systemd-resolved as it does not perform very well under high load, and we have identified its DNS caching to not be very effective.
-  services.resolved.enable = false;
+  # services.resolved.enable = false;
 
   # Discord bridging with out of your element
   # This doesn't support end to bridge encryption so our rooms
