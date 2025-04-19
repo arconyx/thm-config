@@ -1,9 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/main/pack.toml";
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/ff4c93cd6099ebc5d61e51dd10f6e7b2293911d3/pack.toml";
     packHash = "sha256-hWyQ3d6NPKfxiHVccofJWKrNDj7m+anXYYMKCcffNy0=";
+    manifestHash = "sha256:0d3zbaqb9qh3ibd3fs0chmih6xb542kc9l3l8pai9cmn8g824dzn";
   };
+  mcVersion = modpack.manifest.versions.minecraft;
+  fabricVersion = modpack.manifest.versions.fabric;
+  serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
 in
 {
   services.minecraft-servers = {
@@ -17,7 +21,7 @@ in
     };
     servers.magic = {
       enable = true;
-      package = pkgs.fabricServers.fabric-1_20_1;
+      package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
       autoStart = true;
       operators = {
         ArcOnyx = {
