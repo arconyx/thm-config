@@ -55,6 +55,7 @@ in
         white-list = true;
         enforce-whitelist = true;
         spawn-protection = 0;
+        initial-disabled-packs="";
       };
       symlinks = {
         "mods" = "${modpack}/mods";
