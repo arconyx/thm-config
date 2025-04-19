@@ -1,9 +1,4 @@
-{
-  pkgs,
-  lib,
-  config,
-  ...
-}:
+{ pkgs, lib, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
     url = "https://github.com/ArcOnyx/thm-modpack/raw/5941de90c6e15afc9ca51d8b2cf4e8a483fdb1a2/pack.toml";
@@ -15,8 +10,6 @@ let
   serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
 in
 {
-  imports = [ ./postgresql.nix ];
-
   services.minecraft-servers = {
     enable = true;
     eula = true;
@@ -68,52 +61,9 @@ in
       };
       files = {
         "config" = "${modpack}/config";
-        "config/ledger.toml".value = {
-          database = {
-            queueTimeoutMin = 5; # The maximum amount of time to wait for the queue to drain when the server stops
-            queueCheckDelaySec = 10; # The amount of time between checking if the queue is empty when the server stops
-            autoPurgeDays = -1; # Automatically purge entries older than the number of days specified. Set to -1 to disable
-          };
-          search = {
-            pageSize = 8; # Number of actions to show per page
-            purgePermissionLevel = 4; # Permission level for purge command
-          };
-          color = {
-            primary = "#009688";
-            primaryVariant = "#52c7b8";
-            secondary = "#1e88e5";
-            secondaryVariant = "#6ab7ff";
-            light = "#c5d6f0";
-          };
-          actions = {
-            # Blacklists - blacklisted things will not be logged in the database
-            typeBlacklist = [ ]; # Blacklists action types. Ex: "block-break", "entity-kill"
-            worldBlacklist = [ ]; # Blacklists worlds/dimensions. Ex: "mincraft:the_end", "minecraft:overworld"
-            objectBlacklist = [ ]; # Blacklists objects (Items, Mobs, Blocks). Ex: "minecraft:cobblestone", "minecraft:blaze"
-            sourceBlacklist = [ ]; # Blacklists sources. Ex: "lava", "gravity", "fire", "fall"
-          };
-          networking.networking = true; # allow Ledger client mod packets
-          database_extensions = {
-            database = "POSTGRESQL";
-            url = "localhost:${builtins.toString config.services.postgresql.settings.port}/${config.services.minecraft-servers.user}";
-            username = config.services.minecraft-servers.user;
-            password = "";
-            properties = [ ];
-          };
-        };
       };
     };
   };
-
-  services.postgresql.ensureDatabases = [
-    config.services.minecraft-servers.user
-  ];
-  services.postgresql.ensureUsers = [
-    {
-      name = config.services.minecraft-servers.user;
-      ensureDBOwnership = true;
-    }
-  ];
 
   services.cloudflare-dyndns = {
     enable = true;
