@@ -1,9 +1,9 @@
 { pkgs, lib, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/5941de90c6e15afc9ca51d8b2cf4e8a483fdb1a2/pack.toml";
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/fd9ad0c03d7c456042641a30a94d90391e7e2435/pack.toml";
     packHash = "sha256-a08qlvzSxESRiU+ReJbonMNHPyfc9G/geydiIH7yct4=";
-    manifestHash = "sha256:19j4riin6g5srrj7mib2m9qvl0d80q8s3dvqffc21ic2gkyql5i1";
+    manifestHash = "sha256:0n9gfaxcwly2j9lf2gai1hsxsjw3g63ky7qvkvmics6hilbv61hg";
   };
   mcVersion = modpack.manifest.versions.minecraft;
   fabricVersion = modpack.manifest.versions.fabric;
