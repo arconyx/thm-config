@@ -1,8 +1,8 @@
 { pkgs, lib, ... }:
 let
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/8c288fcfb6a670a0cc6a3c4903bfa9930c881199/pack.toml";
-    packHash = "sha256-KJyfSv++3+Tx/OnzxtM84xbvz2DS0bnmI9jbmmWaOYg=";
+    url = "https://github.com/ArcOnyx/thm-modpack/raw/85f4577d799d03885c5a2a6aa079ab93f92252e7/pack.toml";
+    packHash = "sha256-PUeEO9o6LXTVlqqBxOA4DQsbaRnLjFAyLEdt43Cb01Y=";
     manifestHash = "sha256:0rifs9i64kjv3aiiblnjkv64bix38z46y6znspc54pgrqh9v2piv";
   };
   mcVersion = modpack.manifest.versions.minecraft;
@@ -15,6 +15,7 @@ in
     eula = true;
     openFirewall = true;
     dataDir = "/srv/minecraft";
+    environmentFile = "/etc/minecraft/magic.env";
     managementSystem = {
       tmux.enable = false;
       systemd-socket.enable = true;
