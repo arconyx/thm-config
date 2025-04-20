@@ -24,7 +24,6 @@
       "/etc/NetworkManager/system-connections"
       "/etc/passwd"
       "/etc/subgid"
-
     ];
 
     exclude = [

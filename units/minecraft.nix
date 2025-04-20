@@ -56,7 +56,7 @@ in
         white-list = true;
         enforce-whitelist = true;
         spawn-protection = 0;
-        initial-disabled-packs="";
+        initial-disabled-packs = "";
       };
       symlinks = {
         "mods" = "${modpack}/mods";
@@ -79,4 +79,9 @@ in
   };
 
   users.users.arc.extraGroups = [ "minecraft" ];
+
+  # additional backup paths
+  services.restic.backups.backblaze.paths = [
+    "/etc/minecraft"
+  ];
 }

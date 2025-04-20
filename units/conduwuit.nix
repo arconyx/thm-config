@@ -71,6 +71,7 @@ in
     "/var/lib/matrix-conduit"
     "/etc/conduwuit"
     "/etc/ooye"
+    "/etc/tsnsrv"
   ];
 
   # TODO: Integrate with restic and automate online backups
@@ -146,5 +147,4 @@ in
       };
     };
   };
-
 }
