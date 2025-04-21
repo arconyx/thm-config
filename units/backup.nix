@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, config, ... }:
 
 {
   services.restic.backups.backblaze = {
@@ -49,5 +49,18 @@
 
   systemd.timers.restic-backups-backblaze.timerConfig.RandomizedDelaySec = "1hr";
 
-  # TODO: Notify on failure
+  systemd.services.restic-backups-backblaze.unitConfig.OnFailure = "notify-backup-failed.service";
+
+  systemd.services."notify-backup-failed" = {
+    enable = true;
+    description = "Notify on failed backup";
+    serviceConfig = {
+      Type = "oneshot";
+      EnvironmentFile = "/etc/backblaze/sentinel.env";
+    };
+
+    script = ''
+      ${pkgs.curl} -F username=${config.networking.hostName} -F content="Backup failed" $WEBHOOK_URL
+    '';
+  };
 }
