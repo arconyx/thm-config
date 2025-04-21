@@ -60,7 +60,7 @@
     };
 
     script = ''
-      ${pkgs.curl} -F username=${config.networking.hostName} -F content="Backup failed" $WEBHOOK_URL
+      ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Backup failed" $WEBHOOK_URL
     '';
   };
 }
