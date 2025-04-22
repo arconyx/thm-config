@@ -939,16 +939,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1745301977,
-        "narHash": "sha256-K13NBD9shESrzE6+gqXDIH56CPkqtZBO14WUx+hc/+8=",
+        "lastModified": 1745304182,
+        "narHash": "sha256-z1FMnPjqi8JqGgAqo5wQtwfspWNJ5X1PectbefNpQb4=",
         "owner": "arconyx",
         "repo": "thm-modpack",
-        "rev": "5d1d837ca94816e9e9cbd0a60ece7d386136d4b5",
+        "rev": "5b46e0a228d235be32d6092b43d196710fe4f942",
         "type": "github"
       },
       "original": {
         "owner": "arconyx",
-        "ref": "packwiz-nix",
         "repo": "thm-modpack",
         "type": "github"
       }
