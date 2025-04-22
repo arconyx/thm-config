@@ -1,10 +1,10 @@
-{ pkgs, lib, ... }:
+{
+  pkgs,
+  lib,
+  modpack,
+  ...
+}:
 let
-  modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/ArcOnyx/thm-modpack/raw/eebdd52a7a79494cc670b48a477f88a3bb89aa5a/pack.toml";
-    packHash = "sha256-t9kRcFJB/dC3L4LyvtyRg4fI0T9IhZlWbPiynsMn6pI=";
-    manifestHash = "sha256:1gl7j3ndqpw01l74yanra6hmgf264k9vzdh73gqs2w2fdclmx9r7";
-  };
   mcVersion = modpack.manifest.versions.minecraft;
   fabricVersion = modpack.manifest.versions.fabric;
   serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
@@ -58,9 +58,7 @@ in
         spawn-protection = 0;
         initial-disabled-packs = "";
       };
-      symlinks = {
-        "mods" = "${modpack}/mods";
-      };
+      symlinks = modpack.modLinks;
       files = {
         "config" = "${modpack}/config";
       };

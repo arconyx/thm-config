@@ -34,6 +34,10 @@
       url = "github:Infinidoge/nix-minecraft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    thm-modpack = {
+      url = "github:arconyx/thm-modpack/packwiz-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -46,6 +50,7 @@
       conduwuit,
       tsnsrv,
       nix-minecraft,
+      thm-modpack,
       ...
     }:
     let
@@ -60,6 +65,7 @@
           # Should probably use an overlay or something to add these to nixpkgs
           ooyepkgs = ooye.packages.${system};
           conduwuitpkgs = conduwuit.packages.${system};
+          modpack = thm-modpack.packages.${system}.default;
           inherit revision;
         };
 
