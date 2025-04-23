@@ -42,6 +42,10 @@ in
           uuid = "53a2148c-0690-4aa0-b75a-2072d78a772a";
           level = 2;
         };
+        SurrealThings = {
+          uuid = "574f914f-f5e1-4a3d-9942-ca11b339713d";
+          level = 3;
+        };
       };
       jvmOpts = "-Xms6144M -Xmx8192M";
       serverProperties = {
