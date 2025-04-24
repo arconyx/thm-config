@@ -19,7 +19,7 @@
     };
     # matrix stuff
     conduwuit = {
-      url = "github:girlbossceo/conduwuit";
+      url = "github:matrix-construct/tuwunel";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ooye = {
