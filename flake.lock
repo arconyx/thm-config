@@ -114,16 +114,16 @@
         "rocksdb": "rocksdb"
       },
       "locked": {
-        "lastModified": 1743780871,
-        "narHash": "sha256-xmDepDLHsIWiwpWYjhI40XOrV9jCKrYJQ+EK1EOIdRg=",
-        "owner": "girlbossceo",
-        "repo": "conduwuit",
-        "rev": "4e5b87d0cd16f3d015f4b61285b369d027bb909d",
+        "lastModified": 1745461463,
+        "narHash": "sha256-/OAi7Zm6N+43zerJuOqhrhm3rb5L3T2Zq53CwUw/eHs=",
+        "owner": "matrix-construct",
+        "repo": "tuwunel",
+        "rev": "bc9cf8580703d1c759d92303213657613c8d5340",
         "type": "github"
       },
       "original": {
-        "owner": "girlbossceo",
-        "repo": "conduwuit",
+        "owner": "matrix-construct",
+        "repo": "tuwunel",
         "type": "github"
       }
     },
