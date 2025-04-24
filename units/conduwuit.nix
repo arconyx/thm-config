@@ -46,7 +46,7 @@ in
         address = "::1";
         port = 8008;
         database_backend = "rocksdb";
-        database_backup_path = "/srv/conduwuit-db-backups"; # TODO: Test permissions
+        database_backup_path = "/var/lib/matrix-conduit/backups"; # TODO: Test permissions
         database_backups_to_keep = 3;
         new_user_displayname_suffix = "🐝";
         allow_registration = true;
@@ -118,7 +118,6 @@ in
         "reg_token:/etc/conduwuit/reg_token"
       ];
       ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
-      ReadWritePaths = config.services.matrix-conduit.settings.global.database_backup_path;
     };
   };
 
