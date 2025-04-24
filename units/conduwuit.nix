@@ -28,8 +28,6 @@ let
   );
 in
 {
-  imports = [ ./caddy.nix ];
-
   # binary cache for conduwuit
   nix.settings.substituters = lib.mkAfter [ "https://attic.kennel.juneis.dog/conduwuit" ];
   nix.settings.trusted-public-keys = lib.mkAfter [
@@ -43,7 +41,7 @@ in
     settings = {
       global = {
         server_name = "thehivemind.gay";
-        address = "::1";
+        address = "127.0.0.1"; # it complained when i used localhost
         port = 8008;
         database_backend = "rocksdb";
         database_backup_path = "/var/lib/matrix-conduit/backups"; # TODO: Test permissions
@@ -121,14 +119,6 @@ in
     };
   };
 
-  # Proxy everything
-  services.caddy.virtualHosts = {
-    "hive.tail564508.ts.net".extraConfig = ''
-      # conduwuit
-      reverse_proxy [::1]:${builtins.toString config.services.matrix-conduit.settings.global.port}
-    '';
-  };
-
   # Proxy via tailscale funnels
   # We'll probably do the same with the matrix server itself once we've got it working for ooye.
   services.tsnsrv = {
@@ -144,6 +134,11 @@ in
         funnel = true; # disabled while we're doing the inital testing
         suppressWhois = true; # we won't be using the info anyway
         toURL = "http://localhost:${config.services.matrix-ooye.socket}";
+      };
+      matrix = {
+        funnel = true; # disabled while we're doing the inital testing
+        suppressWhois = true; # we won't be using the info anyway
+        toURL = "http://127.0.0.1:${builtins.toString config.services.matrix-conduit.settings.global.port}";
       };
     };
   };
