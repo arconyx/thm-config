@@ -118,6 +118,7 @@ in
         "reg_token:/etc/conduwuit/reg_token"
       ];
       ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
+      ReadWritePaths = config.services.matrix-conduit.settings.global.database_backup_path;
     };
   };
 
