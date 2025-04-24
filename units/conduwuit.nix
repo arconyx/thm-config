@@ -117,7 +117,7 @@ in
       LoadCredential = [
         "reg_token:/etc/conduwuit/reg_token"
       ];
-      ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/conduwuit";
+      ExecStart = lib.mkForce "${config.services.matrix-conduit.package}/bin/tuwunel";
     };
   };
 
@@ -141,7 +141,7 @@ in
     };
     services = {
       matrix-ooye = {
-        funnel = false; # disabled while we're doing the inital testing
+        funnel = true; # disabled while we're doing the inital testing
         suppressWhois = true; # we won't be using the info anyway
         toURL = "http://localhost:${config.services.matrix-ooye.socket}";
       };
