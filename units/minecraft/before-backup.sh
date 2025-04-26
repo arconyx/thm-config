@@ -37,7 +37,7 @@ else
 fi
 
 
-if "$SQLITE_PATH" "$DATA_DIR"/world/ledger.sqlite "VACUUM INTO '$DATA_DIR/ledger_backup.sqlite'"; then
+if "$SQLITE_PATH" "$DATA_PATH/world/ledger.sqlite" "VACUUM INTO '$DATA_PATH/ledger_backup.sqlite'"; then
     echo "Exported ledger database"
 else
     echo "Warning: Unable to export ledger database"
