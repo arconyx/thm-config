@@ -138,5 +138,7 @@ in
       };
     };
 
+    minecraft-server-magic.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
+
   };
 }
