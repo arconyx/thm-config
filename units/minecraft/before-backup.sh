@@ -1,8 +1,8 @@
 # Check if the socket path exists and is a socket file
-if [[ -S "$SOCKET_PATH" ]]; then
+if [[ -p "$SOCKET_PATH" ]]; then
     echo "Minecraft server socket found. Proceeding with save commands."
 
-    echo "Server will backup in 10 minutes" > "$SOCKET_PATH"
+    echo "say Server will backup in 10 minutes" > "$SOCKET_PATH"
     sleep "$BACKUP_WARNING_TIME"
 
     # Send the 'save-off' command to the server via the socket
@@ -37,7 +37,7 @@ else
 fi
 
 
-if "$SQLITE_PATH" "$DATA_DIR/world/ledger.sqlite" "VACUUM INTO '$DATA_DIR/ledger_backup.sqlite'"; then
+if "$SQLITE_PATH" "$DATA_DIR"/world/ledger.sqlite "VACUUM INTO '$DATA_DIR/ledger_backup.sqlite'"; then
     echo "Exported ledger database"
 else
     echo "Warning: Unable to export ledger database"

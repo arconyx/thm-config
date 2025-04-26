@@ -1,5 +1,5 @@
 # Check if the socket path exists and is a socket file
-if [[ -S "$SOCKET_PATH" ]]; then
+if [[ -p "$SOCKET_PATH" ]]; then
     echo "Minecraft server socket found. Proceeding with save-on command."
 
     # Send the 'save-on' command to the server via the socket
