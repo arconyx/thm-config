@@ -7,7 +7,7 @@
     # ./nvidia.nix
 
     ./../../units/conduwuit.nix
-    ./../../units/minecraft.nix
+    ./../../units/minecraft/minecraft.nix
   ];
 
   networking.hostName = "hive"; # Define your hostname.
