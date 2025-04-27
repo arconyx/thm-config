@@ -84,9 +84,16 @@ in
   users.users.arc.extraGroups = [ "minecraft" ];
 
   # additional backup paths
-  services.restic.backups.backblaze.paths = [
-    "/etc/minecraft"
-  ];
+  services.restic.backups.backblaze = {
+    exclude = [
+      "DistantHorizons.sqlite"
+      "DistantHorizons.sqlite-shm"
+      "DistantHorizons.sqlite-wal"
+    ];
+    paths = [
+      "/etc/minecraft"
+    ];
+  };
 
   # TODO: Parameterise server name
   systemd.services = {
