@@ -33,7 +33,7 @@ in
         };
         Qyila = {
           uuid = "9aba3284-1e93-4e49-a8f4-73a9fbe2a3e3";
-          level = 3;
+          level = 4;
         };
         Sithisilith = {
           uuid = "b4807d95-aaf5-4654-b226-a2d278a71553";
