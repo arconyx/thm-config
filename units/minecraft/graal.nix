@@ -2,11 +2,12 @@
   stdenv,
   fetchurl,
   autoPatchelfHook,
-  gcc,
   glibc,
   zlib,
   versionCheckHook,
   lib,
+  alsa-lib,
+  xorg,
   ...
 }:
 
@@ -22,9 +23,15 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ autoPatchelfHook ];
 
   buildInputs = [
-    gcc
     glibc
     zlib
+    alsa-lib # libasound.so wanted by lib/libjsound.so
+    (lib.getLib stdenv.cc.cc) # libstdc++.so.6
+    xorg.libX11
+    xorg.libXext
+    xorg.libXi
+    xorg.libXrender
+    xorg.libXtst
   ];
 
   nativeInstallCheckInputs = [
