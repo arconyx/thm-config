@@ -6,7 +6,7 @@
     ./hardware-configuration.nix
     # ./nvidia.nix
 
-    ./../../units/conduwuit.nix
+    # ./../../units/conduwuit.nix
     ./../../units/minecraft/minecraft.nix
   ];
 

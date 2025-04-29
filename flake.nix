@@ -18,14 +18,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # matrix stuff
-    conduwuit = {
-      url = "github:matrix-construct/tuwunel";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    ooye = {
-      url = "git+https://cgit.rory.gay/nix/OOYE-module.git";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # conduwuit = {
+    #   url = "github:matrix-construct/tuwunel";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    # ooye = {
+    #   url = "git+https://cgit.rory.gay/nix/OOYE-module.git";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     tsnsrv = {
       url = "github:boinkor-net/tsnsrv";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -46,8 +46,8 @@
       nixpkgs,
       home-manager,
       lix-module,
-      ooye,
-      conduwuit,
+      # ooye,
+      # conduwuit,
       tsnsrv,
       nix-minecraft,
       thm-modpack,
@@ -63,8 +63,8 @@
 
         specialArgs = {
           # Should probably use an overlay or something to add these to nixpkgs
-          ooyepkgs = ooye.packages.${system};
-          conduwuitpkgs = conduwuit.packages.${system};
+          # ooyepkgs = ooye.packages.${system};
+          # conduwuitpkgs = conduwuit.packages.${system};
           modpack = thm-modpack.packages.${system}.default;
           inherit revision;
         };
@@ -74,7 +74,7 @@
           ./hosts/hive/configuration.nix
 
           lix-module.nixosModules.default
-          ooye.modules.default
+          # ooye.modules.default
           tsnsrv.nixosModules.default
 
           # make home-manager as a module of nixos
