@@ -9,6 +9,7 @@ let
   mcVersion = modpack.manifest.versions.minecraft;
   fabricVersion = modpack.manifest.versions.fabric;
   serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
+  graal = import ./graal.nix pkgs;
 in
 {
   services.minecraft-servers = {
@@ -23,7 +24,10 @@ in
     };
     servers.magic = {
       enable = true;
-      package = pkgs.fabricServers.${serverVersion}.override { loaderVersion = fabricVersion; };
+      package = pkgs.fabricServers.${serverVersion}.override {
+        loaderVersion = fabricVersion;
+        jre_headless = graal;
+      };
       autoStart = true;
       operators = {
         ArcOnyx = {
