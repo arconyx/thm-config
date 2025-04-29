@@ -27,6 +27,7 @@
       "nix-command"
       "flakes"
     ];
+    allow-import-from-derivation = false;
   };
 
   # Limit the number of generations to keep
