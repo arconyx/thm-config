@@ -52,7 +52,7 @@ in
           level = 3;
         };
       };
-      jvmOpts = "-Xms6144M -Xmx8192M";
+      jvmOpts = "-Xms8G -Xmx8G";
       serverProperties = {
         level-seed = "thehivemind";
         gamemode = "survival";
