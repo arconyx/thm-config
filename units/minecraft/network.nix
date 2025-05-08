@@ -52,10 +52,4 @@
     suppressWhois = true;
     toURL = "http://127.0.0.1:9010";
   };
-
-  services.tsnsrv.services.map = {
-    funnel = true;
-    suppressWhois = true;
-    toURL = "http://127.0.0.1:8100";
-  };
 }
