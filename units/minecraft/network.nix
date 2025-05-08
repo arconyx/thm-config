@@ -28,10 +28,6 @@
       handle_path /exposure/* {
         root * /srv/minecraft/magic/world/exposures
         file_server browse
-
-        handle_errors {
-          respond "File server error {err.status_code} {err.status_text}"
-        }
       }
 
       # bluemap, stripping prefix
@@ -41,6 +37,10 @@
 
       handle {
         error 404
+      }
+
+      handle_errors /exposure/* {
+        respond "File server error: {err.status_code} {err.status_text}"
       }
 
       handle_errors {
