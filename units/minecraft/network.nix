@@ -26,8 +26,12 @@
 
       # let people browse their image exports
       handle /exposure/* {
-        root /srv/minecraft/magic/world/exposures
+        root * /srv/minecraft/magic/world/exposures
         file_server browse
+
+        handle_errors {
+          respond "File server error {err.status_code} {err.status_text}"
+        }
       }
 
       # bluemap, stripping prefix
@@ -47,9 +51,9 @@
 
   systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "minecraft" ];
 
-  services.tsnsrv.services.minecraft = {
-    funnel = true;
-    suppressWhois = true; # we won't be using the info anyway
-    toURL = "http://localhost:9010";
-  };
+  # services.tsnsrv.services.minecraft = {
+  #   funnel = true;
+  #   suppressWhois = true; # we won't be using the info anyway
+  #   toURL = "http://localhost:9010";
+  # };
 }
