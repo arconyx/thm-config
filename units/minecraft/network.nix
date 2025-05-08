@@ -19,12 +19,10 @@
 
   services.caddy.virtualHosts."http://localhost:9010" = {
     extraConfig = ''
-      @exposure path /exposure /exposure/*
-
       encode
 
       # let people browse their image exports
-      file_server @exposure {
+      file_server /exposure/* {
          root /srv/minecraft/magic/world/exposures
          browse
       }
