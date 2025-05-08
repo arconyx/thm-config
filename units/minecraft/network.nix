@@ -39,10 +39,6 @@
         error 404
       }
 
-      handle_errors /exposure/* {
-        respond "File server error: {err.status_code} {err.status_text}"
-      }
-
       handle_errors {
         respond "{err.status_code} {err.status_text}"
       }
