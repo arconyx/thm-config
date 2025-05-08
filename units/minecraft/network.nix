@@ -18,6 +18,11 @@
   };
 
   services.caddy.virtualHosts."http://127.0.0.1:9010" = {
+    serverAliases = [
+      "http://[::1]:9010"
+      "http://localhost:9010"
+      "https://hive.tail564508.ts.net/"
+    ];
     extraConfig = ''
       encode
 
