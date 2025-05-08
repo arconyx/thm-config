@@ -27,9 +27,7 @@
       # let people browse their image exports
       handle /exposure/* {
         root /srv/minecraft/magic/world/exposures
-        file_server {
-          browse
-        }
+        file_server browse
       }
 
       # bluemap, stripping prefix
