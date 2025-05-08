@@ -11,7 +11,10 @@ let
   graal = import ./graal/graal.nix pkgs;
 in
 {
-  imports = [ ./backup/backup.nix ];
+  imports = [
+    ./backup/backup.nix
+    ./network.nix
+  ];
 
   services.minecraft-servers = {
     enable = true;
@@ -75,18 +78,8 @@ in
     };
   };
 
-  services.cloudflare-dyndns = {
-    enable = true;
-    frequency = "*:0/15";
-    domains = [
-      "mc.thehivemind.gay"
-    ];
-    proxied = false; # no point trying to proxy minecraft
-    deleteMissing = true;
-    apiTokenFile = "/etc/cloudflare/apikey.env";
-  };
-
   users.users.arc.extraGroups = [ "minecraft" ];
 
+  # for spark
   systemd.services.minecraft-server-magic.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
 }

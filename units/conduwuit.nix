@@ -28,6 +28,8 @@ let
   );
 in
 {
+  imports = [ ./tsnsrv.nix ];
+
   # binary cache for conduwuit
   nix.settings.substituters = lib.mkAfter [ "https://attic.kennel.juneis.dog/conduwuit" ];
   nix.settings.trusted-public-keys = lib.mkAfter [
@@ -69,7 +71,6 @@ in
     "/var/lib/matrix-conduit"
     "/etc/conduwuit"
     "/etc/ooye"
-    "/etc/tsnsrv"
   ];
 
   # TODO: Integrate with restic and automate online backups
@@ -120,26 +121,16 @@ in
   };
 
   # Proxy via tailscale funnels
-  # We'll probably do the same with the matrix server itself once we've got it working for ooye.
-  services.tsnsrv = {
-    enable = true;
-    defaults = {
-      authKeyPath = "/etc/tsnsrv/client.secret";
-      ephemeral = true;
-      tsnetVerbose = true;
-      tags = [ "tag:tsnsrv" ];
+  services.tsnsrv.services = {
+    matrix-ooye = {
+      funnel = true;
+      suppressWhois = true; # we won't be using the info anyway
+      toURL = "http://localhost:${config.services.matrix-ooye.socket}";
     };
-    services = {
-      matrix-ooye = {
-        funnel = true; # disabled while we're doing the inital testing
-        suppressWhois = true; # we won't be using the info anyway
-        toURL = "http://localhost:${config.services.matrix-ooye.socket}";
-      };
-      matrix = {
-        funnel = true; # disabled while we're doing the inital testing
-        suppressWhois = true; # we won't be using the info anyway
-        toURL = "http://127.0.0.1:${builtins.toString config.services.matrix-conduit.settings.global.port}";
-      };
+    matrix = {
+      funnel = true;
+      suppressWhois = true; # we won't be using the info anyway
+      toURL = "http://127.0.0.1:${builtins.toString config.services.matrix-conduit.settings.global.port}";
     };
   };
 }
