@@ -21,15 +21,24 @@
     extraConfig = ''
       encode
 
+      redir /exposure /exposure/
+      redir /map /map/
+
       # let people browse their image exports
-      file_server /exposure/* {
-         root /srv/minecraft/magic/world/exposures
-         browse
+      handle /exposure/* {
+        root /srv/minecraft/magic/world/exposures
+        file_server {
+          browse
+        }
       }
 
       # bluemap, stripping prefix
-      handle_path /map/ {
+      handle_path /map/* {
         reverse_proxy :8100
+      }
+
+      handle {
+        error 404
       }
 
       handle_errors {
