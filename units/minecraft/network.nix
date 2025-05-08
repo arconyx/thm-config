@@ -31,7 +31,7 @@
 
       # bluemap, stripping prefix
       handle_path /map/ {
-        reverse_proxy 8100
+        reverse_proxy :8100
       }
     '';
   };
