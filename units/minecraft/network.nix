@@ -25,7 +25,7 @@
       redir /map /map/
 
       # let people browse their image exports
-      handle /exposure/* {
+      handle_path /exposure/* {
         root * /srv/minecraft/magic/world/exposures
         file_server browse
 
