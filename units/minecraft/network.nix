@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   imports = [
     ./../caddy.nix
@@ -45,7 +45,7 @@
     '';
   };
 
-  systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "minecraft" ];
+  users.users.minecraft.homeMode = lib.mkForce "771";
 
   services.tsnsrv.services.minecraft = {
     funnel = true;
