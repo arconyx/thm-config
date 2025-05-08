@@ -17,7 +17,7 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
-  services.caddy.virtualHosts."localhost:9010" = {
+  services.caddy.virtualHosts."http://localhost:9010" = {
     extraConfig = ''
       @exposure path /exposure /exposure/*
 
@@ -39,6 +39,6 @@
   services.tsnsrv.services.minecraft = {
     funnel = true;
     suppressWhois = true; # we won't be using the info anyway
-    toURL = "localhost:9010";
+    toURL = "http://localhost:9010";
   };
 }
