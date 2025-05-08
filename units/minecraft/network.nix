@@ -17,7 +17,7 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
-  services.caddy.virtualHosts."http://localhost:9010" = {
+  services.caddy.virtualHosts."http://127.0.0.1:9010" = {
     extraConfig = ''
       encode
 
@@ -50,6 +50,6 @@
   # services.tsnsrv.services.minecraft = {
   #   funnel = true;
   #   suppressWhois = true; # we won't be using the info anyway
-  #   toURL = "http://localhost:9010";
+  #   toURL = "http://127.0.0.1:9010";
   # };
 }
