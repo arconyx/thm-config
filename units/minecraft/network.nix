@@ -25,7 +25,7 @@
 
       # let people browse their image exports
       file_server @exposure {
-         root /srv/minecraft/magic/exposures
+         root /srv/minecraft/magic/world/exposures
          browse
       }
 
