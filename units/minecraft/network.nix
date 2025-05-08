@@ -45,6 +45,8 @@
     '';
   };
 
+  systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "minecraft" ];
+
   services.tsnsrv.services.minecraft = {
     funnel = true;
     suppressWhois = true; # we won't be using the info anyway
