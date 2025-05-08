@@ -33,6 +33,10 @@
       handle_path /map/ {
         reverse_proxy :8100
       }
+
+      handle_errors {
+        respond "{err.status_code} {err.status_text}"
+      }
     '';
   };
 
