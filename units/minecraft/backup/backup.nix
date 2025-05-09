@@ -106,6 +106,8 @@
           SOCKET_PATH = "/run/minecraft/magic.stdin"; # trying to reference the config path failed for some reason
           SQLITE_PATH = "${pkgs.sqlite}/bin/sqlite3";
           SERVER_NAME = "magic";
+          SAVE_WAIT_TIME = "60";
+          BACKUP_WARNING_TIME = "600";
         };
       };
     };
