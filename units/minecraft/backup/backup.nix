@@ -99,7 +99,7 @@
   systemd.timers.minecraft-local-backup = {
     enable = true;
     description = "Run local backup of Minecraft server regularly";
-    conflicts = [ "restic-backups-backblaze.timer" ];
+    wantedBy = [ "timers.target" ];
     timerConfig = {
       OnCalendar = "00/4:00";
       Unit = "minecraft-local-backup.service";
