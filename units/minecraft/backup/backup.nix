@@ -21,11 +21,11 @@
       after-backup = ./after-backup.sh;
       local-backup = ''
         ${before-backup}
-        BACKUP_PATH="/srv/minecraft/backup/$SERVER_NAME/$(date --iso-8601=minutes)"
+        BACKUP_PATH="/srv/minecraft/backup/$(date --iso-8601=minutes)"
         mkdir -p "$BACKUP_PATH"
         cp -r "$DATA_PATH" "$BACKUP_PATH"
         # for the eventual cleanup script
-        echo $(fd --type directory --exact-depth 1 --changed-before 1d)
+        echo $(${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d)
         ${after-backup}
       '';
     in
@@ -105,7 +105,6 @@
           DATA_PATH = config.systemd.services.minecraft-server-magic.serviceConfig.WorkingDirectory;
           SOCKET_PATH = "/run/minecraft/magic.stdin"; # trying to reference the config path failed for some reason
           SQLITE_PATH = "${pkgs.sqlite}/bin/sqlite3";
-          SERVER_NAME = "magic";
           SAVE_WAIT_TIME = "60";
           BACKUP_WARNING_TIME = "600";
         };
