@@ -7,6 +7,7 @@
       "DistantHorizons.sqlite-shm"
       "DistantHorizons.sqlite-wal"
       "/srv/minecraft/backup" # don't want to waste storage backing up the local backups
+      "/srv/minecraft/magic/bluemap/" # this is basically a cache
     ];
     paths = [
       "/etc/minecraft"
