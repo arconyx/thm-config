@@ -2,12 +2,12 @@
 if [[ -p "$SOCKET_PATH" ]]; then
     echo "Minecraft server socket found. Proceeding with save commands."
 
-    echo "say Server will backup in 10 minutes" > "$SOCKET_PATH"
-    sleep "$BACKUP_WARNING_TIME"
-
     # Send the 'save-off' command to the server via the socket
     echo "Sending 'save-off' command..."
-    if echo "save-off" > "$SOCKET_PATH" && echo "say $BACKUP_DEST backup started. Autosave disabled." > "$SOCKET_PATH"; then
+    if echo "save-off" > "$SOCKET_PATH"; then
+        if [$ANNOUNCE -eq 1 ] then
+            echo "say $BACKUP_DEST backup started. Autosave disabled." > "$SOCKET_PATH"
+        fi
         echo "'save-off' command sent successfully."
     else
         echo "Warning: Failed to send 'save-off' command via socket."

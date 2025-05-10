@@ -51,10 +51,10 @@
         };
         script = builtins.readFile before-backup;
         environment = {
+          ANNOUNCE = "1";
           BACKUP_DEST = "Remote";
           DATA_PATH = config.systemd.services.minecraft-server-magic.serviceConfig.WorkingDirectory;
           SOCKET_PATH = "/run/minecraft/magic.stdin"; # trying to reference the config path failed for some reason
-          BACKUP_WARNING_TIME = "600";
           SAVE_WAIT_TIME = "60";
           SQLITE_PATH = "${pkgs.sqlite}/bin/sqlite3";
         };
@@ -76,6 +76,7 @@
         };
         script = builtins.readFile after-backup;
         environment = {
+          ANNOUNCE = "1";
           BACKUP_DEST = "Remote";
           DATA_PATH = config.systemd.services.minecraft-server-magic.serviceConfig.WorkingDirectory;
           SOCKET_PATH = "/run/minecraft/magic.stdin"; # trying to reference the config path failed for some reason
@@ -102,12 +103,12 @@
         };
         script = local-backup;
         environment = {
+          ANNOUNCE = "0";
           BACKUP_DEST = "Local";
           DATA_PATH = config.systemd.services.minecraft-server-magic.serviceConfig.WorkingDirectory;
           SOCKET_PATH = "/run/minecraft/magic.stdin"; # trying to reference the config path failed for some reason
           SQLITE_PATH = "${pkgs.sqlite}/bin/sqlite3";
           SAVE_WAIT_TIME = "60";
-          BACKUP_WARNING_TIME = "600";
         };
       };
     };
