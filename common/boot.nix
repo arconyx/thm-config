@@ -9,4 +9,7 @@
   };
 
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # reboot after one second when kernel panics
+  boot.kernelParams = [ "panic=1" ];
 }
