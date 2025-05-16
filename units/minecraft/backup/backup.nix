@@ -27,6 +27,7 @@
         cp --reflink=always -r "$DATA_PATH" "$BACKUP_PATH"
         # for the eventual cleanup script
         echo $(${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d --absolute-path --full-path '/srv/minecraft/backup/')
+        echo "Backup done"
         ${after-backup}
       '';
     in
