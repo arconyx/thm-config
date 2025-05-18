@@ -81,5 +81,5 @@ in
   users.users.arc.extraGroups = [ "minecraft" ];
 
   # for spark
-  systemd.services.minecraft-server-magic.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
+  systemd.services.minecraft-server-dh.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
 }
