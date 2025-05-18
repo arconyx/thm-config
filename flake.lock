@@ -275,11 +275,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747544331,
-        "narHash": "sha256-RR9uoNg2UPwTk+tvunhR8jWbe+U/G7Q8+oDpNlskKuA=",
+        "lastModified": 1747545023,
+        "narHash": "sha256-AmeIEYzeIR59JDyu9MEPc7EjWIbsVYhpLbrpwc/t6XA=",
         "owner": "arconyx",
         "repo": "thm-modpack",
-        "rev": "1e55d3f732653b38b51f9fd1dc5d22e77f7148d8",
+        "rev": "069b0644c409dd8fa7678dcdfd48cad7c8d8dbff",
         "type": "github"
       },
       "original": {
