@@ -12,7 +12,7 @@ let
 in
 {
   imports = [
-    ./backup/backup.nix
+    # ./backup/backup.nix
     ./network.nix
   ];
 
@@ -26,7 +26,7 @@ in
       tmux.enable = false;
       systemd-socket.enable = true;
     };
-    servers.magic = {
+    servers.dh = {
       enable = true;
       package = pkgs.fabricServers.${serverVersion}.override {
         loaderVersion = fabricVersion;
@@ -59,9 +59,9 @@ in
       jvmOpts = "-Xms8G -Xmx8G -XX:+UnlockExperimentalVMOptions -XX:+UnlockDiagnosticVMOptions -XX:+AlwaysActAsServerClassMachine -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+UseNUMA -XX:AllocatePrefetchStyle=3 -XX:NmethodSweepActivity=1 -XX:ReservedCodeCacheSize=400M -XX:NonNMethodCodeHeapSize=12M -XX:ProfiledCodeHeapSize=194M -XX:NonProfiledCodeHeapSize=194M -XX:-DontCompileHugeMethods -XX:+PerfDisableSharedMem -XX:+UseFastUnorderedTimeStamps -XX:+UseCriticalJavaThreadPriority -XX:+EagerJVMCI -Dgraal.TuneInlinerExploration=1 -Djdk.graal.CompilerConfiguration=enterprise -XX:+UseG1GC -XX:MaxGCPauseMillis=130 -XX:G1NewSizePercent=28 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1MixedGCCountTarget=3 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=0 -XX:SurvivorRatio=32 -XX:MaxTenuringThreshold=1 -XX:G1SATBBufferEnqueueingThresholdPercent=30 -XX:G1ConcMarkStepDurationMillis=5 -XX:+UseTransparentHugePages -XX:ConcGCThreads=6 --enable-native-access=ALL-UNNAMED";
       serverProperties = {
         level-seed = "thehivemind";
-        gamemode = "survival";
+        gamemode = "creative";
         enable-command-block = true;
-        motd = "Test server";
+        motd = "DISTANT HORIZONS TESTING IN PROGRESS";
         difficulty = "hard";
         allow-flight = "true";
         view-distance = 16;

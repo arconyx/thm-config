@@ -284,6 +284,7 @@
       },
       "original": {
         "owner": "arconyx",
+        "ref": "dh-test",
         "repo": "thm-modpack",
         "type": "github"
       }
