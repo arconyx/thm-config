@@ -18,6 +18,9 @@
   # label generations by git commit hash
   system.configurationRevision = revision;
 
+  # lint systemd scripts
+  systemd.enableStrictShellChecks = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
