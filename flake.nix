@@ -17,6 +17,10 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/2.93.0.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    pre-commit-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # matrix stuff
     # conduwuit = {
     #   url = "github:matrix-construct/tuwunel";
@@ -46,6 +50,7 @@
       nixpkgs,
       home-manager,
       lix-module,
+      pre-commit-hooks,
       # ooye,
       # conduwuit,
       tsnsrv,
@@ -55,9 +60,30 @@
     }:
     let
       revision = self.shortRev or self.dirtyShortRev or self.lastModified or "unknown";
+      supportedSystems = [
+        "x86_64-linux"
+      ];
+      forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
     in
     {
-      # nixosConfigurations.HOSTNAME = ...
+      checks = forAllSystems (system: {
+        pre-commit-check = pre-commit-hooks.lib.${system}.run {
+          src = self;
+          hooks = {
+            nixfmt-rfc-style.enable = true;
+            shellcheck.enable = true;
+            ripsecrets.enable = true;
+          };
+        };
+      });
+
+      devShells = forAllSystems (system: {
+        default = nixpkgs.legacyPackages.${system}.mkShell {
+          inherit (self.checks.${system}.pre-commit-check) shellHook;
+          buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
+        };
+      });
+
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
 
