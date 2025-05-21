@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 # Check if the socket path exists and is a socket file
 if [[ -p "$SOCKET_PATH" ]]; then
     echo "Minecraft server socket found. Proceeding with save-on command."
