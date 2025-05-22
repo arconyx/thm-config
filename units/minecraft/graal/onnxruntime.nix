@@ -87,24 +87,23 @@ stdenv.mkDerivation rec {
     fetchSubmodules = true;
   };
 
-  patches =
-    [
-      # If you stumble on these patches trying to update onnxruntime, check
-      # `git blame` and ping the introducers.
+  patches = [
+    # If you stumble on these patches trying to update onnxruntime, check
+    # `git blame` and ping the introducers.
 
-      # Context: we want the upstream to
-      # - always try find_package first (FIND_PACKAGE_ARGS),
-      # - use MakeAvailable instead of the low-level Populate,
-      # - use Eigen3::Eigen as the target name (as declared by libeigen/eigen).
-      ./0001-eigen-allow-dependency-injection.patch
-      # Incorporate a patch that has landed upstream which exposes new
-      # 'abseil-cpp' libraries & modifies the 're2' CMakeLists to fix a
-      # configuration error that around missing 'gmock' exports.
-      #
-      # TODO: Check if it can be dropped after 1.19.0
-      # https://github.com/microsoft/onnxruntime/commit/b522df0ae477e59f60acbe6c92c8a64eda96cace
-      ./update-re2.patch
-    ];
+    # Context: we want the upstream to
+    # - always try find_package first (FIND_PACKAGE_ARGS),
+    # - use MakeAvailable instead of the low-level Populate,
+    # - use Eigen3::Eigen as the target name (as declared by libeigen/eigen).
+    ./0001-eigen-allow-dependency-injection.patch
+    # Incorporate a patch that has landed upstream which exposes new
+    # 'abseil-cpp' libraries & modifies the 're2' CMakeLists to fix a
+    # configuration error that around missing 'gmock' exports.
+    #
+    # TODO: Check if it can be dropped after 1.19.0
+    # https://github.com/microsoft/onnxruntime/commit/b522df0ae477e59f60acbe6c92c8a64eda96cace
+    ./update-re2.patch
+  ];
 
   nativeBuildInputs =
     [

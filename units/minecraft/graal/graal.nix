@@ -23,21 +23,23 @@ stdenv.mkDerivation {
 
   nativeBuildInputs = [ autoPatchelfHook ];
 
-  buildInputs = let
-    onnxruntime = import ./onnxruntime.nix inputs;
-  in [
-    glibc
-    zlib
-    alsa-lib # libasound.so wanted by lib/libjsound.so
-    (lib.getLib stdenv.cc.cc) # libstdc++.so.6
-    fontconfig
-    onnxruntime
-    xorg.libX11
-    xorg.libXext
-    xorg.libXi
-    xorg.libXrender
-    xorg.libXtst
-  ];
+  buildInputs =
+    let
+      onnxruntime = import ./onnxruntime.nix inputs;
+    in
+    [
+      glibc
+      zlib
+      alsa-lib # libasound.so wanted by lib/libjsound.so
+      (lib.getLib stdenv.cc.cc) # libstdc++.so.6
+      fontconfig
+      onnxruntime
+      xorg.libX11
+      xorg.libXext
+      xorg.libXi
+      xorg.libXrender
+      xorg.libXtst
+    ];
 
   nativeInstallCheckInputs = [
     versionCheckHook
