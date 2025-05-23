@@ -39,7 +39,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     thm-modpack = {
-      url = "github:arconyx/thm-modpack/dh-test";
+      url = "github:arconyx/thm-modpack";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
