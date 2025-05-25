@@ -30,11 +30,6 @@
         file_server browse
       }
 
-      # webmap, stripping prefix
-      handle_path /map/* {
-        reverse_proxy :8080
-      }
-
       handle {
         error 404
       }
