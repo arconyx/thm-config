@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ ... }:
 {
   imports = [
     ./../caddy.nix
@@ -40,7 +40,10 @@
     '';
   };
 
-  users.users.minecraft.homeMode = lib.mkForce "771";
+  # so we don't have to chmod exposures world readable
+  systemd.services.caddy.serviceConfig = {
+    SupplementaryGroups = [ "minecraft" ];
+  };
 
   services.tsnsrv.services.minecraft = {
     funnel = true;
