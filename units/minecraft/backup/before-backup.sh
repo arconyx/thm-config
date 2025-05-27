@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 # Check if the socket path exists and is a socket file
 if [[ -p "$SOCKET_PATH" ]]; then
