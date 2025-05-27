@@ -13,6 +13,7 @@ if [[ -p "$SOCKET_PATH" ]]; then
         echo "'save-on' command sent successfully. Autosave re-enabled."
     else
         echo "Warning: Failed to send 'save-on' command via socket."
+        echo "say Backup error: Unable to resume autosave" > "$SOCKET_PATH"
         # Continue execution even if sending fails
     fi
 
@@ -26,6 +27,7 @@ if rm "$DATA_PATH/ledger_backup.sqlite"; then
     echo "Removed ledger backup db"
 else
     echo "Warning: Unable to cleanup ledger database"
+    echo "say Backup error: Unable to cleanup ledger export" > "$SOCKET_PATH"
 fi
 
 exit 0 # Always exit successfully so the backup process continues

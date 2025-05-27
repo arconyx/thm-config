@@ -13,6 +13,7 @@ if [[ -p "$SOCKET_PATH" ]]; then
         echo "'save-off' command sent successfully."
     else
         echo "Warning: Failed to send 'save-off' command via socket."
+        echo "say Backup error: Unable to pause autosave" > "$SOCKET_PATH"
         # Continue execution even if sending fails, server might be shutting down
     fi
 
@@ -25,6 +26,7 @@ if [[ -p "$SOCKET_PATH" ]]; then
          echo "'save-all' command sent successfully."
     else
         echo "Warning: Failed to send 'save-all' command via socket."
+        echo "say Backup error: Unable to force save" > "$SOCKET_PATH"
         # Continue execution even if sending fails
     fi
 
@@ -43,6 +45,7 @@ if "$SQLITE_PATH" "$DATA_PATH/world/ledger.sqlite" "VACUUM INTO '$DATA_PATH/ledg
     echo "Exported ledger database"
 else
     echo "Warning: Unable to export ledger database"
+    echo "say Backup error: Unable to export ledger" > "$SOCKET_PATH"
 fi
 
 echo "Minecraft Server Pre-Backup Script Finished."
