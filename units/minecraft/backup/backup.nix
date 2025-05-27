@@ -82,6 +82,7 @@
       wants = [ "minecraft-after-backup.service" ]; # we use wants because we want to run cleanup even on failure
       after = [ "minecraft-before-backup.service" ];
       before = [ "minecraft-after-backup.service" ];
+      unitConfig.OnFailure = "notify-minecraft-backup-failed.service";
       serviceConfig = {
         User = config.services.minecraft-servers.user;
         Group = config.services.minecraft-servers.group;
@@ -104,6 +105,19 @@
         SAVE_WAIT_TIME = "60";
       };
     };
+  };
+
+  systemd.services."notify-minecraft-backup-failed" = {
+    enable = true;
+    description = "Notify on failed local Minecraft backup";
+    serviceConfig = {
+      Type = "oneshot";
+      EnvironmentFile = "/etc/backblaze/sentinel.env";
+    };
+
+    script = ''
+      ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Local Minecraft backup failed" "$WEBHOOK_URL"
+    '';
   };
 
   systemd.timers.minecraft-local-backup = {
