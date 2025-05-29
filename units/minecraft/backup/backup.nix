@@ -122,13 +122,12 @@
         Type = "oneshot";
       };
       # we inline this so we can easily reference pkgs.fd
-      # rm --recursive --preserve-root=all --verbose
       script = ''
         BACKUP_PATH="/srv/minecraft/backup/$(date --iso-8601=minutes)"
         mkdir -p "$BACKUP_PATH"
         cp --reflink=always -r "$DATA_PATH" "$BACKUP_PATH"
         # for the eventual cleanup script
-        ${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d --absolute-path --full-path '/srv/minecraft/backup/' /srv/minecraft/backup | xargs --no-run-if-empty --verbose ls
+        ${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d --absolute-path --full-path '/srv/minecraft/backup/' /srv/minecraft/backup | xargs --no-run-if-empty --verbose rm --recursive --preserve-root=all --verbose
         echo "Backup done"
       '';
       environment = {
