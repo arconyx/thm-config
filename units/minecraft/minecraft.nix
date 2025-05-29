@@ -78,6 +78,7 @@ in
       symlinks = modpack.modLinks;
       files = {
         "config" = "${modpack}/config";
+        "kubejs" = "${modpack}/kubejs";
       };
     };
   };
