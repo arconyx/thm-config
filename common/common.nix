@@ -36,10 +36,9 @@
   # Limit the number of generations to keep
   boot.loader.systemd-boot.configurationLimit = 10;
 
-  # Perform garbage collection monthly to maintain low disk usage
   nix.gc = {
     automatic = true;
-    dates = "monthly";
+    dates = "weekly";
     options = "--delete-older-than 30d";
   };
 }
