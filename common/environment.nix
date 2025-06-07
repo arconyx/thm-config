@@ -10,6 +10,7 @@
 
   # programs
   programs = {
+    bat.enable = true;
     git.enable = true; # configured in home/common.nix
     nix-ld.enable = true;
 
