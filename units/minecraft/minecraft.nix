@@ -8,7 +8,6 @@ let
   mcVersion = modpack.manifest.versions.minecraft;
   fabricVersion = modpack.manifest.versions.fabric;
   serverVersion = lib.replaceStrings [ "." ] [ "_" ] "fabric-${mcVersion}";
-  graal = import ./graal/graal.nix pkgs;
 in
 {
   imports = [
@@ -30,7 +29,7 @@ in
       enable = true;
       package = pkgs.fabricServers.${serverVersion}.override {
         loaderVersion = fabricVersion;
-        jre_headless = graal;
+        jre_headless = pkgs.graalvmPackages.graalvm-oracle;
       };
       autoStart = true;
       operators = { };
