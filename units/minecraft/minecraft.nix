@@ -40,7 +40,8 @@ in
         motd = "Apply to the Hexcasting Academy today!";
         difficulty = "hard";
         allow-flight = "true";
-        view-distance = 16;
+        view-distance = 12;
+        simulation-distance = 8;
         server-port = 25565;
         white-list = true;
         enforce-whitelist = true;
