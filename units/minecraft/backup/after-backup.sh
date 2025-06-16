@@ -7,9 +7,7 @@ if [[ -p "$SOCKET_PATH" ]]; then
     # Send the 'save-on' command to the server via the socket
     echo "Sending 'save-on' command..."
     if echo "save-on" > "$SOCKET_PATH"; then
-        if [ "$ANNOUNCE" -eq 1 ]; then
-            echo "say $BACKUP_DEST backup finished. Autosave enabled." > "$SOCKET_PATH"
-        fi
+        echo "say Local backup finished. Autosave enabled." > "$SOCKET_PATH"
         echo "'save-on' command sent successfully. Autosave re-enabled."
     else
         echo "Warning: Failed to send 'save-on' command via socket."

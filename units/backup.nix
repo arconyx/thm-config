@@ -18,7 +18,6 @@
       "/root"
       "/srv"
       "/var/lib/nixos"
-      "/var/backup"
       "/etc/group"
       "/etc/machine-id"
       "/etc/NetworkManager/system-connections"
@@ -45,11 +44,14 @@
       "--keep-yearly 3"
     ];
 
+    timerConfig = {
+      RandomizedDelaySec = "1hr";
+      OnCalendar = "02:00";
+    };
+
   };
 
-  systemd.timers.restic-backups-backblaze.timerConfig.RandomizedDelaySec = "1hr";
-
-  systemd.services.restic-backups-backblaze.unitConfig.OnFailure = "notify-backup-failed.service";
+  systemd.services.restic-backups-backblaze.onFailure = [ "notify-backup-failed.service" ];
 
   systemd.services."notify-backup-failed" = {
     enable = true;
