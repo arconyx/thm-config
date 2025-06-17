@@ -32,11 +32,8 @@
         restic-backups-backblaze = {
           # Shutdown server during backup
           conflicts = [ "minecraft-server-${name}.service" ];
-          # If we somehow start at the same time, run the backup first
-          before = [ "minecraft-server-${name}.service" ];
-          # Call warning script before we run
-          wants = [ "minecraft-shutdown-warning-${name}.service" ];
-          after = [ "minecraft-shutdown-warning-${name}.service" ];
+          # If we somehow start at the same time, run the backup second
+          after = [ "minecraft-server-${name}.service" ];
           # Restart server after, printing warning on failure
           onSuccess = [ "minecraft-server-${name}.service" ];
           onFailure = [
@@ -50,14 +47,17 @@
           description = "Warn about Minecraft server '${name}' shutdown";
           requisite = [
             "minecraft-server-${name}.service"
-            "minecraft-server-${name}.socket"
           ];
+          # Run before remote backup
+          wantedBy = [ "restic-backups-backblaze.service" ];
+          before = [ "restic-backups-backblaze.service" ];
           serviceConfig = {
             User = config.services.minecraft-servers.user;
             Group = config.services.minecraft-servers.group;
             Type = "oneshot";
           };
           script = ''
+            echo "Trying to send shutdown warning"
             if [[ -p "$SOCKET_PATH" ]]; then
               echo "Server shutdown warning triggered"
               if echo "say Server will shutdown for backup in $WARNING_TIME seconds." > "$SOCKET_PATH"; then
