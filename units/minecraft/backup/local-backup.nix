@@ -130,13 +130,22 @@
       }
     );
 
-  systemd.timers.minecraft-local-backup = {
-    enable = true;
-    description = "Run local backup of Minecraft server regularly";
-    wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnCalendar = "00/4:00";
-      Unit = "minecraft-local-backup.service";
-    };
-  };
+  systemd.timers =
+    let
+      forEachServer =
+        f: lib.concatMapAttrs (name: value: f name value) config.services.minecraft-servers.servers;
+    in
+    forEachServer (
+      name: cfg: {
+        "minecraft-local-backup-${name}" = {
+          enable = true;
+          description = "Run local backup of Minecraft server regularly";
+          wantedBy = [ "timers.target" ];
+          timerConfig = {
+            OnCalendar = "00/4:00";
+            Unit = "minecraft-local-backup-${name}.service";
+          };
+        };
+      }
+    );
 }
