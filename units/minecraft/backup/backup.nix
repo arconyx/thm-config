@@ -24,7 +24,9 @@
     forEachServer (
       name: cfg:
       let
-        socket = config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path name;
+        socket = builtins.toString (
+          config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path name
+        );
       in
       lib.mkIf cfg.enable {
         restic-backups-backblaze = {
@@ -71,7 +73,7 @@
             fi
           '';
           environment = {
-            SOCKET_PATH = "${socket}";
+            SOCKET_PATH = socket;
             WARNING_TIME = "600";
           };
         };
@@ -106,7 +108,7 @@
             fi
           '';
           environment = {
-            SOCKET_PATH = "${socket}";
+            SOCKET_PATH = socket;
           };
         };
       }
