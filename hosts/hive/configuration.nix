@@ -4,7 +4,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    # ./nvidia.nix
 
     # ./../../units/conduwuit.nix
     ./../../units/minecraft/minecraft.nix
