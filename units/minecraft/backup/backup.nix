@@ -45,9 +45,6 @@
         "minecraft-shutdown-warning-${name}" = {
           enable = true;
           description = "Warn about Minecraft server '${name}' shutdown";
-          requisite = [
-            "minecraft-server-${name}.service"
-          ];
           # Run before remote backup
           wantedBy = [ "restic-backups-backblaze.service" ];
           before = [ "restic-backups-backblaze.service" ];
