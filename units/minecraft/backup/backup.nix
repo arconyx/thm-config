@@ -31,47 +31,33 @@
       lib.mkIf cfg.enable {
         restic-backups-backblaze = {
           # Shutdown server during backup
-          conflicts = [ "minecraft-server-${name}.service" ];
-          # If we somehow start at the same time, run the backup second
-          after = [ "minecraft-server-${name}.service" ];
+          # If we somehow start at the same time, run the backup first
+          before = [ "minecraft-server-${name}.service" ];
           # Restart server after, printing warning on failure
           onSuccess = [ "minecraft-server-${name}.service" ];
           onFailure = [
             "minecraft-server-${name}.service"
             "minecraft-remote-backup-failure-warning-${name}.service"
           ];
-        };
-
-        "minecraft-shutdown-warning-${name}" = {
-          enable = true;
-          description = "Warn about Minecraft server '${name}' shutdown";
-          # Run before remote backup
-          wantedBy = [ "restic-backups-backblaze.service" ];
-          before = [ "restic-backups-backblaze.service" ];
-          serviceConfig = {
-            User = config.services.minecraft-servers.user;
-            Group = config.services.minecraft-servers.group;
-            Type = "oneshot";
-          };
-          script = ''
-            echo "Trying to send shutdown warning"
-            if [[ -p "$SOCKET_PATH" ]]; then
+          preStart = ''
+            echo "Trying to send shutdown warning for minecraft server ${name}"
+            if [[ -p "${socket}" ]]; then
               echo "Server shutdown warning triggered"
-              if echo "say Server will shutdown for backup in $WARNING_TIME seconds." > "$SOCKET_PATH"; then
+              if echo "say Server will shutdown for backup in $(( $MC_SHUTDOWN_WARNING_SECONDS / 60 )) minutes." > "${socket}"; then
                   echo "Shutdown warning command sent successfully."
               else
                   echo "Warning: Failed to send shutdown warning via socket."
               fi
-              sleep "$WARNING_TIME"
+              sleep "$MC_SHUTDOWN_WARNING_SECONDS"
             else
-                echo "Warning: Socket file '$SOCKET_PATH' not found or is not a socket."
-                echo "Minecraft server appears to be offline or socket is not active."
+                echo "Warning: Socket file '${socket}' not found or is not a socket."
+                echo "Minecraft server ${name} appears to be offline or socket is not active."
                 echo "Backup will proceed regardless."
             fi
+            systemctl stop minecraft-server-${name}
           '';
           environment = {
-            SOCKET_PATH = socket;
-            WARNING_TIME = "600";
+            MC_SHUTDOWN_WARNING_SECONDS = "600";
           };
         };
 
@@ -92,21 +78,18 @@
             Type = "oneshot";
           };
           script = ''
-            if [[ -p "$SOCKET_PATH" ]]; then
+            if [[ -p "${socket}" ]]; then
               echo "Attempting to send in-game notification of failed backup."
-              if echo "WARNING: Server backup failed!" > "$SOCKET_PATH"; then
+              if echo "WARNING: Server backup failed!" > "${socket}"; then
                   echo "Warning sent successfully."
               else
                   echo "Warning: Failed to send backup failure warning via socket."
               fi
             else
-                echo "Warning: Socket file '$SOCKET_PATH' not found or is not a socket."
+                echo "Warning: Socket file '${socket}' not found or is not a socket."
                 echo "Minecraft server appears to be offline or socket is not active."
             fi
           '';
-          environment = {
-            SOCKET_PATH = socket;
-          };
         };
       }
     );
