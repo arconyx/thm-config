@@ -39,12 +39,13 @@ in
           echo "Trying to send shutdown warning for minecraft server ${name}"
           if [[ -p "${socket}" ]]; then
             echo "Server shutdown warning triggered"
-            if echo "say Server will shutdown for backup in $(( $MC_SHUTDOWN_WARNING_SECONDS / 60 )) minutes." > "${socket}"; then
+            if echo "say Server will shutdown for backup in 10 minutes." > "${socket}"; then
                 echo "Shutdown warning command sent successfully."
             else
                 echo "Warning: Failed to send shutdown warning via socket."
             fi
-            sleep "$MC_SHUTDOWN_WARNING_SECONDS"
+            # Sleep time is 540 seconds because there is an additional 60 second delay built into server shutdown
+            sleep 540
           else
               echo "Warning: Socket file '${socket}' not found or is not a socket."
               echo "Minecraft server ${name} appears to be offline or socket is not active."
@@ -52,9 +53,6 @@ in
           fi
           systemctl stop minecraft-server-${name}
         '';
-        environment = {
-          MC_SHUTDOWN_WARNING_SECONDS = "600";
-        };
       };
 
       "minecraft-remote-backup-failure-warning-${name}" = {
