@@ -167,7 +167,7 @@ in
               echo "Skipping save-on command."
           fi
 
-          if rm "$${dataDir}/ledger_backup.sqlite"; then
+          if rm "${dataDir}/ledger_backup.sqlite"; then
               echo "Removed ledger backup db"
           else
               echo "Warning: Unable to cleanup ledger database"
