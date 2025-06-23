@@ -1,4 +1,7 @@
 { config, lib, ... }:
+let
+  utils = import ./../utils.nix { inherit config lib; };
+in
 {
   imports = [ ./local-backup.nix ];
 
@@ -16,81 +19,74 @@
     ];
   };
 
-  systemd.services =
+  systemd.services = utils.forEachServer (
+    name: cfg:
     let
-      forEachServer =
-        f: lib.concatMapAttrs (name: value: f name value) config.services.minecraft-servers.servers;
+      socket = config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path name;
     in
-    forEachServer (
-      name: cfg:
-      let
-        socket = builtins.toString (
-          config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path name
-        );
-      in
-      lib.mkIf cfg.enable {
-        restic-backups-backblaze = {
-          # Shutdown server during backup
-          # If we somehow start at the same time, run the backup first
-          before = [ "minecraft-server-${name}.service" ];
-          # Restart server after, printing warning on failure
-          onSuccess = [ "minecraft-server-${name}.service" ];
-          onFailure = [
-            "minecraft-server-${name}.service"
-            "minecraft-remote-backup-failure-warning-${name}.service"
-          ];
-          preStart = ''
-            echo "Trying to send shutdown warning for minecraft server ${name}"
-            if [[ -p "${socket}" ]]; then
-              echo "Server shutdown warning triggered"
-              if echo "say Server will shutdown for backup in $(( $MC_SHUTDOWN_WARNING_SECONDS / 60 )) minutes." > "${socket}"; then
-                  echo "Shutdown warning command sent successfully."
-              else
-                  echo "Warning: Failed to send shutdown warning via socket."
-              fi
-              sleep "$MC_SHUTDOWN_WARNING_SECONDS"
+    lib.mkIf cfg.enable {
+      restic-backups-backblaze = {
+        # Shutdown server during backup
+        # If we somehow start at the same time, run the backup first
+        before = [ "minecraft-server-${name}.service" ];
+        # Restart server after, printing warning on failure
+        onSuccess = [ "minecraft-server-${name}.service" ];
+        onFailure = [
+          "minecraft-server-${name}.service"
+          "minecraft-remote-backup-failure-warning-${name}.service"
+        ];
+        preStart = ''
+          echo "Trying to send shutdown warning for minecraft server ${name}"
+          if [[ -p "${socket}" ]]; then
+            echo "Server shutdown warning triggered"
+            if echo "say Server will shutdown for backup in $(( $MC_SHUTDOWN_WARNING_SECONDS / 60 )) minutes." > "${socket}"; then
+                echo "Shutdown warning command sent successfully."
             else
-                echo "Warning: Socket file '${socket}' not found or is not a socket."
-                echo "Minecraft server ${name} appears to be offline or socket is not active."
-                echo "Backup will proceed regardless."
+                echo "Warning: Failed to send shutdown warning via socket."
             fi
-            systemctl stop minecraft-server-${name}
-          '';
-          environment = {
-            MC_SHUTDOWN_WARNING_SECONDS = "600";
-          };
+            sleep "$MC_SHUTDOWN_WARNING_SECONDS"
+          else
+              echo "Warning: Socket file '${socket}' not found or is not a socket."
+              echo "Minecraft server ${name} appears to be offline or socket is not active."
+              echo "Backup will proceed regardless."
+          fi
+          systemctl stop minecraft-server-${name}
+        '';
+        environment = {
+          MC_SHUTDOWN_WARNING_SECONDS = "600";
         };
+      };
 
-        "minecraft-remote-backup-failure-warning-${name}" = {
-          enable = true;
-          description = "Warn about failed remote backup of Minecraft server '${name}'";
-          requires = [
-            "minecraft-server-${name}.service"
-            "minecraft-server-${name}.socket"
-          ];
-          after = [
-            "minecraft-server-${name}.service"
-            "minecraft-server-${name}.socket"
-          ];
-          serviceConfig = {
-            User = config.services.minecraft-servers.user;
-            Group = config.services.minecraft-servers.group;
-            Type = "oneshot";
-          };
-          script = ''
-            if [[ -p "${socket}" ]]; then
-              echo "Attempting to send in-game notification of failed backup."
-              if echo "WARNING: Server backup failed!" > "${socket}"; then
-                  echo "Warning sent successfully."
-              else
-                  echo "Warning: Failed to send backup failure warning via socket."
-              fi
-            else
-                echo "Warning: Socket file '${socket}' not found or is not a socket."
-                echo "Minecraft server appears to be offline or socket is not active."
-            fi
-          '';
+      "minecraft-remote-backup-failure-warning-${name}" = {
+        enable = true;
+        description = "Warn about failed remote backup of Minecraft server '${name}'";
+        requires = [
+          "minecraft-server-${name}.service"
+          "minecraft-server-${name}.socket"
+        ];
+        after = [
+          "minecraft-server-${name}.service"
+          "minecraft-server-${name}.socket"
+        ];
+        serviceConfig = {
+          User = config.services.minecraft-servers.user;
+          Group = config.services.minecraft-servers.group;
+          Type = "oneshot";
         };
-      }
-    );
+        script = ''
+          if [[ -p "${socket}" ]]; then
+            echo "Attempting to send in-game notification of failed backup."
+            if echo "WARNING: Server backup failed!" > "${socket}"; then
+                echo "Warning sent successfully."
+            else
+                echo "Warning: Failed to send backup failure warning via socket."
+            fi
+          else
+              echo "Warning: Socket file '${socket}' not found or is not a socket."
+              echo "Minecraft server appears to be offline or socket is not active."
+          fi
+        '';
+      };
+    }
+  );
 }
