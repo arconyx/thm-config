@@ -1,4 +1,5 @@
 {
+  config,
   pkgs,
   lib,
   modpack,
@@ -53,6 +54,11 @@ in
         "config" = "${modpack}/config";
         "kubejs" = "${modpack}/kubejs";
       };
+      # TODO: paramterise per server
+      extraStopPre = ''
+        echo Server shutdown in 60 seconds > "${config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path "magic"}"
+        sleep 60
+      '';
     };
   };
 
@@ -60,4 +66,5 @@ in
 
   # for spark
   systemd.services.minecraft-server-magic.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
+  systemd.services.minecraft-server-magic.TimeoutStopSec = "2min 15s"; # increase to account for shutdown warning
 }
