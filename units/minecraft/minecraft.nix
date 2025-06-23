@@ -63,7 +63,7 @@ in
           "kubejs" = "${modpack}/kubejs";
         };
         extraStopPre = ''
-          echo "Server shutdown in 60 seconds" > "${socket}" && sleep 60 || echo "Unable to send shutdown warning"
+          echo "say Server shutdown in 60 seconds" > "${socket}" && sleep 60 || echo "Unable to send shutdown warning"
         '';
       };
   };

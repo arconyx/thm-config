@@ -15,6 +15,7 @@ in
       dataDir =
         builtins.toString
           config.systemd.services."minecraft-server-${name}".serviceConfig.WorkingDirectory;
+      backupRoot = "${config.services.minecraft-servers.dataDir}/backup/${name}";
     in
     lib.mkIf cfg.enable {
       "minecraft-before-local-backup-${name}" = {
@@ -39,13 +40,92 @@ in
           Group = config.services.minecraft-servers.group;
           Type = "oneshot";
         };
-        script = builtins.readFile ./before-backup.sh;
+        script = ''
+          # Check if the socket path exists and is a socket file
+          if [[ -p "${socket}" ]]; then
+              echo "Minecraft server socket found. Proceeding with save commands."
+
+              # Send the 'save-off' command to the server via the socket
+              echo "Sending 'save-off' command..."
+              if echo "save-off" > "${socket}"; then
+                  echo "say Local backup started. Autosave disabled." > "${socket}"
+                  echo "'save-off' command sent successfully."
+              else
+                  echo "Warning: Failed to send 'save-off' command via socket."
+                  echo "say Backup error: Unable to pause autosave" > "${socket}"
+                  # Continue execution even if sending fails, server might be shutting down
+              fi
+
+              # Add a small delay to ensure the server processes the save-off command
+              sleep 1
+
+              # Send the 'save-all' command to the server via the socket
+              echo "Sending 'save-all' command..."
+              if echo "save-all" > "${socket}"; then
+                   echo "'save-all' command sent successfully."
+              else
+                  echo "Warning: Failed to send 'save-all' command via socket."
+                  echo "say Backup error: Unable to force save" > "${socket}"
+                  # Continue execution even if sending fails
+              fi
+
+              # Add a delay to allow the server to complete the manual save before backup starts
+              echo "Waiting $SAVE_WAIT_TIME seconds for the server to complete saving (if online)..."
+              sleep "$SAVE_WAIT_TIME"
+
+          else
+              echo "Warning: Socket file '${socket}' not found or is not a socket."
+              echo "Minecraft server appears to be offline or socket is not active."
+              echo "Skipping save commands. Backup will proceed without pausing server saves."
+          fi
+
+
+          if "${pkgs.sqlite}/bin/sqlite3" "${dataDir}/world/ledger.sqlite" "VACUUM INTO '${dataDir}/ledger_backup.sqlite'"; then
+              echo "Exported ledger database"
+          else
+              echo "Warning: Unable to export ledger database"
+              echo "say Backup error: Unable to export ledger" > "${socket}"
+          fi
+
+          echo "Minecraft Server Pre-Backup Script Finished."
+        '';
         environment = {
-          DATA_PATH = dataDir;
-          SOCKET_PATH = socket;
           SAVE_WAIT_TIME = "60";
-          SQLITE_PATH = "${pkgs.sqlite}/bin/sqlite3";
         };
+      };
+
+      # backup to a local folder
+      "minecraft-local-backup-${name}" = {
+        enable = true;
+        description = "Backup Minecraft server to a local folder";
+        # only while the server is running because otherwise things aren't changing and it should be fine
+        requisite = [
+          "minecraft-server-${name}.service"
+          "minecraft-server-${name}.socket"
+        ];
+        # don't run while other backups are running
+        conflicts = [ "restic-backups-backblaze.service" ];
+        # run setup and cleanup
+        wants = [
+          "minecraft-after-local-backup-${name}.service"
+          "minecraft-before-local-backup-${name}.service"
+        ];
+        after = [ "minecraft-before-local-backup-${name}.service" ];
+        before = [ "minecraft-after-local-backup-${name}.service" ];
+        # trigger webhook on failure
+        onFailure = [ "notify-minecraft-backup-failed-${name}.service" ];
+        serviceConfig = {
+          User = config.services.minecraft-servers.user;
+          Group = config.services.minecraft-servers.group;
+          Type = "oneshot";
+        };
+        script = ''
+          BACKUP_PATH="${backupRoot}/$(date +%Y%m%d-%H%M)"
+          mkdir -p "$BACKUP_PATH"
+          cp --reflink=always -r "${dataDir}" "$BACKUP_PATH"
+          # for the eventual cleanup script
+          echo "Backup done"
+        '';
       };
 
       "minecraft-after-local-backup-${name}" = {
@@ -65,50 +145,39 @@ in
           Group = config.services.minecraft-servers.group;
           Type = "oneshot";
         };
-        script = builtins.readFile ./after-backup.sh;
-        environment = {
-          DATA_PATH = dataDir;
-          SOCKET_PATH = socket;
-        };
-      };
-
-      # backup to a local folder
-      "minecraft-local-backup-${name}" = {
-        enable = true;
-        description = "Backup Minecraft server to a local folder";
-        # only while the server is running because otherwise things aren't changing and it should be fine
-        requisite = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
-        # don't run while other backups are running
-        conflicts = [ "restic-backups-backblaze.service" ];
-        # run setup
-        requires = [ "minecraft-before-local-backup-${name}.service" ];
-        after = [ "minecraft-before-local-backup-${name}.service" ];
-        # and cleanup
-        wants = [ "minecraft-after-local-backup-${name}.service" ]; # we use wants because we want to run cleanup even on failure
-        before = [ "minecraft-after-local-backup-${name}.service" ];
-        # trigger webhook on failure
-        onFailure = [ "notify-minecraft-backup-failed-${name}.service" ];
-        serviceConfig = {
-          User = config.services.minecraft-servers.user;
-          Group = config.services.minecraft-servers.group;
-          Type = "oneshot";
-        };
-        # we inline this so we can easily reference pkgs.fd
         script = ''
-          BACKUP_PATH="$BACKUP_ROOT/$(date +%Y%m%d-%H%M)"
-          mkdir -p "$BACKUP_PATH"
-          cp --reflink=always -r "$DATA_PATH" "$BACKUP_PATH"
-          # for the eventual cleanup script
-          ${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d --absolute-path --full-path "$BACKUP_ROOT" "$BACKUP_ROOT" | xargs --no-run-if-empty --verbose rm --recursive --preserve-root=all --verbose
-          echo "Backup done"
+          # Check if the socket path exists and is a socket file
+          if [[ -p "${socket}" ]]; then
+              echo "Minecraft server socket found. Proceeding with save-on command."
+
+              # Send the 'save-on' command to the server via the socket
+              echo "Sending 'save-on' command..."
+              if echo "save-on" > "${socket}"; then
+                  echo "say Local backup finished. Autosave enabled." > "${socket}"
+                  echo "'save-on' command sent successfully. Autosave re-enabled."
+              else
+                  echo "Warning: Failed to send 'save-on' command via socket."
+                  echo "say Backup error: Unable to resume autosave" > "${socket}"
+                  # Continue execution even if sending fails
+              fi
+
+          else
+              echo "Warning: Socket file '${socket}' not found or is not a socket."
+              echo "Minecraft server appears to be offline or socket is not active."
+              echo "Skipping save-on command."
+          fi
+
+          if rm "$${dataDir}/ledger_backup.sqlite"; then
+              echo "Removed ledger backup db"
+          else
+              echo "Warning: Unable to cleanup ledger database"
+              echo "say Backup error: Unable to cleanup ledger export" > "${socket}"
+          fi
+
+          echo "Cleaning old backups"
+          ${pkgs.fd}/bin/fd --type directory --exact-depth 1 --changed-before 1d --absolute-path --full-path "${backupRoot}" "${backupRoot}" | xargs --no-run-if-empty --verbose rm --recursive --preserve-root=all --verbose
+          echo "Cleanup done"
         '';
-        environment = {
-          BACKUP_ROOT = "${config.services.minecraft-servers.dataDir}/backup/${name}";
-          DATA_PATH = dataDir;
-        };
       };
 
       # calls webhook to report failure

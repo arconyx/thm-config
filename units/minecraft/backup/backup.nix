@@ -76,7 +76,7 @@ in
         script = ''
           if [[ -p "${socket}" ]]; then
             echo "Attempting to send in-game notification of failed backup."
-            if echo "WARNING: Server backup failed!" > "${socket}"; then
+            if echo "say WARNING: Server backup failed!" > "${socket}"; then
                 echo "Warning sent successfully."
             else
                 echo "Warning: Failed to send backup failure warning via socket."
