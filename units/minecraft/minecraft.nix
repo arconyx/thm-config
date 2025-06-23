@@ -70,9 +70,25 @@ in
 
   systemd.services = utils.forEachServer (
     name: cfg: {
-      "minecraft-server-${name}".serviceConfig = {
-        CapabilityBoundingSet = [ "CAP_PERFMON" ]; # for spark
-        TimeoutStopSec = lib.mkForce "2min 15s"; # increased to account for shutdown warning
+      "minecraft-server-${name}" = {
+        onFailure = [ "notify-minecraft-server-failed-magic.service" ];
+        serviceConfig = {
+          CapabilityBoundingSet = [ "CAP_PERFMON" ]; # for spark
+          TimeoutStopSec = lib.mkForce "2min 15s"; # increased to account for shutdown warning
+        };
+      };
+
+      # calls webhook to report failure
+      "notify-minecraft-server-failed-${name}" = {
+        enable = true;
+        description = "Notify on failed Minecraft server";
+        serviceConfig = {
+          Type = "oneshot";
+          EnvironmentFile = "/etc/minecraft/magic.env";
+        };
+        script = ''
+          ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Server crash detected. If it does not restart automatically within 10 minutes ping ArcOnyx." "$DISCORD_WEBHOOK_URL"
+        '';
       };
     }
   );
