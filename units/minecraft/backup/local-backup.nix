@@ -48,7 +48,7 @@ in
               # Send the 'save-off' command to the server via the socket
               echo "Sending 'save-off' command..."
               if echo "save-off" > "${socket}"; then
-                  echo "say Local backup started. Autosave disabled." > "${socket}"
+                  echo "tell @a Local backup started. Autosave disabled." > "${socket}"
                   echo "'save-off' command sent successfully."
               else
                   echo "Warning: Failed to send 'save-off' command via socket."
@@ -153,7 +153,7 @@ in
               # Send the 'save-on' command to the server via the socket
               echo "Sending 'save-on' command..."
               if echo "save-on" > "${socket}"; then
-                  echo "say Local backup finished. Autosave enabled." > "${socket}"
+                  echo "tell @a Local backup finished. Autosave enabled." > "${socket}"
                   echo "'save-on' command sent successfully. Autosave re-enabled."
               else
                   echo "Warning: Failed to send 'save-on' command via socket."
