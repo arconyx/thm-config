@@ -72,7 +72,7 @@
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem {
 
         specialArgs = {
-          modpack = thm-modpack.packages.${nixpkgs.hostPlatform}.default;
+          inherit thm-modpack;
           inherit revision;
         };
 

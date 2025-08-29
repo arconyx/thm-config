@@ -5,20 +5,6 @@ in
 {
   imports = [ ./local-backup.nix ];
 
-  # additional backup paths
-  services.restic.backups.backblaze = {
-    exclude = [
-      "DistantHorizons.sqlite"
-      "DistantHorizons.sqlite-shm"
-      "DistantHorizons.sqlite-wal"
-      "/srv/minecraft/backup" # don't want to waste storage backing up the local backups
-    ];
-    paths = [
-      "/etc/minecraft"
-      # /srv/minecraft already added by top level conf
-    ];
-  };
-
   systemd.services = utils.forEachServer (
     name: cfg:
     let
