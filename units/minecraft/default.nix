@@ -32,7 +32,7 @@ in
   services.minecraft-servers = {
     enable = true;
     eula = true;
-    openFirewall = true;
+    openFirewall = false;
     dataDir = "/srv/minecraft";
     environmentFile = "/etc/minecraft/magic.env";
     managementSystem = {
