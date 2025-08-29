@@ -39,7 +39,7 @@ let
   # for minecraft, uses rcon to get the player list
   # skips the checks if the service started less than minimum-server-lifetime
   no-player-connected = pkgs.writeShellScriptBin "no-player-connected" ''
-    servicestartsec=$(date -d "$(systemctl show --property=ActiveEnterTimestamp minecraft-server.service | cut -d= -f2)" +%s)
+    servicestartsec=$(date -d "$(systemctl show --property=ActiveEnterTimestamp minecraft-server-magic.service | cut -d= -f2)" +%s)
     serviceelapsedsec=$(( $(date +%s) - servicestartsec))
 
     # exit if the server started less than 10 minutes ago
