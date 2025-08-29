@@ -2,11 +2,18 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./networking.nix
 
-    ./../../units/minecraft/minecraft.nix
+    ./../../units/minecraft
   ];
+
+  arcworks.server.enable = true;
+
+  arcworks.users.fishynz = {
+    enable = true;
+    description = "fishynz";
+  };
 
   networking.hostName = "hive"; # Define your hostname.
 

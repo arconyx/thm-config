@@ -1,7 +1,6 @@
 { ... }:
 {
   imports = [
-    ./../caddy.nix
     ./../tsnsrv.nix
   ];
 
@@ -17,6 +16,7 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
+  services.caddy.enable = true;
   services.caddy.virtualHosts.":9010" = {
     extraConfig = ''
       encode
@@ -45,6 +45,7 @@
     SupplementaryGroups = [ "minecraft" ];
   };
 
+  # TODO: Switch to Cloudflare tunnel
   services.tsnsrv.services.minecraft = {
     funnel = true;
     suppressWhois = true;
