@@ -6,7 +6,7 @@
   ...
 }:
 let
-  modpack = thm-modpack.packages.${config.nixpkgs.hostPlatform}.default;
+  modpack = thm-modpack.packages.${config.nixpkgs.hostPlatform.system}.default;
 in
 {
   services.minecraft-servers.servers = {
