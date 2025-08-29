@@ -1,9 +1,5 @@
 { ... }:
 {
-  imports = [
-    ./../tsnsrv.nix
-  ];
-
   # keep dns fresh
   services.cloudflare-dyndns = {
     enable = true;
@@ -16,7 +12,8 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
-  services.caddy.enable = true;
+  # TODO: Reenable after exposing via cloudflare tunnel
+  services.caddy.enable = false;
   services.caddy.virtualHosts.":9010" = {
     extraConfig = ''
       encode
@@ -43,12 +40,5 @@
   # so we don't have to chmod exposures world readable
   systemd.services.caddy.serviceConfig = {
     SupplementaryGroups = [ "minecraft" ];
-  };
-
-  # TODO: Switch to Cloudflare tunnel
-  services.tsnsrv.services.minecraft = {
-    funnel = true;
-    suppressWhois = true;
-    toURL = "http://127.0.0.1:9010";
   };
 }

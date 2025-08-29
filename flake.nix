@@ -11,10 +11,6 @@
       url = "github:arconyx/core";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    tsnsrv = {
-      url = "github:boinkor-net/tsnsrv";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nix-minecraft = {
       url = "github:Infinidoge/nix-minecraft";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,7 +27,6 @@
       nixpkgs,
       core,
       pre-commit-hooks,
-      tsnsrv,
       nix-minecraft,
       thm-modpack,
       ...
@@ -79,7 +74,6 @@
         modules = baseModules ++ [
           ./hosts/hive
           core.nixosModules.default
-          tsnsrv.nixosModules.default
           nix-minecraft.nixosModules.minecraft-servers
           {
             nixpkgs.overlays = [ nix-minecraft.overlay ];

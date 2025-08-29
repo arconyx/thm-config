@@ -71,24 +71,6 @@
         "type": "github"
       }
     },
-    "flake-parts": {
-      "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib"
-      },
-      "locked": {
-        "lastModified": 1743550720,
-        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -228,21 +210,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-lib": {
-      "locked": {
-        "lastModified": 1743296961,
-        "narHash": "sha256-b1EdN3cULCqtorQ4QeWgLMrd5ZGOjLSLemfa00heasc=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "e4822aea2a6d1cdd36653c134cacfd64c97ff4fa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "type": "github"
-      }
-    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -294,8 +261,7 @@
         "nix-minecraft": "nix-minecraft",
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks_2",
-        "thm-modpack": "thm-modpack",
-        "tsnsrv": "tsnsrv"
+        "thm-modpack": "thm-modpack"
       }
     },
     "sddm-sugar-candy-nix": {
@@ -367,27 +333,6 @@
       "original": {
         "owner": "arconyx",
         "repo": "thm-modpack",
-        "type": "github"
-      }
-    },
-    "tsnsrv": {
-      "inputs": {
-        "flake-parts": "flake-parts",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1749151631,
-        "narHash": "sha256-tVHkh0AGDl+de9itdLsi3lfMOyOLyQjtnp1zw2zyYV8=",
-        "owner": "boinkor-net",
-        "repo": "tsnsrv",
-        "rev": "e2537464e45db0f173e8e68d0316b40c13e1e49c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "boinkor-net",
-        "repo": "tsnsrv",
         "type": "github"
       }
     }
