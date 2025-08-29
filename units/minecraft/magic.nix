@@ -88,8 +88,7 @@ in
   systemd.sockets.listen-minecraft = {
     enable = true;
     wantedBy = [ "sockets.target" ];
-    requires = [ "network.target" ];
-    after = [ "network.target" ];
+    wants = [ "network.target" ];
     listenStreams = [ "${toString public-port}" ];
   };
 
