@@ -139,7 +139,7 @@ in
     enable = true;
     serviceConfig.ExecStartPost = "${wait-tcp}/bin/wait-tcp";
     script = ''
-      ${pkgs.systemd}/bin/systemctl start minecraft-server-magic.socket
+      ${pkgs.systemd}/bin/systemctl start minecraft-server-magic.service
       ${pkgs.systemd}/bin/systemctl start stop-minecraft.timer
     '';
   };
@@ -168,7 +168,7 @@ in
       if ${no-player-connected}/bin/no-player-connected
       then
         echo "stopping server"
-        systemctl stop minecraft-server-magic.socket
+        systemctl stop minecraft-server-magic.service
         systemctl stop hook-minecraft.service
         systemctl stop stop-minecraft.timer
       fi
