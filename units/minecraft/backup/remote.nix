@@ -42,7 +42,7 @@ in
       "minecraft-remote-backup-failure-warning-${name}" = {
         enable = true;
         description = "Warn about failed remote backup of Minecraft server '${name}'";
-        requires = [
+        requisite = [
           "minecraft-server-${name}.service"
           "minecraft-server-${name}.socket"
         ];
