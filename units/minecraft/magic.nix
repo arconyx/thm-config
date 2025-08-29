@@ -18,48 +18,22 @@ let
   # public port exposed though firewall
   public-port = 25565;
 
-  # wait 60s for a TCP socket to be available
+  # wait for a TCP socket to be available
   # to wait in the proxifier
   # idea found in http://web.archive.org/web/20240215035104/https://blog.developer.atlassian.com/docker-systemd-socket-activation/
   wait-tcp = pkgs.writeShellScriptBin "wait-tcp" ''
-    for i in `seq 300`; do
-      if ${pkgs.libressl.nc}/bin/nc -z 127.0.0.1 ${toString minecraft-port} > /dev/null ; then
+    for i in `seq 60`; do
+      PLAYERS=`printf "list\n" | ${pkgs.rcon.out}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password}`
+      if echo "$PLAYERS" | grep "are 0 of a"
+      then
         echo "minecraft tcp wait finished"
         exit 0
       fi
-      ${pkgs.coreutils}/bin/sleep 1
+      ${pkgs.coreutils}/bin/sleep 5
     done
     echo "minecraft tcp wait timed out"
     exit 1
   '';
-
-  # time in second before we could stop the server
-  # this should let it time to spawn
-  minimum-server-lifetime = 600;
-
-  # script returning true if the server has to be shutdown
-  # for minecraft, uses rcon to get the player list
-  # skips the checks if the service started less than minimum-server-lifetime
-  no-player-connected = pkgs.writeShellScriptBin "no-player-connected" ''
-    servicestartsec=$(date -d "$(systemctl show --property=ActiveEnterTimestamp minecraft-server-magic.service | cut -d= -f2)" +%s)
-    serviceelapsedsec=$(( $(date +%s) - servicestartsec))
-
-    # exit if the server started less than 10 minutes ago
-    if [ $serviceelapsedsec -lt ${toString minimum-server-lifetime} ]
-    then
-      echo "server is too young to be stopped"
-      exit 1
-    fi
-
-    PLAYERS=`printf "list\n" | ${pkgs.rcon.out}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password}`
-    if echo "$PLAYERS" | grep "are 0 of a"
-    then
-      exit 0
-    else
-      exit 1
-    fi
-  '';
-
 in
 {
   services.minecraft-servers.servers = {
@@ -125,62 +99,29 @@ in
   systemd.services.listen-minecraft = {
     enable = true;
     requires = [
-      "hook-minecraft.service"
+      "minecraft-server-magic.service"
       "listen-minecraft.socket"
     ];
     after = [
-      "hook-minecraft.service"
+      "minecraft-server-magic.service"
       "listen-minecraft.socket"
     ];
+    serviceConfig.EnvironmentFile = config.services.minecraft-servers.environmentFile;
+    # Turns out we need to `exec` systemd-socket-proxyd because it needs to run with the same PID as the daemon itself.
+    # Directly invoking it with `serviceConfig.ExecStart = systemd-socket-proxyd ...` also works but we want extra logic
     script = ''
-      echo "minecraft socket listener triggered"
-      ${pkgs.systemd}/lib/systemd/systemd-socket-proxyd 127.0.0.1:${toString minecraft-port}
-    '';
-  };
-
-  # this starts Minecraft is required
-  # and wait for it to be available over TCP
-  # to unlock listen-minecraft.service proxy
-  systemd.services.hook-minecraft = {
-    enable = true;
-    serviceConfig.ExecStartPost = "${wait-tcp}/bin/wait-tcp";
-    script = ''
-      echo "minecraft hook firing"
-      ${pkgs.systemd}/bin/systemctl start minecraft-server-magic.service
-      ${pkgs.systemd}/bin/systemctl start stop-minecraft.timer
-    '';
-  };
-
-  # create a timer running every minute
-  # that runs stop-minecraft.service script
-  # to check if the server needs to be stopped
-  systemd.timers.stop-minecraft = {
-    enable = true;
-    timerConfig = {
-      OnCalendar = "minutely";
-      Unit = "stop-minecraft.service";
-    };
-    wantedBy = [ "timers.target" ];
-  };
-
-  # run the script no-player-connected
-  # and if it returns true, stop the minecraft-server
-  # but also the timer and the hook-minecraft service
-  # to prepare a working state ready to resume the
-  # server again
-  systemd.services.stop-minecraft = {
-    enable = true;
-    serviceConfig.Type = "oneshot";
-    after = [ "minecraft-server-magic.service" ];
-    script = ''
-      if ${no-player-connected}/bin/no-player-connected
+      ${pkgs.curl}/bin/curl --silent -F username=${config.networking.hostName} -F content="Raising the server from the dead." "$DISCORD_WEBHOOK_URL"
+      if ${wait-tcp}/bin/wait-tcp
       then
-        echo "stopping server"
-        systemctl stop minecraft-server-magic.service
-        systemctl stop hook-minecraft.service
-        systemctl stop stop-minecraft.timer
+        echo "minecraft socket listener triggered"
+        ${pkgs.curl}/bin/curl --silent -F username=${config.networking.hostName} -F content="Ritual successful." "$DISCORD_WEBHOOK_URL"
+        exec ${pkgs.systemd}/lib/systemd/systemd-socket-proxyd 127.0.0.1:${toString minecraft-port} --exit-idle-time 600
+      else
+        ${pkgs.curl}/bin/curl --silent -F username=${config.networking.hostName} -F content="Necromantic error. Try again later." "$DISCORD_WEBHOOK_URL"
+        echo "startup timeout"
       fi
     '';
   };
 
+  systemd.services.minecraft-server-magic.unitConfig.StopWhenUnneeded = true;
 }
