@@ -73,7 +73,6 @@
 
         modules = baseModules ++ [
           ./hosts/hive
-          core.nixosModules.default
           nix-minecraft.nixosModules.minecraft-servers
           {
             nixpkgs.overlays = [ nix-minecraft.overlay ];
