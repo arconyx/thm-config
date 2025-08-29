@@ -5,7 +5,6 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
 
-    # ./../../units/conduwuit.nix
     ./../../units/minecraft/minecraft.nix
   ];
 
