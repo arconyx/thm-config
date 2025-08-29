@@ -24,10 +24,12 @@ let
   wait-tcp = pkgs.writeShellScriptBin "wait-tcp" ''
     for i in `seq 300`; do
       if ${pkgs.libressl.nc}/bin/nc -z 127.0.0.1 ${toString minecraft-port} > /dev/null ; then
+        echo "minecraft tcp wait finished"
         exit 0
       fi
-      ${pkgs.busybox.out}/bin/sleep 1
+      ${pkgs.coreutils}/bin/sleep 1
     done
+    echo "minecraft tcp wait timed out"
     exit 1
   '';
 
@@ -169,7 +171,6 @@ in
   systemd.services.stop-minecraft = {
     enable = true;
     serviceConfig.Type = "oneshot";
-    requisite = [ "minecraft-server-magic.service" ];
     after = [ "minecraft-server-magic.service" ];
     script = ''
       if ${no-player-connected}/bin/no-player-connected
