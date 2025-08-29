@@ -113,6 +113,7 @@ in
     enable = true;
     wantedBy = [ "sockets.target" ];
     requires = [ "network.target" ];
+    after = [ "network.target" ];
     listenStreams = [ "${toString public-port}" ];
   };
 
@@ -129,7 +130,10 @@ in
       "hook-minecraft.service"
       "listen-minecraft.socket"
     ];
-    script = "${pkgs.systemd}/lib/systemd/systemd-socket-proxyd 127.0.0.1:${toString minecraft-port}";
+    script = ''
+      echo "minecraft socket listener triggered"
+      ${pkgs.systemd}/lib/systemd/systemd-socket-proxyd 127.0.0.1:${toString minecraft-port}
+    '';
   };
 
   # this starts Minecraft is required
@@ -139,6 +143,7 @@ in
     enable = true;
     serviceConfig.ExecStartPost = "${wait-tcp}/bin/wait-tcp";
     script = ''
+      echo "minecraft hook firing"
       ${pkgs.systemd}/bin/systemctl start minecraft-server-magic.service
       ${pkgs.systemd}/bin/systemctl start stop-minecraft.timer
     '';
@@ -164,6 +169,8 @@ in
   systemd.services.stop-minecraft = {
     enable = true;
     serviceConfig.Type = "oneshot";
+    requisite = [ "minecraft-server-magic.service" ];
+    after = [ "minecraft-server-magic.service" ];
     script = ''
       if ${no-player-connected}/bin/no-player-connected
       then
