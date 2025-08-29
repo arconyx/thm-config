@@ -22,7 +22,7 @@ let
   # to wait in the proxifier
   # idea found in http://web.archive.org/web/20240215035104/https://blog.developer.atlassian.com/docker-systemd-socket-activation/
   wait-tcp = pkgs.writeShellScriptBin "wait-tcp" ''
-    for i in `seq 60`; do
+    for i in `seq 300`; do
       if ${pkgs.libressl.nc}/bin/nc -z 127.0.0.1 ${toString minecraft-port} > /dev/null ; then
         exit 0
       fi
