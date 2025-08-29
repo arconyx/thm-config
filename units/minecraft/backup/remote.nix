@@ -3,8 +3,6 @@ let
   utils = import ./../utils.nix { inherit config lib; };
 in
 {
-  imports = [ ./local-backup.nix ];
-
   systemd.services = utils.forEachServer (
     name: cfg:
     let
