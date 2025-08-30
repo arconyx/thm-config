@@ -64,6 +64,7 @@ in
   systemd.timers.stop-minecraft = {
     enable = true;
     timerConfig = {
+      OnActiveSec = "5min";
       OnUnitInactiveSec = "10min";
       Unit = "stop-minecraft.service";
     };
