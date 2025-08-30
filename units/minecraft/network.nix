@@ -1,5 +1,7 @@
 { config, ... }:
 {
+  imports = [ ./webhook.nix ];
+
   arcworks.services.backups.global.paths = [ "/etc/cloudflare" ];
 
   # keep dns fresh

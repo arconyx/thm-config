@@ -22,18 +22,20 @@ in
   # Use polkit to give the webhooks user permission to start the service
   security.polkit = {
     enable = true;
-    extraConfig = lib.concatLines utils.forEachServerName (name: ''
-      /* Allow webhooks to launch Minecraft */
-      polkit.addRule(function(action, subject) {
-        if (
-          action.id == "org.freedesktop.systemd1.manage-units" &&
-          action.lookup("unit") == "minecraft-server-${name}.service" &&
-          subject.user == "${config.services.webhook.user}" &&
-          action.lookup("verb") == "start"
-        ) {
-          return polkit.Result.YES;
-        }
-      });
-    '');
+    extraConfig = lib.concatLines (
+      utils.forEachServerName (name: ''
+        /* Allow webhooks to launch Minecraft */
+        polkit.addRule(function(action, subject) {
+          if (
+            action.id == "org.freedesktop.systemd1.manage-units" &&
+            action.lookup("unit") == "minecraft-server-${name}.service" &&
+            subject.user == "${config.services.webhook.user}" &&
+            action.lookup("verb") == "start"
+          ) {
+            return polkit.Result.YES;
+          }
+        });
+      '')
+    );
   };
 }

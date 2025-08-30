@@ -6,5 +6,5 @@
 
   # Map over the server names
   forEachServerName =
-    f: lib.map (name: f) (builtins.attrNames config.services.minecraft-servers.servers);
+    f: builtins.map f (builtins.attrNames config.services.minecraft-servers.servers);
 }
