@@ -21,7 +21,9 @@
     extraConfig = ''
       encode
 
-      reverse_proxy /hooks/* :${builtins.toString config.services.webhook.port}
+      handle /hooks/* {
+        reverse_proxy :${builtins.toString config.services.webhook.port}
+      }
 
       # let people browse their image exports
       redir /exposure /exposure/
@@ -30,6 +32,8 @@
         file_server browse
       }
 
+      # this handle matches all requests so anything else
+      # needs to be in a handle or handle_path block of their own
       handle {
         error 404
       }
