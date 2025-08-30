@@ -1,4 +1,9 @@
-{ config, lib, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 let
   utils = import ./utils.nix { inherit config lib; };
 in
@@ -9,11 +14,22 @@ in
     # bind to loopback only
     # we're not opening the firewall, but better safe
     ip = "127.0.0.1";
+    verbose = true;
     hooks = utils.forEachServer (
       name: cfg: {
         minecraft = {
           id = "start-mc-${name}";
-          execute-command = "systemctl start minecraft-server-${name}.service";
+          execute-command = "${pkgs.systemd}/bin/systemctl";
+          pass-arguments-to-command = [
+            {
+              source = "string";
+              name = "start";
+            }
+            {
+              source = "string";
+              name = "minecraft-server-${name}.service";
+            }
+          ];
         };
       }
     );

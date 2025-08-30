@@ -21,7 +21,7 @@
     extraConfig = ''
       encode
 
-      reverse_proxy /hooks/* ${builtins.toString config.services.webhook.port}
+      reverse_proxy /hooks/* :${builtins.toString config.services.webhook.port}
 
       # let people browse their image exports
       redir /exposure /exposure/
