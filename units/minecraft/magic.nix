@@ -78,12 +78,12 @@ in
     enable = true;
     serviceConfig.Type = "oneshot";
     script = ''
-      PLAYERS=`printf "list\n" | ${pkgs.rcon}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password}`
+      PLAYERS=$(printf "list\n" | ${pkgs.rcon}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password})
       if echo "$PLAYERS" | grep "are 0 of a"
       then
         echo "no players online, checking again in a minute"
         ${pkgs.coreutils}/bin/sleep 60
-        STILL_PLAYERS=`printf "list\n" | ${pkgs.rcon}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password}`
+        STILL_PLAYERS=$(printf "list\n" | ${pkgs.rcon}/bin/rcon -m -H 127.0.0.1 -p 25575 -P ${rcon-password})
         if echo "$STILL_PLAYERS" | grep "are 0 of a"
         then
           echo "stopping server: no players online"
