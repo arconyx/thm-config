@@ -1,5 +1,7 @@
-{ ... }:
+{ config, ... }:
 {
+  arcworks.services.backups.global.paths = [ "/etc/cloudflare" ];
+
   # keep dns fresh
   services.cloudflare-dyndns = {
     enable = true;
@@ -12,33 +14,40 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
-  # TODO: Reenable after exposing via cloudflare tunnel
-  # services.caddy.enable = true;
-  # services.caddy.virtualHosts.":9010" = {
-  #   extraConfig = ''
-  #     encode
+  services.caddy.enable = true;
+  services.caddy.virtualHosts."hive.thehivemind.gay:80" = {
+    extraConfig = ''
+      encode
 
-  #     redir /exposure /exposure/
-  #     redir /map /map/
+      reverse_proxy /hooks/* ${builtins.toString config.services.webhook.port}
 
-  #     # let people browse their image exports
-  #     handle_path /exposure/* {
-  #       root * /srv/minecraft/magic/world/exposures
-  #       file_server browse
-  #     }
+      # let people browse their image exports
+      redir /exposure /exposure/
+      handle_path /exposure/* {
+        root * /srv/minecraft/magic/world/exposures
+        file_server browse
+      }
 
-  #     handle {
-  #       error 404
-  #     }
+      handle {
+        error 404
+      }
 
-  #     handle_errors {
-  #       respond "{err.status_code} {err.status_text}"
-  #     }
-  #   '';
-  # };
+      handle_errors {
+        respond "{err.status_code} {err.status_text}"
+      }
+    '';
+  };
 
-  # # so we don't have to chmod exposures world readable
-  # systemd.services.caddy.serviceConfig = {
-  #   SupplementaryGroups = [ "minecraft" ];
-  # };
+  # so we don't have to chmod exposures world readable
+  systemd.services.caddy.serviceConfig = {
+    SupplementaryGroups = [ "minecraft" ];
+  };
+
+  services.cloudflared = {
+    enable = true;
+    tunnels.hive = {
+      default = "http_status:404";
+      credentialsFile = "/etc/cloudflare/tunnel_credentials.json";
+    };
+  };
 }
