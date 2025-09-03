@@ -51,7 +51,7 @@ in
         };
       };
 
-      # calls webhook to report failure
+      # calls Discord webhook to report failure
       "notify-minecraft-server-failed-${name}" = {
         enable = true;
         description = "Notify on failed Minecraft server";
@@ -61,6 +61,19 @@ in
         };
         script = ''
           ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Server crash detected. If it does not restart automatically within 10 minutes ping ArcOnyx." "$DISCORD_WEBHOOK_URL"
+        '';
+      };
+
+      # notify Discord on startup
+      "notify-minecraft-server-start-${name}" = {
+        enable = true;
+        description = "Notify on Minecraft server startup";
+        serviceConfig = {
+          Type = "oneshot";
+          EnvironmentFile = config.services.minecraft-servers.environmentFile;
+        };
+        script = ''
+          ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Raising the server from the dead." "$DISCORD_WEBHOOK_URL"
         '';
       };
     }

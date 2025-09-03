@@ -21,19 +21,9 @@ in
       "minecraft-before-local-backup-${name}" = {
         enable = true;
         description = "Prepare for local backup of Minecraft server";
-        # if the server isn't running then these won't work and aren't required anyway
-        requisite = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
         # run before backups
         before = [
           "minecraft-local-backup-${name}.service"
-        ];
-        # make sure the server has started before we run
-        after = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
         ];
         serviceConfig = {
           User = config.services.minecraft-servers.user;
@@ -98,11 +88,6 @@ in
       "minecraft-local-backup-${name}" = {
         enable = true;
         description = "Backup Minecraft server to a local folder";
-        # only while the server is running because otherwise things aren't changing and it should be fine
-        requisite = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
         # don't run while other backups are running
         conflicts = [ "restic-backups-backblaze.service" ];
         # run setup and cleanup
@@ -111,8 +96,11 @@ in
           "minecraft-before-local-backup-${name}.service"
         ];
         after = [ "minecraft-before-local-backup-${name}.service" ];
-        before = [ "minecraft-after-local-backup-${name}.service" ];
-        # trigger webhook on failure
+        before = [
+          "minecraft-after-local-backup-${name}.service"
+          "minecraft-server-${name}.service"
+        ];
+        # trigger discord webhook on failure
         onFailure = [ "notify-minecraft-backup-failed-${name}.service" ];
         serviceConfig = {
           User = config.services.minecraft-servers.user;
@@ -123,7 +111,6 @@ in
           BACKUP_PATH="${backupRoot}/$(date +%Y%m%d-%H%M)"
           mkdir -p "$BACKUP_PATH"
           cp --reflink=always -r "${dataDir}" "$BACKUP_PATH"
-          # for the eventual cleanup script
           echo "Backup done"
         '';
       };
@@ -131,11 +118,6 @@ in
       "minecraft-after-local-backup-${name}" = {
         enable = true;
         description = "Cleanup after local backup of Minecraft server";
-        # server needs to be running
-        requisite = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
         # only run after backups
         after = [
           "minecraft-local-backup-${name}.service"

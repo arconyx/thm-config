@@ -1,4 +1,9 @@
-{ config, lib, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 let
   utils = import ./../utils.nix { inherit config lib; };
 in
@@ -12,18 +17,16 @@ in
       restic-backups-backblaze = {
         # Shutdown server during backup
         # If we somehow start at the same time, run the backup first
-        before = [ "minecraft-server-${name}.service" ];
-        # Restart server after, printing warning on failure
-        onSuccess = [ "minecraft-server-${name}.service" ];
-        onFailure = [
+        before = [
           "minecraft-server-${name}.service"
-          "minecraft-remote-backup-failure-warning-${name}.service"
+          "minecraft-remote-backup-done-notif-${name}.service"
         ];
+        wants = [ "minecraft-remote-backup-done-notif-${name}.service" ];
         preStart = ''
           echo "Trying to send shutdown warning for minecraft server ${name}"
           if [[ -p "${socket}" ]]; then
             echo "Server shutdown warning triggered"
-            if echo "say Server will shutdown for backup in 10 minutes." > "${socket}"; then
+            if echo "say Server will shutdown for backup in 10 minutes. Please wait for the backup done notification in Discord before restarting it." > "${socket}"; then
                 echo "Shutdown warning command sent successfully."
             else
                 echo "Warning: Failed to send shutdown warning via socket."
@@ -39,36 +42,15 @@ in
         '';
       };
 
-      "minecraft-remote-backup-failure-warning-${name}" = {
+      "minecraft-remote-backup-done-notif-${name}" = {
         enable = true;
-        description = "Warn about failed remote backup of Minecraft server '${name}'";
-        requisite = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
-        after = [
-          "minecraft-server-${name}.service"
-          "minecraft-server-${name}.socket"
-        ];
-        serviceConfig = {
-          User = config.services.minecraft-servers.user;
-          Group = config.services.minecraft-servers.group;
-          Type = "oneshot";
-        };
+        description = "Notify Discord about finished backup of Minecraft server '${name}'";
+        serviceConfig.EnvironmentFile = config.services.minecraft-servers.environmentFile;
         script = ''
-          if [[ -p "${socket}" ]]; then
-            echo "Attempting to send in-game notification of failed backup."
-            if echo "say WARNING: Server backup failed!" > "${socket}"; then
-                echo "Warning sent successfully."
-            else
-                echo "Warning: Failed to send backup failure warning via socket."
-            fi
-          else
-              echo "Warning: Socket file '${socket}' not found or is not a socket."
-              echo "Minecraft server appears to be offline or socket is not active."
-          fi
+          ${pkgs.curl}/bin/curl --silent -F username=${config.networking.hostName} -F content="Backup done." "$DISCORD_WEBHOOK_URL"
         '';
       };
+
     }
   );
 }
