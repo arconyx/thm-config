@@ -10,11 +10,11 @@
         "sddm-sugar-candy-nix": "sddm-sugar-candy-nix"
       },
       "locked": {
-        "lastModified": 1756449003,
-        "narHash": "sha256-VPMsKXd3RcE+a70l6tWe5zC7SJDre4yXcZgVANMWu6s=",
+        "lastModified": 1756868882,
+        "narHash": "sha256-80dyhiJIClIos6T3DfCWKIU+/Koj/ZYRskFDN23C4hE=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "51a27af9155f357b38e1f4a53192576710480cac",
+        "rev": "0a28e0f734b18fd8c0eee06d2f1d378e3be330ef",
         "type": "github"
       },
       "original": {
