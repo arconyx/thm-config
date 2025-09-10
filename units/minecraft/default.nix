@@ -68,6 +68,7 @@ in
       "notify-minecraft-server-start-${name}" = {
         enable = true;
         description = "Notify on Minecraft server startup";
+        wantedBy = [ "minecraft-server-${name}.service" ];
         serviceConfig = {
           Type = "oneshot";
           EnvironmentFile = config.services.minecraft-servers.environmentFile;
