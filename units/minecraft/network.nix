@@ -12,7 +12,7 @@
       "mc.thehivemind.gay"
     ];
     proxied = false; # no point trying to proxy minecraft
-    deleteMissing = true;
+    deleteMissing = false;
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
