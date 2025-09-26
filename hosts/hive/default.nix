@@ -7,6 +7,7 @@
     ./networking.nix
 
     ./../../units/minecraft
+    ./../../units/space-engineers
   ];
 
   arcworks.server.enable = true;
