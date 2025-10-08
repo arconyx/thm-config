@@ -15,11 +15,21 @@ let
   '';
 in
 {
+  users.users.engineer = {
+    # podman requires an assigned range
+    autoSubUidGidRange = true;
+    isSystemUser = true;
+    group = "engineer";
+    createHome = true;
+    # podman stores config + volumes under home dir
+    home = "/var/lib/space-engineers";
+  };
+  users.groups.engineer = { };
+
   # Runtime
   virtualisation.podman = {
     enable = true;
     autoPrune.enable = true;
-    dockerCompat = true;
   };
 
   # Enable container name DNS for all Podman networks.
@@ -48,6 +58,7 @@ in
       "25565:27016/udp"
     ];
     log-driver = "journald";
+    podman.user = "engineer";
     extraOptions = [
       "--network-alias=se-server"
       "--network=bridge"
@@ -87,6 +98,7 @@ in
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
+      User = "engineer";
     };
     script = ''
       podman volume inspect spaceengineers_bins || podman volume create spaceengineers_bins
@@ -99,6 +111,7 @@ in
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
+      User = "engineer";
     };
     script = ''
       podman volume inspect spaceengineers_plugins || podman volume create spaceengineers_plugins
@@ -111,6 +124,7 @@ in
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
+      User = "engineer";
     };
     script = ''
       podman volume inspect spaceengineers_steamcmd || podman volume create spaceengineers_steamcmd
@@ -126,6 +140,7 @@ in
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
+      User = "engineer";
     };
     script = ''
       podman volume inspect spaceengineers_world || ${init-world}
@@ -143,4 +158,8 @@ in
     };
     # wantedBy = [ "multi-user.target" ];
   };
+
+  arcworks.services.backups.backup.backblaze.paths = [
+    "${config.users.users.engineer.home}/.local/share/containers/storage/volumes/spaceengineers_world/_data"
+  ];
 }
