@@ -94,7 +94,11 @@ in
 
   # Volumes
   systemd.services."podman-volume-spaceengineers_bins" = {
-    path = [ pkgs.podman ];
+    path = [
+      pkgs.podman
+      # Needed for access to newuidmap from pkgs.shadow with setcap binaries
+      "/run/wrappers"
+    ];
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
@@ -107,7 +111,10 @@ in
     wantedBy = [ "podman-compose-spaceengineers-root.target" ];
   };
   systemd.services."podman-volume-spaceengineers_plugins" = {
-    path = [ pkgs.podman ];
+    path = [
+      pkgs.podman
+      "/run/wrappers"
+    ];
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
@@ -120,7 +127,10 @@ in
     wantedBy = [ "podman-compose-spaceengineers-root.target" ];
   };
   systemd.services."podman-volume-spaceengineers_steamcmd" = {
-    path = [ pkgs.podman ];
+    path = [
+      pkgs.podman
+      "/run/wrappers"
+    ];
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
@@ -135,6 +145,7 @@ in
   systemd.services."podman-volume-spaceengineers_world" = {
     path = [
       pkgs.podman
+      "/run/wrappers"
       pkgs.gnutar
     ];
     serviceConfig = {
