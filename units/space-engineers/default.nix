@@ -23,6 +23,7 @@ in
     createHome = true;
     # podman stores config + volumes under home dir
     home = "/var/lib/space-engineers";
+    linger = true;
   };
   users.groups.engineer = { };
 
