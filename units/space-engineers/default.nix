@@ -55,7 +55,7 @@ in
       "spaceengineers_world:/appdata/space-engineers/World:rw"
     ];
     ports = [
-      "25565:27016/udp"
+      "25565:25565/udp"
     ];
     log-driver = "journald";
     podman.user = "engineer";
