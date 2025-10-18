@@ -2,7 +2,6 @@
 # TODO: Switch to rootless podman
 {
   pkgs,
-  lib,
   config,
   ...
 }:
@@ -23,125 +22,79 @@ in
     createHome = true;
     # podman stores config + volumes under home dir
     home = "/var/lib/space-engineers";
+    linger = true;
   };
   users.groups.engineer = { };
 
-  # Runtime
-  virtualisation.podman = {
-    enable = true;
-    autoPrune.enable = true;
-  };
-
-  # Enable container name DNS for all Podman networks.
-  networking.firewall.interfaces =
-    let
-      matchAll = if !config.networking.nftables.enable then "podman+" else "podman*";
-    in
+  home-manager.users.engineer =
+    { osConfig, ... }:
     {
-      "${matchAll}".allowedUDPPorts = [ 53 ];
+      home.stateVersion = "25.05";
+      home.homeDirectory = osConfig.users.users.engineer.home;
+
+      services.podman = {
+        enable = true;
+        volumes = {
+          spaceengineers_bins = {
+            description = "Binaries for Space Engineers";
+            driver = "local";
+            preserve = false;
+          };
+          spaceengineers_plugins = {
+            description = "Plugins for Space Engineers";
+            driver = "local";
+            preserve = false;
+          };
+          spaceengineers_steamcmd = {
+            description = "Steam CLI for Space Engineers";
+            driver = "local";
+            preserve = false;
+          };
+          spaceengineers_world = {
+            description = "World save for Space Engineers";
+            driver = "local";
+            preserve = true;
+          };
+        };
+
+        containers."space-engineers-dedicated-docker-linux" = {
+          autoStart = false;
+          description = "Space Engineers server";
+          image = "mmmaxwwwell/space-engineers-dedicated-docker-linux:v2";
+          network = "bridge";
+          networkAlias = [ "se-server" ];
+          ports = [ "25565:25565/udp" ];
+          volumes = [
+            "spaceengineers_bins:/appdata/space-engineers/SpaceEngineersDedicated:rw"
+            "spaceengineers_plugins:/appdata/space-engineers/Plugins:rw"
+            "spaceengineers_steamcmd:/home/wine:rw"
+            "spaceengineers_world:/appdata/space-engineers/World:rw"
+          ];
+        };
+      };
     };
+
+  # virtualisation = {
+  #   containers.enable = true;
+  #   podman = {
+  #     enable = true;
+  #     autoPrune.enable = true;
+  #     # defaultNetwork.settings.dns_enabled = true;
+  #   };
+  #   oci-containers.backend = "podman";
+  # };
+
+  # # Enable container name DNS for all Podman networks.
+  # networking.firewall.interfaces =
+  #   let
+  #     matchAll = if !config.networking.nftables.enable then "podman+" else "podman*";
+  #   in
+  #   {
+  #     "${matchAll}".allowedUDPPorts = [ 53 ];
+  #   };
 
   networking.firewall.allowedUDPPorts = [ 25565 ];
 
-  virtualisation.oci-containers.backend = "podman";
-
-  # Containers
-  virtualisation.oci-containers.containers."space-engineers-dedicated-docker-linux" = {
-    image = "mmmaxwwwell/space-engineers-dedicated-docker-linux:v2";
-    volumes = [
-      "spaceengineers_bins:/appdata/space-engineers/SpaceEngineersDedicated:rw"
-      "spaceengineers_plugins:/appdata/space-engineers/Plugins:rw"
-      "spaceengineers_steamcmd:/home/wine:rw"
-      "spaceengineers_world:/appdata/space-engineers/World:rw"
-    ];
-    ports = [
-      "25565:25565/udp"
-    ];
-    log-driver = "journald";
-    podman.user = "engineer";
-    extraOptions = [
-      "--network-alias=se-server"
-      "--network=bridge"
-    ];
-  };
-  systemd.services."podman-space-engineers-dedicated-docker-linux" = {
-    startLimitIntervalSec = 300;
-    startLimitBurst = 5;
-    serviceConfig = {
-      Restart = lib.mkOverride 90 "on-failure";
-    };
-    after = [
-      "podman-volume-spaceengineers_bins.service"
-      "podman-volume-spaceengineers_plugins.service"
-      "podman-volume-spaceengineers_steamcmd.service"
-      "podman-volume-spaceengineers_world.service"
-    ];
-    requires = [
-      "podman-volume-spaceengineers_bins.service"
-      "podman-volume-spaceengineers_plugins.service"
-      "podman-volume-spaceengineers_steamcmd.service"
-      "podman-volume-spaceengineers_world.service"
-    ];
-    partOf = [
-      "podman-compose-spaceengineers-root.target"
-    ];
-    wantedBy = [
-      "podman-compose-spaceengineers-root.target"
-    ];
-    # TODO: Replace with something that blocks se startup rather than terminating the mc server
-    conflicts = [ "minecraft-server-magic.service" ];
-  };
-
-  # Volumes
-  systemd.services."podman-volume-spaceengineers_bins" = {
-    path = [
-      pkgs.podman
-      # Needed for access to newuidmap from pkgs.shadow with setcap binaries
-      "/run/wrappers"
-    ];
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-      User = "engineer";
-    };
-    script = ''
-      podman volume inspect spaceengineers_bins || podman volume create spaceengineers_bins
-    '';
-    partOf = [ "podman-compose-spaceengineers-root.target" ];
-    wantedBy = [ "podman-compose-spaceengineers-root.target" ];
-  };
-  systemd.services."podman-volume-spaceengineers_plugins" = {
-    path = [
-      pkgs.podman
-      "/run/wrappers"
-    ];
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-      User = "engineer";
-    };
-    script = ''
-      podman volume inspect spaceengineers_plugins || podman volume create spaceengineers_plugins
-    '';
-    partOf = [ "podman-compose-spaceengineers-root.target" ];
-    wantedBy = [ "podman-compose-spaceengineers-root.target" ];
-  };
-  systemd.services."podman-volume-spaceengineers_steamcmd" = {
-    path = [
-      pkgs.podman
-      "/run/wrappers"
-    ];
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-      User = "engineer";
-    };
-    script = ''
-      podman volume inspect spaceengineers_steamcmd || podman volume create spaceengineers_steamcmd
-    '';
-    partOf = [ "podman-compose-spaceengineers-root.target" ];
-    wantedBy = [ "podman-compose-spaceengineers-root.target" ];
-  };
   systemd.services."podman-volume-spaceengineers_world" = {
     path = [
       pkgs.podman
@@ -158,16 +111,6 @@ in
     '';
     partOf = [ "podman-compose-spaceengineers-root.target" ];
     wantedBy = [ "podman-compose-spaceengineers-root.target" ];
-  };
-
-  # Root service
-  # When started, this will automatically create all resources and start
-  # the containers. When stopped, this will teardown all resources.
-  systemd.targets."podman-compose-spaceengineers-root" = {
-    unitConfig = {
-      Description = "Root target generated by compose2nix.";
-    };
-    # wantedBy = [ "multi-user.target" ];
   };
 
   arcworks.services.backups.backup.backblaze.paths = [
