@@ -15,10 +15,10 @@ let
     set -eo pipefail
     mkdir -p "${world_host_dir}" $VERBOSE_ARG
     if [ ! -d "${world_host_dir}/World" ]; then
-      install --backup numbered --mode a=rX,u+w $VERBOSE_ARG "${default_world}" "${world_host_dir}"
+      cp -r --update=none $VERBOSE_ARG "${default_world}/World" "${world_host_dir}"
     fi
-    cp --update all $VERBOSE_ARG "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
-    chmod a=rX,u+w $VERBOSE_ARG "${world_host_dir}/SpaceEngineers-Dedicated.cfg"
+    cp --update=all $VERBOSE_ARG "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
+    chmod -R a=rX,u+w $VERBOSE_ARG "${world_host_dir}"
   '';
 in
 {
