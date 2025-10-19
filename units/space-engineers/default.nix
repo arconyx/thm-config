@@ -12,12 +12,13 @@ let
   home = "/var/lib/space-engineers";
   world_host_dir = "${home}/se_world";
   init-world = pkgs.writeShellScript "init-world" ''
-    if [! -d "${world_host_dir}" ]; then
-      mkdir "${world_host_dir}"
-      install --backup numbered --mode a=rX,u+w "${default_world}" "${world_host_dir}"
+    set -eo pipefail
+    mkdir -p "${world_host_dir}" $VERBOSE_ARG
+    if [ ! -d "${world_host_dir}/World" ]; then
+      install --backup numbered --mode a=rX,u+w $VERBOSE_ARG "${default_world}" "${world_host_dir}"
     fi
-    cp --update all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
-    chmod --mode a=rX,u+w "${world_host_dir}/SpaceEngineers-Dedicated.cfg"
+    cp --update all $VERBOSE_ARG "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
+    chmod a=rX,u+w $VERBOSE_ARG "${world_host_dir}/SpaceEngineers-Dedicated.cfg"
   '';
 in
 {
@@ -38,7 +39,7 @@ in
   systemd.enableStrictShellChecks = lib.mkForce false;
 
   home-manager.users.engineer =
-    { ... }:
+    { lib, ... }:
     {
       home.stateVersion = "25.05";
       home.homeDirectory = home;
