@@ -6,12 +6,12 @@ let
   world_host_dir = "${home}/se_world";
   init-world = pkgs.writeShellScript "init-world" ''
     set -eo pipefail
-    ${pkgs.coreutils}/bin/mkdir -p "${world_host_dir}"
-    if [ ! -d "${world_host_dir}/World" ]; then
+    if [ ! -d "${world_host_dir}" ]; then
+      ${pkgs.coreutils}/bin/mkdir "${world_host_dir}"
       ${pkgs.coreutils}/bin/cp -r --update=none "${default_world}/World" "${world_host_dir}"
+      ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
+      ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${world_host_dir}"
     fi
-    ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
-    ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${world_host_dir}"
   '';
 in
 {
@@ -72,7 +72,6 @@ in
             "spaceengineers_steamcmd:/home/wine:rw"
             "${world_host_dir}:/appdata/space-engineers/World:rw"
           ];
-          userNS = "keep-id:uid=1000,gid=1000";
         };
       };
 
