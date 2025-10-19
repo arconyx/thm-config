@@ -67,7 +67,7 @@ in
         };
       };
 
-      systemd.services.init-se-world = {
+      systemd.user.services.init-se-world = {
         enable = true;
         script = ''
           set -eo pipefail
