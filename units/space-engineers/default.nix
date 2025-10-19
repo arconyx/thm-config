@@ -3,14 +3,21 @@
 {
   pkgs,
   config,
+  lib,
   ...
 }:
 
 let
   default_world = ./inital_state;
+  home = "/var/lib/space-engineers";
+  world_host_dir = "${home}/se_world";
   init-world = pkgs.writeShellScript "init-world" ''
-    podman volume create spaceengineers_world
-    tar cvf - --mode a=r,u+w,a+X -C ${default_world} . | podman volume import spaceengineers_world -
+    if [! -d "${world_host_dir}" ]; then
+      mkdir "${world_host_dir}"
+      install --backup numbered --mode a=rX,u+w "${default_world}" "${world_host_dir}"
+    fi
+    cp --update all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
+    chmod --mode a=rX,u+w "${world_host_dir}/SpaceEngineers-Dedicated.cfg"
   '';
 in
 {
@@ -21,16 +28,20 @@ in
     group = "engineer";
     createHome = true;
     # podman stores config + volumes under home dir
-    home = "/var/lib/space-engineers";
+    home = home;
     linger = true;
+    useDefaultShell = true;
   };
   users.groups.engineer = { };
+  nix.settings.allowed-users = [ "engineer" ];
+
+  systemd.enableStrictShellChecks = lib.mkForce false;
 
   home-manager.users.engineer =
-    { osConfig, ... }:
+    { ... }:
     {
       home.stateVersion = "25.05";
-      home.homeDirectory = osConfig.users.users.engineer.home;
+      home.homeDirectory = home;
 
       services.podman = {
         enable = true;
@@ -50,14 +61,9 @@ in
             driver = "local";
             preserve = false;
           };
-          spaceengineers_world = {
-            description = "World save for Space Engineers";
-            driver = "local";
-            preserve = true;
-          };
         };
 
-        containers."space-engineers-dedicated-docker-linux" = {
+        containers."space-engineers" = {
           autoStart = false;
           description = "Space Engineers server";
           image = "mmmaxwwwell/space-engineers-dedicated-docker-linux:v2";
@@ -68,9 +74,15 @@ in
             "spaceengineers_bins:/appdata/space-engineers/SpaceEngineersDedicated:rw"
             "spaceengineers_plugins:/appdata/space-engineers/Plugins:rw"
             "spaceengineers_steamcmd:/home/wine:rw"
-            "spaceengineers_world:/appdata/space-engineers/World:rw"
+            "${world_host_dir}:/appdata/space-engineers/World:rw"
           ];
         };
+      };
+
+      home.activation = {
+        initSEWorld = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+          run ${init-world}
+        '';
       };
     };
 
