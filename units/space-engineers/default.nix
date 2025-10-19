@@ -1,7 +1,6 @@
 # Auto-generated using compose2nix v0.3.3-pre.
 # TODO: Switch to rootless podman
 {
-  pkgs,
   lib,
   ...
 }:
@@ -87,24 +86,6 @@ in
     };
 
   networking.firewall.allowedUDPPorts = [ 25565 ];
-
-  systemd.services."podman-volume-spaceengineers_world" = {
-    path = [
-      pkgs.podman
-      "/run/wrappers"
-      pkgs.gnutar
-    ];
-    serviceConfig = {
-      Type = "oneshot";
-      RemainAfterExit = true;
-      User = "engineer";
-    };
-    script = ''
-      podman volume inspect spaceengineers_world || ${init-world}
-    '';
-    partOf = [ "podman-compose-spaceengineers-root.target" ];
-    wantedBy = [ "podman-compose-spaceengineers-root.target" ];
-  };
 
   arcworks.services.backups.backup.backblaze.paths = [ world_host_dir ];
 }
