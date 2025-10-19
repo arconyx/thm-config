@@ -2,7 +2,6 @@
 # TODO: Switch to rootless podman
 {
   pkgs,
-  config,
   lib,
   ...
 }:
@@ -126,7 +125,5 @@ in
     wantedBy = [ "podman-compose-spaceengineers-root.target" ];
   };
 
-  arcworks.services.backups.backup.backblaze.paths = [
-    "${config.users.users.engineer.home}/.local/share/containers/storage/volumes/spaceengineers_world/_data"
-  ];
+  arcworks.services.backups.backup.backblaze.paths = [ world_host_dir ];
 }
