@@ -6,12 +6,12 @@ let
   world_host_dir = "${home}/se_world";
   init-world = pkgs.writeShellScript "init-world" ''
     set -eo pipefail
-    mkdir -p "${world_host_dir}"
+    ${pkgs.coreutils}/bin/mkdir -p "${world_host_dir}"
     if [ ! -d "${world_host_dir}/World" ]; then
-      cp -r --update=none "${default_world}/World" "${world_host_dir}"
+      ${pkgs.coreutils}/bin/cp -r --update=none "${default_world}/World" "${world_host_dir}"
     fi
-    cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
-    chmod -R a=rX,u+w "${world_host_dir}"
+    ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
+    ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${world_host_dir}"
   '';
 in
 {
@@ -75,37 +75,6 @@ in
           userNS = "keep-id:uid=1000,gid=1000";
         };
       };
-
-      systemd.user.services.pod-unifi = {
-
-        Service = {
-          Type = "forking";
-          ExecStartPre = [
-            # This is needed for the Pod start automatically
-            "${pkgs.coreutils}/bin/sleep 3s"
-            # Port config see:
-            # https://help.ui.com/hc/en-us/articles/218506997-Required-Ports-Reference
-            # The image requires `--userns=host`
-            ''
-              -${pkgs.podman}/bin/podman pod create --replace \
-                --network=unifi \
-                --userns=host \
-                --cpus=3 \
-                --label=PODMAN_SYSTEMD_UNIT="pod-unifi.service" \
-                -p 192.168.3.1:8443:8443/tcp \
-                -p 192.168.4.1:1900:1900/udp \
-                -p 192.168.4.1:3478:3478/udp \
-                -p 192.168.4.1:5514:5514/udp \
-                -p 192.168.4.1:10001:10001/udp \
-                -p 192.168.4.1:6789:6789/tcp \
-                -p 192.168.4.1:8080:8080/tcp unifi
-            ''
-          ]; # ExecStartPre
-          ExecStart = "${pkgs.podman}/bin/podman pod start unifi";
-          ExecStop = "${pkgs.podman}/bin/podman pod stop unifi";
-          RestartSec = "1s";
-        }; # Service
-      }; # systemd.user.services.pod-unifi
 
       systemd.user.services.init-se-world = {
         Unit = {
