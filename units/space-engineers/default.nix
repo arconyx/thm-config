@@ -86,25 +86,6 @@ in
       };
     };
 
-  # virtualisation = {
-  #   containers.enable = true;
-  #   podman = {
-  #     enable = true;
-  #     autoPrune.enable = true;
-  #     # defaultNetwork.settings.dns_enabled = true;
-  #   };
-  #   oci-containers.backend = "podman";
-  # };
-
-  # # Enable container name DNS for all Podman networks.
-  # networking.firewall.interfaces =
-  #   let
-  #     matchAll = if !config.networking.nftables.enable then "podman+" else "podman*";
-  #   in
-  #   {
-  #     "${matchAll}".allowedUDPPorts = [ 53 ];
-  #   };
-
   networking.firewall.allowedUDPPorts = [ 25565 ];
 
   systemd.services."podman-volume-spaceengineers_world" = {
