@@ -60,7 +60,7 @@ in
         };
 
         containers."${container-name}" = {
-          autoStart = false;
+          autoStart = true;
           description = "Space Engineers server";
           image = "mmmaxwwwell/space-engineers-dedicated-docker-linux:v2";
           network = "bridge";
