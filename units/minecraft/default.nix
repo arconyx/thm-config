@@ -77,6 +77,18 @@ in
           ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="Raising the server from the dead." "$DISCORD_WEBHOOK_URL"
         '';
       };
+
+      "notify-minecraft-server-unavailable-${name}" = {
+        enable = true;
+        description = "Notify that the Minecraft server is temporarily unavailable";
+        serviceConfig = {
+          Type = "oneshot";
+          EnvironmentFile = config.services.minecraft-servers.environmentFile;
+        };
+        script = ''
+          ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="The Minecraft server is unavailable right now because Hive is being used to host a Space Engineers server. Blame Rev. Normal service will be resumed by 10 December. Maybe. Congratulations on choosing the worst possible time to try revive the server." "$DISCORD_WEBHOOK_URL"
+        '';
+      };
     }
   );
 
