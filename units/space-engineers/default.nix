@@ -80,7 +80,7 @@ in
             INSTANCE_NAME = instance_name;
             PUBLIC_IP = "se.thehivemind.gay";
           };
-          extraConfig.Container.Memory = "8G";
+          extraPodmanArgs = [ "--memory=8G" ];
         };
       };
 
