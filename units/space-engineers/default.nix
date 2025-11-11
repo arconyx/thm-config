@@ -80,10 +80,7 @@ in
             INSTANCE_NAME = instance_name;
             PUBLIC_IP = "se.thehivemind.gay";
           };
-          extraPodmanArgs = [
-            "--memory=8G"
-            "--restart=on-failure:3"
-          ];
+          extraPodmanArgs = [ "--memory=8G" ];
         };
       };
 
