@@ -24,7 +24,7 @@ in
         socket = config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path "magic";
       in
       {
-        enable = true;
+        enable = false;
         package = pkgs.fabricServers.${serverVersion}.override {
           loaderVersion = fabricVersion;
           jre_headless = pkgs.graalvmPackages.graalvm-oracle;

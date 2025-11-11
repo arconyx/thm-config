@@ -25,7 +25,7 @@ in
     ];
     paths = [
       "/etc/minecraft"
-      # /srv/minecraft already added by top level conf
+      # /srv/minecraft already added by top level conf including all of /srv
     ];
   };
 
