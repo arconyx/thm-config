@@ -3,14 +3,17 @@
 let
   default_world = ./inital_state;
   home = "/var/lib/space-engineers";
-  world_host_dir = "${home}/se_world";
+
+  data_dir = "${home}/se_instances";
+  instance_name = "REV_THM_Server";
+  instance_dir = "${data_dir}/${instance_name}";
   init-world = pkgs.writeShellScript "init-world" ''
     set -eo pipefail
-    if [ ! -d "${world_host_dir}" ]; then
-      ${pkgs.coreutils}/bin/mkdir "${world_host_dir}"
-      ${pkgs.coreutils}/bin/cp -r --update=none "${default_world}/World" "${world_host_dir}"
-      ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${world_host_dir}"
-      ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${world_host_dir}"
+    if [ ! -d "${instance_dir}" ]; then
+      ${pkgs.coreutils}/bin/mkdir "${instance_dir}"
+      ${pkgs.coreutils}/bin/cp -r --update=none "${default_world}/World" "${instance_dir}"
+      ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${instance_dir}"
+      ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${data_dir}"
     fi
   '';
 in
@@ -33,7 +36,7 @@ in
 
   home-manager.users.engineer =
     let
-      container-name = "space-engineers";
+      container-name = "se-devidian";
     in
     {
       home.stateVersion = "25.05";
@@ -42,17 +45,17 @@ in
       services.podman = {
         enable = true;
         volumes = {
-          spaceengineers_bins = {
-            description = "Binaries for Space Engineers";
-            driver = "local";
-            preserve = false;
-          };
-          spaceengineers_plugins = {
+          se_plugins = {
             description = "Plugins for Space Engineers";
             driver = "local";
             preserve = false;
           };
-          spaceengineers_steamcmd = {
+          se_server = {
+            description = "Binaries for Space Engineers";
+            driver = "local";
+            preserve = false;
+          };
+          se_steamcmd = {
             description = "Steam CLI for Space Engineers";
             driver = "local";
             preserve = false;
@@ -62,16 +65,22 @@ in
         containers."${container-name}" = {
           autoStart = true;
           description = "Space Engineers server";
-          image = "mmmaxwwwell/space-engineers-dedicated-docker-linux:v2";
+          image = "docker.io/devidian/spaceengineers:winestaging";
           network = "bridge";
           networkAlias = [ "se-server" ];
           ports = [ "25565:25565/udp" ];
           volumes = [
-            "spaceengineers_bins:/appdata/space-engineers/SpaceEngineersDedicated:rw"
-            "spaceengineers_plugins:/appdata/space-engineers/Plugins:rw"
-            "spaceengineers_steamcmd:/home/wine:rw"
-            "${world_host_dir}:/appdata/space-engineers/World:rw"
+            "se_plugins:/appdata/space-engineers/plugins:rw"
+            "${data_dir}:/appdata/space-engineers/instances:rw"
+            "se_server:/appdata/space-engineers/SpaceEngineersDedicated:rw"
+            "se_steamcmd:/root/.steam:rw"
           ];
+          environment = {
+            WINEDEBUG = "-all";
+            INSTANCE_NAME = instance_name;
+            PUBLIC_IP = "se.thehivemind.gay";
+          };
+          extraConfig.Container.Memory = "8G";
         };
       };
 
@@ -91,5 +100,5 @@ in
 
   networking.firewall.allowedUDPPorts = [ 25565 ];
 
-  arcworks.services.backups.backup.backblaze.paths = [ world_host_dir ];
+  arcworks.services.backups.backup.backblaze.paths = [ instance_dir ];
 }
