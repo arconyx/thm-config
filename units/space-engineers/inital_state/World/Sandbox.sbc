@@ -97,50 +97,49 @@
     <dictionary />
   </ControlledEntities>
   <Settings xsi:type="MyObjectBuilder_SessionSettings">
-    <GameMode>Survival</GameMode>
-    <InventorySizeMultiplier>3</InventorySizeMultiplier>
-    <BlocksInventorySizeMultiplier>1</BlocksInventorySizeMultiplier>
+    <GameMode>Creative</GameMode>
+    <InventorySizeMultiplier>10</InventorySizeMultiplier>
+    <BlocksInventorySizeMultiplier>10</BlocksInventorySizeMultiplier>
     <AssemblerSpeedMultiplier>3</AssemblerSpeedMultiplier>
     <AssemblerEfficiencyMultiplier>3</AssemblerEfficiencyMultiplier>
     <RefinerySpeedMultiplier>3</RefinerySpeedMultiplier>
-    <OnlineMode>OFFLINE</OnlineMode>
-    <MaxPlayers>2</MaxPlayers>
+    <OnlineMode>PUBLIC</OnlineMode>
+    <MaxPlayers>8</MaxPlayers>
     <MaxFloatingObjects>100</MaxFloatingObjects>
-    <TotalBotLimit>32</TotalBotLimit>
     <MaxBackupSaves>5</MaxBackupSaves>
     <MaxGridSize>0</MaxGridSize>
     <MaxBlocksPerPlayer>0</MaxBlocksPerPlayer>
-    <TotalPCU>100000</TotalPCU>
-    <PiratePCU>25000</PiratePCU>
+    <TotalPCU>0</TotalPCU>
+    <PiratePCU>50000</PiratePCU>
     <GlobalEncounterPCU>25000</GlobalEncounterPCU>
     <MaxFactionsCount>0</MaxFactionsCount>
-    <BlockLimitsEnabled>GLOBALLY</BlockLimitsEnabled>
+    <BlockLimitsEnabled>PER_PLAYER</BlockLimitsEnabled>
     <EnableRemoteBlockRemoval>true</EnableRemoteBlockRemoval>
-    <EnvironmentHostility>NORMAL</EnvironmentHostility>
-    <AutoHealing>true</AutoHealing>
-    <EnableCopyPaste>false</EnableCopyPaste>
+    <EnvironmentHostility>SAFE</EnvironmentHostility>
+    <AutoHealing>false</AutoHealing>
+    <EnableCopyPaste>true</EnableCopyPaste>
     <WeaponsEnabled>true</WeaponsEnabled>
-    <ShowPlayerNamesOnHud>true</ShowPlayerNamesOnHud>
+    <ShowPlayerNamesOnHud>false</ShowPlayerNamesOnHud>
     <ThrusterDamage>true</ThrusterDamage>
     <CargoShipsEnabled>true</CargoShipsEnabled>
     <EnableSpectator>false</EnableSpectator>
     <WorldSizeKm>0</WorldSizeKm>
-    <RespawnShipDelete>false</RespawnShipDelete>
+    <RespawnShipDelete>true</RespawnShipDelete>
     <ResetOwnership>false</ResetOwnership>
     <WelderSpeedMultiplier>2</WelderSpeedMultiplier>
     <GrinderSpeedMultiplier>2</GrinderSpeedMultiplier>
-    <RealisticSound>false</RealisticSound>
+    <RealisticSound>true</RealisticSound>
     <HackSpeedMultiplier>0.33</HackSpeedMultiplier>
     <PermanentDeath>false</PermanentDeath>
     <AutoSaveInMinutes>5</AutoSaveInMinutes>
     <EnableSaving>true</EnableSaving>
     <InfiniteAmmo>false</InfiniteAmmo>
-    <EnableContainerDrops>true</EnableContainerDrops>
+    <EnableContainerDrops>false</EnableContainerDrops>
     <SpawnShipTimeMultiplier>0</SpawnShipTimeMultiplier>
     <ProceduralDensity>0.35</ProceduralDensity>
     <ProceduralSeed>0</ProceduralSeed>
     <DestructibleBlocks>true</DestructibleBlocks>
-    <EnableIngameScripts>false</EnableIngameScripts>
+    <EnableIngameScripts>true</EnableIngameScripts>
     <ViewDistance>15000</ViewDistance>
     <EnableToolShake>true</EnableToolShake>
     <VoxelGeneratorVersion>4</VoxelGeneratorVersion>
@@ -166,15 +165,15 @@
     <EnableVoxelDestruction>true</EnableVoxelDestruction>
     <MaxDrones>5</MaxDrones>
     <EnableDrones>true</EnableDrones>
-    <EnableWolfs>true</EnableWolfs>
-    <EnableSpiders>true</EnableSpiders>
+    <EnableWolfs>false</EnableWolfs>
+    <EnableSpiders>false</EnableSpiders>
     <FloraDensityMultiplier>1</FloraDensityMultiplier>
     <BlockTypeLimits>
       <dictionary />
     </BlockTypeLimits>
     <EnableScripterRole>false</EnableScripterRole>
     <MinDropContainerRespawnTime>5</MinDropContainerRespawnTime>
-    <MaxDropContainerRespawnTime>20</MaxDropContainerRespawnTime>
+    <MaxDropContainerRespawnTime>8</MaxDropContainerRespawnTime>
     <EnableTurretsFriendlyFire>false</EnableTurretsFriendlyFire>
     <EnableSubgridDamage>false</EnableSubgridDamage>
     <SyncDistance>3000</SyncDistance>
@@ -185,7 +184,7 @@
     <TrashRemovalEnabled>true</TrashRemovalEnabled>
     <StopGridsPeriodMin>15</StopGridsPeriodMin>
     <TrashFlagsValue>7706</TrashFlagsValue>
-    <AFKTimeountMin>0</AFKTimeountMin>
+    <AFKTimeountMin>10</AFKTimeountMin>
     <BlockCountThreshold>20</BlockCountThreshold>
     <PlayerDistanceThreshold>500</PlayerDistanceThreshold>
     <OptimalGridCount>0</OptimalGridCount>
@@ -195,10 +194,10 @@
     <VoxelPlayerDistanceThreshold>5000</VoxelPlayerDistanceThreshold>
     <VoxelGridDistanceThreshold>5000</VoxelGridDistanceThreshold>
     <VoxelAgeThreshold>24</VoxelAgeThreshold>
-    <EnableResearch>true</EnableResearch>
-    <EnableGoodBotHints>true</EnableGoodBotHints>
-    <OptimalSpawnDistance>16000</OptimalSpawnDistance>
-    <EnableAutorespawn>true</EnableAutorespawn>
+    <EnableResearch>false</EnableResearch>
+    <EnableGoodBotHints>false</EnableGoodBotHints>
+    <OptimalSpawnDistance>50000</OptimalSpawnDistance>
+    <EnableAutorespawn>false</EnableAutorespawn>
     <EnableBountyContracts>true</EnableBountyContracts>
     <EnableSupergridding>false</EnableSupergridding>
     <EnableEconomy>true</EnableEconomy>
@@ -207,10 +206,10 @@
     <WeatherSystem>true</WeatherSystem>
     <WeatherLightingDamage>false</WeatherLightingDamage>
     <HarvestRatioMultiplier>0.8</HarvestRatioMultiplier>
-    <TradeFactionsCount>10</TradeFactionsCount>
-    <StationsDistanceInnerRadius>5000000</StationsDistanceInnerRadius>
-    <StationsDistanceOuterRadiusStart>5000000</StationsDistanceOuterRadiusStart>
-    <StationsDistanceOuterRadiusEnd>10000000</StationsDistanceOuterRadiusEnd>
+    <TradeFactionsCount>15</TradeFactionsCount>
+    <StationsDistanceInnerRadius>10000000</StationsDistanceInnerRadius>
+    <StationsDistanceOuterRadiusStart>10000000</StationsDistanceOuterRadiusStart>
+    <StationsDistanceOuterRadiusEnd>30000000</StationsDistanceOuterRadiusEnd>
     <EconomyTickInSeconds>1200</EconomyTickInSeconds>
     <NPCGridClaimTimeLimit>120</NPCGridClaimTimeLimit>
     <SimplifiedSimulation>false</SimplifiedSimulation>
@@ -268,9 +267,9 @@
     <PlanetaryEncounterDespawnTimeout>120</PlanetaryEncounterDespawnTimeout>
     <LimitBlocksBy>BlockPairName</LimitBlocksBy>
     <MaxHudChatMessageCount>100</MaxHudChatMessageCount>
-    <EnableShareInertiaTensor>false</EnableShareInertiaTensor>
-    <EnableUnsafePistonImpulses>false</EnableUnsafePistonImpulses>
-    <EnableUnsafeRotorTorques>false</EnableUnsafeRotorTorques>
+    <EnableShareInertiaTensor>true</EnableShareInertiaTensor>
+    <EnableUnsafePistonImpulses>true</EnableUnsafePistonImpulses>
+    <EnableUnsafeRotorTorques>true</EnableUnsafeRotorTorques>
     <EnableRadiation>true</EnableRadiation>
     <SolarRadiationIntensity>0</SolarRadiationIntensity>
     <ResetForageableItems>true</ResetForageableItems>
