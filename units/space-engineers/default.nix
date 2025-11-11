@@ -10,7 +10,7 @@ let
   init-world = pkgs.writeShellScript "init-world" ''
     set -eo pipefail
     if [ ! -d "${instance_dir}" ]; then
-      ${pkgs.coreutils}/bin/mkdir "${instance_dir}"
+      ${pkgs.coreutils}/bin/mkdir -p "${instance_dir}"
       ${pkgs.coreutils}/bin/cp -r --update=none "${default_world}/World" "${instance_dir}"
       ${pkgs.coreutils}/bin/cp --update=all "${default_world}/SpaceEngineers-Dedicated.cfg" "${instance_dir}"
       ${pkgs.coreutils}/bin/chmod -R a=rX,u+w "${data_dir}"
