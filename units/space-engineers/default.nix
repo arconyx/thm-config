@@ -5,7 +5,7 @@ let
   home = "/var/lib/space-engineers";
 
   data_dir = "${home}/se_instances";
-  instance_name = "pleasework";
+  instance_name = "november2025";
   instance_dir = "${data_dir}/${instance_name}";
   init-world = pkgs.writeShellScript "init-world" ''
     set -eo pipefail
