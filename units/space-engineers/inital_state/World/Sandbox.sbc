@@ -183,7 +183,7 @@
         <TradeFactionsCount>10</TradeFactionsCount>
 		<EnableRadiation>true</EnableRadiation>
 		<SolarRadiationIntensity>0</SolarRadiationIntensity>
-		<FoodConsumptionRate>0.5</FoodConsumptionRate>
+		<FoodConsumptionRate>0</FoodConsumptionRate>
 		<EnableSurvivalBuffs>true</EnableSurvivalBuffs>
 		<EnableReducedStatsOnRespawn>true</EnableReducedStatsOnRespawn>
     </Settings>
