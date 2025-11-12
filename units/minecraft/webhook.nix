@@ -6,6 +6,7 @@
 }:
 let
   utils = import ./utils.nix { inherit config lib; };
+
 in
 {
   # Register a webhook to start the minecraft server
@@ -27,7 +28,7 @@ in
             }
             {
               source = "string";
-              name = "minecraft-server-${name}.service";
+              name = "notify-minecraft-server-unavailable-${name}.service";
             }
           ];
         };
