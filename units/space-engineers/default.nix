@@ -86,15 +86,48 @@ in
       };
     };
 
-    systemd.user.services.init-se-world = {
-      Unit = {
-        Description = "Initialise Space Engineers world";
-        Before = [ "podman-${container-name}.service" ];
+    systemd.user.services = {
+      init-se-world = {
+        Unit = {
+          Description = "Initialise Space Engineers world";
+          Before = [ "podman-${container-name}.service" ];
+        };
+        Install.RequiredBy = [ "podman-${container-name}.service" ];
+        Service = {
+          Type = "exec";
+          ExecStart = init-world;
+        };
       };
-      Install.RequiredBy = [ "podman-${container-name}.service" ];
-      Service = {
-        Type = "exec";
-        ExecStart = init-world;
+
+      "se-local-backup" = {
+        Unit.Description = "Backup Space Engineers server to a local folder";
+        # don't run while other backups are running
+
+        Service = {
+          User = "engineer";
+          Group = "engineer";
+          Type = "oneshot";
+          ExecStart = pkgs.writeShellScript "local-se-backup" ''
+            BACKUP_PATH="${backupRoot}/$(date +%Y%m%d-%H%M)"
+            mkdir -p "$BACKUP_PATH"
+            cp --reflink=always -r "${instance_dir}" "$BACKUP_PATH"
+            echo "Backup done"
+          '';
+        };
+      };
+
+    };
+
+    systemd.user.timers.se-local-backup = {
+      Unit = {
+        Description = "Run local backup of Space Engineers server regularly";
+        PartOf = [ "podman-${container-name}.service" ];
+      };
+      Install.WantedBy = [ "podman-${container-name}.service" ];
+      Timer = {
+        OnCalendar = "07/1:00";
+        Unit = "se-local-backup.service";
+        RandomizedDelaySec = 600;
       };
     };
 
@@ -103,34 +136,4 @@ in
   networking.firewall.allowedUDPPorts = [ 25565 ];
 
   arcworks.services.backups.backup.backblaze.paths = [ instance_dir ];
-
-  systemd.services."se-local-backup" = {
-    enable = true;
-    description = "Backup Space Engineers server to a local folder";
-    # don't run while other backups are running
-    conflicts = [ "restic-backups-backblaze.service" ];
-    serviceConfig = {
-      User = "engineer";
-      Group = "engineer";
-      Type = "oneshot";
-    };
-    script = ''
-      BACKUP_PATH="${backupRoot}/$(date +%Y%m%d-%H%M)"
-      mkdir -p "$BACKUP_PATH"
-      cp --reflink=always -r "${instance_dir}" "$BACKUP_PATH"
-      echo "Backup done"
-    '';
-  };
-
-  systemd.timers."se-local-backup" = {
-    enable = true;
-    description = "Run local backup of Space Engineers server regularly";
-    wantedBy = [ "podman-${container-name}.service" ];
-    partOf = [ "podman-${container-name}.service" ];
-    timerConfig = {
-      OnCalendar = "07/1:00";
-      Unit = "se-local-backup.service";
-      RandomisedDelaySec = 600;
-    };
-  };
 }
