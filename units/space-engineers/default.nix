@@ -67,7 +67,10 @@ in
         image = "docker.io/devidian/spaceengineers:winestaging";
         network = "bridge";
         networkAlias = [ "se-server" ];
-        ports = [ "25565:25565/udp" ];
+        ports = [
+          "25565:25565/udp"
+          "8080:8080"
+        ];
         volumes = [
           "se_plugins:/appdata/space-engineers/plugins:rw"
           "${data_dir}:/appdata/space-engineers/instances:rw"
