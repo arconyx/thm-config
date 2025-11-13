@@ -119,7 +119,7 @@
         <MaxFactionsCount>0</MaxFactionsCount>
         <BlockLimitsEnabled>GLOBALLY</BlockLimitsEnabled>
         <EnableRemoteBlockRemoval>true</EnableRemoteBlockRemoval>
-        <EnvironmentHostility>NORMAL</EnvironmentHostility>
+        <EnvironmentHostility>SAFE</EnvironmentHostility>
         <AutoHealing>true</AutoHealing>
         <EnableCopyPaste>false</EnableCopyPaste>
         <WeaponsEnabled>true</WeaponsEnabled>
