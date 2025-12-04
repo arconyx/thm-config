@@ -104,13 +104,11 @@ in
         # don't run while other backups are running
 
         Service = {
-          User = "engineer";
-          Group = "engineer";
           Type = "oneshot";
           ExecStart = pkgs.writeShellScript "local-se-backup" ''
-            BACKUP_PATH="${backupRoot}/$(date +%Y%m%d-%H%M)"
-            mkdir -p "$BACKUP_PATH"
-            cp --reflink=always -r "${instance_dir}" "$BACKUP_PATH"
+            BACKUP_PATH="${backupRoot}/$(${pkgs.coreutils}/bin/date +%Y%m%d-%H%M)"
+            ${pkgs.coreutils}/bin/mkdir -p "$BACKUP_PATH"
+            ${pkgs.coreutils}/bin/cp --reflink=always -r "${instance_dir}" "$BACKUP_PATH"
             echo "Backup done"
           '';
         };
