@@ -2,13 +2,13 @@
   description = "NixOS config for THM servers";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     core = {
-      url = "github:arconyx/core/25.05";
+      url = "github:arconyx/core/25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-minecraft = {

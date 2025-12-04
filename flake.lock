@@ -6,20 +6,19 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "pre-commit-hooks": "pre-commit-hooks",
-        "sddm-sugar-candy-nix": "sddm-sugar-candy-nix"
+        "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1764807233,
-        "narHash": "sha256-wu0MdjNba5S2Bw8JR5WHvCWQu2pq2crBrtN8o4ycG/U=",
+        "lastModified": 1764664082,
+        "narHash": "sha256-qZCiSuL/TGrSbIwirxPtYqLz56Kt3AVjPGgGf2VkTs4=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "280841d9dc66b07bf04c0885a278bcaada63b6cf",
+        "rev": "d0785b765e4dcd778b8840d819e1416de41b1dba",
         "type": "github"
       },
       "original": {
         "owner": "arconyx",
-        "ref": "25.05",
+        "ref": "25.11",
         "repo": "core",
         "type": "github"
       }
@@ -159,16 +158,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1751810233,
-        "narHash": "sha256-kllkNbIqQi3VplgTMeGzuh1t8Gk8TauvkTRt93Km+tQ=",
+        "lastModified": 1764866045,
+        "narHash": "sha256-0GsEtXV9OquDQ1VclQfP16cU5VZh7NEVIOjSH4UaJuM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "9b0873b46c9f9e4b7aa01eb634952c206af53068",
+        "rev": "f63d0fe9d81d36e5fc95497217a72e02b8b7bcab",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
-        "ref": "release-25.05",
+        "ref": "release-25.11",
         "repo": "home-manager",
         "type": "github"
       }
@@ -197,16 +196,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1764560356,
-        "narHash": "sha256-M5aFEFPppI4UhdOxwdmceJ9bDJC4T6C6CzCK1E2FZyo=",
+        "lastModified": 1764677808,
+        "narHash": "sha256-H3lC7knbXOBrHI9hITQ7modLuX20mYJVhZORL5ioms0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6c8f0cca84510cc79e09ea99a299c9bc17d03cb6",
+        "rev": "1aab89277eb2d87823d5b69bae631a2496cff57a",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.05",
+        "ref": "nixos-25.11",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -263,27 +262,6 @@
         "nixpkgs": "nixpkgs",
         "pre-commit-hooks": "pre-commit-hooks_2",
         "thm-modpack": "thm-modpack"
-      }
-    },
-    "sddm-sugar-candy-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "core",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1751118511,
-        "narHash": "sha256-7e/DScfn7ZokFwpFytWnAIgxfEb9S1H7nXW1y6Rg0VQ=",
-        "owner": "Zhaith-Izaliel",
-        "repo": "sddm-sugar-candy-nix",
-        "rev": "977deb9bbaa4d962a58eb016b37ccf8ede6a8340",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Zhaith-Izaliel",
-        "repo": "sddm-sugar-candy-nix",
-        "type": "github"
       }
     },
     "systems": {
