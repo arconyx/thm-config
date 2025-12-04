@@ -28,7 +28,7 @@ in
             }
             {
               source = "string";
-              name = "notify-minecraft-server-unavailable-${name}.service";
+              name = "minecraft-server-${name}.service";
             }
           ];
         };
