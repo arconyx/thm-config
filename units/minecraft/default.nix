@@ -10,6 +10,7 @@ in
 {
   imports = [
     ./backup
+    ./necromancy.nix
     ./network.nix
 
     ./magic.nix
