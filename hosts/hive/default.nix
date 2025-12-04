@@ -3,11 +3,10 @@
 {
   imports = [
     ./../common.nix
+
     ./hardware-configuration.nix
     ./networking.nix
-
-    ./../../units/minecraft
-    ./../../units/space-engineers
+    ./minecraft
   ];
 
   arcworks.server.enable = true;

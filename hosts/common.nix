@@ -2,6 +2,7 @@
 {
   imports = [
     ./../home
+    ./../units
   ];
 
   arcworks.services.backups = {
