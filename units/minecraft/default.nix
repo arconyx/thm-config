@@ -7,6 +7,7 @@
 {
   imports = [
     ./ephemeral.nix
+    ./proxy.nix
   ];
 
   options.thm.services.minecraft = {
