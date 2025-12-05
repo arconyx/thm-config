@@ -300,9 +300,10 @@
         services.minecraft-servers.servers = lib.concatMapAttrs (
           name: cfg:
           let
-            msg-discord = msg: ''
-              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content='[${name}] ${msg}' "$DISCORD_WEBHOOK_URL"
-            '';
+            # This can't have trailing whitespace because it breaks `${msg-discord "whatever"} || echo "err msg"`
+            msg-discord =
+              msg:
+              lib.strings.trim ''${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="[${name}] ${msg}" "$DISCORD_WEBHOOK_URL"'';
           in
           {
             ${name} = {
@@ -347,16 +348,13 @@
               files = cfg.files;
 
               # Notify Discord on start
-              # Note the - prefix so failures are ignored
               extraStartPre = ''
-                - ${msg-discord "Raising the server from the dead"}
+                ${msg-discord "Raising the server from the dead"} || echo "Unable to notify Discord of start"
               '';
 
               # Provide a 60 second warning before shutdown
-              # This isn't a regular systemd hook so the - prefix isn't supported
               extraStopPre = ''
-                echo "say Server shutdown in 60 seconds" > "${socket name}" && sleep 60 \
-                || echo "Unable to send shutdown warning"
+                echo "say Server shutdown in 60 seconds" > "${socket name}" && sleep 60 || echo "Unable to send shutdown warning"
               '';
 
               extraStopPost = ''

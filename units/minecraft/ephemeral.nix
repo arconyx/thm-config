@@ -26,7 +26,7 @@ in
           name: cfg:
           let
             msg-discord = msg: ''
-              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content='[${name}] ${msg}' "$DISCORD_WEBHOOK_URL"
+              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="[${name}] ${msg}" "$DISCORD_WEBHOOK_URL"
             '';
             start-server = pkgs.writeShellScript "start-minecraft-server-from-webhook" ''
               source ${mcCfg.environmentFile}
