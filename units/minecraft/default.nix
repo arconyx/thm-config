@@ -301,7 +301,7 @@
           name: cfg:
           let
             msg-discord = msg: ''
-              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="[${name}] ${msg}" "$DISCORD_WEBHOOK_URL"
+              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content='[${name}] ${msg}' "$DISCORD_WEBHOOK_URL"
             '';
           in
           {

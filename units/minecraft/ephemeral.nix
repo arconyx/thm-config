@@ -10,19 +10,11 @@ let
   useEphemeral = mcCfg.enable && ephemeralServers != [ ];
 in
 {
-
   config = lib.mkIf useEphemeral {
     # allow starting servers with a webhook
     services.webhook =
       let
-        start-server = pkgs.writeShellScript "start-minecraft-server-from-webhook" ''
-          if systemctl is-active --quiet restic-backups-backblaze.service; then
-            source ${mcCfg.environmentFile}
-            ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="[$1] Backup in progress. Please wait until it is finished to start the server." "$DISCORD_WEBHOOK_URL"
-          else
-            systemctl start "minecraft-server-$1.service"
-          fi
-        '';
+        ephemeralServices = lib.mapAttrsToList (_: cfg: cfg.serviceName) ephemeralServers;
       in
       {
         enable = true;
@@ -30,18 +22,32 @@ in
         # we're not opening the firewall, but better safe
         ip = "127.0.0.1";
         verbose = true;
-        hooks = lib.concatMapAttrs (name: cfg: {
-          "minecraft-${name}" = {
-            id = "start-mc-${name}";
-            execute-command = "${start-server}";
-            pass-arguments-to-command = [
-              {
-                source = "string";
-                name = name;
-              }
-            ];
-          };
-        }) ephemeralServers;
+        hooks = lib.concatMapAttrs (
+          name: cfg:
+          let
+            msg-discord = msg: ''
+              ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content='[${name}] ${msg}' "$DISCORD_WEBHOOK_URL"
+            '';
+            start-server = pkgs.writeShellScript "start-minecraft-server-from-webhook" ''
+              source ${mcCfg.environmentFile}
+              if systemctl is-active --quiet restic-backups-backblaze.service; then
+                ${msg-discord "Backup in progress. Please wait until it is finished to start the server."}
+              elif systemctl is-active --quiet ${lib.concatStringsSep " " (lib.remove cfg.serviceName ephemeralServices)}; then
+                ${msg-discord "Another server is running. Please wait until it is finished to start the server."}
+              elif systemctl is-active --quiet ${cfg.serviceName}; then
+                ${msg-discord "Server is already running."}
+              else
+                systemctl start ${cfg.serviceName}
+              fi
+            '';
+          in
+          {
+            "minecraft-${name}" = {
+              id = "start-mc-${name}";
+              execute-command = "${start-server}";
+            };
+          }
+        ) ephemeralServers;
       };
 
     # Use polkit to give the webhooks user permission to start the service
