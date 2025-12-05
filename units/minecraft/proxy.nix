@@ -165,7 +165,8 @@ in
       systemd.services.gate = {
         description = "A proxy for Minecraft servers powered by Gate";
         confinement = {
-          enable = true;
+          # FIXME: confinement is breaking the connection to the backend for some reason
+          enable = false;
           packages = [ cfgFile ] ++ favicons;
         };
 
@@ -200,6 +201,21 @@ in
           # https://github.com/NixOS/nixpkgs/blob/nixos-25.11/nixos/modules/security/systemd-confinement.nix
           ProtectHostname = true;
           ProtectClock = true;
+
+          # reenabling things because confinement is broken
+          ProtectSystem = "strict";
+          ProtectHome = true;
+          InaccessiblePaths = [
+            "/srv"
+            "/etc"
+            "/var"
+            "/config"
+          ];
+          PrivateTmp = true;
+          ProtectKernelTunables = true;
+          ProtectKernelModules = true;
+          ProtectKernelLogs = true;
+          ProtectControlGroups = true;
         };
 
       };
