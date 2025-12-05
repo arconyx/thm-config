@@ -98,6 +98,7 @@
                 §eTry necromancy!
               '';
               version.name = "1.20.1 (modded)";
+              favicon = ./servers/magic.png;
             };
           }
         ];
