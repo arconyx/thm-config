@@ -207,8 +207,10 @@ in
           ProtectHome = true;
           InaccessiblePaths = [
             "/srv"
-            "/etc"
-            "/var"
+            # I commented out these paths and it started detecting backends.
+            # What.
+            # "/etc"
+            # "/var"
             "/config"
           ];
           PrivateTmp = true;
