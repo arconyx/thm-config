@@ -101,11 +101,11 @@ in
                     default = -1;
                     description = "Server protocol version. Usually -1 for the fallback.";
                   };
-                  favicon = lib.mkOption {
-                    type = lib.types.nullOr (lib.types.either lib.types.str lib.types.path);
-                    description = "Path to an image file or base64 data uri (64x64 optimal)";
-                    default = null;
-                  };
+                };
+                favicon = lib.mkOption {
+                  type = lib.types.nullOr (lib.types.either lib.types.str lib.types.pathInStore);
+                  description = "Path to an image file or base64 data uri (64x64 optimal)";
+                  default = null;
                 };
               };
 
@@ -155,6 +155,8 @@ in
         };
       };
 
+      favicons = builtins.filter builtins.isPath (map (cfg: cfg.fallback.favicon) liveRoutes);
+
       cfgFile = settingsFormat.generate "gate-config" (lib.recursiveUpdate baseCfg cfg.settings);
     in
     lib.mkIf cfg.enable {
@@ -164,7 +166,7 @@ in
         description = "A proxy for Minecraft servers powered by Gate";
         confinement = {
           enable = true;
-          packages = [ cfgFile ];
+          packages = [ cfgFile ] ++ favicons;
         };
 
         wants = [ "network-online.target" ];
