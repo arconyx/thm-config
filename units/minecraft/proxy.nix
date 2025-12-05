@@ -155,13 +155,17 @@ in
         };
       };
 
+      cfgFile = settingsFormat.generate "gate-config" (lib.recursiveUpdate baseCfg cfg.settings);
     in
     lib.mkIf cfg.enable {
       networking.firewall.allowedTCPPorts = lib.mkIf cfg.openFirewall [ cfg.publicPort ];
 
       systemd.services.gate = {
         description = "A proxy for Minecraft servers powered by Gate";
-        confinement.enable = true;
+        confinement = {
+          enable = true;
+          packages = [ cfgFile ];
+        };
 
         wants = [ "network-online.target" ];
         after = [ "network-online.target" ];
@@ -171,7 +175,7 @@ in
         startLimitIntervalSec = 120;
 
         environment = {
-          GATE_CONFIG = settingsFormat.generate "gate-config" (lib.recursiveUpdate baseCfg cfg.settings);
+          GATE_CONFIG = cfgFile;
         };
 
         serviceConfig = {
