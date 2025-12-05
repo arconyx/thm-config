@@ -49,7 +49,6 @@ in
           }
         ) ephemeralServers;
       };
-
     # Use polkit to give the webhooks user permission to start the service
     security.polkit = {
       enable = true;
@@ -78,7 +77,6 @@ in
         timerConfig = {
           OnActiveSec = "10min";
           OnUnitInactiveSec = "10min";
-          Unit = "stop-minecraft.service";
         };
         wantedBy = [ cfg.serviceName ];
         after = [ cfg.serviceName ];
@@ -86,9 +84,15 @@ in
       };
     }) ephemeralServers;
 
-    # if no player is connected wait a minute
-    # if still no players, shutdown the server
-    systemd.services = lib.concatMapAttrs (name: cfg: {
+    systemd.services = {
+      # access to env file for discord token
+      webhook.serviceConfig = {
+        SupplementaryGroups = [ "minecraft" ];
+      };
+    }
+    // (lib.concatMapAttrs (name: cfg: {
+      # if no player is connected wait a minute
+      # if still no players, shutdown the server
       "stop-minecraft-${name}" = {
         enable = true;
         serviceConfig.Type = "oneshot";
@@ -116,6 +120,6 @@ in
             fi
           '';
       };
-    }) ephemeralServers;
+    }) ephemeralServers);
   };
 }
