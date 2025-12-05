@@ -25,10 +25,8 @@
   services.cloudflare-dyndns = {
     enable = true;
     frequency = "*:0/15";
-    domains = [
-      "mc.thehivemind.gay"
-      "*.mc.thehivemind.gay"
-    ];
+    # subdomains of this are handled with a cname atm
+    domains = [ "mc.thehivemind.gay" ];
     proxied = false; # no point trying to proxy minecraft
     deleteMissing = false;
     apiTokenFile = "/etc/cloudflare/apikey.env";
