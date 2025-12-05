@@ -157,7 +157,7 @@ in
 
       favicons = builtins.filter builtins.isPath (map (cfg: cfg.fallback.favicon) liveRoutes);
 
-      cfgFile = settingsFormat.generate "gate-config" (lib.recursiveUpdate baseCfg cfg.settings);
+      cfgFile = settingsFormat.generate "gate-config.yml" (lib.recursiveUpdate baseCfg cfg.settings);
     in
     lib.mkIf cfg.enable {
       networking.firewall.allowedTCPPorts = lib.mkIf cfg.openFirewall [ cfg.publicPort ];
