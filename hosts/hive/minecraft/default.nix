@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   imports = [ ./servers/magic.nix ];
 
@@ -77,6 +77,31 @@
       "-XX:ConcGCThreads=6"
       "--enable-native-access=ALL-UNNAMED"
     ];
+
+    proxy = {
+      enable = true;
+      openFirewall = true;
+      routes =
+        let
+          servers = config.thm.services.minecraft.servers;
+        in
+        [
+          {
+            host = [
+              "magic.mc.thehivemind.gay"
+              "mc.thehivemind.gay"
+            ];
+            backend = "localhost:${toString servers.magic.port}";
+            fallback = {
+              motd = ''
+                §cMagic server is offline.
+                §eTry necromancy!
+              '';
+              version.name = "1.20.1 (modded)";
+            };
+          }
+        ];
+    };
   };
 
 }

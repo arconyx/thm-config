@@ -18,7 +18,7 @@ in
       loaderVersion = fabricVersion;
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;
     };
-    port = 25565;
+    port = 25566;
     settings = {
       gamemode = "survival";
       difficulty = "hard";
