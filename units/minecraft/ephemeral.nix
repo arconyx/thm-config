@@ -93,6 +93,8 @@ in
       };
     }
     // (lib.concatMapAttrs (name: cfg: {
+      "minecraft-server-${name}".wants = lib.mkIf mcCfg.proxy.enable [ "gate.service" ];
+
       # if no player is connected wait a minute
       # if still no players, shutdown the server
       "stop-minecraft-${name}" = {
