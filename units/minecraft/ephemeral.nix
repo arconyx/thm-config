@@ -75,7 +75,9 @@ in
       "stop-minecraft-${name}" = {
         enable = true;
         timerConfig = {
+          # startup when the timer has been active for 10 minutes
           OnActiveSec = "10min";
+          # run when the associated service has been stopped for 10 minutes
           OnUnitInactiveSec = "10min";
         };
         wantedBy = [ cfg.serviceName ];
@@ -99,13 +101,14 @@ in
         script =
           let
             rcon = "${pkgs.rcon}/bin/rcon -m -H 127.0.0.1 -p ${builtins.toString cfg.rcon-port} -P ${cfg.rcon-password}";
+            wait_seconds = "60";
           in
           ''
             PLAYERS=$(printf "list\n" | ${rcon})
             if echo "$PLAYERS" | grep "are 0 of a"
             then
-              echo "no players online, checking again in a minute"
-              ${pkgs.coreutils}/bin/sleep 60
+              echo "no players online, checking again in a ${wait_seconds}s"
+              ${pkgs.coreutils}/bin/sleep ${wait_seconds}
               STILL_PLAYERS=$(printf "list\n" | ${rcon})
               if echo "$STILL_PLAYERS" | grep "are 0 of a"
               then
@@ -116,7 +119,8 @@ in
                 echo "player has come online, shutdown cancelled"
               fi
             else
-              exit 1
+              echo "players online"
+              exit 0
             fi
           '';
       };
