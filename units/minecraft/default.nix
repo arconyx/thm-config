@@ -450,6 +450,8 @@
           };
         }) servers;
 
+        environment.systemPackages = [ (pkgs.callPackage ./nbted.nix { }) ];
+
       }
     );
 }

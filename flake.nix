@@ -33,11 +33,10 @@
     }:
     let
       revision = self.shortRev or self.dirtyShortRev or self.lastModified or "unknown";
-      supportedSystems = [
-        "x86_64-linux"
-      ];
+      supportedSystems = [ "x86_64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
       baseModules = [ core.nixosModules.default ];
+      pkgsForSystem = system: nixpkgs.legacyPackages.${system};
     in
     {
       checks = forAllSystems (system: {
@@ -56,19 +55,18 @@
       });
 
       devShells = forAllSystems (system: {
-        default = nixpkgs.legacyPackages.${system}.mkShell {
+        default = (pkgsForSystem system).mkShell {
           inherit (self.checks.${system}.pre-commit-check) shellHook;
           buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
         };
       });
 
-      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
+      formatter = forAllSystems (system: (pkgsForSystem system).nixfmt-tree);
 
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem {
 
         specialArgs = {
-          inherit thm-modpack;
-          inherit revision;
+          inherit thm-modpack revision;
         };
 
         modules = baseModules ++ [
@@ -79,5 +77,9 @@
           }
         ];
       };
+
+      packages = forAllSystems (system: {
+        nbted = (pkgsForSystem system).callPackage ./units/minecraft/nbted.nix { };
+      });
     };
 }

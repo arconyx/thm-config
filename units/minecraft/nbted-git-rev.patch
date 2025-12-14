@@ -1,0 +1,65 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index cf0cb1d..5c54f1d 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -2,7 +2,6 @@
+ name = "nbted"
+ version = "1.5.2"
+ authors = ["C4K3 <crates.io@c4k3.net>"]
+-build = "build.rs"
+ repository = "https://github.com/C4K3/nbted"
+ description = "Command-line NBT editor"
+ license = "CC0-1.0"
+diff --git a/build.rs b/build.rs
+deleted file mode 100644
+index 2924aaa..0000000
+--- a/build.rs
++++ /dev/null
+@@ -1,34 +0,0 @@
+-use std::env;
+-use std::fs::File;
+-use std::io::prelude::*;
+-use std::path::Path;
+-use std::process::Command;
+-
+-/* All the build file currently does is try to figure out the current
+- * git revision, and write it to the OUT_DIR/git-revision.txt file */
+-fn main() {
+-    /* Figure out the current git revision */
+-    let git: String = match Command::new("git").arg("rev-parse").arg("HEAD").output() {
+-        Ok(x) => match String::from_utf8(x.stdout) {
+-            Ok(x) => format!(r#""{}""#, x.trim()),
+-            Err(e) => {
+-                println!("cargo:warning=build script got invalid output trying to get latest git revision: {:?}",
+-                                 e);
+-                "unknown git revision".to_string()
+-            }
+-        },
+-        Err(e) => {
+-            println!(
+-                "cargo:warning=build script unable to get latest git revision: {:?}",
+-                e
+-            );
+-            "unknown git revision".to_string()
+-        }
+-    };
+-
+-    let out_dir = env::var("OUT_DIR").unwrap();
+-    let dest_path = Path::new(&out_dir).join("git-revision.txt");
+-    let mut f = File::create(&dest_path).unwrap();
+-
+-    f.write_all(git.as_bytes()).unwrap();
+-}
+diff --git a/src/main.rs b/src/main.rs
+index 86cff0f..f2097db 100644
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -81,7 +81,7 @@ fn run_cmdline() -> Result<i32> {
+             env!("CARGO_PKG_NAME"),
+             env!("CARGO_PKG_VERSION"),
+             /* See build.rs for the git-revision.txt file */
+-            include!(concat!(env!("OUT_DIR"), "/git-revision.txt"))
++            "nix build (unknown rev)"
+         );
+         println!("https://github.com/C4K3/nbted");
+         return Ok(0);
