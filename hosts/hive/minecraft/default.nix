@@ -1,6 +1,9 @@
 { config, ... }:
 {
-  imports = [ ./servers/magic.nix ];
+  imports = [
+    ./servers/magic.nix
+    ./servers/forever-test.nix
+  ];
 
   # allow easy interaction with world save
   users.users.arc.extraGroups = [ "minecraft" ];
