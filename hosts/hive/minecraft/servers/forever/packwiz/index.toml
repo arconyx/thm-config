@@ -33,6 +33,10 @@ file = "config/modernfix-mixins.properties"
 hash = "88e156ebea5860a21c27da03912948a7849f9dd0ba5c4ccc9c102f3c52208c81"
 
 [[files]]
+file = "config/moonrise.yml"
+hash = "6221a70da7c057a8a44ed67b4c347200dd2a0a8bf7e68a3d8ace8b7a9306aaf7"
+
+[[files]]
 file = "config/noisium.json"
 hash = "3b6acdbc5ce36d9a81fb2a889760b5eb9fd88683cb06e234eca92559ad151329"
 
