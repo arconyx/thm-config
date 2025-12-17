@@ -95,6 +95,19 @@
               favicon = ./servers/magic.png;
             };
           }
+          {
+            host = [
+              "forever.mc.thehivemind.gay"
+            ];
+            backend = "localhost:${toString servers.forever-test.port}";
+            fallback = {
+              motd = ''
+                §cTest server is offline.
+                §eTry necromancy!
+              '';
+              version.name = "1.21.11";
+            };
+          }
         ];
     };
   };
