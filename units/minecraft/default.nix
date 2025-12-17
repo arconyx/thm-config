@@ -476,9 +476,7 @@
         ]
         ++
           # if backup is diabled for a server exclude it from the backup paths
-          (lib.mapAttrsToList (
-            name: config.systemd.services."minecraft-server-${name}".serviceConfig.WorkingDirectory
-          ) (lib.filterAttrs (_: cfg: !cfg.backup) servers));
+          (lib.mapAttrsToList (name: cfg: data_dir name) (lib.filterAttrs (_: cfg: !cfg.backup) servers));
       }
     );
 }
