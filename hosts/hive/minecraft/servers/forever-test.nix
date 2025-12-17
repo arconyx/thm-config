@@ -3,7 +3,7 @@
   ...
 }:
 let
-  rev = "2ad25f79a6a8464fe99f0c17d27bc7193b37595d";
+  rev = "b1c3e751ae0913970e31749d395efb5cc904dcd0";
   modpack = pkgs.fetchPackwizModpack {
     url = "https://github.com/arconyx/thm-modpack/raw/${rev}/pack.toml";
     packHash = "sha256-Ke3X9UJ0w7GuM66zwn9+FQJmsnwobvmJSkhSPLX/D7M=";
