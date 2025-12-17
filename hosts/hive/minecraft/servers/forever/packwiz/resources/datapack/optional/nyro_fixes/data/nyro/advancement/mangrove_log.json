@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_item": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:mangrove_roots"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "nyro:mangrove_log"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_item"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "nyro:mangrove_log"
+        ]
+    }
+}

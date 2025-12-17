@@ -1,0 +1,40 @@
+name: Packwiz refresh
+
+on:
+  push:
+    paths: 
+      - 'hosts/hive/minecraft/servers/forever/packwiz/**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Nix Quick Install
+        uses: nixbuild/nix-quick-install-action@v34
+
+      - name: Run packwiz refresh
+        run: |
+            cd hosts/hive/minecraft/servers/forever/packwiz
+            nix develop --command packwiz refresh
+
+      - name: Commit any changes
+        run: |
+            if [[ `git status --porcelain` ]]; then
+              git config user.name github-actions
+              git config user.email github-actions@github.com
+              git add -u
+              git commit -m "packwiz refresh"
+              git push
+            else
+              echo "No changes"
+            fi
+      

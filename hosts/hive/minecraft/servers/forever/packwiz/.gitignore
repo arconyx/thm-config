@@ -1,0 +1,5 @@
+*.mrpack
+.env
+.envrc
+.direnv/
+result

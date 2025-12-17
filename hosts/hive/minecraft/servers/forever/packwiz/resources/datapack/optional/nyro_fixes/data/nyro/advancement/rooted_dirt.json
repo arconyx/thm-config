@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_hanging": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:hanging_roots"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_mg": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:mangrove_roots"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "nyro:rooted_dirt"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_hanging",
+            "has_mg"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "nyro:rooted_dirt"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+*.mrpack
+.env
+.envrc
+.direnv/
+flake.nix
+flake.lock
+nix/
+result
+.github
+.jj
+.git

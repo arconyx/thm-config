@@ -3,10 +3,9 @@
   ...
 }:
 let
-  rev = "3cfa9bc9efa195f7009442b0a330a69ec5b85898";
   modpack = pkgs.fetchPackwizModpack {
-    url = "https://github.com/arconyx/thm-modpack/raw/${rev}/pack.toml";
-    packHash = "sha256-9S2UKCVWEer2iqcfvieWuAqGMMvUmfE+FDkd7Q0qiC8=";
+    src = ./packwiz;
+    packHash = "sha256-pVfDzgTQnnDzNmPEYySh3deGbLH01Xv/TS+ZdAeRMSI=";
   };
 in
 {
@@ -31,8 +30,11 @@ in
     symlinks = {
       mods = "${modpack}/mods";
     };
+    # nix-minecraft has a collectFilesAt function as a symlink helper
+    # might be worth using if this attrset gets more complex
     files = {
-      "config" = "${modpack}/config";
+      config = "${modpack}/config";
+      resources = "${modpack}/resources";
     };
     backup = false;
   };

@@ -2,7 +2,7 @@
 {
   imports = [
     ./servers/magic.nix
-    ./servers/forever-test.nix
+    ./servers/forever
   ];
 
   # allow easy interaction with world save

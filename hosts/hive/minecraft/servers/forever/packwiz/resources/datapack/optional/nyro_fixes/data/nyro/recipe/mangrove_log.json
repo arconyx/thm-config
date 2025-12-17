@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "xxx",
+      "xxx",
+      "xxx"
+    ],
+    "key": {
+      "x": {
+        "item": "minecraft:mangrove_roots"
+      }
+    },
+    "result": {
+      "id": "minecraft:mangrove_log"
+    }
+  }
