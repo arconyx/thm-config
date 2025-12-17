@@ -190,7 +190,7 @@ in
 
           # Hardening, sections named after man page sections in systemd.exec
           # Capabilities
-          CapabilitiesBoundingSet = "";
+          CapabilityBoundingSet = "";
           # Security
           NoNewPrivileges = true;
           # Sandboxing
