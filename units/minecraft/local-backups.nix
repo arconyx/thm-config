@@ -9,6 +9,11 @@ let
   servers = lib.filterAttrs (_: cfg: cfg.enable) mcCfg.servers;
 in
 {
+  arcworks.services.backups.global.exclude = [
+    # don't want to waste storage backing up the local backups
+    "${config.services.minecraft-servers.dataDir}/backup"
+  ];
+
   systemd.services = lib.concatMapAttrs (
     name: cfg:
     let

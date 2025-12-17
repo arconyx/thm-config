@@ -231,6 +231,17 @@
                 '';
               };
 
+              backup = lib.mkOption {
+                type = lib.types.bool;
+                default = true;
+                example = false;
+                description = ''
+                  Whether to backup this server.
+
+                  Test servers may wish to disable this to save backup space.
+                '';
+              };
+
               serviceName = lib.mkOption {
                 type = lib.types.str;
                 default = "minecraft-server-${name}.service";
@@ -255,6 +266,9 @@
         # this is a function from server name to path
         # string -> spath
         socket = config.services.minecraft-servers.managementSystem.systemd-socket.stdinSocket.path;
+
+        # similar functions
+        data_dir = name: config.systemd.services."minecraft-server-${name}".serviceConfig.WorkingDirectory;
       in
       {
         assertions =
@@ -368,6 +382,8 @@
 
         systemd.services = lib.mkMerge [
           {
+            # this runs even if backups are disabled for the server
+            # since we want the server offline to speedup backups
             minecraft-post-remote-backup =
               let
                 persistentServers = lib.mapAttrsToList (name: cfg: cfg.serviceName) (
@@ -398,7 +414,7 @@
               conflicts = [ "restic-backups-backblaze.service" ];
             };
 
-            "minecraft-local-backup-${name}" = {
+            "minecraft-local-backup-${name}" = lib.mkIf cfg.backup {
               enable = true;
               description = "Backup Minecraft server to a local folder";
               conflicts = [ "restic-backups-backblaze.service" ];
@@ -416,14 +432,14 @@
               ];
               environment = {
                 SAVE_WAIT_TIME = "60";
-                DATA_DIR = config.systemd.services."minecraft-server-${name}".serviceConfig.WorkingDirectory;
+                DATA_DIR = data_dir name;
                 BACKUP_ROOT = "${config.services.minecraft-servers.dataDir}/backup/${name}";
                 SOCKET = socket name;
               };
             };
 
             # calls webhook to report failure
-            "notify-minecraft-backup-failed-${name}" = {
+            "notify-minecraft-backup-failed-${name}" = lib.mkIf cfg.backup {
               enable = true;
               description = "Notify on failed local Minecraft backup";
               serviceConfig = {
@@ -438,7 +454,7 @@
         ];
 
         systemd.timers = lib.concatMapAttrs (name: cfg: {
-          "minecraft-local-backup-${name}" = {
+          "minecraft-local-backup-${name}" = lib.mkIf cfg.backup {
             enable = true;
             description = "Run local backup of Minecraft server regularly";
             wantedBy = [ "timers.target" ];
@@ -452,6 +468,17 @@
 
         environment.systemPackages = [ (pkgs.callPackage ./nbted.nix { }) ];
 
+        arcworks.services.backups.global.exclude = # Distant horizons files can be regenerated
+        [
+          "DistantHorizons.sqlite"
+          "DistantHorizons.sqlite-shm"
+          "DistantHorizons.sqlite-wal"
+        ]
+        ++
+          # if backup is diabled for a server exclude it from the backup paths
+          (lib.mapAttrsToList (
+            name: config.systemd.services."minecraft-server-${name}".serviceConfig.WorkingDirectory
+          ) (lib.filterAttrs (_: cfg: !cfg.backup) servers));
       }
     );
 }

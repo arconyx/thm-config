@@ -15,13 +15,6 @@
       "/etc/minecraft"
       # /srv/minecraft already added by top level conf including all of /srv
     ];
-    exclude = [
-      # Distant horizons files can be regenerated
-      "DistantHorizons.sqlite"
-      "DistantHorizons.sqlite-shm"
-      "DistantHorizons.sqlite-wal"
-      "/srv/minecraft/backup" # don't want to waste storage backing up the local backups
-    ];
   };
 
   # keep dns fresh for server subdomain

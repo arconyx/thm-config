@@ -34,5 +34,6 @@ in
     files = {
       "config" = "${modpack}/config";
     };
+    backup = false;
   };
 }
