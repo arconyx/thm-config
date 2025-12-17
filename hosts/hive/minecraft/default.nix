@@ -52,7 +52,7 @@
       "-XX:+UseFastUnorderedTimeStamps"
       "-XX:+UseCriticalJavaThreadPriority"
       "-XX:+EagerJVMCI"
-      "-Dgraal.TuneInlinerExploration=1"
+      "-Djdk.graal.TuneInlinerExploration=1"
       "-Djdk.graal.CompilerConfiguration=enterprise"
       "-XX:+UseG1GC"
       "-XX:MaxGCPauseMillis=130"
