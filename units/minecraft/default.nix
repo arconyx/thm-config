@@ -399,6 +399,7 @@
                 serviceConfig = {
                   DynamicUser = true;
                   Type = "oneshot";
+                  EnvironmentFile = globalCfg.environmentFile;
                 };
                 wantedBy = [ "restic-backups-backblaze.service" ];
                 after = [ "restic-backups-backblaze.service" ];
