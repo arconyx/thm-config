@@ -84,6 +84,7 @@
         nbted = (pkgsForSystem system).callPackage ./units/minecraft/nbted.nix { };
         forever-modpack = nix-minecraft.legacyPackages.${system}.fetchPackwizModpack {
           src = ./hosts/hive/minecraft/servers/forever/packwiz;
+          packHash = nixpkgs.lib.fakeHash;
         };
       });
     };
