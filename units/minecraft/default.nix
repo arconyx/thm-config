@@ -474,6 +474,7 @@
           "DistantHorizons.sqlite"
           "DistantHorizons.sqlite-shm"
           "DistantHorizons.sqlite-wal"
+          "${config.services.minecraft-servers.dataDir}/backup"
         ]
         ++
           # if backup is diabled for a server exclude it from the backup paths
