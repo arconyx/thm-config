@@ -218,6 +218,19 @@ in
           ProtectKernelModules = true;
           ProtectKernelLogs = true;
           ProtectControlGroups = true;
+
+          # adding stuff highlighted by `systemd-analyze security`
+          PrivateUsers = true;
+          ProtectProc = "invisible";
+          PrivateDevices = true;
+          SystemCallArchitectures = "native";
+          MemoryDenyWriteExecute = true;
+          RestrictRealtime = true;
+          LockPersonality = true;
+          RestrictNamespaces = true;
+          RestrictAddressFamilies = "AF_UNIX AF_INET AF_INET6";
+          # ~ -> deny list
+          SystemCallFilter = "~@clock @cpu-emulation @debug @module @mount @obsolete @privileged @raw-io @reboot @resources @swap";
         };
 
       };
