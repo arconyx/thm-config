@@ -136,18 +136,6 @@ file = "resources/datapack/optional/amethyst/pack.mcmeta"
 hash = "fa64b2d7a8a1eaaf669c02b24fe488d84558e3db75c2fd3422d56f97e58e5777"
 
 [[files]]
-file = "resources/datapack/optional/bundle/data/minecraft/advancement/recipes/tools/bundle.json"
-hash = "c0427aa39217e52393a3c42a209f676f5151db0990acf6dcced180406baf803f"
-
-[[files]]
-file = "resources/datapack/optional/bundle/data/minecraft/recipe/bundle.json"
-hash = "19e4bed6f87968000521570f66463fb866ea15f873ac96f807aebe67898efe4a"
-
-[[files]]
-file = "resources/datapack/optional/bundle/pack.mcmeta"
-hash = "26aa411da73a991f8a85b1c8f5f7b954bb74377bf3e544ca5ff2615ced57186b"
-
-[[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/advancement/cobblestone.json"
 hash = "cb46877cdc1e43c098a84fe45131c02d30043d6087ac535d192242fdb26be891"
 
@@ -186,18 +174,6 @@ hash = "6a7109ad73cb8f25c6d2f099cec7c49aa04d408c785dcba90b1e7295960858e7"
 [[files]]
 file = "resources/datapack/optional/phantom_membrane/pack.mcmeta"
 hash = "fa64b2d7a8a1eaaf669c02b24fe488d84558e3db75c2fd3422d56f97e58e5777"
-
-[[files]]
-file = "resources/datapack/optional/saddle/data/arc/advancement/saddle.json"
-hash = "e59a9e8ff6d9cfbac76f493b5231e22443fb14c0b4ad16f3fc54a58ff8d157b1"
-
-[[files]]
-file = "resources/datapack/optional/saddle/data/arc/recipe/saddle_recipe.json"
-hash = "8d8f6d76b9c88a392dc365e45fd039a080de69d4e5a094b323cc48c7736c7a7e"
-
-[[files]]
-file = "resources/datapack/optional/saddle/pack.mcmeta"
-hash = "f840a5c09a158985cdf62f284c819df2b9138a188f568d39c1bd664870a319cb"
 
 [[files]]
 file = "resources/datapack/optional/small_dripleaf/data/arc/advancement/dripleaf.json"
