@@ -25,6 +25,7 @@ in
       };
       extraConfig = {
         region-file-compression = "lz4";
+        level-seed = "thm unlimited";
       };
     };
     symlinks = {
