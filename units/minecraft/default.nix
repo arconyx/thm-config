@@ -411,6 +411,7 @@
             "minecraft-server-${name}" = {
               # increased to account for shutdown warning
               serviceConfig.TimeoutStopSec = lib.mkForce "2min 15s";
+              wants = [ "minecraft-servers.target" ];
               after = [ "restic-backups-backblaze.service" ];
               conflicts = [ "restic-backups-backblaze.service" ];
             };
@@ -466,6 +467,11 @@
             };
           };
         }) servers;
+
+        systemd.targets.minecraft-servers = {
+          enable = true;
+          description = "Helper target for all minecraft servers";
+        };
 
         environment.systemPackages = [ (pkgs.callPackage ./nbted.nix { }) ];
 

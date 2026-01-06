@@ -172,7 +172,10 @@ in
 
         wants = [ "network-online.target" ];
         after = [ "network-online.target" ];
-        wantedBy = [ "multi-user.target" ];
+        wantedBy = [
+          "multi-user.target"
+          "minecraft-servers.target"
+        ];
 
         startLimitBurst = 5;
         startLimitIntervalSec = 120;
