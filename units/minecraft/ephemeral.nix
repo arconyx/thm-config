@@ -17,7 +17,7 @@ in
         ephemeralServices = lib.mapAttrsToList (_: cfg: cfg.serviceName) ephemeralServers;
       in
       {
-        enable = true;
+        enable = useEphemeral;
         # bind to loopback only
         # we're not opening the firewall, but better safe
         ip = "127.0.0.1";
