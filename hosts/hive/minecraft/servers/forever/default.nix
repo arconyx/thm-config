@@ -5,7 +5,7 @@
 let
   modpack = pkgs.fetchPackwizModpack {
     src = ./packwiz;
-    packHash = "sha256-DdFs3C8MUIo8/EwXOrHhbmBgopbwUn0qh5FUWL1P8W0==";
+    packHash = "sha256-WXB3ZeO6gEzVZVhyorL7QJ89D0swLuZhx/9DXUTJ/2U=";
   };
 in
 {
