@@ -9,16 +9,17 @@ let
   };
 in
 {
-  thm.services.minecraft.servers.forever-test = {
+  thm.services.minecraft.servers.forever = {
     enable = true;
     package = pkgs.fabricServers.fabric-1_21_11.override {
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;
     };
     port = 25567;
+    alwaysOn = true;
     settings = {
       gamemode = "creative";
       difficulty = "hard";
-      motd = "The world is a house of sand, soon to crumble and fall";
+      motd = "The world is born anew";
       distance = {
         view = 12;
         simulation = 8;

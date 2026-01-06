@@ -99,7 +99,7 @@
             host = [
               "forever.mc.thehivemind.gay"
             ];
-            backend = "localhost:${toString servers.forever-test.port}";
+            backend = "localhost:${toString servers.forever.port}";
             fallback = {
               motd = ''
                 §cTest server is offline.
