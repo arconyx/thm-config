@@ -54,9 +54,8 @@ hash = "fc8ffe66dc0c7eb55cf2ce38d1ae4bf1c4cdfbfdcda2636b1cd140c851e03cc5"
 metafile = true
 
 [[files]]
-file = "mods/amcdb.pw.toml"
-hash = "21ceb4ab833315e9a633516092c04d83217191a7541ad7fede38dd510d28b7f9"
-metafile = true
+file = "mods/amcdb-1.21.5-1.3.0a.jar"
+hash = "19fbb66666b7b70e4a0085595988b8f8c1e00f8c6e041b7e32329899bc7d9948"
 
 [[files]]
 file = "mods/armor-poser.pw.toml"
