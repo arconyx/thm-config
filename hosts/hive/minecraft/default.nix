@@ -97,6 +97,7 @@
           }
           {
             host = [
+              "192.168.0.131"
               "forever.mc.thehivemind.gay"
             ];
             backend = "localhost:${toString servers.forever.port}";
