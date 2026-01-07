@@ -409,8 +409,10 @@
           }
           (lib.concatMapAttrs (name: cfg: {
             "minecraft-server-${name}" = {
-              # increased to account for shutdown warning
-              serviceConfig.TimeoutStopSec = lib.mkForce "2min 15s";
+              # increased to "2min 15s" account for shutdown warning
+              # increased futher to "5min" because the forever server keeps
+              # being incredibly slow
+              serviceConfig.TimeoutStopSec = lib.mkForce "5min";
               wants = [ "minecraft-servers.target" ];
               after = [ "restic-backups-backblaze.service" ];
               conflicts = [ "restic-backups-backblaze.service" ];
