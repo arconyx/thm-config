@@ -28,6 +28,37 @@
     apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
+  # this is used for webhooks and stuff
+  services.caddy.enable = true;
+  services.caddy.virtualHosts."hive.thehivemind.gay:80" = {
+    extraConfig = ''
+      encode
+
+      handle /hooks/* {
+        reverse_proxy :${builtins.toString config.services.webhook.port}
+      }
+
+      # this handle matches all requests so anything else
+      # needs to be in a handle or handle_path block of their own
+      handle {
+        error 404
+      }
+
+      handle_errors {
+        respond "{err.status_code} {err.status_text}"
+      }
+    '';
+  };
+
+  # used for hive.thehivemind.gay
+  services.cloudflared = {
+    enable = true;
+    tunnels.hive = {
+      default = "http_status:404";
+      credentialsFile = "/etc/cloudflare/tunnel_credentials.json";
+    };
+  };
+
   thm.services.minecraft = {
     enable = true;
     environmentFile = "/etc/minecraft/magic.env";
