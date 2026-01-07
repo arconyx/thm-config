@@ -103,7 +103,7 @@
             backend = "localhost:${toString servers.forever.port}";
             fallback = {
               motd = ''
-                §cTest server is offline.
+                §cForever server is offline.
                 §eTry necromancy!
               '';
               version.name = "1.21.11";

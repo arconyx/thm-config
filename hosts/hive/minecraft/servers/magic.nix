@@ -13,7 +13,7 @@ let
 in
 {
   thm.services.minecraft.servers.magic = {
-    enable = false;
+    enable = true;
     package = pkgs.fabricServers.${serverVersion}.override {
       loaderVersion = fabricVersion;
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;
@@ -36,7 +36,7 @@ in
   };
 
   # make exposures photos accessible on the interwebs
-  services.caddy.enable = false;
+  services.caddy.enable = true;
   services.caddy.virtualHosts."hive.thehivemind.gay:80" = {
     extraConfig = ''
       encode
@@ -70,7 +70,7 @@ in
   };
 
   services.cloudflared = {
-    enable = false;
+    enable = true;
     tunnels.hive = {
       default = "http_status:404";
       credentialsFile = "/etc/cloudflare/tunnel_credentials.json";
