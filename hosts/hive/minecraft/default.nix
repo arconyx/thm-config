@@ -138,6 +138,7 @@
                 §eTry necromancy!
               '';
               version.name = "1.21.11";
+              favicon = ./servers/magic.png;
             };
           }
         ];
