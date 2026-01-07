@@ -7,7 +7,7 @@
 let
   mcCfg = config.thm.services.minecraft;
   ephemeralServers = lib.filterAttrs (_: cfg: cfg.enable && !cfg.alwaysOn) mcCfg.servers;
-  useEphemeral = mcCfg.enable && ephemeralServers != [ ];
+  useEphemeral = mcCfg.enable && ephemeralServers != { };
 in
 {
   config = lib.mkIf useEphemeral {
