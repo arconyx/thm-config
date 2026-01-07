@@ -13,7 +13,7 @@ let
 in
 {
   thm.services.minecraft.servers.magic = {
-    enable = true;
+    enable = false;
     package = pkgs.fabricServers.${serverVersion}.override {
       loaderVersion = fabricVersion;
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;

@@ -120,7 +120,7 @@
             fallback = {
               motd = ''
                 §cMagic server is offline.
-                §eTry necromancy!
+                §eWe may return later.
               '';
               version.name = "1.20.1 (modded)";
               favicon = ./servers/magic.png;
