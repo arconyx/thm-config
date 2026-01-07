@@ -94,16 +94,6 @@ hash = "76a12a836d4c7f0f943a1e391dd2d7b5c4673caa497fff16593d49449376b117"
 metafile = true
 
 [[files]]
-file = "mods/forge-config-api-port.pw.toml"
-hash = "b22f1d052eee2810fda73d850dd6f425a1214965e03a5a9dada421abfe74603b"
-metafile = true
-
-[[files]]
-file = "mods/leaves-be-gone.pw.toml"
-hash = "225c4d26ae5d2345591ce23340cdaf9009a46a1fc46a7cb054795cd8403efe56"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "88a36b21d538d44aca7dd0a7e5ad8c09b1b263be3f4381e3bb22bc9f94ee7290"
 metafile = true
@@ -121,11 +111,6 @@ metafile = true
 [[files]]
 file = "mods/noisiumforked.pw.toml"
 hash = "c1906aafc5af2f95945d31f840263f3490efe781461fbcee33df3f3a68c431b3"
-metafile = true
-
-[[files]]
-file = "mods/puzzles-lib.pw.toml"
-hash = "f3e9b0ac5a63f905fcf7923e71556e4ee435b858d60f05219e9ea4fcde45694a"
 metafile = true
 
 [[files]]
