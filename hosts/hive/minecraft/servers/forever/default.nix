@@ -17,7 +17,7 @@ in
     port = 25567;
     alwaysOn = true;
     settings = {
-      gamemode = "creative";
+      gamemode = "survival";
       difficulty = "hard";
       motd = "The world is born anew";
       distance = {
