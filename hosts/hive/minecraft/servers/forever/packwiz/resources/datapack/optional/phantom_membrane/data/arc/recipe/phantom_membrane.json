@@ -2,12 +2,8 @@
     "type": "minecraft:crafting_shapeless",
     "category": "misc",
     "ingredients": [
-        {
-            "item": "minecraft:slime_ball"
-        },
-        {
-            "item": "minecraft:ghast_tear"
-        }
+        "minecraft:slime_ball",
+        "minecraft:ghast_tear"
     ],
     "result": {
         "id": "minecraft:phantom_membrane",

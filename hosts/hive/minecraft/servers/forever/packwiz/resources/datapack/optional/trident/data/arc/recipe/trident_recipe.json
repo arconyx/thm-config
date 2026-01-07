@@ -6,12 +6,8 @@
         " i "
     ],
     "key": {
-        "#": {
-            "item": "minecraft:diamond"
-        },
-        "i": {
-            "item": "minecraft:iron_ingot"
-        }
+        "#": "minecraft:diamond",
+        "i": "minecraft:iron_ingot"
     },
     "result": {
         "id": "minecraft:trident",

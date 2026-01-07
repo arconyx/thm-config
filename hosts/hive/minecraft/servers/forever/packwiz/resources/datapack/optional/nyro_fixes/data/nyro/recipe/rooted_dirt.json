@@ -1,10 +1,13 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-      {"item": "minecraft:dirt"},
-      [{"item": "minecraft:hanging_roots"}, {"item": "minecraft:mangrove_roots"}]
-    ],
-    "result": {
-      "id": "minecraft:rooted_dirt"
-    }
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:dirt",
+    [
+      "minecraft:hanging_roots",
+      "minecraft:mangrove_roots"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:rooted_dirt"
   }
+}

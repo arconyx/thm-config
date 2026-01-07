@@ -94,6 +94,16 @@ hash = "76a12a836d4c7f0f943a1e391dd2d7b5c4673caa497fff16593d49449376b117"
 metafile = true
 
 [[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "b22f1d052eee2810fda73d850dd6f425a1214965e03a5a9dada421abfe74603b"
+metafile = true
+
+[[files]]
+file = "mods/leaves-be-gone.pw.toml"
+hash = "225c4d26ae5d2345591ce23340cdaf9009a46a1fc46a7cb054795cd8403efe56"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "88a36b21d538d44aca7dd0a7e5ad8c09b1b263be3f4381e3bb22bc9f94ee7290"
 metafile = true
@@ -111,6 +121,11 @@ metafile = true
 [[files]]
 file = "mods/noisiumforked.pw.toml"
 hash = "c1906aafc5af2f95945d31f840263f3490efe781461fbcee33df3f3a68c431b3"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "f3e9b0ac5a63f905fcf7923e71556e4ee435b858d60f05219e9ea4fcde45694a"
 metafile = true
 
 [[files]]
@@ -139,11 +154,11 @@ hash = "89f65f4f05bad6285aee05f2af9c3cde52cbc0c40a6b59d001d18900d685cf41"
 
 [[files]]
 file = "resources/datapack/optional/amethyst/data/arc/recipe/amethyst_shards.json"
-hash = "aa05f0867725ed84bbb5634789dc346165396f1c70d004824a388095b78ff1a7"
+hash = "fd09dd24bb56795c4d2cc7b9e049cec83bec0ac39daf426e76e2f8c6cba6ddfc"
 
 [[files]]
 file = "resources/datapack/optional/amethyst/pack.mcmeta"
-hash = "fa64b2d7a8a1eaaf669c02b24fe488d84558e3db75c2fd3422d56f97e58e5777"
+hash = "21041f8392ec9a8fce2089a6f7ca8eb1a69238f1f72f1b4cd2776ba66e649e32"
 
 [[files]]
 file = "resources/datapack/optional/double_shulker_shells_v1-3-15/data/double_shulker_shells/loot_table/entities/shulker.json"
@@ -1999,19 +2014,19 @@ hash = "3872e5b9fc0f34131faf74f8257e60e1dc9c2c805d57282beffd0137beb29a65"
 
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/cobblestone.json"
-hash = "9243bb0f6a0e6b0a1b69cc6a02de7fd376e0bfa8b89435258e00ca728ffdfb5d"
+hash = "ec344f58dfb98ac75a3e7412bd0026ead95ce271aea0cf8e2bfcdff709f2dd61"
 
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/mangrove_log.json"
-hash = "bf85f30b2275c57cc878317836aa6f4abece457e354088a9befaadd29b58351c"
+hash = "69fc1e3d2d26dbfafa9d32440420cb13c42c0294cad55d7dfb3b46f4b6baa87d"
 
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/rooted_dirt.json"
-hash = "5ae8af8034773c65f6331b61b943c5071538c972a7853f4ef66914aca9edf20b"
+hash = "7ee09f1af647931c7495aeae667eb83dac1b5856b814e91fc792263332401f9f"
 
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/pack.mcmeta"
-hash = "b46c6ba2f646c20be61ab9c2084a7d3db2f3bf190d8b727bd76fc53a3d40e1cd"
+hash = "5b845913afc1faa66f0de58dc51ffd35707f6413f94f781aa465dfbafa82b5b4"
 
 [[files]]
 file = "resources/datapack/optional/phantom_membrane/data/arc/advancement/phantom_membrane.json"
@@ -2019,11 +2034,11 @@ hash = "f2337a1347e4666d486e84fa9b3c12bb23393e9139673cc00ad5e2da811380bd"
 
 [[files]]
 file = "resources/datapack/optional/phantom_membrane/data/arc/recipe/phantom_membrane.json"
-hash = "6a7109ad73cb8f25c6d2f099cec7c49aa04d408c785dcba90b1e7295960858e7"
+hash = "9536392ef60b052aa549a87e3799b7207ce69d7a735f533b3a930e6769e1a851"
 
 [[files]]
 file = "resources/datapack/optional/phantom_membrane/pack.mcmeta"
-hash = "fa64b2d7a8a1eaaf669c02b24fe488d84558e3db75c2fd3422d56f97e58e5777"
+hash = "21041f8392ec9a8fce2089a6f7ca8eb1a69238f1f72f1b4cd2776ba66e649e32"
 
 [[files]]
 file = "resources/datapack/optional/player_head_drops_v1-1-15/data/minecraft/loot_table/blocks/player_head.json"
@@ -2063,11 +2078,11 @@ hash = "9b4149a76c7e202a0a37956f528ff8a9595c55ab63e16a230b750994f1832f37"
 
 [[files]]
 file = "resources/datapack/optional/small_dripleaf/data/arc/recipe/dripleaf_recipe.json"
-hash = "b69f1839b237d73b0f2dc4c9a6adb5303af20632e60e6d4e4720b050dba40a4e"
+hash = "5005aecf18975cf95274ebdf017740a8064f64e9aafe0f730f8265412901043f"
 
 [[files]]
 file = "resources/datapack/optional/small_dripleaf/pack.mcmeta"
-hash = "183b44ba15f757e5f5da35fc36b1f41a3459ac9b1ac8bf8cc7dfc5c31cd6764c"
+hash = "63990f3c7914c648978895499b32d34e4d0e203aa3b8d38e36107d180b1170f1"
 
 [[files]]
 file = "resources/datapack/optional/smelt_flesh/data/arc/advancement/smelt_flesh.json"
@@ -2075,11 +2090,11 @@ hash = "50def667931532e12eb25bc7b5711ff694b9bae0ad48a0c50b9ff01cca4e81b1"
 
 [[files]]
 file = "resources/datapack/optional/smelt_flesh/data/arc/recipe/smelt_flesh.json"
-hash = "f7c68a0f0c9bf8e2c908b346315f386f872ddc88c4a09eb43a21f2f664678cf2"
+hash = "9b5044709229de08e1ec6d63aa4398b890cd1938638534b41296b3fd5b3b810a"
 
 [[files]]
 file = "resources/datapack/optional/smelt_flesh/pack.mcmeta"
-hash = "ca4c1b1c27ae2059ac9957fa97ddd8c6bb1236247dd4275b4ec119833082ce8a"
+hash = "06442df2f860ad2a8106e6d51cc97752bf7e39d349ddaa409e5b3d8dbadce9f3"
 
 [[files]]
 file = "resources/datapack/optional/trident/data/arc/advancement/trident.json"
@@ -2087,23 +2102,23 @@ hash = "e235422a9007b624a60b1d36cbbd8bcd745a11a932a73c1cceb6bf713cdb4351"
 
 [[files]]
 file = "resources/datapack/optional/trident/data/arc/recipe/trident_recipe.json"
-hash = "d21f3b181bc0a142e4e566fe502f8adfa2966891c72b5a9873c64135b3af4ccc"
+hash = "74b19927068eb28ef3ce8fd3e73db0af645cd79c0999771ca9c75997898ed065"
 
 [[files]]
 file = "resources/datapack/optional/trident/pack.mcmeta"
-hash = "e41a97df90a902396713f0070da80c987e24aab48a329a677e22aa500bb9baca"
+hash = "56dc9852d357edfc26ffabc6001ca2a792ffb3c8dfde03aef93c435825d4377a"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/dispenser.json"
-hash = "ef1722898e8ba0660c455d1e15ca9048eadd2f38deeb9dc9cdac3422f4949b1a"
+hash = "d2321b29e63ec288b1877cefd37af613ca2b1072f0988c0ff35e4b96bb9fb37e"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/dropper.json"
-hash = "56042355853b933cb57fcee58f5a34d47c6ba93b9e8357e3761dac561c6fad2a"
+hash = "5098163bfcd3bdb5d4800b9b29bbdddb438ef156a0adc0fb79f12b4acb093d70"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/lever.json"
-hash = "5897e5260ff8c94db6e845ab261b6817b4ffa31ceaf1d53a8de160f17ae470bf"
+hash = "1d3ec7cff00c5d38cf01a2bb5068175e5eae873f0c06169b010fe10b2a3109e2"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/tags/item/stone_crafting_materials.json"
@@ -2115,7 +2130,7 @@ hash = "465b833d72a5e8a25dc1646e0e0374da07940dbb1b82b22ebf29d9c12a4207ce"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/pack.mcmeta"
-hash = "8d2dc960220aae89e4c8143992514c7d3d056e0614d6bdb99241a194633f9fd3"
+hash = "7b94fe297421601b50cbe713b294288b0791c129402e9597b6bf322adb9bd858"
 
 [[files]]
 file = "resources/datapack/optional/wool2string/data/arc/advancement/string_from_wool.json"
