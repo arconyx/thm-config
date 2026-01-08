@@ -38,7 +38,6 @@ in
       config = "${modpack}/config";
       resources = "${modpack}/resources";
     };
-    backup = false;
   };
 
   # for Spark
