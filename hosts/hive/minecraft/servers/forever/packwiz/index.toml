@@ -2132,15 +2132,15 @@ hash = "56dc9852d357edfc26ffabc6001ca2a792ffb3c8dfde03aef93c435825d4377a"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/dispenser.json"
-hash = "d2321b29e63ec288b1877cefd37af613ca2b1072f0988c0ff35e4b96bb9fb37e"
+hash = "f4b71abd79e6f67e210fc3bf7ce0ff82cd426dde1d87e909520c101fca867aeb"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/dropper.json"
-hash = "5098163bfcd3bdb5d4800b9b29bbdddb438ef156a0adc0fb79f12b4acb093d70"
+hash = "0a32faeb4802b95ca3fba7c6ed9aa637063d6eb29e0e469d65f4b907e865c56a"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/recipe/lever.json"
-hash = "1d3ec7cff00c5d38cf01a2bb5068175e5eae873f0c06169b010fe10b2a3109e2"
+hash = "cf97ad842deb4d8b2f1783b0f76949cd0d9ae0b3c11305a5e10a0b872b8b251b"
 
 [[files]]
 file = "resources/datapack/optional/vanilla_overrides/data/minecraft/tags/item/stone_crafting_materials.json"
@@ -2160,7 +2160,7 @@ hash = "d2b64546a5a9433eeb8f6a72b7ba7b19ddb99d551764c37d2a4f811923cfe3e7"
 
 [[files]]
 file = "resources/datapack/optional/wool2string/data/arc/recipe/string_recipe.json"
-hash = "e353f8a975d3ae7e140a71c03d8a5839e36488d613c031ee002de92fd9ab3179"
+hash = "bfd9b0d5d2292c280323ca4bd7b3bbafce11a9ac8b3500a71c04cf37bfcafadf"
 
 [[files]]
 file = "resources/datapack/optional/wool2string/pack.mcmeta"
