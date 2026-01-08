@@ -1,1 +1,1 @@
-scoreboard objectives add deaths deathCount
+scoreboard objectives add deathDetector deathCount
