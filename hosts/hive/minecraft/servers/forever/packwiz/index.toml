@@ -33,10 +33,6 @@ file = "config/modernfix-mixins.properties"
 hash = "88e156ebea5860a21c27da03912948a7849f9dd0ba5c4ccc9c102f3c52208c81"
 
 [[files]]
-file = "config/moonrise.yml"
-hash = "6221a70da7c057a8a44ed67b4c347200dd2a0a8bf7e68a3d8ace8b7a9306aaf7"
-
-[[files]]
 file = "config/noisium.json"
 hash = "3b6acdbc5ce36d9a81fb2a889760b5eb9fd88683cb06e234eca92559ad151329"
 
@@ -51,6 +47,34 @@ hash = "23a8a187620045f58cafbe9d9c46f8c3aa6323a0f0a42b91bcda2fb39ac73794"
 [[files]]
 file = "config/structure_layout_optimizer.jsonc"
 hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
+
+[[files]]
+file = "config/universal-graves/config.json"
+hash = "e5de99ef8cf0b47ade7d9248385778d33bdecae381fc4ee246d2c54749c7d81a"
+
+[[files]]
+file = "config/universal-graves/example_models/corpse_player.json"
+hash = "f1f86bd740c9bde120cca8769e900005cf46f67cfb076b65b50c339f47deb69e"
+
+[[files]]
+file = "config/universal-graves/example_models/corpse_zombie.json"
+hash = "dc1ee62c77ef7831f52c1c9a44c5dff3e5ccaa4094d43438e9fdbe1f41a06a17"
+
+[[files]]
+file = "config/universal-graves/example_models/default.json"
+hash = "c0f6c5e52fcfe066b1b300e9c4c738feb87dc1397ce45e58b99b63cb25e07167"
+
+[[files]]
+file = "config/universal-graves/example_models/ender.json"
+hash = "87be637b2b08c7f97550362d66f1682ce475c4c29a470f96a44cdf86f6dc6c0e"
+
+[[files]]
+file = "config/universal-graves/example_models/player_head.json"
+hash = "c0f6c5e52fcfe066b1b300e9c4c738feb87dc1397ce45e58b99b63cb25e07167"
+
+[[files]]
+file = "config/universal-graves/example_models/soul.json"
+hash = "bd3c7cba512978e4d0f5632aed773b47d93e80e9243656fc092d6cc56ddc53e1"
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
@@ -123,6 +147,11 @@ hash = "c1906aafc5af2f95945d31f840263f3490efe781461fbcee33df3f3a68c431b3"
 metafile = true
 
 [[files]]
+file = "mods/polymer.pw.toml"
+hash = "b39ee5a28d5548d591e8f396d2407893affcc71470d7c058d3287039a960e55d"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-config.pw.toml"
 hash = "d92bfa71e44d6ea1eff1e95955f776db2a3855c02b2d45ba98ef9a53913df485"
 metafile = true
@@ -148,6 +177,11 @@ hash = "424ba6f67a9392eb474ead2ea4ce5e3b6cc4f9041a4d27e61ad60a1abb009a50"
 metafile = true
 
 [[files]]
+file = "mods/universal-graves.pw.toml"
+hash = "c1166e4664aa67501d4daafac5e69cb29094dd46942d35e64b4d5d8a0a54decd"
+metafile = true
+
+[[files]]
 file = "resources/datapack/optional/amethyst/data/arc/advancement/amethyst.json"
 hash = "89f65f4f05bad6285aee05f2af9c3cde52cbc0c40a6b59d001d18900d685cf41"
 
@@ -158,34 +192,6 @@ hash = "fd09dd24bb56795c4d2cc7b9e049cec83bec0ac39daf426e76e2f8c6cba6ddfc"
 [[files]]
 file = "resources/datapack/optional/amethyst/pack.mcmeta"
 hash = "21041f8392ec9a8fce2089a6f7ca8eb1a69238f1f72f1b4cd2776ba66e649e32"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/arc/function/init.mcfunction"
-hash = "d60c71199e992fe3b63c0d0159e8396d183ac0bd03989fe149350a88b1a362db"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/arc/function/last_death.mcfunction"
-hash = "ad32a124515292a1c3cb0fb051b0349e6cece9e597c0bf8b64a4698a70606579"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/arc/function/run_death_functions.mcfunction"
-hash = "91a6991486450ae80e0075a68aebb1fe9c83a10650dc037211e0559808d39440"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/arc/function/score_monitor.mcfunction"
-hash = "8b56438f486749fef675976a3cbc5b1a668761f4f66bd7bde89c1a4b70cc9b5f"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/minecraft/tags/function/load.json"
-hash = "11cefed2cac6e7fda3a6f8d862779436e7014c65a4f9e0d2ff49c04a0979c801"
-
-[[files]]
-file = "resources/datapack/optional/death_location/data/minecraft/tags/function/tick.json"
-hash = "4847b9d3e0b546d651fbd708d4cd7ee9175331f9cf9ddd77e47e1e58486f99f6"
-
-[[files]]
-file = "resources/datapack/optional/death_location/pack.mcmeta"
-hash = "31a2a388f59dc4f9847d1c6700dbe46277fccab7453f44f59609711bd6b812d9"
 
 [[files]]
 file = "resources/datapack/optional/double_shulker_shells_v1-3-15/data/double_shulker_shells/loot_table/entities/shulker.json"

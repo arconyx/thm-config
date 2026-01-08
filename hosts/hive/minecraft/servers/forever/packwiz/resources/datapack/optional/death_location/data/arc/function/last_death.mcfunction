@@ -1,1 +1,0 @@
-$tellraw @s {"text": "Died at $(pos) in $(dimension)", "color": "gray"}
