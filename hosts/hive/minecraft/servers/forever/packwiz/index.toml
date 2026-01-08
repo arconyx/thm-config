@@ -176,7 +176,7 @@ hash = "11cefed2cac6e7fda3a6f8d862779436e7014c65a4f9e0d2ff49c04a0979c801"
 
 [[files]]
 file = "resources/datapack/optional/death_location/data/minecraft/tags/function/tick.json"
-hash = "fe057f3564e1bcd389c9e727a58a0966b32e909c8405257eb9cb6c7f82c893c1"
+hash = "4847b9d3e0b546d651fbd708d4cd7ee9175331f9cf9ddd77e47e1e58486f99f6"
 
 [[files]]
 file = "resources/datapack/optional/death_location/pack.mcmeta"

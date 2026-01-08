@@ -1,6 +1,5 @@
 {
     "values": [
-        "arc:score_monitor",
-        "arc:update_counters"
+        "arc:score_monitor"
     ]
 }
