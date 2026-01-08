@@ -5,7 +5,7 @@
 let
   modpack = pkgs.fetchPackwizModpack {
     src = ./packwiz;
-    packHash = "sha256-T7rpb7pr7nhn4jT1ApbyyII0+U+dTsWDSYYap2QWUXk=";
+    packHash = "sha256-OMttdZbey4QLhGlLsiWDPagWK+X8yp5hm8nELq2NPLE=";
   };
 in
 {
@@ -40,4 +40,7 @@ in
     };
     backup = false;
   };
+
+  # for Spark
+  systemd.services.minecraft-server-forever.serviceConfig.CapabilityBoundingSet = [ "CAP_PERFMON" ];
 }

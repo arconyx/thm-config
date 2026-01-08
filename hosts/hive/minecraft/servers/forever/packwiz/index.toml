@@ -45,6 +45,10 @@ file = "config/resourceful-config-web.json"
 hash = "cf77cf1cb3809cebe552f1079dfeaca07cf409edc46f92df9686d7c8e843f9fc"
 
 [[files]]
+file = "config/spark/config.json"
+hash = "23a8a187620045f58cafbe9d9c46f8c3aa6323a0f0a42b91bcda2fb39ac73794"
+
+[[files]]
 file = "config/structure_layout_optimizer.jsonc"
 hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
@@ -126,6 +130,11 @@ metafile = true
 [[files]]
 file = "mods/simple-resource-loader.pw.toml"
 hash = "072d663edf6434788b126994b7901a654efb279c4b7f503bcad4938d6d6396a5"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "c073f13897a838e3c409e46b8a1d8cb510d6a6584dd815aeadaf4886f1779513"
 metafile = true
 
 [[files]]
