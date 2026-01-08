@@ -403,8 +403,9 @@
                 };
                 wantedBy = [ "restic-backups-backblaze.service" ];
                 after = [ "restic-backups-backblaze.service" ];
-                wants = persistentServers;
-                before = persistentServers;
+                # Tried to use `wants+before` here but it silently failed to trigger server launch
+                onSuccess = persistentServers;
+                onFailure = persistentServers;
               };
           }
           (lib.concatMapAttrs (name: cfg: {
