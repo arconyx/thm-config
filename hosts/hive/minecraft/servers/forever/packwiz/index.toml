@@ -146,6 +146,34 @@ file = "resources/datapack/optional/amethyst/pack.mcmeta"
 hash = "21041f8392ec9a8fce2089a6f7ca8eb1a69238f1f72f1b4cd2776ba66e649e32"
 
 [[files]]
+file = "resources/datapack/optional/death_location/data/arc/function/init.mcfunction"
+hash = "1d25371eda9f06d8137cf98fb8087995f192c3c6536d2c3e657aa8fe151b433d"
+
+[[files]]
+file = "resources/datapack/optional/death_location/data/arc/function/last_death.mcfunction"
+hash = "ad32a124515292a1c3cb0fb051b0349e6cece9e597c0bf8b64a4698a70606579"
+
+[[files]]
+file = "resources/datapack/optional/death_location/data/arc/function/run_death_functions.mcfunction"
+hash = "7b854baad1403fd93b4f19394f2db6ffd96ecbf376c1eac67fc1c5982895c7d1"
+
+[[files]]
+file = "resources/datapack/optional/death_location/data/arc/function/score_monitor.mcfunction"
+hash = "36a8e831fc1ed2dec56aca08691897a8732252f155889e59c4f0aeb03b401149"
+
+[[files]]
+file = "resources/datapack/optional/death_location/data/minecraft/tags/function/load.json"
+hash = "9b7aca7cf31543bc63199f986f14ce8520903c264fd89213686eb5025fa86046"
+
+[[files]]
+file = "resources/datapack/optional/death_location/data/minecraft/tags/function/tick.json"
+hash = "0d9a2e607de4a87f06dc9e52413c45083fbe838df88358c6c28aa8cf77aa3ddd"
+
+[[files]]
+file = "resources/datapack/optional/death_location/pack.mcmeta"
+hash = "31a2a388f59dc4f9847d1c6700dbe46277fccab7453f44f59609711bd6b812d9"
+
+[[files]]
 file = "resources/datapack/optional/double_shulker_shells_v1-3-15/data/double_shulker_shells/loot_table/entities/shulker.json"
 hash = "1dc33e184696fe279a6da24b06ed9858b264f818df6386984a4c1efc7e5f6d7e"
 
