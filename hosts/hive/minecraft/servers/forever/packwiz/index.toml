@@ -2038,6 +2038,10 @@ file = "resources/datapack/optional/nyro_fixes/data/nyro/advancement/cobblestone
 hash = "cb46877cdc1e43c098a84fe45131c02d30043d6087ac535d192242fdb26be891"
 
 [[files]]
+file = "resources/datapack/optional/nyro_fixes/data/nyro/advancement/deepslate.json"
+hash = "a29b1f934873539d4cffa7298505f60c404fef4a8b0241cd06631faf09bdc7dc"
+
+[[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/advancement/mangrove_log.json"
 hash = "8c390544812d8c6c1eb4647be9319f4a5a33ebb6bf601565a5be4b17890e53d2"
 
@@ -2048,6 +2052,10 @@ hash = "3872e5b9fc0f34131faf74f8257e60e1dc9c2c805d57282beffd0137beb29a65"
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/cobblestone.json"
 hash = "ec344f58dfb98ac75a3e7412bd0026ead95ce271aea0cf8e2bfcdff709f2dd61"
+
+[[files]]
+file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/deepslate.json"
+hash = "900d0db7cf9b5d3b44e66bd820b401ced59e337ac9f2e2bb77632881aa4e1209"
 
 [[files]]
 file = "resources/datapack/optional/nyro_fixes/data/nyro/recipe/mangrove_log.json"
