@@ -37,7 +37,11 @@ in
     files = {
       config = "${modpack}/config";
       resources = "${modpack}/resources";
-      squaremap = "${modpack}/squaremap";
+      # reference files instead of dir
+      # because squaremap writes map data to the squaremap dir
+      # and we don't want to overwrite it
+      "squaremap/config.yml" = "${modpack}/squaremap/config.yml";
+      "squaremap/advanced.yml" = "${modpack}/squaremap/advanced.yml";
     };
   };
 
