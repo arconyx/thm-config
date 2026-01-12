@@ -39,7 +39,7 @@
       }
 
       redir /forever/map /forever/map/
-      handle /forever/map/ {
+      handle_path /forever/map/* {
         root * /srv/minecraft/forever/squaremap/web/
         file_server
       }
