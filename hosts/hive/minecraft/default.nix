@@ -38,6 +38,12 @@
         reverse_proxy :${builtins.toString config.services.webhook.port}
       }
 
+      redir /forever/map /forever/map/
+      handle /forever/map/ {
+        root * /srv/minecraft/forever/squaremap/web/
+        file_server
+      }
+
       # this handle matches all requests so anything else
       # needs to be in a handle or handle_path block of their own
       handle {
@@ -49,6 +55,8 @@
       }
     '';
   };
+  # so caddy can see the webmap files
+  systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "minecraft" ];
 
   # used for hive.thehivemind.gay
   services.cloudflared = {

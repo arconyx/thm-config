@@ -5,7 +5,7 @@
 let
   modpack = pkgs.fetchPackwizModpack {
     src = ./packwiz;
-    packHash = "sha256-blUz70JAaojQBYvDteTWW58ksRi6LE7DJTpj3SKiQFk=";
+    packHash = "sha256-pHx0Wb/f1OtWviGD+aY+yHcvOIu+f8uT1TZ7VonqSZw=";
   };
 in
 {
@@ -37,6 +37,7 @@ in
     files = {
       config = "${modpack}/config";
       resources = "${modpack}/resources";
+      squaremap = "${modpack}/squaremap";
     };
   };
 

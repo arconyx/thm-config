@@ -1,0 +1,13 @@
+name = "Squaremap"
+filename = "squaremap-fabric-mc1.21.11-1.3.12.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/PFb7ZqK6/versions/BW8lMXBi/squaremap-fabric-mc1.21.11-1.3.12.jar"
+hash-format = "sha512"
+hash = "f62eb791a3f5812eb174565d318f2e6925353f846ef8ac56b4e595f481494e0c281f26b9e9fcfdefa855093c96b735b12f67ee17c07c2477aa7a3439238670d9"
+
+[update]
+[update.modrinth]
+mod-id = "PFb7ZqK6"
+version = "BW8lMXBi"

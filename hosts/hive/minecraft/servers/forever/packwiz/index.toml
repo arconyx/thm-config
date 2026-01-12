@@ -172,6 +172,11 @@ hash = "c073f13897a838e3c409e46b8a1d8cb510d6a6584dd815aeadaf4886f1779513"
 metafile = true
 
 [[files]]
+file = "mods/squaremap.pw.toml"
+hash = "c6993c6cccc8afb4d7161d9f739e80ff6692374a3ce72be36062a8bf7228724a"
+metafile = true
+
+[[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
 hash = "424ba6f67a9392eb474ead2ea4ce5e3b6cc4f9041a4d27e61ad60a1abb009a50"
 metafile = true
@@ -2184,3 +2189,11 @@ hash = "bfd9b0d5d2292c280323ca4bd7b3bbafce11a9ac8b3500a71c04cf37bfcafadf"
 [[files]]
 file = "resources/datapack/optional/wool2string/pack.mcmeta"
 hash = "a87418be1a5611c62edf77b7c7a9890783c02ca248cd2c0ae01572c12b60e97f"
+
+[[files]]
+file = "squaremap/advanced.yml"
+hash = "95e1394fd49041c539706416e054b88b886ab539edb8b2fb7038e018cd8b887e"
+
+[[files]]
+file = "squaremap/config.yml"
+hash = "456f66abdb6177d0d367a05a1e27494159fd520c2e99e0ee1139f8b0f0a278c0"
