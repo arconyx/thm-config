@@ -258,6 +258,7 @@
   config =
     let
       globalCfg = config.thm.services.minecraft;
+      baseDir = "/srv/minecraft";
     in
     lib.mkIf globalCfg.enable (
       let
@@ -302,7 +303,7 @@
           enable = true;
           eula = true;
           openFirewall = false;
-          dataDir = "/srv/minecraft";
+          dataDir = baseDir;
           environmentFile = globalCfg.environmentFile;
           managementSystem = {
             tmux.enable = false;
@@ -478,16 +479,31 @@
 
         environment.systemPackages = [ (pkgs.callPackage ./nbted.nix { }) ];
 
-        arcworks.services.backups.global.exclude = # Distant horizons files can be regenerated
-        [
-          "DistantHorizons.sqlite"
-          "DistantHorizons.sqlite-shm"
-          "DistantHorizons.sqlite-wal"
-          "${config.services.minecraft-servers.dataDir}/backup"
-        ]
-        ++
-          # if backup is diabled for a server exclude it from the backup paths
-          (lib.mapAttrsToList (name: cfg: data_dir name) (lib.filterAttrs (_: cfg: !cfg.backup) servers));
+        arcworks.services.backups.global = {
+          exclude = [
+            # Distant horizons files can be regenerated
+            "DistantHorizons.sqlite"
+            "DistantHorizons.sqlite-shm"
+            "DistantHorizons.sqlite-wal"
+            # This is the local backups
+            "${config.services.minecraft-servers.dataDir}/backup"
+            # fabric runtime stuff
+            "${baseDir}/*/.fabric"
+            # these are maintained by the nix config
+            "${baseDir}/*/config"
+            "${baseDir}/*/mods"
+            # other stuff we don't care to backup
+            "${baseDir}/*/cache"
+            "${baseDir}/*/crash-reports"
+            "${baseDir}/*/libraries"
+            # map can be regenerated if needed
+            "${baseDir}/*/squaremap"
+          ]
+          ++
+            # if backup is diabled for a server exclude it from the backup paths
+            (lib.mapAttrsToList (name: cfg: data_dir name) (lib.filterAttrs (_: cfg: !cfg.backup) servers));
+          paths = [ baseDir ];
+        };
       }
     );
 }
