@@ -463,9 +463,23 @@
           "minecraft-local-backup-${name}" = lib.mkIf cfg.backup {
             enable = true;
             description = "Run local backup of Minecraft server regularly";
-            wantedBy = [ "timers.target" ];
+            wantedBy = [ cfg.serviceName ];
+            # stop the timer when the server stops
+            # no point copying save files from a server that isn't changing
+            # this also restarts the timer if the service restarts
+            # which could lead to excessive backups but oh well
+            partOf = [ cfg.serviceName ];
             timerConfig = {
-              OnCalendar = "00/4:00";
+              # If a timer configured with OnBootSec= or OnStartupSec= is already in the past when the timer unit is activated,
+              # it will immediately elapse and the configured unit is started. This is not the case
+              # for timers defined in the other directives.
+              # - man systemd.timer
+              # Run backup 2 hours after the server starts
+              # and every 4 hours thereafter
+              # From the man docs above we know OnUnitInactiveSec won't trigger
+              # the moment the timer starts if it's been move than 4 hours
+              OnActiveSet = "2h";
+              OnUnitInactiveSec = "4hr";
               RandomizedDelaySec = "30min";
               Unit = "minecraft-local-backup-${name}.service";
             };
