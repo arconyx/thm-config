@@ -50,7 +50,7 @@ hash = "5a9058652bc0b88b8810e0b94eba0e1a90cbff2472845c53a7e67442682a1579"
 
 [[files]]
 file = "config/universal-graves/config.json"
-hash = "e5de99ef8cf0b47ade7d9248385778d33bdecae381fc4ee246d2c54749c7d81a"
+hash = "26be63ed27707002564c0e21872ef329a8a6cf2ab902ccc685614361ca56ad49"
 
 [[files]]
 file = "config/universal-graves/example_models/corpse_player.json"
