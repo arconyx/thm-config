@@ -259,6 +259,70 @@ file = "resources/datapack/optional/ender_chest_always_drops_v1-0-7/pack.png"
 hash = "0924a0764854da67fce668c8ec382af89c0d1c6e0ebecdd45b5ccb994bc9a8e2"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/curse_of_greed.json"
+hash = "370be06dcf4ad522e793690fda7c240e28c61264fc52d0f96aab878d852fff5b"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/event/banner_competition_jan_2025/participant.json"
+hash = "5faf09a6bc4e6f02b71b97dd5b5e8e0e32800318344998aa9916312629b422b2"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/event/banner_competition_jan_2025/winner.json"
+hash = "d3102d57762ef132588b6f8124e1f7443b122a7d04018b8239cd9511a3956c5f"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/mint_access.json"
+hash = "a1956b8ff3936066827520c0c62381c5d68ed74cbd8b6917a1a29fbf1c47d7f1"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/root.json"
+hash = "b633a13a1a6f49d762879d80618998f30346f6a64a3c72f3df9c374ed56ec314"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/enchantment/curse_of_greed.json"
+hash = "fd577d701b23d13b5c5c54ae460e41c7e6c4a8ae125df9848d96d303c8613055"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/init.mcfunction"
+hash = "f5badc03ac8ce55730bac32b2626743ac45f97ff5e133a4d2de175eae417309c"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/puck_say.mcfunction"
+hash = "e8f5dccc31f925db6dab4b8dfc2949609a4254cab17e9cba5a66963c85cecf42"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/scan_players.mcfunction"
+hash = "bc6d2811750c2280a11d22c68bd39a3b1f7b41eee66af4b92d46e79a8a21d3eb"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/scan_slots.mcfunction"
+hash = "8514e4c49530127e9959557cad599c60227c82e741bebac04c4d983cc1ac0159"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/item_modifier/tatter_charm.json"
+hash = "562cd3cfedd73222d2a8df1a3dcdbe3a459955fd3615d5db3c6c5dda50bc70c1"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/predicate/trigger_curse_of_greed.json"
+hash = "8187d737b28fdce5b77e93dbad6bcca931aba0fb601fff78dd1a61868ce103f6"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/minecraft/tags/enchantment/curse.json"
+hash = "68f02d08f7b8f3ce1425b215176c4fe3210b538c3ed0470b80c4cc0a385d7fa9"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/minecraft/tags/function/load.json"
+hash = "b361c8848355c9358e254cff2d9a31de52bff577d78c340dc193e558235d3743"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/minecraft/tags/function/tick.json"
+hash = "08d7d131b37f09e70086328083aa52645354a11c3fc2276b20ca78ce1992ee53"
+
+[[files]]
+file = "resources/datapack/optional/forever/pack.mcmeta"
+hash = "bf4eafa641ec1774bda24e2bf35b02f19e8ec8072f9901b1ab32f85fc35f6a58"
+
+[[files]]
 file = "resources/datapack/optional/more_mob_heads_v2-18-0/data/double_shulker_shells/tags/item/shulker_shell.json"
 hash = "8138e5e9bb95f27b029fa5e119d99c2e9a6b7f44c8a07faada29f295b76297d3"
 
