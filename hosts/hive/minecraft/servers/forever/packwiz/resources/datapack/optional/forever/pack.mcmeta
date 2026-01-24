@@ -1,0 +1,8 @@
+{
+	"pack": {
+		"pack_format": 94,
+		"description": "Custom content for the forever server",
+		"min_format": [94, 1],
+		"max_format": [94, 1]
+	}
+}
