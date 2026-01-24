@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "components": {
+                "minecraft:banner_patterns": [
+                    {
+                        "color": "green",
+                        "pattern": "minecraft:gradient"
+                    },
+                    {
+                        "color": "green",
+                        "pattern": "minecraft:border"
+                    },
+                    {
+                        "color": "black",
+                        "pattern": "minecraft:border"
+                    },
+                    {
+                        "color": "lime",
+                        "pattern": "minecraft:rhombus"
+                    },
+                    {
+                        "color": "lime",
+                        "pattern": "minecraft:flower"
+                    },
+                    {
+                        "color": "black",
+                        "pattern": "minecraft:flower"
+                    }
+                ]
+            },
+            "count": 1,
+            "id": "minecraft:black_banner"
+        },
+        "title": "Imperial Artist in Residence",
+        "description": "You won the competition to design the Imperial Banner",
+        "frame": "challenge",
+        "hidden": true
+    },
+    "parent": "forever:event/banner_competition_jan_2025/participant",
+    "criteria": {
+        "by_grant": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

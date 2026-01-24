@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:purple_banner"
+        },
+        "title": "Banner Artist",
+        "description": "Participate in the competition to design the Imperial Banner",
+        "frame": "challenge",
+        "hidden": false
+    },
+    "parent": "forever:root",
+    "criteria": {
+        "by_grant": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

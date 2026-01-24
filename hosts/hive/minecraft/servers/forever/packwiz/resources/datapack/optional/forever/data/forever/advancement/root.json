@@ -9,36 +9,7 @@
         "background": "minecraft:gui/advancements/backgrounds/stone",
         "description": "Everywhere the light touches - and everywhere it hasn't gotten to yet",
         "icon": {
-            "components": {
-                "minecraft:banner_patterns": [
-                    {
-                        "color": "green",
-                        "pattern": "minecraft:gradient"
-                    },
-                    {
-                        "color": "green",
-                        "pattern": "minecraft:border"
-                    },
-                    {
-                        "color": "black",
-                        "pattern": "minecraft:border"
-                    },
-                    {
-                        "color": "lime",
-                        "pattern": "minecraft:rhombus"
-                    },
-                    {
-                        "color": "lime",
-                        "pattern": "minecraft:flower"
-                    },
-                    {
-                        "color": "black",
-                        "pattern": "minecraft:flower"
-                    }
-                ]
-            },
-            "count": 1,
-            "id": "minecraft:black_banner"
+            "id": "minecraft:nether_star"
         },
         "show_toast": false,
         "title": "Eternal Empire"
