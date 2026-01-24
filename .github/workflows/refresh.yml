@@ -30,7 +30,6 @@ jobs:
         run: |
             if [[ `git status --porcelain` ]]; then
               echo "Packwiz hash has changed. Packwiz must be refreshed and the nix FOD hash updated."
-              cd ../../../../../..
               echo "Calculating nix FOD hash"
               nix build .#forever-modpack
               echo "Please apply changes manually"
