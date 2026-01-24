@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:trial_key"
+        },
+        "title": "Minted Key",
+        "description": "You are trusted with full access to the Imperial Mint",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "parent": "forever:root",
+    "criteria": {
+        "original_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

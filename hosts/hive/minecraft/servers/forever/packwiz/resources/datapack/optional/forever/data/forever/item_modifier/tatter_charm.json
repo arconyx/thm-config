@@ -1,0 +1,43 @@
+{
+    "function": "minecraft:filtered",
+    "item_filter": {
+        "items": "minecraft:written_book",
+        "components": {
+            "minecraft:written_book_content": {
+                "pages": [
+                    {
+                        "raw": "This token has a value of 1 Imperial Charm, awarded for service to the Empire."
+                    }
+                ],
+                "title": {
+                    "raw": "Imperial Charm"
+                },
+                "author": "ArcOnyx",
+                "generation": 2,
+                "resolved": true
+            }
+        }
+    },
+    "on_pass": {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:written_book_content": {
+                "pages": [
+                    {
+                        "raw": {
+                            "text": "This book is worthless. The curse of greed is at work here.",
+                            "obfuscated": true
+                        }
+                    }
+                ],
+                "title": {
+                    "raw": "Counterfeit Imperial Charm"
+                },
+                "author": "Puck",
+                "generation": 3,
+                "resolved": true
+            }
+        }
+    },
+    "conditions": []
+}
