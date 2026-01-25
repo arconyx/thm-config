@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:written_book"
+        },
+        "title": "Charmed",
+        "description": "Acquire your first Imperial Charm"
+    },
+    "parent": "forever:root",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:written_book",
+                        "components": {
+                            "minecraft:written_book_content": {
+                                "pages": [
+                                    {
+                                        "raw": "This token has a value of 1 Imperial Charm, awarded for service to the Empire."
+                                    }
+                                ],
+                                "title": {
+                                    "raw": "Imperial Charm"
+                                },
+                                "author": "ArcOnyx",
+                                "generation": 2,
+                                "resolved": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

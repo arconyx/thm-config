@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:gold_block"
+        },
+        "title": "Excessive Wealth",
+        "description": "Acquire 8 stacks of charms. Time to go support local businesses.",
+        "hidden": true
+    },
+    "parent": "forever:charms/wealth/charm_64",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

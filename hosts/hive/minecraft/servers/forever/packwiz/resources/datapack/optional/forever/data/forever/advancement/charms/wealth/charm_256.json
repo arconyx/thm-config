@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:diamond_block"
+        },
+        "title": "Trust Fund Kid",
+        "description": "Acquire 16 stacks of charms. Don't you think this is getting a bit much?",
+        "hidden": true
+    },
+    "parent": "forever:charms/wealth/charm_128",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

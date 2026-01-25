@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:pink_shulker_box"
+        },
+        "title": "Offshore Accounts",
+        "description": "Acquire 27 stacks of charms. This is too much money.",
+        "hidden": true
+    },
+    "parent": "forever:charms/wealth/charm_256",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

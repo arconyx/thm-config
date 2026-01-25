@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:rotten_flesh"
+        },
+        "title": "Capitalist Scum",
+        "description": "Fill your inventory with charms. Somehow.",
+        "hidden": true
+    },
+    "parent": "forever:charms/wealth/charm_432",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

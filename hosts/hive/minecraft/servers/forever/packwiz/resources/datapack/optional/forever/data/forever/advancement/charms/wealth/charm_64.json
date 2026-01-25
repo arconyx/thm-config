@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:bookshelf"
+        },
+        "title": "The Coin Must Flow",
+        "description": "Acquire 4 stacks of charms",
+        "hidden": true
+    },
+    "parent": "forever:charms/wealth/charm_16",
+    "criteria": {
+        "has_charm": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
