@@ -259,6 +259,38 @@ file = "resources/datapack/optional/ender_chest_always_drops_v1-0-7/pack.png"
 hash = "0924a0764854da67fce668c8ec382af89c0d1c6e0ebecdd45b5ccb994bc9a8e2"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_1.json"
+hash = "921c2d175b91f53c57b7b6f7605fdd0c7ddb642aaa1acc9775495eed4fefbbf9"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_128.json"
+hash = "86fccbebc94f57ffc93622ae03b2b659e608f76f632a0bcc289e24ad4d74fe3c"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_16.json"
+hash = "3b06c0dd57fd6a4e1e12fcbb0bcaf09aeaec04b2befd8b57a57466ee1061d018"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_256.json"
+hash = "fc4a3647db408d0736f7c78d620dde642a6887eb59e8a5d87166129e16d3a9c2"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_432.json"
+hash = "07508251dff0c2def041023e3c9825788ffdae4a23dbb932bcb4cf5fb5fe3e5e"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_592.json"
+hash = "9a7679b912bb37691cdc5025559270227304c2028b249e439314b26f6e25d100"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_64.json"
+hash = "6e96227314c8e8777b878852d7a32e9ce3652f0543efab671aba4e2091c21761"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_monitor.json"
+hash = "343e5866ae748bcbe61f1a62e51468e8e15a8cb5ebc7b0db764ab9ff504af262"
+
+[[files]]
 file = "resources/datapack/optional/forever/data/forever/advancement/curse_of_greed.json"
 hash = "370be06dcf4ad522e793690fda7c240e28c61264fc52d0f96aab878d852fff5b"
 
@@ -280,7 +312,15 @@ hash = "b633a13a1a6f49d762879d80618998f30346f6a64a3c72f3df9c374ed56ec314"
 
 [[files]]
 file = "resources/datapack/optional/forever/data/forever/enchantment/curse_of_greed.json"
-hash = "fd577d701b23d13b5c5c54ae460e41c7e6c4a8ae125df9848d96d303c8613055"
+hash = "c3d1ad18ef079dc177061b85d9625c4e6a063d4bfe9fc7b6f47733fce22f2b73"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/advancement_helpers/charms/wealth/count_charms.mcfunction"
+hash = "35c9b25cb008b5fb5efa88c3142e594478dade4bbd9545a726c23100adb1d095"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/advancement_helpers/init.mcfunction"
+hash = "f3c5c2e436b312628493ba3891890d0db13f036a5ac4935101fdf14827350cbc"
 
 [[files]]
 file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/init.mcfunction"
@@ -307,12 +347,8 @@ file = "resources/datapack/optional/forever/data/forever/predicate/trigger_curse
 hash = "8187d737b28fdce5b77e93dbad6bcca931aba0fb601fff78dd1a61868ce103f6"
 
 [[files]]
-file = "resources/datapack/optional/forever/data/minecraft/tags/enchantment/curse.json"
-hash = "68f02d08f7b8f3ce1425b215176c4fe3210b538c3ed0470b80c4cc0a385d7fa9"
-
-[[files]]
 file = "resources/datapack/optional/forever/data/minecraft/tags/function/load.json"
-hash = "b361c8848355c9358e254cff2d9a31de52bff577d78c340dc193e558235d3743"
+hash = "6a7c754dc35e12d3927b53dda477a40ca254eb4a640fe7b74709ade401aeff92"
 
 [[files]]
 file = "resources/datapack/optional/forever/data/minecraft/tags/function/tick.json"
