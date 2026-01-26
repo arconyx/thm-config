@@ -1,0 +1,1 @@
+execute as @e[type=item,distance=..4] if items entity @s contents minecraft:written_book[minecraft:written_book_content={"pages": [{"raw": "This token has a value of 1 Imperial Charm, awarded for service to the Empire."}],"title": {"raw": "Imperial Charm"},"author": "ArcOnyx","generation": 2,"resolved": true}] run function forever:blessing_well/as_book

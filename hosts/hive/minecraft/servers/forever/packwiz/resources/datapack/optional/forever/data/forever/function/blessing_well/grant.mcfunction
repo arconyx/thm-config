@@ -1,4 +1,4 @@
-execute store result score @s randomBlessing run random roll 1..13
+execute store result score @s randomBlessing run random value 1..13
 
 effect clear @s
 
