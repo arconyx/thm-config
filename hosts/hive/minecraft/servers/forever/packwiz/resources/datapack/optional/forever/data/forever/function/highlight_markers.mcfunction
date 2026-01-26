@@ -1,0 +1,1 @@
+execute as @a if score @s showMarkers matches 1 at @s at @e[type=marker,distance=..30] run particle minecraft:dripping_lava ~ ~ ~ 0.1 0.1 0.1 1 1

@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "forever:curse_of_greed/scan_players"
+        "forever:curse_of_greed/scan_players",
+        "forever:highlight_markers"
     ]
 }

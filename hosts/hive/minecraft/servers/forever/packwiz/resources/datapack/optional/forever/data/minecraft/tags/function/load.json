@@ -3,6 +3,7 @@
     "values": [
         "forever:curse_of_greed/init",
         "forever:advancement_helpers/init",
-        "forever:blessing_well/init"
+        "forever:blessing_well/init",
+        "forever:init"
     ]
 }
