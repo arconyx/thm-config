@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                    "name": "ArcOnyx"
+                }
+            }
+        },
+        "title": "Regicide",
+        "description": "You have slain His High Imperialness :(\n(it wasn't very hard)\n\nNB: Murder of the Most Archest Emperor does not confer any power",
+        "hidden": true,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "kill": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player",
+                    "team": "arconyxTitle"
+                }
+            }
+        }
+    },
+    "parent": "forever:root",
+    "rewards": {
+        "function": "forever:kingslayer"
+    }
+}
