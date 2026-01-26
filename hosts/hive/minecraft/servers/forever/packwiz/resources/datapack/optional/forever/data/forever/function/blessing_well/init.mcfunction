@@ -1,0 +1,1 @@
+scoreboard objectives add randomBlessing dummy

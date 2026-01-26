@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "forever:curse_of_greed/init",
-        "forever:advancement_helpers/init"
+        "forever:advancement_helpers/init",
+        "forever:blessing_well/init"
     ]
 }
