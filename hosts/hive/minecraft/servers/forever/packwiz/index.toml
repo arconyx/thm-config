@@ -259,6 +259,10 @@ file = "resources/datapack/optional/ender_chest_always_drops_v1-0-7/pack.png"
 hash = "0924a0764854da67fce668c8ec382af89c0d1c6e0ebecdd45b5ccb994bc9a8e2"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/button.json"
+hash = "8f398c9f1f4af86cd6d112acb59a236e3a9010a0b7f95f99e134ec4acc1eba9e"
+
+[[files]]
 file = "resources/datapack/optional/forever/data/forever/advancement/charms/wealth/charm_1.json"
 hash = "921c2d175b91f53c57b7b6f7605fdd0c7ddb642aaa1acc9775495eed4fefbbf9"
 
@@ -303,6 +307,10 @@ file = "resources/datapack/optional/forever/data/forever/advancement/event/banne
 hash = "d3102d57762ef132588b6f8124e1f7443b122a7d04018b8239cd9511a3956c5f"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/advancement/kingslayer.json"
+hash = "1c2388b3c2e97dc32980a326f9f1848be48ca34bef306fb1983e046f2c2661c4"
+
+[[files]]
 file = "resources/datapack/optional/forever/data/forever/advancement/mint_access.json"
 hash = "a1956b8ff3936066827520c0c62381c5d68ed74cbd8b6917a1a29fbf1c47d7f1"
 
@@ -323,6 +331,26 @@ file = "resources/datapack/optional/forever/data/forever/function/advancement_he
 hash = "f3c5c2e436b312628493ba3891890d0db13f036a5ac4935101fdf14827350cbc"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/function/blessing_well/as_book.mcfunction"
+hash = "6ba2a8d2773f798a1b2b0a18ddae5a840ea6bd598bc1aad176dca3fbc2925731"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/blessing_well/global_scan.mcfunction"
+hash = "57b74a9daa4299ae9f37dffe1147b28d7d220c24b088eaea98b2f10c87cd2623"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/blessing_well/grant.mcfunction"
+hash = "ce26d7c69f740e91dd2887610952562263c11895c523637fb17ab910d9bbe557"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/blessing_well/init.mcfunction"
+hash = "34d0ccd733edf7f877d2803cdc44e18e908076c729bb1959be09d9ef51ce5d43"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/blessing_well/marker_scan.mcfunction"
+hash = "39c4184430fd079a3b7c8feeb0110dae1a8ebdc60ce0d966b6013cc472916cbe"
+
+[[files]]
 file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed/init.mcfunction"
 hash = "f5badc03ac8ce55730bac32b2626743ac45f97ff5e133a4d2de175eae417309c"
 
@@ -339,6 +367,18 @@ file = "resources/datapack/optional/forever/data/forever/function/curse_of_greed
 hash = "8514e4c49530127e9959557cad599c60227c82e741bebac04c4d983cc1ac0159"
 
 [[files]]
+file = "resources/datapack/optional/forever/data/forever/function/highlight_markers.mcfunction"
+hash = "34c1553e7414c88c3661122e3cb479e8a2bb9f70fe986e426aea8ee0cba2dafd"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/init.mcfunction"
+hash = "2e9d44f8d7daf73a01bd218dd9100da7b8ff1fa3872f99b129f1c6e4c1c4a81e"
+
+[[files]]
+file = "resources/datapack/optional/forever/data/forever/function/kingslayer.mcfunction"
+hash = "e4dda81ab0d05919c7af829cefae277bb995a7f4c0adc24ced375ea590a4f86b"
+
+[[files]]
 file = "resources/datapack/optional/forever/data/forever/item_modifier/tatter_charm.json"
 hash = "562cd3cfedd73222d2a8df1a3dcdbe3a459955fd3615d5db3c6c5dda50bc70c1"
 
@@ -348,11 +388,11 @@ hash = "8187d737b28fdce5b77e93dbad6bcca931aba0fb601fff78dd1a61868ce103f6"
 
 [[files]]
 file = "resources/datapack/optional/forever/data/minecraft/tags/function/load.json"
-hash = "6a7c754dc35e12d3927b53dda477a40ca254eb4a640fe7b74709ade401aeff92"
+hash = "62f782976695f29e8ea3b6bda9ce069a985016758f67828e4ab94866259b4a5b"
 
 [[files]]
 file = "resources/datapack/optional/forever/data/minecraft/tags/function/tick.json"
-hash = "08d7d131b37f09e70086328083aa52645354a11c3fc2276b20ca78ce1992ee53"
+hash = "82d0387ea354b90dc8d043ba91931606f0fb4d71eeb25e6b68f9c47bde3a80b2"
 
 [[files]]
 file = "resources/datapack/optional/forever/pack.mcmeta"
