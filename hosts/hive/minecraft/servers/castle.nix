@@ -6,7 +6,7 @@
 {
   thm.services.minecraft.servers.castle = {
     enable = false;
-    package = pkgs.vanillaServers.vanilla-1_21_11;
+    package = pkgs.fabricServers.fabric-1_21_11;
     port = 25568;
     settings = {
       gamemode = "creative";
@@ -21,6 +21,15 @@
       };
     };
     backup = false;
+    mods = {
+      "mods/amcdb-1.3.0.jar" = pkgs.fetchurl {
+        url = "https://cdn.modrinth.com/data/8X31FLYC/versions/AF4dKwqr/amcdb-1.3.0.jar";
+        hash = "sha512-0GsVprBJs1L5c+6xKMkkafZ2AxIwj9C0HbsR5/v5QIwhY7jXEoJoOyiau1SZjkHUFGrpvAwYOWFhUS4984N4fA==";
+      };
+    };
+    files = {
+      "config/amcdb.properties" = ./forever/packwiz/config/amcdb.properties;
+    };
     jvmOpts = [
       "-Xms8G"
       "-Xmx8G"
