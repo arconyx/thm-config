@@ -21,7 +21,7 @@
       };
     };
     backup = false;
-    mods = {
+    symlinks = {
       "mods/amcdb-1.3.0.jar" = pkgs.fetchurl {
         url = "https://cdn.modrinth.com/data/8X31FLYC/versions/AF4dKwqr/amcdb-1.3.0.jar";
         hash = "sha512-0GsVprBJs1L5c+6xKMkkafZ2AxIwj9C0HbsR5/v5QIwhY7jXEoJoOyiau1SZjkHUFGrpvAwYOWFhUS4984N4fA==";
