@@ -1,6 +1,7 @@
 { config, ... }:
 {
   imports = [
+    ./servers/castle.nix
     ./servers/magic.nix
     ./servers/forever
   ];
@@ -119,6 +120,19 @@
           servers = config.thm.services.minecraft.servers;
         in
         [
+          {
+            host = [
+              "castle.mc.thehivemind.gay"
+            ];
+            backend = "localhost:${toString servers.castle.port}";
+            fallback = {
+              motd = ''
+                §cCastle server is offline.
+                §eTry necromancy!
+              '';
+              version.name = "1.21.11";
+            };
+          }
           {
             host = [
               "magic.mc.thehivemind.gay"
