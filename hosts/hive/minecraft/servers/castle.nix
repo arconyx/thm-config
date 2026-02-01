@@ -5,7 +5,7 @@
 }:
 {
   thm.services.minecraft.servers.castle = {
-    enable = false;
+    enable = true;
     package = pkgs.fabricServers.fabric-1_21_11;
     port = 25568;
     settings = {
