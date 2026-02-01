@@ -45,7 +45,7 @@
 
     servers = lib.mkOption {
       default = { };
-      description = ''Servers managed with this module'';
+      description = "Servers managed with this module";
       type = lib.types.attrsOf (
         lib.types.submodule (
           { name, ... }:
@@ -203,7 +203,7 @@
                   example = {
                     region-file-compression = "lz4";
                   };
-                  description = ''Additional values added to server.properties'';
+                  description = "Additional values added to server.properties";
                 };
 
               };
