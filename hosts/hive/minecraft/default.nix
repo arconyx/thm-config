@@ -39,6 +39,11 @@
         reverse_proxy :${builtins.toString config.services.webhook.port}
       }
 
+      handle_path /share/* {
+        root /srv/share
+        file_server
+      }
+
       redir /forever/map /forever/map/
       handle_path /forever/map/* {
         root * /srv/minecraft/forever/squaremap/web/
