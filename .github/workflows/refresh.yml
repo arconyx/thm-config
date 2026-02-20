@@ -21,6 +21,14 @@ jobs:
       - name: Nix Quick Install
         uses: nixbuild/nix-quick-install-action@v34
 
+      - name: Restore and save Nix store
+        uses: nix-community/cache-nix-action@v7
+        with:
+            primary-key: nix-${{ runner.os }}-${{ hashFiles('**/flake.lock') }}-packwiz-${{ hashFiles('hosts/hive/minecraft/servers/forever/packwiz/pack.toml') }}
+            restore-prefixes-first-match: |
+              nix-${{ runner.os }}-${{ hashFiles('**/flake.lock') }}-packwiz-
+              nix-${{ runner.os }}-
+
       - name: Run packwiz refresh
         run: |
             cd hosts/hive/minecraft/servers/forever/packwiz

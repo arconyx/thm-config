@@ -22,7 +22,7 @@ jobs:
             - name: Restore and save Nix store
               uses: nix-community/cache-nix-action@v7
               with:
-                  primary-key: nix-${{ runner.os }}-${{ hashFiles('**/flake.lock') }}
+                  primary-key: nix-${{ runner.os }}-${{ hashFiles('**/flake.lock') }}-flake
                   restore-prefixes-first-match: nix-${{ runner.os }}-
 
             - name: Check
