@@ -141,7 +141,6 @@
           {
             host = [
               "magic.mc.thehivemind.gay"
-              "mc.thehivemind.gay"
             ];
             backend = "localhost:${toString servers.magic.port}";
             fallback = {

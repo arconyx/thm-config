@@ -15,7 +15,7 @@ in
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;
     };
     port = 25567;
-    alwaysOn = true;
+    alwaysOn = false;
     settings = {
       gamemode = "survival";
       difficulty = "hard";
