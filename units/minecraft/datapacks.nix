@@ -19,8 +19,7 @@ in
         name: cfg:
         let
           update-datapacks = pkgs.writeShellScript "start-datapack-update-from-webhook-${name}" ''
-              systemctl start ${mkServiceName name}.service
-            fi
+            systemctl start ${mkServiceName name}.service
           '';
         in
         {
