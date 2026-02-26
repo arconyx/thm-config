@@ -7,6 +7,7 @@
 {
   imports = [
     ./ephemeral.nix
+    ./datapacks.nix
     ./proxy.nix
   ];
 
@@ -242,6 +243,23 @@
                 '';
               };
 
+              importDatapacks = {
+                enable = lib.mkEnableOption " import datapacks from git";
+                repository = lib.mkOption {
+                  type = lib.types.singleLineStr;
+                  example = "https://example.com/repository.git";
+                  description = "Address of git repository";
+                };
+                directories = lib.mkOption {
+                  type = lib.types.listOf lib.types.singleLineStr;
+                  example = [
+                    "elseworlds"
+                    "qol"
+                  ];
+                  description = "List of top level paths to copy from the repository";
+                };
+              };
+
               serviceName = lib.mkOption {
                 type = lib.types.str;
                 default = "minecraft-server-${name}.service";
@@ -309,6 +327,15 @@
             tmux.enable = false;
             systemd-socket.enable = true;
           };
+        };
+
+        services.webhook = {
+          # notice we aren't enabling it here, just configuring
+          # this is because datapacks and ephemeral both need this config
+          # bind to loopback only
+          # we're not opening the firewall, but better safe
+          ip = "127.0.0.1";
+          verbose = true;
         };
 
         # Server module from https://github.com/Infinidoge/nix-minecraft
