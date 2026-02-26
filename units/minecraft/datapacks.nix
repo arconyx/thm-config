@@ -92,7 +92,7 @@ in
 
             cp --update=all "$BUILD_DIR/"*.zip "${data_dir name}/world/datapacks"
 
-            ${msg-discord "Datapacks updated from git repo. \`/reload\` required to apply changes."}
+            ${msg-discord "Datapacks updated from git repo. /reload required to apply changes."}
           '';
       };
     }) datapackServers);
