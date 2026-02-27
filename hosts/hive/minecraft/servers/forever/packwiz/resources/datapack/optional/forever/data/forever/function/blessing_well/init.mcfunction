@@ -1,2 +1,0 @@
-scoreboard objectives add randomBlessing dummy
-schedule function forever:blessing_well/global_scan 2s

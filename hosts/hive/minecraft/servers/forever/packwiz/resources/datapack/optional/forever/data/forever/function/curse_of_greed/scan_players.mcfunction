@@ -1,1 +1,0 @@
-execute as @a[predicate=forever:trigger_curse_of_greed] run function forever:curse_of_greed/scan_slots
