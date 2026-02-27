@@ -43,11 +43,6 @@ in
       "squaremap/config.yml" = "${modpack}/squaremap/config.yml";
       "squaremap/advanced.yml" = "${modpack}/squaremap/advanced.yml";
     };
-    importDatapacks = {
-      enable = true;
-      repository = "https://github.com/arconyx/mc-datapacks.git";
-      directories = [ "forever" ];
-    };
   };
 
   # for Spark

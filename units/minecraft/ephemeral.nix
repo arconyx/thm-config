@@ -18,6 +18,10 @@ in
       in
       {
         enable = true;
+        # bind to loopback only
+        # we're not opening the firewall, but better safe
+        ip = "127.0.0.1";
+        verbose = true;
         hooks = lib.concatMapAttrs (
           name: cfg:
           let
