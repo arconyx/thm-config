@@ -4,6 +4,8 @@
   imports = [
     ./../common.nix
 
+    ./../../home/ilphaonar.nix
+
     ./hardware-configuration.nix
     ./networking.nix
     ./minecraft
