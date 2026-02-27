@@ -8,6 +8,7 @@
 
   # allow easy interaction with world save
   users.users.arc.extraGroups = [ "minecraft" ];
+  users.users.ilphaonar.extraGroups = [ "minecraft" ];
 
   # Configure backups
   arcworks.services.backups.global = {
