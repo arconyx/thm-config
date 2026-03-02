@@ -3,6 +3,7 @@
 {
   # Enable networking
   networking.networkmanager.enable = lib.mkForce false;
+  networking.useNetworkd = true;
   systemd.network.enable = true;
   systemd.network.networks."10-wan" = {
     matchConfig.Name = "eno1";
