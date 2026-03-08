@@ -9,11 +9,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1771552978,
-        "narHash": "sha256-H7iaWS3QmGvb679a1+wv/GALzCqkg7oiL5AbKp2VLwc=",
+        "lastModified": 1772941438,
+        "narHash": "sha256-DQEW+T+VHsTIIZlr2f9rLeiWfBkLHSgYHV3pRYBH21s=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "3be35c7a0ab90a4bd495ed87cb394b78a73a4abe",
+        "rev": "bb6eb53bd4b85eab8892f87c9ddf1b3e7fade415",
         "type": "github"
       },
       "original": {
