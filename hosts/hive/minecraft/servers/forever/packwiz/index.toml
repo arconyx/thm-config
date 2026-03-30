@@ -78,112 +78,106 @@ hash = "bd3c7cba512978e4d0f5632aed773b47d93e80e9243656fc092d6cc56ddc53e1"
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
-hash = "fc8ffe66dc0c7eb55cf2ce38d1ae4bf1c4cdfbfdcda2636b1cd140c851e03cc5"
+hash = "319e33f0c095431cac722aec0c44649e7aeed9aa47e87426dc02b78ba1821585"
 metafile = true
 
 [[files]]
 file = "mods/amcdb.pw.toml"
-hash = "21ceb4ab833315e9a633516092c04d83217191a7541ad7fede38dd510d28b7f9"
+hash = "6bf822b9a50b6d4006bde311d1a22de9ab47a58da2c84e341851a9c9dfc8c4bb"
 metafile = true
 
 [[files]]
 file = "mods/armor-poser.pw.toml"
-hash = "e68b724497f2a9ea4cead44c579f9acb128a9d5bbf7c198716c77b1f1cbbbe5c"
+hash = "4da83b91a76fd1d8f00525a018603ddea7e99f9b0a0829c551ed59b38162ea5d"
 metafile = true
+
+[[files]]
+file = "mods/best-behaviour-1.2.0.jar"
+hash = "18f04c71f5ae93d6a4c820131baaf0a326ed941f9a771437655ff5e52eba1eb1"
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "ff260b35492778bdce59ffa064a59c6a9953ffd409eb40782af14b78a29a2cb8"
-metafile = true
-
-[[files]]
-file = "mods/chunky.pw.toml"
-hash = "eaa52d6ff1bcb539956d50626085d9185eca346fabcf6b3c176c53192b9958ec"
+hash = "b7b5d17a9d618a5819c2ae0b0d25f2ff1fde4ada6beb14d4cc5221162a1be0b6"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "72f3dbfcfbf16d8437d865b090c4338cf32de86f290e8e8dde5626cb301bb4c7"
+hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
 metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "c2a61b492dd0d7a156e15b7572adb40552b94c09658cc3c6d7faf99288d094c7"
+hash = "4d91155ad72a2cde07f84f595c0803dec37174b53c6c15291145ef480fc4d902"
 metafile = true
 
 [[files]]
 file = "mods/death-backup.pw.toml"
-hash = "6f5850283e6ef5c39c228d72e421e17dfe74082cfa2b501150783c99463406ef"
+hash = "fa61fe573622d163370c17d639aa780bbd6cea15c77d6b08f9c6637463291907"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "cf6edd71a012b437bca4bcac93c44d1109632db31b5f638d28b58fa77cf771b5"
+hash = "667420ac98bdf5f6f7e747b83f9407722586e0c15b635ad295bef55449498474"
 metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
-hash = "76a12a836d4c7f0f943a1e391dd2d7b5c4673caa497fff16593d49449376b117"
+hash = "069d81cab53c0141459ad4d70bcf3e10f17652f24cc62d3b4a0fc2cd2b700871"
 metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "88a36b21d538d44aca7dd0a7e5ad8c09b1b263be3f4381e3bb22bc9f94ee7290"
-metafile = true
-
-[[files]]
-file = "mods/mobexplosiongriefinggamerule.pw.toml"
-hash = "ab7264ef01098f63db5a3e073f22685b126c491cb3d4d11bf7444ae7ae3d5df5"
+hash = "18e0ba646659bc50a858729cfeff255a76c7702e5065ee56ce03e9553b430e67"
 metafile = true
 
 [[files]]
 file = "mods/modernfix-mvus.pw.toml"
-hash = "ec6cca86e9b3f9095b6b8fe66398618067cc23e5c273cfdb25dfb5263c7aeec6"
+hash = "dc12b3aba319df85cefde7e6fb0e89e59399fa304a2bbfacf812fb240c06380b"
 metafile = true
 
 [[files]]
 file = "mods/noisiumforked.pw.toml"
-hash = "c1906aafc5af2f95945d31f840263f3490efe781461fbcee33df3f3a68c431b3"
+hash = "2c08bbdf7dc74bb0c6775311ecca268dae129e4573a2102a651da48fa4fe311d"
 metafile = true
 
 [[files]]
 file = "mods/polymer.pw.toml"
-hash = "b39ee5a28d5548d591e8f396d2407893affcc71470d7c058d3287039a960e55d"
+hash = "45152945e04a655c09679711b669cf375c3fd80dd4758690404920335d3b7fda"
 metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
-hash = "d92bfa71e44d6ea1eff1e95955f776db2a3855c02b2d45ba98ef9a53913df485"
+hash = "d5a2925609b3dcf060253a1d75414e4c7747c9d5c206c5ff83a678f75b94ff5b"
 metafile = true
 
 [[files]]
 file = "mods/scalablelux.pw.toml"
-hash = "936e9028071f4e49ecd551aadab4c161f9a7143764b4cc89f8077296bd8645a6"
+hash = "645be5d20d755e83c986014b768abbf473d3bf31da5dcd197af63c8b200cc141"
 metafile = true
 
 [[files]]
 file = "mods/simple-resource-loader.pw.toml"
-hash = "072d663edf6434788b126994b7901a654efb279c4b7f503bcad4938d6d6396a5"
+hash = "f8f5a13a845c5c8bbaf4abbdee49dccccb37d988c0d36445fe4585af285bf1b7"
 metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
-hash = "c073f13897a838e3c409e46b8a1d8cb510d6a6584dd815aeadaf4886f1779513"
+hash = "fbe51395401ce68d9933a65fbcb4ed8cda82ac88d4afd79a5740116114d15949"
 metafile = true
 
 [[files]]
 file = "mods/squaremap.pw.toml"
-hash = "c6993c6cccc8afb4d7161d9f739e80ff6692374a3ce72be36062a8bf7228724a"
+hash = "fc2851bc6d9e38d8de19f1a802d25ea4d7a1be90fe1917365034af50cfb2a974"
 metafile = true
 
 [[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
-hash = "424ba6f67a9392eb474ead2ea4ce5e3b6cc4f9041a4d27e61ad60a1abb009a50"
+hash = "6801adb48ee85a21c7c4992625c34a751197382cb952dd25082d145a37de84fb"
 metafile = true
 
 [[files]]
 file = "mods/universal-graves.pw.toml"
-hash = "c1166e4664aa67501d4daafac5e69cb29094dd46942d35e64b4d5d8a0a54decd"
+hash = "a08743e4beed90ebe697e70cabe6d0eafd0a2f9c8bfa32c1677bf980f4f05bae"
 metafile = true
 
 [[files]]

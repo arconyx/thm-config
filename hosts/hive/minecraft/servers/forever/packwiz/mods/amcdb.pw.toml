@@ -1,13 +1,13 @@
 name = "AMCDB"
-filename = "amcdb-1.3.0.jar"
+filename = "amcdb-1.4.0.jar"
 side = "server"
 
 [download]
-url = "https://cdn.modrinth.com/data/8X31FLYC/versions/AF4dKwqr/amcdb-1.3.0.jar"
+url = "https://cdn.modrinth.com/data/8X31FLYC/versions/bVQ8aXfb/amcdb-1.4.0.jar"
 hash-format = "sha512"
-hash = "d06b15a6b049b352f973eeb128c92469f6760312308fd0b41dbb11e7fbf9408c2163b8d71282683b289abb54998e41d4146ae9bc0c18396161512e3df383787c"
+hash = "0b8257b87600c4a84318d82206fb6c59bb6f356fcc5f0fad95fff0708421f06bcb0c273ff3b7ed5c92d3ef4ca61836258167663677a27c9324079495409748d4"
 
 [update]
 [update.modrinth]
 mod-id = "8X31FLYC"
-version = "AF4dKwqr"
+version = "bVQ8aXfb"
