@@ -474,11 +474,11 @@
               # it will immediately elapse and the configured unit is started. This is not the case
               # for timers defined in the other directives.
               # - man systemd.timer
-              # Run backup 2 hours after the server starts
+              # Run backup 30 minutes after the server starts
               # and every 4 hours thereafter
               # From the man docs above we know OnUnitInactiveSec won't trigger
               # the moment the timer starts if it's been move than 4 hours
-              OnActiveSec = "2h";
+              OnActiveSec = "30min";
               OnUnitInactiveSec = "4hr";
               RandomizedDelaySec = "30min";
               Unit = "minecraft-local-backup-${name}.service";
