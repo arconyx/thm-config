@@ -478,7 +478,7 @@
               # and every 4 hours thereafter
               # From the man docs above we know OnUnitInactiveSec won't trigger
               # the moment the timer starts if it's been move than 4 hours
-              OnActiveSet = "2h";
+              OnActiveSec = "2h";
               OnUnitInactiveSec = "4hr";
               RandomizedDelaySec = "30min";
               Unit = "minecraft-local-backup-${name}.service";
