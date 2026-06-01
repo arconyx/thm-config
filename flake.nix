@@ -10,6 +10,7 @@
     core = {
       url = "github:arconyx/core/25.11";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.pre-commit-hooks.follows = "pre-commit-hooks";
     };
     nix-minecraft = {
       url = "github:Infinidoge/nix-minecraft";
