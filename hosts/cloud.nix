@@ -77,7 +77,6 @@ in
       size = 2 * 1024; # 2GB
     }
   ];
-  systemd.services.mkswap-var-swapfile.enableStrictShellChecks = false;
 
   nixpkgs.hostPlatform = {
     system = "x86_64-linux";
