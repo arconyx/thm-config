@@ -35,8 +35,4 @@
   services.resolved.enable = true;
 
   arcworks.network.tailnet.enable = true;
-  services.tailscale.extraSetFlags = [
-    # Needed to access tailscale serve routes prior to v1.94
-    "--accept-routes"
-  ];
 }
