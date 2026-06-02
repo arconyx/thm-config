@@ -48,7 +48,7 @@
               enable = true;
               settings.noLambdaArg = true;
             };
-            nixfmt-rfc-style.enable = true;
+            nixfmt.enable = true;
             shellcheck.enable = true;
             ripsecrets.enable = true;
           };
