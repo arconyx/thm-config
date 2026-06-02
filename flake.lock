@@ -11,16 +11,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1778209053,
-        "narHash": "sha256-yYpIJxSp8Litd+TwzqqgUsDujpYon6cyakFW3zolMdw=",
+        "lastModified": 1780192701,
+        "narHash": "sha256-WFYE/OLltyfNJHYfAH8FUQmxgrsm4vKO9KykfMrxvE8=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "7d8ad4147d98b411b76a4400c9d3a0f883dda3e8",
+        "rev": "a770bac677cfafc6d8d9c16439f6624a5d4fea24",
         "type": "github"
       },
       "original": {
         "owner": "arconyx",
-        "ref": "25.11",
+        "ref": "26.05",
         "repo": "core",
         "type": "github"
       }
@@ -104,16 +104,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1764536451,
-        "narHash": "sha256-BgtcUkBfItu9/yU14IgUaj4rYOanTOUZjUfBP20/ZB4=",
+        "lastModified": 1780361225,
+        "narHash": "sha256-wnV9ttf4fPWNonBIQmvlrSlNpQYgx5HgWWd007mwIFA=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "3fdd076e08049a9c7a83149b270440d9787d2df5",
+        "rev": "e28654b71096e08c019d4861ca26acb646f583d8",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
-        "ref": "release-25.11",
+        "ref": "release-26.05",
         "repo": "home-manager",
         "type": "github"
       }
@@ -142,15 +142,15 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1779102034,
-        "narHash": "sha256-uTBbAAmkcLK3Fd3RjXG/VX1jkiY0gdh+oqWyB+BjyhI=",
-        "rev": "687f05a9184cad4eaf905c48b63649e3a86f5433",
+        "lastModified": 1780203844,
+        "narHash": "sha256-0LbzRbwKOIae/V/p/wDALlUWZ5ZF41vtH05PYdKhh5I=",
+        "rev": "b51242d7d43689db2f3be91bd05d5b24fbb469c4",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/25.11/nixos-25.11.11112.687f05a9184c/nixexprs.tar.xz?lastModified=1779102034&rev=687f05a9184cad4eaf905c48b63649e3a86f5433"
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.889.b51242d7d436/nixexprs.tar.xz?lastModified=1780203844&rev=b51242d7d43689db2f3be91bd05d5b24fbb469c4"
       },
       "original": {
         "type": "tarball",
-        "url": "https://channels.nixos.org/nixos-25.11/nixexprs.tar.xz"
+        "url": "https://channels.nixos.org/nixos-26.05/nixexprs.tar.xz"
       }
     },
     "pre-commit-hooks": {
