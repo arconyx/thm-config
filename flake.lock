@@ -57,24 +57,6 @@
         "type": "github"
       }
     },
-    "flake-utils": {
-      "inputs": {
-        "systems": "systems_2"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -199,34 +181,18 @@
         "type": "github"
       }
     },
-    "systems_2": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
     "thm-modpack": {
       "inputs": {
-        "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1764843299,
-        "narHash": "sha256-DUGId5YDpdD37eXdkRh2dh/kDBFYgGt4kmEI6TPmtOM=",
+        "lastModified": 1781341730,
+        "narHash": "sha256-E7wTgocUoGThbexN5tfVTbnH99f5Jpk7dFvOFEWPdAA=",
         "owner": "arconyx",
         "repo": "thm-modpack",
-        "rev": "6712269bdd86132a15029ed144513de3686d37b9",
+        "rev": "6867fc529af2bc576a6e8e54d3b3147ae5586b71",
         "type": "github"
       },
       "original": {
