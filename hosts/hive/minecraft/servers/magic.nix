@@ -28,7 +28,7 @@ in
         simulation = 8;
       };
     };
-    symlinks = modpack.modLinks;
+    symlinks.mods = "${modpack}/mods";
     files = {
       "config" = "${modpack}/config";
       "kubejs" = "${modpack}/kubejs";
