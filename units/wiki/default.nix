@@ -251,9 +251,6 @@ let
 
         $wgGroupPermissions['bureaucrat']['usermerge'] = true;
         $wgGroupPermissions['sysop']['usermerge'] = true;
-
-        # broken
-        $wgDebugLogFile = "/proc/self/fd/1";
     '';
   };
 in
@@ -352,23 +349,6 @@ in
       settings = {
         "listen.owner" = "caddy";
         "listen.group" = "caddy";
-
-        # nixos mediawiki defaults
-        # "pm" = "dynamic";
-        # "pm.max_children" = 32;
-        # "pm.start_servers" = 2;
-        # "pm.min_spare_servers" = 2;
-        # "pm.max_spare_servers" = 4;
-        # "pm.max_requests" = 500;
-
-        # tuned for pi
-        "pm" = "ondemand";
-        "pm.max_children" = 6;
-        "pm.max_requests" = 500;
-
-        "catch_workers_output" = "yes";
-        "decorate_workers_output" = "no";
-        "access.log" = "/proc/self/fd/1";
       };
       phpEnv = {
         DISCORD_CLIENT_ID = "$DISCORD_CLIENT_ID";
@@ -427,6 +407,7 @@ in
       paths = [
         "/tmp/wiki.backup"
         uploadsDir
+        stateDir
       ];
     };
   };
