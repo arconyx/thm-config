@@ -72,6 +72,9 @@ let
     in
     {
       VisualEditor = null;
+      # TODO: Enable for template parameters
+      # https://www.mediawiki.org/wiki/Extension:TemplateData
+      TemplateData = null;
       # TODO: update extensions
       PluggableAuth = pkgs.fetchFromGitHub {
         owner = "wikimedia";
