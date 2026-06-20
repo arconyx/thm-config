@@ -1,0 +1,134 @@
+diff --git a/composer.json b/composer.json
+index 750a11f..4d76f71 100644
+--- a/composer.json
++++ b/composer.json
+@@ -1,7 +1,8 @@
+ {
+ 	"require": {
+ 		"mediawiki/oauthclient": "^2.3",
+-		"league/oauth2-facebook": "^2.0"
++		"league/oauth2-facebook": "^2.0",
++		"wohali/oauth2-discord-new": "^1.2"
+ 	},
+ 	"require-dev": {
+ 		"mediawiki/mediawiki-codesniffer": "46.0.0",
+diff --git a/src/AuthenticationProvider/DiscordAuth.php b/src/AuthenticationProvider/DiscordAuth.php
+new file mode 100644
+index 0000000..3ca23d1
+--- /dev/null
++++ b/src/AuthenticationProvider/DiscordAuth.php
+@@ -0,0 +1,114 @@
++<?php
++
++namespace WSOAuth\AuthenticationProvider;
++
++use Wohali\OAuth2\Client\Provider\Discord;
++use MediaWiki\User\UserIdentity;
++
++class DiscordAuth extends AuthProvider {
++
++	const SOURCE = 'source';
++	const DISCORD = 'discord';
++
++	/**
++	 * @var Discord
++	 */
++	private $provider;
++	
++	private $guildId;
++	private $botToken;
++
++	/**
++	 * @inheritDoc
++	 */
++	public function __construct( string $clientId, string $clientSecret, ?string $authUri, ?string $redirectUri, array $extensionData = [] ) {
++		$this->provider = new Discord( [
++			'clientId' => $clientId,
++			'clientSecret' => $clientSecret,
++			'redirectUri' => $redirectUri
++		] );
++		$this->guildId = $extensionData['guildId'];
++		$this->botToken = $extensionData['botToken'];
++	}
++
++	/**
++	 * @inheritDoc
++	 */
++	public function login( ?string &$key, ?string &$secret, ?string &$authUrl ): bool {
++		$scopes = ['identify'];
++		$authUrl = $this->provider->getAuthorizationUrl([ 'scope' => $scopes]);
++		$secret = $this->provider->getState();
++
++		return true;
++	}
++
++	/**
++	 * @inheritDoc
++	 */
++	public function logout( UserIdentity &$user ): void {
++	}
++
++	/**
++	 * @inheritDoc
++	 */
++	public function getUser( string $key, string $secret, &$errorMessage ) {
++		if ( !isset( $_GET['code'] ) ) {
++			$errorMessage = 'Discord did not return authorization code';
++			return false;
++		}
++
++		if (!isset( $_GET['state'] ) || empty( $_GET['state'] ) || ( $_GET['state'] !== $secret) ) {
++			$errorMessage = 'Discord did not return authorization state';
++			return false;
++		}
++
++		try {
++			$token = $this->provider->getAccessToken('authorization_code', ['code' => $_GET['code']]);
++
++			$user = $this->provider->getResourceOwner($token);
++			$userId = $user->getId();
++			$userInfo = [
++				'name' => $user->getUsername(),
++				'discord_user_id' => $userId,
++				self::SOURCE => self::DISCORD
++			];
++
++			try {
++				$guildUrl = "https://discord.com/api/v10/guilds/$this->guildId/members/$userId";
++				$opts = [
++					'http' => [
++						'method' => "GET",
++						'header' => "Authorization: Bot $this->botToken\n" .
++							"User-Agent: THMWiki (thehivemind.gay, 1)"
++					]
++				];
++				$context = stream_context_create($opts);
++				$apiCall = file_get_contents($guildUrl, false, $context);
++				$guildMembership = json_decode($apiCall);
++
++				if ($guildMembership->user->id != $userId) {
++					$errorMessage = 'Invalid user id';
++					return false;
++				}
++
++
++			} catch (\Exception $e) {
++				$errorMessage = 'Not a member of a valid guild';
++				return false;
++			}
++
++			return $userInfo;
++			
++		} catch ( \Exception $e ) {
++			$errorMessage = $e->getMessage();
++			return false;
++		}
++	}
++
++	/**
++	 * @inheritDoc
++	 */
++	public function saveExtraAttributes( int $id ): void {
++	}
++}
++
