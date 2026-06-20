@@ -364,6 +364,59 @@ in
   };
 
   config = lib.mkIf config.arc.services.wiki.enable {
+    services.caddy = {
+      enable = true;
+      virtualHosts = {
+        "wiki.thehivemind.gay" = {
+          extraConfig = ''
+            # Set this path to your site's directory.
+            root * /srv/www/public
+
+            # wiki stuff
+            redir /wiki /wiki/
+            rewrite /wiki/* /mediawiki/index.php?title={path}
+            rewrite /wiki/rest.php/* /mediawiki/rest.php?{query}
+
+            handle /mediawiki/* {
+              root ${config.arc.services.wiki.finalPackage}/share
+              
+              # don't use php for images subfolder
+              @wiki_noimages {
+                path /mediawiki/*
+                not path /mediawiki/images*
+
+                # since we block access here we also need to hide
+                # it from the file server
+                not path /mediawiki/LocalSettings.php
+              }
+
+              php_fastcgi @wiki_noimages unix/${config.services.phpfpm.pools.mediawiki.socket}
+
+              handle_path /mediawiki/images/* {
+                root /var/lib/mediawiki/uploads
+                # this is recommended by mediawiki
+                header /mediawiki/images X-Content-Type-Options nosniff
+                encode zstd gzip
+                file_server
+              }
+
+              # Enable the static file server.
+              file_server @wiki_noimages {
+                hide LocalSettings.php *.php
+              }
+            }
+
+            encode zstd gzip
+            file_server
+
+            handle_errors {
+              respond "{err.status_code} {err.status_text}"
+            }
+          '';
+        };
+      };
+    };
+
     services.phpfpm.pools.mediawiki = {
       inherit user group;
       phpEnv.MEDIAWIKI_CONFIG = "${mediawikiConfig}";
