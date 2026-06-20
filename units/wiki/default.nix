@@ -5,6 +5,8 @@
   ...
 }:
 let
+  cfg = config.thm.services.wiki;
+
   # php version
   # https://www.mediawiki.org/wiki/Compatibility#PHP
   php = pkgs.php83;
@@ -177,10 +179,10 @@ let
         ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
         ## https://www.mediawiki.org/wiki/Manual:Short_URL
         $wgScriptPath = "/mediawiki";
-        $wgArticlePath = "/wiki/$1";
+        $wgArticlePath = "/${cfg.articlePath}/$1";
 
         ## The protocol and server name to use in fully-qualified URLs
-        $wgServer = "https://thehivemind.gay";
+        $wgServer = "https://${cfg.domain}";
 
         ## The URL path to static resources (images, scripts, etc.)
         $wgResourceBasePath = $wgScriptPath;
@@ -354,31 +356,48 @@ let
   };
 in
 {
-  options.arc.services.wiki = {
+  options.thm.services.wiki = {
     enable = lib.mkEnableOption "THM Wiki";
     finalPackage = lib.mkOption {
       type = lib.types.package;
       readOnly = true;
       default = pkg;
     };
+    domain = lib.mkOption {
+      type = lib.types.str;
+      example = "example.thehivemind.gay";
+      description = ''
+        The public host for the wiki.
+
+        This expects to be the only service on the (sub)domain and will configure
+        the reverse proxy as such.
+      '';
+    };
+    articlePath = lib.mkOption {
+      type = lib.types.str;
+      example = "wiki";
+      description = ''
+        The article path for the wiki, relative to the host root.
+        e.g. 'wiki' in https://example.thehivemind.gay/wiki/Main_Page'';
+    };
   };
 
-  config = lib.mkIf config.arc.services.wiki.enable {
+  config = lib.mkIf cfg.enable {
     services.caddy = {
       enable = true;
       virtualHosts = {
-        "wiki.thehivemind.gay" = {
+        "${cfg.domain}" = {
           extraConfig = ''
             # Set this path to your site's directory.
             root * /srv/www/public
 
             # wiki stuff
-            redir /wiki /wiki/
-            rewrite /wiki/* /mediawiki/index.php?title={path}
-            rewrite /wiki/rest.php/* /mediawiki/rest.php?{query}
+            redir /${cfg.articlePath} /${cfg.articlePath}/
+            rewrite /${cfg.articlePath}/* /mediawiki/index.php?title={path}
+            rewrite /${cfg.articlePath}/rest.php/* /mediawiki/rest.php?{query}
 
             handle /mediawiki/* {
-              root ${config.arc.services.wiki.finalPackage}/share
+              root ${cfg.finalPackage}/share
               
               # don't use php for images subfolder
               @wiki_noimages {
