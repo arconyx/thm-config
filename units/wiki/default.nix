@@ -26,38 +26,6 @@ let
     inherit php;
   };
 
-  # make mediawiki admin scripts available to user
-  mediawikiScripts =
-    pkgs.runCommand "mediawiki-scripts"
-      {
-        nativeBuildInputs = [ pkgs.makeWrapper ];
-        preferLocalBuild = true;
-      }
-      ''
-        mkdir -p $out/bin
-        makeWrapper ${php}/bin/php $out/bin/mediawiki-maintenance \
-          --set MEDIAWIKI_CONFIG ${mediawikiConfig} \
-          --add-flags ${pkg}/share/mediawiki/maintenance/run.php
-
-        for i in changePassword createAndPromote deleteUserEmail renameUser resetUserEmail userOptions edit nukePage update importDump run; do
-          script="$out/bin/mediawiki-$i"
-        cat <<'EOF' >"$script"
-        #!${pkgs.runtimeShell}
-        become=(exec)
-        if [[ "$(id -u)" != ${user} ]]; then
-          become=(exec /run/wrappers/bin/sudo -u ${user} --)
-        fi
-        "${"$"}{become[@]}" ${placeholder "out"}/bin/mediawiki-maintenance \
-        EOF
-          if [[ "$i" != "run" ]]; then
-            echo "  ${pkg}/share/mediawiki/maintenance/$i.php \"\$@\"" >>"$script"
-          else
-            echo "  ${pkg}/share/mediawiki/maintenance/\$1.php \"\''${@:2}\"" >>"$script"
-          fi
-          chmod +x "$script"
-        done
-      '';
-
   mediawikiConfig = pkgs.writeTextFile {
     name = "LocalSettings.php";
     checkPhase = ''
@@ -370,7 +338,15 @@ in
     };
     users.groups.mediawiki = { };
 
-    environment.systemPackages = [ mediawikiScripts ];
+    # Make mediawiki admin scripts avaiable to the user
+    environment.systemPackages = [
+      (pkgs.callPackage ./scripts.nix {
+        wikiPhp = php;
+        wikiPkg = pkg;
+        wikiUser = user;
+        wikiConfig = mediawikiConfig;
+      })
+    ];
 
     systemd.tmpfiles.rules = [
       "d '${baseStateDir}' 0750 ${user} ${group} - -"
