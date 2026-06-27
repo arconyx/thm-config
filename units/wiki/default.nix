@@ -347,7 +347,6 @@ in
         allow_url_fopen = 1
         session.use_trans_sid = 0
         log_errors = 1
-        error_log = "syslog"
       '';
       settings = {
         "listen.owner" = "caddy";
