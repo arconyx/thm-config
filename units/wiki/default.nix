@@ -76,7 +76,7 @@ let
             'localhost' => 'thehivemind.gay',      // Same as IDHost above; required by some mail servers
             'port'      => 443,                // Port to use when connecting to the SMTP server
             'auth'      => true,               // Should we use SMTP authentication (true or false)
-            'username'  => 'getenv('SMTP_USERNAME')',     // Username to use for SMTP authentication (if being used)
+            'username'  => getenv('SMTP_USERNAME'),     // Username to use for SMTP authentication (if being used)
             'password'  => getenv('SMTP_PASSWORD')       // Password to use for SMTP authentication (if being used)
         ];
 
