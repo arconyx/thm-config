@@ -335,6 +335,9 @@ in
       };
     };
 
+    # eww, phpfpm is run as root and only changes owner of child processes
+    # TODO: See about reimplementing phpfpm services more locked down
+    # This would also allow using StateDirectory instead of systemd-tmpfiles
     services.phpfpm.pools.mediawiki = {
       inherit user group;
       phpEnv.MEDIAWIKI_CONFIG = "${mediawikiConfig}";
