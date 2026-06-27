@@ -285,7 +285,8 @@ in
     services.caddy = {
       enable = true;
       virtualHosts = {
-        "${cfg.domain}" = {
+        # we expect to behind a cloudflare tunnel that will handle tls termination
+        "${cfg.domain}:80" = {
           extraConfig = ''
             # Set this path to your site's directory.
             root * /srv/www/public
