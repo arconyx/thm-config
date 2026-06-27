@@ -44,20 +44,23 @@ let
         src = fetchFromGitHub {
           owner = "wikimedia";
           repo = "mediawiki-extensions-WSOAuth";
-          rev = "0d02ee546dd3211a9899c4cd772f240fd3fc8277";
-          hash = "sha256-mBDn4x72uz6sKXqdHjBWs2GSNIQcb0kTBwyOsElRn64=";
+          rev = "0fd5fc2300c877ca7ef8f1e3b811caec4acccbf1";
+          hash = "sha256-04VCOKfrgrijrv9CdjXeaExmAsxIEWcWMz8W2KVutGI=";
         };
 
         patches = [
           ./wsoauth/discord-auth.patch
         ];
 
+        # Generated with `composer update --no-install --no-dev`
+        # in a local clone of the repo with the Discord patch applied
         composerLock = ./wsoauth/wsoauth-composer.lock;
+
         # manually test validation with `composer validate`
         # it doesn't like the missing name and description fields
         composerStrictValidation = false;
 
-        vendorHash = "sha256-VXUqCRjWNSzgLx/hTIiw0yeLcYaawsePRn/D05L+CQA=";
+        vendorHash = "sha256-ewQeiUT4/0FnzCayjDXOKFfXPfFBFOxnzjcuN9kFSsU=";
       };
     in
     {

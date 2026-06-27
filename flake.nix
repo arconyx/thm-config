@@ -79,12 +79,19 @@
         modules = [ ./hosts/cloud.nix ];
       };
 
-      packages = forAllSystems (system: {
-        nbted = (pkgsForSystem system).callPackage ./units/minecraft/nbted.nix { };
-        forever-modpack = nix-minecraft.legacyPackages.${system}.fetchPackwizModpack {
-          src = ./hosts/hive/minecraft/servers/forever/packwiz;
-          packHash = nixpkgs.lib.fakeHash;
-        };
-      });
+      packages = forAllSystems (
+        system:
+        let
+          pkgs = pkgsForSystem system;
+        in
+        {
+          nbted = pkgs.callPackage ./units/minecraft/nbted.nix { };
+          forever-modpack = nix-minecraft.legacyPackages.${system}.fetchPackwizModpack {
+            src = ./hosts/hive/minecraft/servers/forever/packwiz;
+            packHash = nixpkgs.lib.fakeHash;
+          };
+          mediawiki = pkgs.callPackage ./units/wiki/mediawiki.nix { php = pkgs.php83; };
+        }
+      );
     };
 }
