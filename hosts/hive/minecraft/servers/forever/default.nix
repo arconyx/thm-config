@@ -5,13 +5,13 @@
 let
   modpack = pkgs.fetchPackwizModpack {
     src = ./packwiz;
-    packHash = "sha256-ml69zV9eIYgHmIbwID+LzNoJaAxGnewp7MoyjdXJ/W8=";
+    packHash = "sha256-gZ6bqLwg7ZMStbiH4+hOtdybGKx+EAzja/irYL8FaS4=";
   };
 in
 {
   thm.services.minecraft.servers.forever = {
     enable = true;
-    package = pkgs.fabricServers.fabric-26_1_2.override {
+    package = pkgs.fabricServers.fabric-26_2.override {
       jre_headless = pkgs.graalvmPackages.graalvm-oracle;
     };
     port = 25567;

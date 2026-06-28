@@ -78,7 +78,7 @@ hash = "bd3c7cba512978e4d0f5632aed773b47d93e80e9243656fc092d6cc56ddc53e1"
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
-hash = "319e33f0c095431cac722aec0c44649e7aeed9aa47e87426dc02b78ba1821585"
+hash = "db49ed5fd52d71b3eb2f65f7385b63c3f3d572e269d774281786eec2522ffc42"
 metafile = true
 
 [[files]]
@@ -88,36 +88,36 @@ metafile = true
 
 [[files]]
 file = "mods/armor-poser.pw.toml"
-hash = "4da83b91a76fd1d8f00525a018603ddea7e99f9b0a0829c551ed59b38162ea5d"
+hash = "c9aa43cb74bfe03fc2ba17bd693baba8dae6ab7bc622284477d5acebf7b33315"
 metafile = true
 
 [[files]]
-file = "mods/best-behaviour-1.2.0.jar"
-hash = "18f04c71f5ae93d6a4c820131baaf0a326ed941f9a771437655ff5e52eba1eb1"
+file = "mods/best-behaviour-1.3.0.jar"
+hash = "3ab08a142e8fd867dac5d3b69a10eb272eca476349ac3cde712df8ea5d2a0df6"
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "b7b5d17a9d618a5819c2ae0b0d25f2ff1fde4ada6beb14d4cc5221162a1be0b6"
+hash = "497421d9c7549e8a1cbb08d9102ccbc48695aa96834daca398a5c1498670422a"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
+hash = "7fa9592b9948b8809018a4e7c3ca7da4d19fc5ef8c03021414cb22ae0253f083"
 metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "4d91155ad72a2cde07f84f595c0803dec37174b53c6c15291145ef480fc4d902"
+hash = "cf6170463eb4c151428de2b9ace6119f17f22658aaa8f60bc58cc0677036d586"
 metafile = true
 
 [[files]]
 file = "mods/death-backup.pw.toml"
-hash = "fa61fe573622d163370c17d639aa780bbd6cea15c77d6b08f9c6637463291907"
+hash = "90b11087d8e0afc57c41ede8293a184a20e99d1bb034a8d218c59fd066520ed1"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "667420ac98bdf5f6f7e747b83f9407722586e0c15b635ad295bef55449498474"
+hash = "fdc6309bf3420b7e358737b05877335191021e8a2376def243deb0e521797166"
 metafile = true
 
 [[files]]
@@ -127,37 +127,37 @@ metafile = true
 
 [[files]]
 file = "mods/forge-config-api-port.pw.toml"
-hash = "ccf85a22cdd9f965cc6aa8dd97c5f5aac4d5b42427888a852af5874f8a345d87"
+hash = "8c91080e610d7c8c40ae6445d36af1cf591fe1ebf70718b3e6d4714232b23592"
 metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "18e0ba646659bc50a858729cfeff255a76c7702e5065ee56ce03e9553b430e67"
+hash = "d655305d7933a11ed9c0c8edb57868c053b9c995c121c00b47061cf0e098c92a"
 metafile = true
 
 [[files]]
 file = "mods/modernfix-mvus.pw.toml"
-hash = "dc12b3aba319df85cefde7e6fb0e89e59399fa304a2bbfacf812fb240c06380b"
+hash = "ca48f91f6b339797f8186d7adbb60581afac53f1a073f116fb4b1c08a29fa31b"
 metafile = true
 
 [[files]]
 file = "mods/noisiumforked.pw.toml"
-hash = "2c08bbdf7dc74bb0c6775311ecca268dae129e4573a2102a651da48fa4fe311d"
+hash = "1330268d34fa30998d31f2299eb65054cc419bb935710a50a95518dbeccbb268"
 metafile = true
 
 [[files]]
 file = "mods/polymer.pw.toml"
-hash = "45152945e04a655c09679711b669cf375c3fd80dd4758690404920335d3b7fda"
+hash = "ab37e8fa90c01b2eae0ec0e0750e5136e95c993c52f4e6d46b9d3e1aa160288d"
 metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
-hash = "d5a2925609b3dcf060253a1d75414e4c7747c9d5c206c5ff83a678f75b94ff5b"
+hash = "a8d92e3a2cf956cfa5932d3324a219729fe549fbcc3992c75b54d6b345178389"
 metafile = true
 
 [[files]]
 file = "mods/scalablelux.pw.toml"
-hash = "645be5d20d755e83c986014b768abbf473d3bf31da5dcd197af63c8b200cc141"
+hash = "8635a6f88d0f0e9487299a0da5507bb9f1685969a8b02772efdba6df3d9c0afa"
 metafile = true
 
 [[files]]
@@ -167,12 +167,12 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
-hash = "fbe51395401ce68d9933a65fbcb4ed8cda82ac88d4afd79a5740116114d15949"
+hash = "c7b6e4a7666e9e64a70df0b550db2e25f7150d4c1c2c2e79e81dfbc036ce3a25"
 metafile = true
 
 [[files]]
 file = "mods/squaremap.pw.toml"
-hash = "fc2851bc6d9e38d8de19f1a802d25ea4d7a1be90fe1917365034af50cfb2a974"
+hash = "6fd96a7ec1e8986ee2e7e5e7fbd582f9921de753ed483b5f5d37a2e077b59305"
 metafile = true
 
 [[files]]
@@ -182,7 +182,7 @@ metafile = true
 
 [[files]]
 file = "mods/universal-graves.pw.toml"
-hash = "a08743e4beed90ebe697e70cabe6d0eafd0a2f9c8bfa32c1677bf980f4f05bae"
+hash = "f969f99ffcf07344c72837e095a9101ccfe75e13903610787ef0c8c22c6c047e"
 metafile = true
 
 [[files]]

@@ -1,16 +1,16 @@
 name = "THM Forever Server Mods"
 author = "ArcOnyx"
-version = "0.2.0"
+version = "0.3.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "96cadb50bcfca11a4982a24e6e0405104f930de9feda1afc9a2e84a67f94d36e"
+hash = "7f17ad55125ae82727b1fa8ddcff0e741090d3af7b65a8ceb581d74512bffba9"
 
 [versions]
-fabric = "0.19.1"
-minecraft = "26.1.2"
+fabric = "0.19.3"
+minecraft = "26.2"
 
 [options]
 datapack-folder = "resources/datapack"
