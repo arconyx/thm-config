@@ -256,17 +256,15 @@ in
         # we expect to behind a cloudflare tunnel that will handle tls termination
         "${cfg.domain}:80" = {
           extraConfig = ''
-            # Set this path to your site's directory.
-            root * /srv/www/public
+            # rewrite domain root to main page
+            rewrite / /mediawiki/index.php
 
-            # wiki stuff
+            # allow accessing pages at example.com/w/Article_Title
             redir /${cfg.articlePath} /${cfg.articlePath}/
             rewrite /${cfg.articlePath}/* /mediawiki/index.php?title={path}
             rewrite /${cfg.articlePath}/rest.php/* /mediawiki/rest.php?{query}
 
             handle /mediawiki/* {
-              root ${cfg.finalPackage}/share
-              
               # don't use php for images subfolder
               @wiki_noimages {
                 path /mediawiki/*
@@ -289,12 +287,12 @@ in
 
               # Enable the static file server.
               file_server @wiki_noimages {
+                root ${cfg.finalPackage}/share
                 hide LocalSettings.php *.php
               }
             }
 
             encode zstd gzip
-            file_server
 
             handle_errors {
               respond "{err.status_code} {err.status_text}"
