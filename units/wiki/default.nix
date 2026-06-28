@@ -208,7 +208,7 @@ let
                 'type' => 'discord',
                 'clientId' => getenv('DISCORD_CLIENT_ID'),
                 'clientSecret' => getenv('DISCORD_CLIENT_SECRET'),
-                'redirectUri' => 'https://thehivemind.gay/mediawiki/index.php?title=Special:PluggableAuthLogin',
+                'redirectUri' => 'https://${cfg.domain}/mediawiki/index.php?title=Special:PluggableAuthLogin',
                 'extensionData' => [
                     'botToken' => getenv('DISCORD_BOT_TOKEN'),
                     'guildId' => getenv('DISCORD_GUILD_ID')
