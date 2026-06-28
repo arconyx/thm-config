@@ -266,6 +266,9 @@ in
             rewrite /${cfg.articlePath}/rest.php/* /mediawiki/rest.php?{query}
 
             handle /mediawiki/* {
+              # root path for php_fastcgi and file_server
+              root ${cfg.finalPackage}/share
+
               # don't use php for images subfolder
               @wiki_noimages {
                 path /mediawiki/*
@@ -288,7 +291,6 @@ in
 
               # Enable the static file server.
               file_server @wiki_noimages {
-                root ${cfg.finalPackage}/share
                 hide LocalSettings.php *.php
               }
             }
