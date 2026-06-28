@@ -250,6 +250,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "mediawiki" ];
     services.caddy = {
       enable = true;
       virtualHosts = {
