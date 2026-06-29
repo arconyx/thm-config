@@ -93,7 +93,7 @@ metafile = true
 
 [[files]]
 file = "mods/best-behaviour-1.3.0.jar"
-hash = "3ab08a142e8fd867dac5d3b69a10eb272eca476349ac3cde712df8ea5d2a0df6"
+hash = "69d1389283f092a59561b7070e772d6e9b95ed224db0ece3b7e60295e0f32538"
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
