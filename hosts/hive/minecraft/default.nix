@@ -165,7 +165,7 @@
                 §cForever server is offline.
                 §eTry necromancy!
               '';
-              version.name = "26.1.2";
+              version.name = "26.2";
               favicon = ./servers/magic.png;
             };
           }
