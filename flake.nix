@@ -33,10 +33,13 @@
       ...
     }:
     let
-      revision = self.shortRev or self.dirtyShortRev or self.lastModified or "unknown";
+      revision = self.rev or self.dirtyRev or self.lastModified or "unknown";
       supportedSystems = [ "x86_64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
-      baseModules = [ core.nixosModules.default ];
+      baseModules = [
+        core.nixosModules.default
+        { arcworks.revision = revision; }
+      ];
       pkgsForSystem = system: nixpkgs.legacyPackages.${system};
     in
     {
@@ -67,7 +70,7 @@
       formatter = forAllSystems (system: (pkgsForSystem system).nixfmt-tree);
 
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit thm-modpack revision; };
+        specialArgs = { inherit thm-modpack; };
         modules = baseModules ++ [
           ./hosts/hive
           nix-minecraft.nixosModules.minecraft-servers

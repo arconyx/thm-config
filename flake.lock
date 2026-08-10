@@ -11,11 +11,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781061606,
-        "narHash": "sha256-ThP7bkCo2Iw4ng+rm5DerKnmHca64fmwHuT5IZuI82U=",
+        "lastModified": 1786249709,
+        "narHash": "sha256-iAcA3hN2hx1Vu/zS1dR2h+hpDfK3i9rk/TJ8/4OjNTw=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "a2c65a72427a5d25a3eef0ae84aa3c2f87c5f51c",
+        "rev": "fd2fbc6aa0cee0de67f511ad1dc31f77d6725b85",
         "type": "github"
       },
       "original": {
