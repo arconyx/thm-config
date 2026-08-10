@@ -70,11 +70,13 @@
       formatter = forAllSystems (system: (pkgsForSystem system).nixfmt-tree);
 
       nixosConfigurations.hive = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit thm-modpack; };
         modules = baseModules ++ [
           ./hosts/hive
           nix-minecraft.nixosModules.minecraft-servers
-          { nixpkgs.overlays = [ nix-minecraft.overlay ]; }
+          {
+            _module.args = { inherit thm-modpack; };
+            nixpkgs.overlays = [ nix-minecraft.overlay ];
+          }
         ];
       };
 
