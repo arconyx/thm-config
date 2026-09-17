@@ -11,9 +11,7 @@ in
 {
   thm.services.minecraft.servers.forever = {
     enable = true;
-    package = pkgs.fabricServers.fabric-26_2.override {
-      jre_headless = pkgs.graalvmPackages.graalvm-oracle;
-    };
+    package = pkgs.fabricServers.fabric-26_2;
     port = 25567;
     alwaysOn = false;
     settings = {

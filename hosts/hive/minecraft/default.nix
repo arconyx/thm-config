@@ -37,7 +37,7 @@
       encode
 
       handle /hooks/* {
-        reverse_proxy :${builtins.toString config.services.webhook.port}
+        reverse_proxy :${toString config.services.webhook.port}
       }
 
       handle_path /share/* {
@@ -74,47 +74,37 @@
     };
   };
 
+  # For Minecraft
+  # Option details https://docs.kernel.org/admin-guide/mm/transhuge.html
+  boot.kernel.sysfs = {
+    kernel.mm.transparent_hugepage = {
+      # use thp on request
+      enabled = "madvise";
+      # use thp on request for shared memory
+      shmem_enabled = "advise";
+      # if we can't issue thp ignore it but khugepage runs soon to defrag
+      # for future calls
+      defrag = "defer";
+      # explicitly enable defragging by khugepaged
+      khugepaged.defrag = "1";
+    };
+  };
+
   thm.services.minecraft = {
     enable = true;
     environmentFile = "/etc/minecraft/magic.env";
     rcon-password = "3489trawo5ATpfhaQEQr"; # pragma: allowlist secret
+    # https://github.com/Obydux/Minecraft-startup-flags
     jvmOpts = [
       "-Xms8G"
       "-Xmx8G"
-      "-XX:+UnlockExperimentalVMOptions"
-      "-XX:+UnlockDiagnosticVMOptions"
-      "-XX:+AlwaysActAsServerClassMachine"
+      "-XX:+UseZGC"
+      "-XX:TrimNativeHeapInterval=5000"
+      "-XX:+UseStringDeduplication"
+      "-XX:+UseCompactObjectHeaders"
       "-XX:+AlwaysPreTouch"
-      "-XX:+DisableExplicitGC"
-      "-XX:+UseNUMA"
-      "-XX:AllocatePrefetchStyle=3"
-      "-XX:NmethodSweepActivity=1"
-      "-XX:ReservedCodeCacheSize=400M"
-      "-XX:NonNMethodCodeHeapSize=12M"
-      "-XX:ProfiledCodeHeapSize=194M"
-      "-XX:NonProfiledCodeHeapSize=194M"
-      "-XX:-DontCompileHugeMethods"
-      "-XX:+PerfDisableSharedMem"
-      "-XX:+UseFastUnorderedTimeStamps"
-      "-XX:+UseCriticalJavaThreadPriority"
-      "-XX:+EagerJVMCI"
-      "-Djdk.graal.TuneInlinerExploration=1"
-      "-Djdk.graal.CompilerConfiguration=enterprise"
-      "-XX:+UseG1GC"
-      "-XX:MaxGCPauseMillis=130"
-      "-XX:G1NewSizePercent=28"
-      "-XX:G1HeapRegionSize=16M"
-      "-XX:G1ReservePercent=20"
-      "-XX:G1MixedGCCountTarget=3"
-      "-XX:InitiatingHeapOccupancyPercent=10"
-      "-XX:G1MixedGCLiveThresholdPercent=90"
-      "-XX:G1RSetUpdatingPauseTimePercent=0"
-      "-XX:SurvivorRatio=32"
-      "-XX:MaxTenuringThreshold=1"
-      "-XX:G1SATBBufferEnqueueingThresholdPercent=30"
-      "-XX:G1ConcMarkStepDurationMillis=5"
       "-XX:+UseTransparentHugePages"
-      "-XX:ConcGCThreads=6"
+      # TODO: Review if we can restrict this
       "--enable-native-access=ALL-UNNAMED"
     ];
 

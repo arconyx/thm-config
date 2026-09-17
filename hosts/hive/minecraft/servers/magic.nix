@@ -16,7 +16,6 @@ in
     enable = true;
     package = pkgs.fabricServers.${serverVersion}.override {
       loaderVersion = fabricVersion;
-      jre_headless = pkgs.graalvmPackages.graalvm-oracle;
     };
     port = 25566;
     settings = {
