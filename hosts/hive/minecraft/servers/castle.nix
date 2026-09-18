@@ -6,7 +6,9 @@
 {
   thm.services.minecraft.servers.castle = {
     enable = true;
-    package = pkgs.fabricServers.fabric-1_21_11;
+    package = pkgs.fabricServers.fabric-1_21_11.override {
+      jre_headless = pkgs.openjdk25_headless;
+    };
     port = 25568;
     settings = {
       gamemode = "creative";

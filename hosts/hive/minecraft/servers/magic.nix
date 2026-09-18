@@ -16,6 +16,7 @@ in
     enable = true;
     package = pkgs.fabricServers.${serverVersion}.override {
       loaderVersion = fabricVersion;
+      jre_headless = pkgs.openjdk25_headless;
     };
     port = 25566;
     settings = {
