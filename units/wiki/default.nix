@@ -393,9 +393,9 @@ in
 
     systemd.services.phpfpm-mediawiki.serviceConfig.EnvironmentFile = "/etc/mediawiki/secrets.env";
 
-    services.restic.backups.backblaze = {
-      backupPrepareCommand = "${php}/bin/php ${pkg}/share/mediawiki/maintenance/run.php SqliteMaintenance --backup-to /tmp/wiki.backup --conf ${mediawikiConfig}";
-      backupCleanupCommand = "rm /tmp/wiki.backup";
+    arcworks.services.backups.backup.backblaze = {
+      prepareCommands = "${php}/bin/php ${pkg}/share/mediawiki/maintenance/run.php SqliteMaintenance --backup-to /tmp/wiki.backup --conf ${mediawikiConfig}";
+      cleanupCommands = "rm /tmp/wiki.backup";
       paths = [
         "/tmp/wiki.backup"
         uploadsDir
