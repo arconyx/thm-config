@@ -1,0 +1,22 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "Player Head Drops",
+                "color": "gold"
+            },
+            {
+                "text": "\nvanillatweaks.net",
+                "color": "yellow"
+            }
+        ],
+        "min_format": [
+            121,
+            0
+        ],
+        "max_format": [
+            121,
+            0
+        ]
+    }
+}

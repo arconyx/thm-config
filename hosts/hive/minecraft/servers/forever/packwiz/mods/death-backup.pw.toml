@@ -1,13 +1,13 @@
 name = "Death Backup"
-filename = "deathbackup-26.2.0-3.6.jar"
+filename = "deathbackup-26.3.0-3.7.jar"
 side = "server"
 
 [download]
-url = "https://cdn.modrinth.com/data/Ot5JFxuv/versions/H09EYUgl/deathbackup-26.2.0-3.6.jar"
+url = "https://cdn.modrinth.com/data/Ot5JFxuv/versions/7D7laRNA/deathbackup-26.3.0-3.7.jar"
 hash-format = "sha512"
-hash = "854cd486e38362a7f11ca93dc0c3f15c1d0104f84b5b41a32b3d0ce0555e3cbf9038b4d0f091e15bf532d34cdb8d0a4c32576f31dfa8942a9272225135c75f0a"
+hash = "a390b6d714ed9a83134dbf0e50ca14fe7f9e081b3e4fd45ce44348d2544e189dae2c434a82c30a0b3d71b897e57a63527cb68b57ac818030c1eedbb8c6683cdf"
 
 [update]
 [update.modrinth]
 mod-id = "Ot5JFxuv"
-version = "H09EYUgl"
+version = "7D7laRNA"

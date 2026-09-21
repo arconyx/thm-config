@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "vanilla:entities/shulker",
+      "required": false
+    },
+    {
+      "id": "#double_shulker_shells:entities/shulker",
+      "required": false
+    }
+  ]
+}

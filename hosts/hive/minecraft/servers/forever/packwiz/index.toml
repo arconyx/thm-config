@@ -78,7 +78,7 @@ hash = "bd3c7cba512978e4d0f5632aed773b47d93e80e9243656fc092d6cc56ddc53e1"
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
-hash = "db49ed5fd52d71b3eb2f65f7385b63c3f3d572e269d774281786eec2522ffc42"
+hash = "d3f2bc4d5d77f02ae3810f17429f1d2df1258ff415101c9e35650a57eacbc45d"
 metafile = true
 
 [[files]]
@@ -88,36 +88,36 @@ metafile = true
 
 [[files]]
 file = "mods/armor-poser.pw.toml"
-hash = "c9aa43cb74bfe03fc2ba17bd693baba8dae6ab7bc622284477d5acebf7b33315"
+hash = "ba85f78e3ab56c1ba30454d2b3b278c1faa3058fd77e151c04f50bc149e14ae3"
 metafile = true
 
 [[files]]
-file = "mods/best-behaviour-1.3.0.jar"
-hash = "69d1389283f092a59561b7070e772d6e9b95ed224db0ece3b7e60295e0f32538"
+file = "mods/best-behaviour-1.4.0.jar"
+hash = "c90a9d311390885b5094d8640deee0291bea44895f1643dcd8ac0241830f5ddc"
 
 [[files]]
 file = "mods/c2me-fabric.pw.toml"
-hash = "497421d9c7549e8a1cbb08d9102ccbc48695aa96834daca398a5c1498670422a"
+hash = "e07c6a592ba844c3bd26e8ee73a21771dfa49396292ecca6eb77d48a17c0fb7d"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "7fa9592b9948b8809018a4e7c3ca7da4d19fc5ef8c03021414cb22ae0253f083"
+hash = "2b9727522c90a979eb9671ad7c5421443d91391b0697d1772146e6bfa19cb3c1"
 metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "cf6170463eb4c151428de2b9ace6119f17f22658aaa8f60bc58cc0677036d586"
+hash = "236c57b7b7c1561fbf7d5b2a04816a4cc5c3c062819ceb8f183909d2e853b287"
 metafile = true
 
 [[files]]
 file = "mods/death-backup.pw.toml"
-hash = "90b11087d8e0afc57c41ede8293a184a20e99d1bb034a8d218c59fd066520ed1"
+hash = "cabe5492fda209523de5ff0c4c2bf5e311316a6affe141c23e63b1169a6ac921"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "fdc6309bf3420b7e358737b05877335191021e8a2376def243deb0e521797166"
+hash = "fb72a70cb53c63f1da4520c25c8a7d806cc1c733e827016615623b65d751852d"
 metafile = true
 
 [[files]]
@@ -127,37 +127,32 @@ metafile = true
 
 [[files]]
 file = "mods/forge-config-api-port.pw.toml"
-hash = "8c91080e610d7c8c40ae6445d36af1cf591fe1ebf70718b3e6d4714232b23592"
+hash = "3eb12471fce0aadbda432f7fd5ba4e2120e0e0ebbb3663eea756a17ec0254407"
 metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
-hash = "d655305d7933a11ed9c0c8edb57868c053b9c995c121c00b47061cf0e098c92a"
+hash = "b44f3ab71e52f1aaae97cf8644f2316042de8b7777d6b6794567c8c7d220bd2b"
 metafile = true
 
 [[files]]
 file = "mods/modernfix-mvus.pw.toml"
-hash = "ca48f91f6b339797f8186d7adbb60581afac53f1a073f116fb4b1c08a29fa31b"
-metafile = true
-
-[[files]]
-file = "mods/noisiumforked.pw.toml"
-hash = "1330268d34fa30998d31f2299eb65054cc419bb935710a50a95518dbeccbb268"
+hash = "3b3b9e886735bd8d8809954b7da8d1cca5b8186086379f129f0e4183470a7b2b"
 metafile = true
 
 [[files]]
 file = "mods/polymer.pw.toml"
-hash = "ab37e8fa90c01b2eae0ec0e0750e5136e95c993c52f4e6d46b9d3e1aa160288d"
+hash = "9c6d5c22717d2c3081c6fa2e1be814e1c79db0872529b2aad0a84d5fb4f8bbb4"
 metafile = true
 
 [[files]]
 file = "mods/resourceful-config.pw.toml"
-hash = "a8d92e3a2cf956cfa5932d3324a219729fe549fbcc3992c75b54d6b345178389"
+hash = "d020948abe913e80ffc7b798d65a48b79b4c788b7df3f5af27f4df57596466f5"
 metafile = true
 
 [[files]]
 file = "mods/scalablelux.pw.toml"
-hash = "8635a6f88d0f0e9487299a0da5507bb9f1685969a8b02772efdba6df3d9c0afa"
+hash = "8ab8d9da45456dfc8146a7d4b4b4243c69ba5b4375d086f361bf23df6e14988a"
 metafile = true
 
 [[files]]
@@ -167,1690 +162,2388 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
-hash = "c7b6e4a7666e9e64a70df0b550db2e25f7150d4c1c2c2e79e81dfbc036ce3a25"
+hash = "9b0969e4afbc18124775c008361dc1cfb9a17e49098d93d067b6342a4a54427c"
 metafile = true
 
 [[files]]
 file = "mods/squaremap.pw.toml"
-hash = "6fd96a7ec1e8986ee2e7e5e7fbd582f9921de753ed483b5f5d37a2e077b59305"
+hash = "68be73d53b5bdc6487f469f2bcfccb46ab0f619457d57e1790a6222c631caa29"
 metafile = true
 
 [[files]]
 file = "mods/structure-layout-optimizer.pw.toml"
-hash = "6801adb48ee85a21c7c4992625c34a751197382cb952dd25082d145a37de84fb"
+hash = "be392e50e388ab478131b164a90d1ccb7163b0946334ee12583d3afd6f86c456"
 metafile = true
 
 [[files]]
 file = "mods/universal-graves.pw.toml"
-hash = "f969f99ffcf07344c72837e095a9101ccfe75e13903610787ef0c8c22c6c047e"
+hash = "0b8dfdec9a2625121cdce419d34605e35689ba704cb4d75ada5cbfeeb77c6b4d"
 metafile = true
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/double_shulker_shells/loot_table/entities/shulker.json"
-hash = "1dc33e184696fe279a6da24b06ed9858b264f818df6386984a4c1efc7e5f6d7e"
+file = "mods/zconfig.pw.toml"
+hash = "8078347c8e2fd79bbb3e414fd36bc319e2d043f8d3b955c14f430fee0b5d6843"
+metafile = true
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/double_shulker_shells/tags/item/shulker_shell.json"
+file = "mods/zfastnoise.pw.toml"
+hash = "37ef000a222ca997af5e219e79f0725db78fe21e09d4adca187adf3e9ccd2981"
+metafile = true
+
+[[files]]
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/double_shulker_shells/loot_table/entities/shulker.json"
+hash = "c3fe9edfe817578891f1e7aca3449b47eb83675987f009daa75294f727bb6f38"
+
+[[files]]
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/double_shulker_shells/tags/item/shulker_shell.json"
 hash = "744a01e05e1dcd54d48494f6d2b28d85760228c1dc250fe69582ca8afdef9a96"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/minecraft/loot_table/entities/shulker.json"
-hash = "c1ee18d46a789d1978628c34e625f22d5c89fcf5648c9ead2e73cf4e4b595890"
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/double_shulker_shells/tags/loot_table/entities/shulker.json"
+hash = "c53f5a5c996569515c7b7ca9cc6bea096e1be859244154aff334c412fc4f63a6"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/vanilla/loot_table/entities/shulker.json"
-hash = "d1c4b46dee1c53b8fb98409fb16a2a60035c126567c52135a2cbde86e58e25fd"
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/minecraft/loot_table/entities/shulker.json"
+hash = "adfbd496f074badfbd3fee3b8adbb852e56eadbfc65cdc3ca86324895833667a"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/vanillatweaks/advancement/double_shulker_shells.json"
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/vanilla/loot_table/entities/shulker.json"
+hash = "4d67d04bdb9268e49a84366a4af46b4e96e6b59140462a651e3a1bfc5fce886b"
+
+[[files]]
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/vanillatweaks/advancement/double_shulker_shells.json"
 hash = "f931b649f4f7bbedb7b0c7a8bb1bff721e8e5bd86726c67d0f23986920a0e2e6"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/data/vanillatweaks/advancement/root.json"
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/vanillatweaks/advancement/root.json"
 hash = "932453fa70ac5369f7fc0435fec16809ca0558378c684670909aa128531b0de9"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/pack.mcmeta"
-hash = "abb513724ba12451b58cab209645618c8b64624b8f032f8ceb9e114ff13049a7"
+file = "resources/datapack/optional/double shulker shells v1.3.18/data/vanillatweaks/tags/loot_table/entities/shulker.json"
+hash = "e274baee71a4a47ec7755a03dc1f857e110ad679ca6757a89af656f4fa6969d8"
 
 [[files]]
-file = "resources/datapack/optional/double_shulker_shells_v1-3-17/pack.png"
+file = "resources/datapack/optional/double shulker shells v1.3.18/pack.mcmeta"
+hash = "d93a9c87508d2be0c0012a8ab4ec522419de26baad8d8fc8bf9008adc153541e"
+
+[[files]]
+file = "resources/datapack/optional/double shulker shells v1.3.18/pack.png"
 hash = "c624c432d135bdf16a04e53cde761b417c0f31f681b9a280fa445d0f4684fc72"
 
 [[files]]
-file = "resources/datapack/optional/ender_chest_always_drops_v1-0-9/data/minecraft/loot_table/blocks/ender_chest.json"
-hash = "c8617b644203e08e5dc5a42d23d66f794f69ca8ca2abf9833613c57883dca378"
+file = "resources/datapack/optional/ender chest always drops v1.0.10/data/minecraft/loot_table/blocks/ender_chest.json"
+hash = "96a0dfe65428d15ccc2156773936dc163019f58e54a8ccf7d0619c3e6f6a2c26"
 
 [[files]]
-file = "resources/datapack/optional/ender_chest_always_drops_v1-0-9/data/vanillatweaks/advancement/ender_chest_always_drops.json"
+file = "resources/datapack/optional/ender chest always drops v1.0.10/data/vanillatweaks/advancement/ender_chest_always_drops.json"
 hash = "e268ab5bc1e3e68f12bc27d3d572360bf205f13394ac1193c337983396bb7f36"
 
 [[files]]
-file = "resources/datapack/optional/ender_chest_always_drops_v1-0-9/data/vanillatweaks/advancement/root.json"
+file = "resources/datapack/optional/ender chest always drops v1.0.10/data/vanillatweaks/advancement/root.json"
 hash = "932453fa70ac5369f7fc0435fec16809ca0558378c684670909aa128531b0de9"
 
 [[files]]
-file = "resources/datapack/optional/ender_chest_always_drops_v1-0-9/pack.mcmeta"
-hash = "0882c98ab7179e6ace720a9edbc5aa340c1f4bdfde5521eeeaa6fa9db8622a3a"
+file = "resources/datapack/optional/ender chest always drops v1.0.10/pack.mcmeta"
+hash = "2b602eeb7c199a2d44970af0ccf7591601e69a1885e5408be161c8efe5536e90"
 
 [[files]]
-file = "resources/datapack/optional/ender_chest_always_drops_v1-0-9/pack.png"
+file = "resources/datapack/optional/ender chest always drops v1.0.10/pack.png"
 hash = "0924a0764854da67fce668c8ec382af89c0d1c6e0ebecdd45b5ccb994bc9a8e2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/double_shulker_shells/tags/item/shulker_shell.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/double_shulker_shells/tags/item/shulker_shell.json"
 hash = "8138e5e9bb95f27b029fa5e119d99c2e9a6b7f44c8a07faada29f295b76297d3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/blocks/player_head.json"
-hash = "9e44fa3f5ae4ff5ede34416ea987356af33433fdd97135e2c345d9849fbf5ead"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/blocks/player_head.json"
+hash = "2a08eba6a4543c9cb4aca492a986e2b613e0b0ab0b101cd804ac4f5938c90a37"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/allay.json"
-hash = "10ec75bd3e914261c56cdab0f98287a1bc440412bb66ab51a3ef54daed275afa"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/allay.json"
+hash = "7d43069dec9a937f301dde8dcd5d0cd4c6a56d331d724e13a69025433cf3e636"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/armadillo.json"
-hash = "bd3e2c9e99dc8a7df8408a6f38aa07595d989e6b2583d88981d921b0445e8c9e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/armadillo.json"
+hash = "e867511570f4c5c174ac196d60e59515f25c5e9abf2c585758773d292511a9c4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/axolotl.json"
-hash = "555dd849323f46b18cff919d8a414ae575d1dfe291a4b2b2595db8463f192261"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/axolotl.json"
+hash = "f4c7243f558cc09d74d50a760c62a64b9c33166e39180d0554775a2fea7a99f2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/bat.json"
-hash = "b5104247d1fa68e3597284faa783d8bf9221ee2641c7cd442cfc04ec594b933c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/bat.json"
+hash = "868a24404f0c96ee9b8c71b1883a80d7e20db3a10adb868a0be67dd4f2720638"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/bee.json"
-hash = "11938de2282aabc81ee781bf5c8315ea575e81b8ecb6d44c818c51c91a3c5f57"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/bee.json"
+hash = "0a0299b0e489514f5fd1d8ba660eba530c205134e3093d219b85b7d1bd2ad27b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/blaze.json"
-hash = "00bf957383a935dfa36573416d74ba80786b73489fea9f4b780f91190538c359"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/blaze.json"
+hash = "d0ed7ff04a885f18556d01942eadf4d3899e37cdd71e56b50def2c5cbbddacfa"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/bogged.json"
-hash = "302c0a4e4ecba9f3cb0a397de54cb68b745c11a54fd9dff8c222201a18773528"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/bogged.json"
+hash = "413cef77786e233e73edbca31dcd3e82b56a6168a9166a37d71140616874191c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/breeze.json"
-hash = "0042a0bd8236d7d2c03710c2d1aec3974956a1ebcfd97a255803b425adf45244"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/breeze.json"
+hash = "f75d720371f554a48d9ddfdfa83b1b14c316c89e5dd4b24a411aa5aef2565447"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/camel.json"
-hash = "03c4125774e6dc8b3a0bb2654628d47f55e6886dae806615bfead848969a9355"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/camel.json"
+hash = "07ee5dc6d80c0c8ab91e8448b902226f04d9750042da4eda6dccf34cdd7d9eb8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/camel_husk.json"
-hash = "68518f8b08cbf2f197d1fe5c41dcec6ad42a6164249e48b2e8e3257c9dbe411a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/camel_husk.json"
+hash = "9fe6e7e334f172f52d6ee75d192fbded711382be121ab9207d11f5fa7a67aedd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/cat.json"
-hash = "4a83a9879d6826e685f0562b8ad6c55cd98292444b0d485df0b819a06a213cc4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/cat.json"
+hash = "fe994dd2f3a4471fb1da1fa0c2137a3c41a6cc940567b422732d5600ca865365"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/cave_spider.json"
-hash = "f2a2082bad02e1ef7174534a07f6b5e42786a37d7a0c4abe79765baef1b92045"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/cave_spider.json"
+hash = "ecd9c5342a226749823f80faf3d9d2a0ae1fdf389894d81fd51b3eace63763e9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/chicken.json"
-hash = "621dc5c455c011b82c8654fa2b2aa785db7de28bb8963ef8e0b1d1044380ce26"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/chicken.json"
+hash = "bf03bf6a9e7d25fb270c3c9293c02efde2d4f8d9ecd583049c5f34800624adf9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/cod.json"
-hash = "82883c3bc6052dec83e306c6a704489e726dd1ad10dff02e272d497eb2f7486c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/cod.json"
+hash = "212ab02e9cb85c18562948a2e2ab202f53a693cded809c94e4d2860576133791"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/copper_golem.json"
-hash = "692f0df592d0bc068a4125ef1fbb1ca86ba2d22458ac2d80fdbe2ef014ab984d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/copper_golem.json"
+hash = "593df1b90d08823eb0ddc26e40161f89497f814daad88bc8f829be5498f5a9cf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/cow.json"
-hash = "db984f24e52d45bb3cf672a12abe75b5726d313c8633fab12d9d8252300a4fff"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/cow.json"
+hash = "f5c941b4b5186a2da4bb0c1fa92c8d3b7a219dfb426b6fe33f9687f8c1ba4ff9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/creaking.json"
-hash = "c025ce682633f2f84eb504aa35240b53409260f78ce5253d86e981999c2bdfd1"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/creaking.json"
+hash = "765a032460085a249176a27ff66d117d0ffb7d5c232351d842eeb3460fd5b6d5"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/creeper.json"
-hash = "80572b81a270d85ac3e600f8e36e22fc8a127c8fe907e281bfd6b940c5817370"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/creeper.json"
+hash = "aa94e439a1e7282c9bc0eaf3435797ce832c3728ef711a773f1df3b9b9b56338"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/dolphin.json"
-hash = "4d02e75c3f61e01b80c92dd9d4dee5cf12c5230371ed000fc3715e84c8a8791a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/dolphin.json"
+hash = "b8bbf3b55238c9d0795b1cef701b2feb433b78a7710265ad13012649be616cb1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/donkey.json"
-hash = "d1aebc98717105d9b7da977ea01e8f691dcc3a666875fe626f4f66e85450c553"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/donkey.json"
+hash = "82d621f785ba33a2c8b41a67e2cba4cc1265acc6b1e346c1fcecff3d3ea58118"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/drowned.json"
-hash = "3e8b21e949588306a0bd0a6f37d82bb47803ed62918ebca717c684c4ec785735"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/drowned.json"
+hash = "502dff4f3a7ecc835cecdc500070f6662200072a4fc3f558e33fbb95e51d910c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/elder_guardian.json"
-hash = "7bb8d3209c9cdf0fc9f19f69fd810d60ba6a498cc4a67a4822f326a55691d319"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/elder_guardian.json"
+hash = "1536b20eebc05be0fd53a87246357ab2410124375e0f2841b03e7b722e3e7b91"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/enderman.json"
-hash = "996a81c2a7aa3ad6691c9f9dcdff5c69c66a5e60c7d0cbd6483148fce1d925bf"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/enderman.json"
+hash = "6fcca34a953fa7b9d571b322a7f1d6c44eed75b950755b86f5df2b3d48de27e8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/endermite.json"
-hash = "b204736602b4bbb1ab861ee9f6287d5716c26b889072750b3c0e58b089c90f19"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/endermite.json"
+hash = "c478b4b510a6e4d567f996d1f8f87aa63619f4c0c1843072c14a23ffe66d56a3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/evoker.json"
-hash = "fd43bd9a042900d414eb3466f83db61d6d2084ffb7164159e1b798ce2ff90e57"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/evoker.json"
+hash = "640ef86a72c7b780b04b204d9a4a72026e4ce076d5d44e209b159553ae2c1c09"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/fox.json"
-hash = "c36661429ec17986403ccaefd5bbc658ced4f233510e3d92977f7f4609752f7d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/fox.json"
+hash = "84b0432665079de407bf87cf43a7adfc536b9f313eb161a5c72884d5b2fc2d52"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/frog.json"
-hash = "9ddf55703b26256859c15780492b7369876431b7d1c8d8f2419580b9a8619d43"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/frog.json"
+hash = "894fc7e723be103bcdd83acf1f2dbd06f45d087334e5ef136055fd15f65f9406"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/ghast.json"
-hash = "f75b549b9756348b03d623abd209300ddfe3ccffb989ccc0927bbe3beacbd3e2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/ghast.json"
+hash = "24078bc52629969be08fd29aa7e94bc07ebc3a4a4858d0d6776f93b7e408dedf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/glow_squid.json"
-hash = "603e11003841392233d7d3ebd949e684cf15dd14a82f8d2a69ac70865015a795"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/glow_squid.json"
+hash = "f85496af9d1fbc8515dcc97226c81ed2f8f0cce7d4c50ec90a298a2e03af4206"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/goat.json"
-hash = "335efcc42c48f11c836644f34b16c7601f2d0f4f754b00570810c3d440b615e1"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/goat.json"
+hash = "23215d68299c91e61c18c741d257bdfcaaa03d79c15b3a8bf15c7dc1c02b24c2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/guardian.json"
-hash = "6a9abb656be036309eb9525ed27878c8bdfe2acc3f877aa437c034e5fef38209"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/guardian.json"
+hash = "0f7e45193ee688b8da4236ea3100960030cc816e6f7d15f308972487442a62d3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/happy_ghast.json"
-hash = "646b0467fd381691afd500cbc478d08c6064dc79257bc664a3fee43475bad70b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/happy_ghast.json"
+hash = "15de7b7c04e7dc3c13146b6dccb283eccf529341d5f414c6baccc98cf30de973"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/hoglin.json"
-hash = "20443326e7e3be5bd54a3d65ae04a103af54da1bcd0f2a0abc390cfa5bf687b0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/hoglin.json"
+hash = "1752decd7e904395a5a6770d42031afa24a7374b0ecccee829a4901a354599ed"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/horse.json"
-hash = "aba68ce4d9ff5b1d418c2d34821a0920b2ef10fff2d59292a2aca506fbeb391b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/horse.json"
+hash = "9d1e6b192b558ea391427186c2b99817a81a3118fb906418f0665974bda034bb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/husk.json"
-hash = "a87efad5cfde9638919412f569650cf82781183f2b750d6989ba124960ed9456"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/husk.json"
+hash = "f7a61e5db6792ce5994f5366d90deb2a17e9ef85bbb08e377a1ce5e332608fd6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/illusioner.json"
-hash = "f25893a100c42bf2fe34a86f875e2297ab22c0b88cc7af19d0dc6288ee497579"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/illusioner.json"
+hash = "ef2fef840680d6c03146017b89d9359eb8bfd38af649c662056c3526a7559326"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/iron_golem.json"
-hash = "2a5a8648af13c15e92a74ff8b247fd9bdf9214a7b27ab548494884ba37b930e6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/iron_golem.json"
+hash = "e3fd933de7f31f09ebd571bc4edb52db04c7f4265a546e1356b14e62d525ebbc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/llama.json"
-hash = "4d0dd8c7b0455261d4d7a7d4e60d3fdc5c361349bc1520e4a9bed562abb1256f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/llama.json"
+hash = "7f212e76abbef77cd6c10ac213d40a3cf8433b397ac9ae74ff59f0165f138fed"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/magma_cube.json"
-hash = "00239f5cb944d184b1fa5845ce531e0007eaa8fcda13025ce7b842ea9417099b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/magma_cube.json"
+hash = "b756a445750294f1f9f6a9149e9c98e2a774b6836ebb6e822696a6d2ca0cc75f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/mooshroom.json"
-hash = "1824870f6c564a386a9d6bd1c4a4363982cd9db090f79af3ca93c6aff8549199"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/mooshroom.json"
+hash = "931f03ec00b51b9c6aabc508dc7e06367b9592d074d735dda381081a1d14d6f2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/mule.json"
-hash = "c1c4cf8db3cfb400d217636abf3700df6fd44485b176a04598c941ecf772a2e5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/mule.json"
+hash = "a7e35d534cce964d055d74860e6eea5c5fe929004ddc5175538adf255829ec9f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/nautilus.json"
-hash = "40986fc58cfee7953394a636c36a86332036a08d83ddea2ccc81a697e5f53880"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/nautilus.json"
+hash = "be780678da93782ec858ebc0fca27fab293d30daf99b2c61871bdc9423c6ca77"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/ocelot.json"
-hash = "e6c65563ea2a4696688858cf2c76092715e1b8c813130a64646c9a1e1f285545"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/ocelot.json"
+hash = "18702dde37cfd8c901d103d1a9f6a2d24f930edcc81134eb26877d4d517ea1a2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/panda.json"
-hash = "98b4db7d300a66a3dbdf6b6b965277e146f2640ff5fd6ff24954739616c3595d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/panda.json"
+hash = "290743acdd03e36ff5f46ba41122627e1dadcd7c3221165fd5fbc73b341ce574"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/parched.json"
-hash = "b4b5351e25416cc22eab955082b2b76f591a4e3e50441da05d611fab57c31c70"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/parched.json"
+hash = "1bacd321adcd7adb3af018f0e7e5b3f71fcf73577a5c7628b330abe463653cbb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/parrot.json"
-hash = "1d2272c4e2707a2f89f34ee9303c6fbe5e966ad6cfd1375db56437cdf999efd8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/parrot.json"
+hash = "4752961b2eb3e04a3a10e161c2cdef5ed3954f64062fa1becf5a79351776831b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/phantom.json"
-hash = "c7242c5dd115ea630eec50ac63d419ea503b6e327a53e0143f9c97d132982691"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/phantom.json"
+hash = "888606e825e9c728806b0dd4dfc146df4623afbd51ef24b51e3c92aa9d22eb7b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/pig.json"
-hash = "4083de8636b1f6707ccbaecff6ecb3c60a4077c694401b1620dbb0259784eee2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/pig.json"
+hash = "fbe9f9f7c46becab7bb84d961e71d2efab28e8d34a904835ddd06b0a9a6d421e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/piglin_brute.json"
-hash = "89698ffc11e60595ae4961a88f7fae12ff29ebf83d6b5bdd03d651773a6cf046"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/piglin_brute.json"
+hash = "22a64fddd086c0fa555299caeb94ecaac00afd6d91332393e15fb313ddecfe17"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/pillager.json"
-hash = "efe0d3ee860d3e1ca6c088c386f15a07ae3cd69180c2a9c3dfca57be92a0c3dd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/pillager.json"
+hash = "73e8fd8a254d2e6fb1a96d6e318d6117f1c8761fdd8547ea4942929300956f85"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/polar_bear.json"
-hash = "13525e2d3acbc9e4cee1cd760b9fd4ab5e5ea59f81e4b9003142784e5159a5bc"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/polar_bear.json"
+hash = "adb3d0022feb4905abe9319f7308c890de2b528c9d98565435006031866a4d60"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/pufferfish.json"
-hash = "d17508a6b6dbb4accf597993d8610dcc038bd2a9e3270b73e083ea04637ba6a8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/pufferfish.json"
+hash = "7721518f48e824fe497b24d368f3e3aadb9826b4860f91a884670c1ee83d7a4b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/rabbit.json"
-hash = "0ec7d437cd799f0d1dbc8a0b0d8987b8b9ef963f38d85cd9b8eac52126ba2f81"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/rabbit.json"
+hash = "7719db2b1f7260de4313df04f7a4eec89722c439411996ec5bb8628a58b77b7c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/ravager.json"
-hash = "8a823368884b52a3fe0e9585bdc59fcb2f40ee9c5185b2e8ad00a5d97e9094f5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/ravager.json"
+hash = "ade4e520eb64154065e169b17efbbb26622859f8e8fdca8a36377f0bb936b656"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/salmon.json"
-hash = "4de124e5326954516d44b7a283dd1597b323e62c02adcfbc9cfd5e360a54acbd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/salmon.json"
+hash = "18b4e533dcd7101c1df7dd26640129227fe038223a76b1a31a3ae6b3f6ae8d3b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep.json"
-hash = "03cd7e7cf9520de830a54def24aa4a7520c754c3f2107c8a7394161f33e03b72"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep.json"
+hash = "deaaf46071c877e63c0bd28a30d7b0370e08704068fefc70ced071cb901a0cd3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/black.json"
-hash = "eacbbc3d125539ca2d792c665fc219e749c12736796bd087a6f73c062a9be31d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/black.json"
+hash = "df48d7dde1247a36837cbe9d4c2b0346822ca70d7200cabd7102442b3d530313"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/blue.json"
-hash = "326ce04f4d7bff591acd7db732d00f856aa83b91c7358f831ccf9de5715b379a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/blue.json"
+hash = "17d804a0a64e1c85320bb7df74dc5f959ef374197d55b7a7fc129c3ed6996df8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/brown.json"
-hash = "f4eb4dc2803d15a316e633a2f7f7cff030d333ad6bf669b18068e120648b42fa"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/brown.json"
+hash = "125ed0774aeb5a3b15fbbc1a077d9b687bd74c202651cc2382308bb57c2da658"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/cyan.json"
-hash = "efcb5599601d6dd32257592ac45af40c8b1047df7a87a340a76e447ba975cc20"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/cyan.json"
+hash = "4788fcc1fd4f81de521dbaa5a33ee9446abafbb378fc5d19cf8eac68a6cbf0f8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/gray.json"
-hash = "f28acd1b4cb8f4be72c7eb2b6060276783c2bf31d676974187323eb83eb5a416"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/gray.json"
+hash = "e37524989e2a146e401f42087dec21b3e67b6f2e3491c76d432c3d8a7c1c96ae"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/green.json"
-hash = "b0590a99110a2493ae277ec7c13784e3b4a22e07c0fb9fc91163b8cb54762f8b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/green.json"
+hash = "bc70426476ba102d28e7e8b9acc50b41e8c930abb75068dd891dbf0926ac9696"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/light_blue.json"
-hash = "6cd693d893c608e523f0ae89a40583ba1e013f05cd8f750e8dee8cc81a0bea8f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/light_blue.json"
+hash = "c80d1917df0afe70051f78c7f702e5e6f565e39c165b0858b88ba3f335d2d0fb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/light_gray.json"
-hash = "52913124a5050a594561df87eb7bf05b21449eaac6da6c244b0eb296f7a4d543"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/light_gray.json"
+hash = "470692ece7d0e7e16eb1d7ac81ddec378e52cfe5dd1d4060d988edb30bd4a4f6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/lime.json"
-hash = "57977fbb7875206786ed6e8b2560f6f2f7f1b594b4caa6edcb60233e44921592"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/lime.json"
+hash = "a6a32dd0c7750b62f358d4764ed2b5a97d2fcc80b40d0949f2435f0b8d32b682"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/magenta.json"
-hash = "051be5a7d861f65133d31ada5c0d04a07bb6a63c37fa9ffb5106f1905fa2db6a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/magenta.json"
+hash = "85dbd368199498c7bbd4fd7d898e19fd9fc0e4de64b5f2d6ec6e157fe7fc4b12"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/orange.json"
-hash = "295808fa7d0ee581715528729adbef34f76c09eaef5d29e4612ded788862e401"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/orange.json"
+hash = "2cccbdf21588f09195f7c41ae290c3fe644447f9d685e9f2961e9ec304a4aa6c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/pink.json"
-hash = "87f2bcacfd0f0840db488370741b1edbe46b100b543027c1e3106a48f418a7a5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/pink.json"
+hash = "ce4deefb3d04f847d9f0fa05aedf55582304c2185a264a272dc94e6c2475e061"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/purple.json"
-hash = "13cebe76ebb10faecf7ee0da42f2e503109da5a83b111560e78f07cd8428ca9e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/purple.json"
+hash = "d8f494f1acf11230448012fbf9255000eb3ce169cb0b2e8c4771de2940547e25"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/red.json"
-hash = "f0290fe3c83547793b1b52c4b60969d4b7072606ea68d577ede18989a705c2c8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/red.json"
+hash = "c9471bd7d54971f680cb80a650a4c787089812ced091be989501120f8d2e9e2b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/white.json"
-hash = "1c13c13f4e007353699e79fcab99dc6d5c3857bd7518b38c2d79fec2b91227a6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/white.json"
+hash = "bbe6bd636e06e5b1afec88da94420626c7282c1ccfb25b88dccfa41a0b605591"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sheep/yellow.json"
-hash = "72de2f1218baa63c769e9fec908fa8d4a16d42d2e3b7b04d1ef0af7db33e4fc5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sheep/yellow.json"
+hash = "b1d637dd867c05cbf57ca5b344ca433f81142128210e3333a139352400a28955"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/shulker.json"
-hash = "214227bc4c94e0608891410698032cc74bb0a868c66926c92084401680df2563"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/shulker.json"
+hash = "adfbd496f074badfbd3fee3b8adbb852e56eadbfc65cdc3ca86324895833667a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/silverfish.json"
-hash = "facf3e84a11f0e0c17e4925d69785dc86b7a7ecd0a9b3c0b5a2551f90616c5ed"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/silverfish.json"
+hash = "5844253ce35b8088679142887f17c1d547bcff0270258422fa2ff2f76903ee1c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/skeleton_horse.json"
-hash = "b4b0d47703d7df396d59bb05fe394c8eaea6958c3f53ab63a2d0d9c3b8c5dd07"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/skeleton_horse.json"
+hash = "5a9d580d4bbbd3dab546dfe9a87e7a5d953f7a8a37d0fe048036b2893e602b27"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/slime.json"
-hash = "4f6df68c9010ffb45f166baf830b5cbf3a185e59d813dc1e12881c17868b0cc8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/slime.json"
+hash = "935e66225b8c4483478e8e8756b8a24d47efe19a118f9180e4d06a3f3929be83"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/sniffer.json"
-hash = "a91d64889e95c21ba0d8d2b60479598bd135a4fd07aecd4f631eb6b497d1ce79"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/sniffer.json"
+hash = "3f5dbc9e70520275b55104b8eacb4591e18767314b0d5e1908905c46b3eb7421"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/snow_golem.json"
-hash = "dde50fdc9ad92be40075a2e33c5f0958993289c8ca67aecef72e30c73c22a28d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/snow_golem.json"
+hash = "ca60542279d3815f765be0c8d29436a7433260738d7ceb8adca437962d0d34dd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/spider.json"
-hash = "c39451f02da90b7c18ca2d6d38abf8d20b5828260391b9ec248a43e11cef8f43"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/spider.json"
+hash = "a3b86f27cfd398ba1a07c9a7ec9f192d46faaa82e9cd7994c4458e73c669ce6f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/squid.json"
-hash = "8b42215486c7f0ae6c599a368f00fddf13dd1f2de28eb015ae06fe11ea842ad3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/squid.json"
+hash = "79dad3be68929c1b2d5d7364863defad08dc2275257099ecca3b2990be257a3d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/stray.json"
-hash = "07ad7569bb2d9c6fb23a88f39cf35452eac9a1d39e4672423f5fe5e68bfc4a11"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/stray.json"
+hash = "bc225573627cca3c150fbf97fa1ab5d3df430731c4d2f7dedeec32b69239e885"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/strider.json"
-hash = "83877349b9a109580fa2d25ebc429cf10812094f9c6c2c0b6c4dfdb7257157a2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/strider.json"
+hash = "b803117b48152213593592cd2050bff00ef715b066d88b76abfded4564b7759f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/tadpole.json"
-hash = "f5e216c2e111e52d16a7586614752fea6895b6a8e7375d65dd877ae91b8eec5a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/tadpole.json"
+hash = "6fdd3126dc99e001f6f109785bfc3b41d6ae29b5e0d7abd2fab58e36545571bb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/trader_llama.json"
-hash = "900320db697534bb8040e0f7054eafc07b47cb4457dc2e01736cf21ec5b97891"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/trader_llama.json"
+hash = "002c2303dde92b670024e06199e74a158ae9430f01ff0fc0d8ba03fb578ce8ae"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/tropical_fish.json"
-hash = "e12d2a716fa21cbc350db7dac28816f784955fa775e75a24ad11d1f76429140f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/tropical_fish.json"
+hash = "eea619c75418e4dc6db5d1f906ef93cc8b00356a17321557181847312024e834"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/turtle.json"
-hash = "eba1eb50ae34937edb9ea5dc79f370ee61b466969fd7e48282939126c88e3daa"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/turtle.json"
+hash = "3b27eebc11963b8232ead8a1358b4803d0971b55e305109dd03e0a576fd8d20d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/vex.json"
-hash = "3a49703e5429b9f448b8ec0e36fb4d6892443562d4fe68ceb244f2e40188fb41"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/vex.json"
+hash = "2353f34020c2fd53ef106c2b679fa69f436548e18c9163c1d14b8ff2ae0ff500"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/villager.json"
-hash = "dd6330b527941368d7f9b124fdedba9d4323c608d2dc4d08464a464b7ac5c48d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/villager.json"
+hash = "ec02373ff480f4656c49a0b06cfa2c35cb2338a7181ef8357da301a3070ba34d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/vindicator.json"
-hash = "975a9681f90d1c1bedf5636fd38d06522eb22df500e0f1d2eba0811624bc0813"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/vindicator.json"
+hash = "9790c2f6398c435271d09f1cf5146b64e50251e01d36b611d9a2d0e33688de3d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/wandering_trader.json"
-hash = "b9333eefe4b3fb965eb0ca04b3be2f90d764fbcb6a34e46f1aad1bb5fab9f046"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/wandering_trader.json"
+hash = "15d48add45ca5cf82f9b5404580063709ff1c0e6e34c3450a47d7a005bfefce4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/warden.json"
-hash = "72671a323b3eb5b9555bfd5e4d2b9c8e2b308b9e3755504321c8b3f0fdc7788c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/warden.json"
+hash = "7c1925aa0eac8d2890cf6f8e5bb0027c55f3075ffb83d218eae7c61b9c6e8f47"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/witch.json"
-hash = "a33497dbf14914d955a84a8683c398ceeb5406a584118de24595402568449f79"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/witch.json"
+hash = "d2be08333e2f6baf628c62d6e33b26a3d672f584c9a9a74d6d0b458d06665a7c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/wither.json"
-hash = "a096c1fe57ca047091c53cfcbc98245f535d053dd38f11845d7a5f5c8673caa8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/wither.json"
+hash = "bc7188fa5738aee8185ad486e9c8f45ce3c3f6c18a2bb8b72bd0c86ccc261af3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/wolf.json"
-hash = "7b91360dd78298e31263994d952f16c8e6b54dffff63c43dcaee528f937836c4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/wolf.json"
+hash = "b3517b743043613bd0720792da3a6212187bd38fea564127f7f7f74f116976f2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/zoglin.json"
-hash = "d1cffb4202f8549e5e34be147142f9516e47770605d132e90b4b48c4e2f362b6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/zoglin.json"
+hash = "fdaee808e8b17d8814cc9e1c374a9daf432307097d875a67ae4cb47d3d6b1d18"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/zombie_horse.json"
-hash = "c09868ad649c5c09e72a120a40a6294aa81aa1a18caadd69a3e1db8fb96113d6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/zombie_horse.json"
+hash = "27e71ad67235571acf839bd035d6528a07ee84f1547062064cad6c911f722379"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/zombie_nautilus.json"
-hash = "77b08131e5113ea69478af8d2854aa5d936d906c7063705e963130601fde1dd9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/zombie_nautilus.json"
+hash = "0e7515e2f9ec1746ba9829a34c476883defc03e93bddb1bdf55de5d70dbfbb84"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/zombie_villager.json"
-hash = "2855460e003a87277b21db8c317506f62772e2d0a29287e3dc6374d5fc337d32"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/zombie_villager.json"
+hash = "f79d6ecca6d51c238f1c1d469b9315963251d36593421dfed0a8684ca7587f19"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/minecraft/loot_table/entities/zombified_piglin.json"
-hash = "ce5eee45be44c4e6c0c493bdc34868560ceb0a1d88e45d34a0f0f07fbd7fefb2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/minecraft/loot_table/entities/zombified_piglin.json"
+hash = "2b0c22113b329df9546a26c7713ca9cd66ac1a9c91b5dda9319dedc4699688a7"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/allay.json"
-hash = "f9b6dff4a90207e6070ac89f9db753e72923c4c652073813893f57e80418b12c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/allay.json"
+hash = "e573e1fc4d2d2c40cb336c984fc435afcce6a50429e716d9cf2f1bbbc5739d3c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/armadillo.json"
-hash = "d142f3775883680bf0e19de6e1814afeec714e5b05ecc190c8e96f77e4f182ff"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/armadillo.json"
+hash = "de33af50bee9199544aa07e9899fcf0de132f9a95ae42a8e0d16602b82818d8d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/axolotl.json"
-hash = "c7e433fff09f95ae84e7632ab12fbc10e94c50a9e904bcdf7ba5c3bc88a20a1d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/axolotl.json"
+hash = "f451e2faeca84e43c9ed6049ff5349f583d50048cfdeab2e92ff91fd75185886"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/bat.json"
-hash = "cce8c7780bf301dd1a329e7dabff0578e1e4f4efdab9a101d19f9065d9d1a666"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/bat.json"
+hash = "d393ee68476d5165deceb841e49795f994059304cb9feeacf3290303aa939f43"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/bee.json"
-hash = "a99c687a5050e1ec7d859eade0b175a96955655f566700a0d8e1fadd07e70449"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/bee.json"
+hash = "5e4121ef10a9757ec0262a6796a98e0c118003b127794e399e24faa0a7919cac"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/blaze.json"
-hash = "eee474156216b8e1766432745f9d0bd2bf6c85ad68abfbfdd2d2aa7e1f33c3f0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/blaze.json"
+hash = "5af731765007a8498b64a9d00d81c849260bc19cf782a5db50f0d9a56bef6c66"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/bogged.json"
-hash = "f1251489494e358938a6e53247a82e9862ea9f474359880276d515b99fa1e06b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/bogged.json"
+hash = "1712002d64308de656e6eca57741021b7f8ae2c19fef4e40ba805a404077b214"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/breeze.json"
-hash = "55bfd7f02041c46bb70fa83d77a18552e3784105a1485a131f2908c953bb62c4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/breeze.json"
+hash = "2c12b88438cf733d812259811bda0485d6863aab047b120abd6d5a5f2c677cbc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/camel.json"
-hash = "cece449640692075830a394360a90d88a31dd5a18ba3db474f7b7c5ee617283a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/camel.json"
+hash = "395307df9bcd5601ff936dd50340daeec1752239b92369d1945eec59759b1a53"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/camel_husk.json"
-hash = "c56828c3eea3c3802feb772741725c72b8c0505eeae0e0cdb8ee9020a0bb9cbc"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/camel_husk.json"
+hash = "c6b24a0cb2a1fcdb9dcb266050285e8d620f9af24d870ee544f3dd4ecd1b3969"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/cat.json"
-hash = "d591f3ca427288f4c646f627d4942b28c87dbce09a246738a50a45987be6fea5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/cat.json"
+hash = "4fc648c397782fc2d99890bd84be949c8836b53c48ca586bc2eb35150bff5387"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/cave_spider.json"
-hash = "9d80df1abd66d3c8038a30bdbc13410d16668bdd56b8d9111d6bba66a0bd2a8f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/cave_spider.json"
+hash = "64e8a1e8f5c7189532be5cc4b963cd238ecadf3124389381317c564cc7629a76"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/chicken.json"
-hash = "45d603805a7636d36dafc81afc7c8ca504607a7d023d8fb870e669181e691f13"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/chicken.json"
+hash = "a8adb8693261bda4d0275a8c16935306411afc2400b9b96ad5cc927e7eff092d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/cod.json"
-hash = "a8b8ec61f6d38c993fe5fb53cb9f8bae9fa89bc7d8fdbbdeadced6444c3d5100"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/cod.json"
+hash = "90bb5b9307b5e2c684123864e93c198e2e1c42ec3a15a49a810dc926b05b8289"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/copper_golem.json"
-hash = "69f0e907db019b15a3144030e59169169c6e4a8a6393fac9e791dd78fbc1bef9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/copper_golem.json"
+hash = "44432824bac4070ebd1f751621506e79c443a77a836b69f30e8ae194818892aa"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/cow.json"
-hash = "9c253b90f79524f1822a83b9bbc7605bb917caa12420f273e3b4b68bddc527c9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/cow.json"
+hash = "56fc228be16b863d4d5c6715ef4524affc5be622a2563763456c3bf5850e87ab"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/creaking.json"
-hash = "1ed7b81550cced932954773265832104e9d81d4131f5eb25c48ecfa6a3ebc9b6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/creaking.json"
+hash = "776cec12a14564c08481f6a5190f70676c5a68b17d8f79981aa06fd015a32fb2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/creeper.json"
-hash = "9d495221454ccdb08c6ffc7f6f2839cb8cef5540a906b2a7770d00676240eb34"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/creeper.json"
+hash = "0a947b055b8b634d13a4aa59639ee466efeaa864b92456f69ac854e529dc615f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/dolphin.json"
-hash = "23ef7f7e5aa4a24eb00f2c51db52e2f6e41eb83ded65e76383049057ae216ff5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/dolphin.json"
+hash = "e900baaa00158cb32dcfcf6b3b116e7dfdc7ad80c550a3bae2e9892facbdb500"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/donkey.json"
-hash = "c92aaa8528d45726b17cb24ecc0ee11f2faefdad6ed66f1c159f464a15c1c487"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/donkey.json"
+hash = "6c1a6786c92cead84a37b61a3ef6f522f7ef266b6ebec1bcee0aff461eb61ff0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/drowned.json"
-hash = "d1d14065dbc57422e46e4a46f645e9e9fee9a3d65f5e729cde37d023b9f96dc2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/drowned.json"
+hash = "81b999c6b955324b8b0f7d7a6c0a4c95c3f3f3783ef98f55d8916f085962ad80"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/elder_guardian.json"
-hash = "2c3a4895637e8b7814b71925bed6fae165c16e7c9f4446a013d46ca205155d1d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/elder_guardian.json"
+hash = "9fd2f9b1136cf27505e6c52a5d586b2361a115f20dd5e655ca463f2980bf23dd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/enderman.json"
-hash = "2352018f2645e6febbcae9f257c300a258400a8d4316551a9f6caa0c91d0712b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/enderman.json"
+hash = "02c3050dc015c15a6352c671dc46a029e4d40e0b4affd06084b3f02f4463eff0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/endermite.json"
-hash = "46b7c81a78cddc551cbd73d26749e64ee05a2bc9a3839dc664654cab018f16cd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/endermite.json"
+hash = "2875ed29508e95a31eb9ea3c0ca6c06310002b42595a14b339d23df59a64879f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/evoker.json"
-hash = "576e89da2704b02798cd9c9b7685738ccbeedbf101263fef4927615b20e8e5a5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/evoker.json"
+hash = "6cf72db8cd1a43e393d58f2e0985c41829b8fe0bd30604f769ce03084d4d7525"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/fox.json"
-hash = "d23328a7d7517131088a9cc76aba18cfb7ae3ec576eb24223507329f244995b0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/fox.json"
+hash = "1c7f2ccb88db60b6119a1d0b5680835f20bd3617b492daf48f291ee19822a6bd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/frog.json"
-hash = "c86d9950fa349a5522eb77c7710d7f8f43e2f0c4da228c9fb9c1e18cad2b50b7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/frog.json"
+hash = "abefa02c2790bd564243727f7977ff29c29c859baa85807be0ed1de601b9fd16"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/ghast.json"
-hash = "a10e1994f09ab0feeba237c8356e2f50b6fd614ea216fc46473921f599d5c42e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/ghast.json"
+hash = "30b63963888c2ae44a47f132048aaad02cc17e87cf16dd10bee4f1c94abe385a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/glow_squid.json"
-hash = "803592f18a09d637f36460643d47dca84058523f5d7c152bcf693ac75293b2f5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/glow_squid.json"
+hash = "c0ad7200b8e4325718903e56f9e308bee00ce1c241e57ef02a217789785c953a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/goat.json"
-hash = "2ce92c88f27404044e0f5ee4bf15c44ebd25f822561e85b20417f3954de49c66"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/goat.json"
+hash = "6251c77c1d315200a889364d7725931ddd947da3ebde5263d7b97d71471e07f9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/guardian.json"
-hash = "8652080b859c47948e8b5999fa0589a51e37d1d894d1294281ed8d342a3ed2c0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/guardian.json"
+hash = "82af2520163f57b54a27f7f9c9110a9738d5968967dc3649ed4388b04d1ed56f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/happy_ghast.json"
-hash = "1bd866dc7a87855ff260b5042c0de546bd902346c79271e39d481f1feafbb18d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/happy_ghast.json"
+hash = "f2d24afb1a63277b0972901945fc0bd16f99802448d76649af3a8f5d9905fca3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/hoglin.json"
-hash = "6b8358fb0bf6b2f333dc3e0fe5417b62b613d77c2d4abf2d453a89a3a270aaa0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/hoglin.json"
+hash = "912935a86ea540f10a4ec4eaa38fa8c2fdec79ff2f5f29c242b3e0a0645d4b56"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/horse.json"
-hash = "679c791f201700e7333f75cead00162b1d14be06d22b3e22ee4b4bc0c05ac4c9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/horse.json"
+hash = "d88d589cd1f25117231614ccb481c5f293a795dfc113d6f871747ca91bb99ca8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/husk.json"
-hash = "428415a7d9710cfa7566556154c7793e83236de80ca8a1097d6cd5693b49dac0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/husk.json"
+hash = "1d6cba246c90dbf3711835c8fabe94e77a067c86227a6c71a0cae170967fa97b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/illusioner.json"
-hash = "69aaa315c231f3e2f1398cfbf4e486b2db6f5beafca94199f6c719471eb45440"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/illusioner.json"
+hash = "b05e9804c54eea0358a6c896dfcf50a1974c01170716bf3a22b40291dd94255a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/iron_golem.json"
-hash = "508289c263cbac797ed99b64939d375b163cc04af284718bcb45537287bcc70c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/iron_golem.json"
+hash = "fd1e72a07e6a8d522a28a6d678ed08437a87dfec2383a21c0adab1c5bc593f9b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/llama.json"
-hash = "b9202ee81f6111953978ef86d504714cfb4d630aedceb1881ac5828a83ed4972"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/llama.json"
+hash = "6ee4ee6e2ad609e95af6e1202e33a04c4b4c4c4ac9865106c95d5bf7753d31e8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/magma_cube.json"
-hash = "246dea73a0624b5808415496e1509325b916e29c876c981951506405fea57134"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/magma_cube.json"
+hash = "7d735dd3b8a149e8038a2fc7400aba896a12a403ba8b8ef29ba6f5236ef8ae9f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/mooshroom.json"
-hash = "bb9a150c993a8820189d3d740b66cca354d7684bed2d61ba01e0bebd2773f59f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/mooshroom.json"
+hash = "30e51c57a0bfd4634529eae5109d780335118c43c5b4a5f6bbf4bd34ce5fd8f9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/mule.json"
-hash = "120b224a81300c9d19221500b49f511a115702cab23c84af3d159ea8c1e9151e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/mule.json"
+hash = "2388b9942b3ea087925a418d368c36c0df5a503819434f17bb43bc83cc6aa269"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/nautilus.json"
-hash = "968b4ce476a2eb9739fec849ffe6f1b3ce65dcba51e29945f3c7074c0a435875"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/nautilus.json"
+hash = "b156065b9058dd38797e69ab05e889fbe2860d4cf78c5854430f322a50242bb0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/ocelot.json"
-hash = "03fb81de39c9f3a9f49d8d6cbce5cfc990f02d0db8f192e8c7d05e0c87a11a25"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/ocelot.json"
+hash = "ac8077a50644ba30112738d3d6155e55779865d7373dbcab813de81ab8f1a0cc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/panda.json"
-hash = "35d56907f8715a478b6254923196c91d357ff5f59842b24b42396d1b3627d57c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/panda.json"
+hash = "c898395dbc4acfae1aa74c825c2c17bc1e0ebf184c227c9d743a3dae7febe76f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/parched.json"
-hash = "d880946deab19b3376fa0929b9b99167af317f4aac7537317334a6a7ee39bbe0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/parched.json"
+hash = "490557003094c18305026d82cb642299a8d65e89261dc033649b9c70db263e7a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/parrot.json"
-hash = "1a3838e9793f49c7affbe24fc614ef483d2ff126ee74bc1b73ef720b879b14d8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/parrot.json"
+hash = "b843c5cb724fa6a9c27212b9f21f5f6e9987fd2797f4b54663e21057ef439265"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/phantom.json"
-hash = "e7defb3bce53da203ff273c0610e3950bf4de2098016f877e95c23a02170abd4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/phantom.json"
+hash = "df5a56d82176a96ba01182262523a2f7b47fe571b0c4add3371fe1626ff7de22"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/pig.json"
-hash = "94fc288680ea7fce384447f134eb1459fff7b6627138f77de7659251b5e47442"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/pig.json"
+hash = "003da8b95c228a6b9fc1a2169c3d4b47db1eb2b30f1e009cab753469d215a2ae"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/piglin_brute.json"
-hash = "23ca35ea791f7a8d8cbf08b726296f174624fd151eb7daa29bab0c8d0e4a255e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/piglin_brute.json"
+hash = "8153aa4cff496cb2b6af712cc55cae3db6a8f813d2bceea7db5686d2e92728e4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/pillager.json"
-hash = "b5b140366231efd6ddc049090241585e94624ab138b8a05597bae00ce850a0cb"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/pillager.json"
+hash = "78807a2f9b46183427f33cfc70d723c38a5f508e09bebc773201fe6eff988529"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/polar_bear.json"
-hash = "8aec22942bd597899f91c7dc2cddb35741fde47f0c2878b9b71eedfcdc3353fe"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/polar_bear.json"
+hash = "94a1f9929858b7ff53c51a3d371ea9776238a590f321e8d87bc919f9357f4b2f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/pufferfish.json"
-hash = "834a2248afe881562ee91244624904066b776a8c94c10dfd2476fcb327c4112b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/pufferfish.json"
+hash = "c17efa2449d916ae4c38212b7e609a80ab0f4fd462891b8b1f52335eda78e8d7"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/rabbit.json"
-hash = "6a5178c3c972e5993e5217c370c7d20df3a7e58b5832c84dc028cb27f40060a2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/rabbit.json"
+hash = "6e08190c79360179bfa4d9ca5427e44a4b2aefbfd7253f75d3cd07a28dc4db09"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/ravager.json"
-hash = "8ace52060ff9016c4502ea8505b403bd6e4ef59ccfc25a9ff2a83a4b4ca0a836"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/ravager.json"
+hash = "2fc86b470197a0d4f39bc2538ad94bd01e250ea0cef8a96c190656155bf0f945"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/salmon.json"
-hash = "8be3d01fefce1190a429391550f4a56e174a15ac24afed74c4bcb0bd35d0e531"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/salmon.json"
+hash = "7261b7740eead9f5320fb5a8741b10cb4f8ef1d4d9e2c1a6974f2d8f101924fc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep.json"
-hash = "daba91e77fef03e3cd63edd02b9bc154b65971d6d56e14554cb64b8236964773"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep.json"
+hash = "83720f0fb28d1260a820a6ec95862e009fc2914ea6654112468989c392409c16"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/black.json"
-hash = "6b115d22d5454bb717557fc0b4a5c4cde9f49ed48a9cb2926c20154ad0509704"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/black.json"
+hash = "67cd96389b8ee96822b330aa54f5d1a5f7b76fa71b7b164ca98f12ca0ede6500"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/blue.json"
-hash = "c4a57aea48278c3cca53cb119d919ba99b473c9e8fc48bba2bcf201a994dc74e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/blue.json"
+hash = "857520c6b5f6053ddd9cbe40d84f2a1c0174ad040a808dd57abcc85270064408"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/brown.json"
-hash = "5df99abc971dad50cd275befb6352e74f9b543bf3d1163c033188855da092011"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/brown.json"
+hash = "623ba50e444d679ca3a615dda430403252d8c92829305e4600ecec253b1e23b3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/cyan.json"
-hash = "0602868b31025542a90221d2786a7695229ef41e9dc0f577f8d62df0a995cba1"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/cyan.json"
+hash = "3e9f771ee780077c3208b20b6c791f42bf412d019a43762b38d271855e5fe61b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/gray.json"
-hash = "d91af82843482368c5e6c274cba968b6510c3dc8a76b47325533fe13104c7122"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/gray.json"
+hash = "59f94a66ff338a77de82d7fd39bb1c035f9379ed095add50d6defcbcaa2e3e81"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/green.json"
-hash = "51cf46d90c460af1c67aba984a442ef3154de2e0369649687997364acaa6abcf"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/green.json"
+hash = "4259f6e5fd22cf65124c7512d7acafed36931bbbc7467c21a102947be1303eaf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/jeb_.json"
-hash = "de6e1ef29992d6865a2e7f97ef99a700cdb5bd90838f1244d8873cd8010d8d2b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/jeb_.json"
+hash = "f3da84c058b5ac2a99424c5aa049a6ce61ee77e8c92370a3363dc6c7ff19654c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/jeb_sheep.json"
-hash = "9294aaed9ce3d79d63428cb3d2ab5872919b656e0f0f3a73b33e733c7dc3f6e5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/jeb_sheep.json"
+hash = "9070c75d678a7ede541e13ddb471e395df7c7fa580dd7be1ab0c0105bf02f365"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/light_blue.json"
-hash = "9be10862a200d281e810d1f73934a4295c29825d945d74459392a0b7be32371e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/light_blue.json"
+hash = "862042bea5eeeffa9f25c055302fa60fec652f34050d298c7ae67d8cfe513745"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/light_gray.json"
-hash = "ce072059370cbc026a3efdc1c35f818f29fce72764bf00d720f4382034d2f990"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/light_gray.json"
+hash = "58350ecb880fe8f3bd75f673f0332fd3d80db9f6b1497536fb838808514968ee"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/lime.json"
-hash = "225b6d305fbe86d5e4329b82f39029a573a2ef959428c17913eb0e1a951da65b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/lime.json"
+hash = "eb13ce375b10dc226460ee11605864ea1717aa75ac7af94e20d8f2d8d39daa46"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/magenta.json"
-hash = "5f11ed1477eed36f4a35327b19d8097386ba844270c51735bc0edee40118d001"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/magenta.json"
+hash = "dd4fe5a3cac8da11aaa2745fcda02ae58228af37eee76e32cb136fbf68665200"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/orange.json"
-hash = "cf55c49574205c5e9160c19688b003679b41d40b43b08453fb11aa4791368b65"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/orange.json"
+hash = "24f4f28ef723a36c540b83e17509e3e5382414f6ca43c9e5295069d5e4e91e13"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/pink.json"
-hash = "3e4fc99b4d183c7e9da0561d22d8a592902e70f10f0032dae48e38f01d1833cb"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/pink.json"
+hash = "e2a3cfdf5dcf9eabaa8e4dcd509409584876c86998e8f0d8ab9f5ae504e7b070"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/purple.json"
-hash = "db5a091b30e647ac7fba0628f872af01e92c6cceed79e10d1ca1f0b2edcaa0d2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/purple.json"
+hash = "19eb48adc67d3129087f259be71aadd96b13197b7cbebc6287fa12a3cd7ee3c4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/red.json"
-hash = "79082fc9052334113ba11e0a802451aa34dd62409bf6ac0534fc02a9a926309d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/red.json"
+hash = "0a4a34a789aa21df693cbb2779366d6d177d597daa77ad56603eaa41614e3a53"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/white.json"
-hash = "1b4e299364b8521e8e194908d3d508913b40d5d4e1163dbf583242b54044e033"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/white.json"
+hash = "bd4a9bdcdd8921cf29ad15594136c81f530cf2c6d5f7a35618889420c5340b07"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sheep/yellow.json"
-hash = "5e670bcb6febdccbb1e7b14a4f24faca82ec98f0c51ffade0120f33774b84ca9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sheep/yellow.json"
+hash = "f5b6f876b2fc0b3574d89364917ae1ba5b9402b7312ceb0f1a16065dda0dbedf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/shulker.json"
-hash = "08c628258b431077d04d6951791f0546762bd99dcd0881027b103fc18044a07d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/shulker.json"
+hash = "ff1bd4384b29b74641b90140317819198a75052d4e3c182be29b1e8440198e88"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/silverfish.json"
-hash = "58f9bc067240afb346c479a9e8a715b778442c39f0a83538e24490defddc37c5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/silverfish.json"
+hash = "76d7c9632f6fa87dda7d26dc6b59173a3b9fc349395bc9b91475a60165e05207"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/skeleton_horse.json"
-hash = "007bdbe0f29cfec54006611870a3d55f60cff6ad98d927c87a15e61d760447a9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/skeleton_horse.json"
+hash = "f553b75fec1698a5793c4a88990bbc2e8cbfa21c1cc8afb332694fb2c7c3d06e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/slime.json"
-hash = "71b83f00b45737f9e22ac90e221dfd67219304197cbed47723d740dabe2c4782"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/slime.json"
+hash = "741c358abea90da93b07be9949a356ff64a2de34f4363e3f10d8670c9e6bd155"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/sniffer.json"
-hash = "da6b1eff0e45917bebf0f3bbef19fd9d190b68da678a05c500527c114d69f1d7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/sniffer.json"
+hash = "a5c3bdf0920147c6c9b5bf4d5954356e69e419f908d77bbd7b75a9654b914b7c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/snow_golem.json"
-hash = "068fd142252fdc4d74d8b1776284b8842a43ebc4a7a0e46212b37b0b2ea18524"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/snow_golem.json"
+hash = "1d4cc2647d0682f2296eeb7f4b2c70db26d131a672dd14800d8eea74ac092591"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/spider.json"
-hash = "3205be434eda97f4f83a693c88f8f4b131c651a5cf6ad03df77f563370895387"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/spider.json"
+hash = "c44e9d6b94e1925fe18736770544e4d67ea8f9680e6134d7f05d23f6b91af3fa"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/squid.json"
-hash = "fe4e0ce6723afe5d1413e1a6982426cc856f7332b44730571385199c3f5c5b3b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/squid.json"
+hash = "846ab4212954835beae2867c4f25c56948e58cb61facd4d646b7540dbb36b723"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/stray.json"
-hash = "f5c05521d886c329b33a58a1e04ac7c1f82169a573f88eba17d4d701a93cddf6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/stray.json"
+hash = "e823b563f45e7e2a25a8563c0c1388351ab78ae0da3496e53fee0951d3f5b851"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/strider.json"
-hash = "48e9531e7c5ddfea2de5a75f714881c9ba4874691432c7f3eea977dadbaf1319"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/strider.json"
+hash = "e16c4f279cd3de0bc803c0bbb21ccca7b45acb5c90577dcd2303695bb7778113"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/tadpole.json"
-hash = "b2bbe97f113c87cc2f9008e1684891514c64cad608888bc8ce84996051ae4d56"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/tadpole.json"
+hash = "c44661392259c17b5c1ee686f12ec84ae2767cd7de31a06282604a71570dd009"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/trader_llama.json"
-hash = "9ecb198dd9a57f89e597135f543012112008e032ca9f833d786d271cf1555fd7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/trader_llama.json"
+hash = "fe07918cdd1d5ab69703f4c069175a5c6f51e39c26a8044590bbb92d6639962d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/tropical_fish.json"
-hash = "24aec47c65c39cf5c8382d3caaf4187b68141bb01d2a7fce52e07fd43aa40ccb"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/tropical_fish.json"
+hash = "e61d6736626e2a081e40967a12122deb930da60cfc71c413f62bb93fe94e7732"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/turtle.json"
-hash = "cb54a2c0172c4f6f7af7bd79d49523e3c72253978a06e83917f293951d0ee999"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/turtle.json"
+hash = "d65da395cb93d101dc0a78930b116bccbbf229e51ebe9cce20cc95a644e7af51"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/vex.json"
-hash = "4b1b6526bac798968cff3afa8360232391029167f3b726bab5439e861bac8442"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/vex.json"
+hash = "31d41ba34b7e6c3b3ac5feca9f3e2612f0baa3e50ef86011a2310ddac89af33a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/villager.json"
-hash = "37c98716612f4e839f012001ec980790a80d29e9f9ea26ebe64338ebdf4926c0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/villager.json"
+hash = "ff44e1da992921f9d44263bd37e9c394421b5ae0af6b3b065ce27b22d7660c46"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/vindicator.json"
-hash = "ada456026f18d6fff28b053658138267c32d2c98c1696ee4ae82de021bb41cfd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/vindicator.json"
+hash = "82aec4903dd587c2d97bc137ebe042a6bbe9e01fa2d6401105a7aefca8723854"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/wandering_trader.json"
-hash = "926bc0d2d2479ce40e6f5b8e95fd8af702079b402a11cac85a5e5cf8e4d750f2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/wandering_trader.json"
+hash = "e79fe532dd106f04a86f6e0cf6f4dff66124e0d19b61ca8bb052bcf145eca6bc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/warden.json"
-hash = "1d465d596dfb0a9dc517a25940fc2b0270704c9131a19fc4f0b396e0301198a7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/warden.json"
+hash = "7ba9197fb1c57e7c258c27343473e6332649f1d47062eb2709cb6e16f3e96ce4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/witch.json"
-hash = "c19d8226172b18c87b4f2d965a7ecbe164a5a07183792c80e1f75add1d8ad2b7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/witch.json"
+hash = "60f18c55f6171c5291e34b93a2a69fb128c10a6d37094540a143b52c79e9a369"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/wither.json"
-hash = "14bddf8beeebaee45a4908816ed9623346e8d674f5ceba23c185971ac35b6968"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/wither.json"
+hash = "d62e104ae098bea74fa5389a3144f39097d45ae78454b477062d00cb787981dc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/wolf.json"
-hash = "b14910f821f4200dd21a3cf0ec71f2431a75d5e8da693847c9768acd066b9853"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/wolf.json"
+hash = "29dc17b0ca2c083df2b5abd80a1fc991a2e1cb75679db4b335b69dab03af5811"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/zoglin.json"
-hash = "168b16605890a969a6c15337078468de3a1ca61b4f3a3e86baffecdc3c29f90a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/zoglin.json"
+hash = "692fd08b018bc92b53142d0842eb79c8a3175395178b262b9acf3646171b14e3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/zombie_horse.json"
-hash = "b7258de178de0f05d87670e90695896efbae7b3aadf1644679dd0cf95634922d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/zombie_horse.json"
+hash = "20816f715c22459513c45af7d526be0a2c6d4de4dccc312a41b5cb008f1c5fd0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/zombie_nautilus.json"
-hash = "92ebc971056351589ee239c0b91884d694e2c8b5f7d7132a5605acd8058066b4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/zombie_nautilus.json"
+hash = "7e52338260e7d06e91a6c0d84b4941ecf1722003f369fe7f0305bc2da1af840e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/zombie_villager.json"
-hash = "58afa16b2c72d9cf54a3ad275ae9d5ca10c90499f41bde352c4a31ccf3ca2135"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/zombie_villager.json"
+hash = "a3be0cfac7172d765fbf2e5b8ea3ac2ff5e8bb1c65e961b9b690b3314dffec1c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/more_mob_heads/loot_table/entities/zombified_piglin.json"
-hash = "afccfb7ad6c4c514a4bd2d38202f1ff50a264b21d181bf3aebe06575ac39dfee"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/loot_table/entities/zombified_piglin.json"
+hash = "166e7326729934ac3be043e9c4d89ba2bd4f3cf9dc4eac773bbb60d48c99b9d6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/allay.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/allay.json"
+hash = "3fd57b5dfac98d221a6b4a38c14822063a267fbddbf661f9073bc58a6aa3a6a9"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/armadillo.json"
+hash = "009d3dd471b44bf02235ff424f0713432acd10fc4fb251728fb019aff4136879"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/axolotl.json"
+hash = "5d99e82c6c97cce1103bd029477548f0fdf5cfc54f0f53bd88ae06a93701f69d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/bat.json"
+hash = "b86348fe1ab1d11046bdfa4c7b3db679ddec91eeb50de5fbad38faab6c5261ca"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/bee.json"
+hash = "5afceeebc292d13ada21ead881fbeaaa0e796fb1500ae8c4d1f2b52aefc51796"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/blaze.json"
+hash = "bd6876562ab9644828796c4d8d71d6d3d4b2d422865fd8d2f66323fa314b75ed"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/bogged.json"
+hash = "277e0dc5653b74605a0e8e3c2f43e35e505869d1669abf9839ddcd07e8b9c25a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/breeze.json"
+hash = "826ccdf727891a07300333e7bb90f82e8f10b14a581b61b3e873a2351dd0c494"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/camel.json"
+hash = "be1db41b318cc3174577a26fe21ffb76b3aea27db10883ebc7b75ce6fa49c1d0"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/camel_husk.json"
+hash = "587896ad3501443677cac910dcdf79a1b957b7d997fb2dea5984aff386e8c8b6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/cat.json"
+hash = "8a048c4fcc78e79808ef4a87eab12defdf9837e5c2d2d3575e7eafc90a9d957d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/cave_spider.json"
+hash = "422a40e662dafbfa17b76f73c1f1a3d9274bc32be87e731c865e447711cc8170"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/chicken.json"
+hash = "78d9d2b709cf91ece57dd1fc4e49435efa6dfa34b9a8947d5dfaa665ceaeac16"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/cod.json"
+hash = "cbdf81c427ada35f30730701b4d408c8cd4f0a9ef35b1ab5f0154b33f5874298"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/copper_golem.json"
+hash = "32410e66b0572642df6ed3a09b87b5f9a80a654e3db02d7b399f10a0d9eeabc0"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/cow.json"
+hash = "5ff90116325b0b1a8a93453eef530ce1ce99d1e0a2469dce99cd065fb9d7228a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/creaking.json"
+hash = "11933727178f89523aa6e5aac078acdc4dbe26a04d7b6b52e3d90109a8240b56"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/creeper.json"
+hash = "86c31be8886cc81ccd77363577a19276897073e4132df46abcb7f74f620a0bc9"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/dolphin.json"
+hash = "d38aaf4e394e084e2b9abe4f7e46eba69fbbca8a785a2e7c44ab759e08905171"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/donkey.json"
+hash = "4bc577c8010a30f803548b2957c92cfc2b12c48e3c9821bfcbd42a4911f5f5a2"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/drowned.json"
+hash = "0b1fb29aa3f30d0d524b2a789171c6d26ceed60a7e0aa8d187afa88874522c52"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/elder_guardian.json"
+hash = "5c93c8b90f7aad9c281b63544546ccbe571769a20dd0d737721ebed04f77f8fc"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/enderman.json"
+hash = "3b6a654a3a5ee6026f81c6db22b7d97ca7a8687ea5d000669461ae5a65c9b5d5"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/endermite.json"
+hash = "131a275da93eab138e86ff8d96de8c043c38374282768fe032fe63e422c6a8c7"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/evoker.json"
+hash = "c2933a861da8f99b222266154ef9642372e1e75672a53475836b139e9156ccfc"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/fox.json"
+hash = "cfd6ca39877eeea8f6382dc6a7bb49f07d4d0dee488c637e564d083e64cbe984"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/frog.json"
+hash = "e49f4ab27960b27636b31cd1ba3d2cf58405b667b8fc60fba88fe2a68604f927"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/ghast.json"
+hash = "6f1eabf661e56e1be81b7c1562eeecdb2b4fc25acafe7ba8c3be8d0c8937587b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/glow_squid.json"
+hash = "3ea9a92582179ff0eacdeea9b36d6b880e1871fdad16cb48e146788ea4f8ddcb"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/goat.json"
+hash = "c0e34f3cf2dd438115ef675e511b4727c6e460f9085b2beccd80f44106b93a7b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/guardian.json"
+hash = "8fd88508fec1dda6fb1985e545c700121fa2cba44d8a000a910db889cefb49d8"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/happy_ghast.json"
+hash = "c69cb9875e4115565628de769ad4d5d8aa7d68866918319071d0cfef90e3028d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/hoglin.json"
+hash = "92300eed1a41e393487c07da2d20696d7d3c5885b5762eec37cf4b2d99ae8945"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/horse.json"
+hash = "4ddda2faf62e607fe3b1ffbc68b15b22a154689b6dafb364a465137617cea4f2"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/husk.json"
+hash = "fb9f232c1846c5474280db0b5062f7b986f1e163fe97d608918e7530abfff3ce"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/illusioner.json"
+hash = "bdcd9e1e8e6a63c4ffa8a476b5dadd61b0b56cef12478c0383daa6a4dc1779b2"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/iron_golem.json"
+hash = "fb295bd7577fb069366d1327ac4fac3632ea7d5feca529a33c2a80dbe6d232fc"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/llama.json"
+hash = "b6ea48e544dc0f3a56163230cbcd54e320f8826aa8c38c34eba6ba9309db7506"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/magma_cube.json"
+hash = "861a59994344d8d9a6016426883048a1462769cc225066e04b484d3c57449659"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/mooshroom.json"
+hash = "a503aae4919f4544f5cb52b79c2f661a8d79cc4c7caf995b37efad24fe7f8279"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/mule.json"
+hash = "0724c5f39ce8987f3f916be24cbc6c31ad9ec39459c623974ab0a3420eaee1ed"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/nautilus.json"
+hash = "c336c4990d671c980a4c858c5ce15002f474bfb785a5f9d04fe0d509f0f13d6a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/ocelot.json"
+hash = "c5811217e2a7ca70cbd24676f13c06190093fb199eb13a396beb4cf818a65ea1"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/panda.json"
+hash = "85ba0e573afc665088e463a04cc63535587af49886d81fbb862b67a7970a424d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/parched.json"
+hash = "50f6fc9777272d2fba9065f919ea3a3176e9c1aca4a22d5800fd6895d8a83abe"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/parrot.json"
+hash = "906686fe4893eed76ff2f68613fd17082285111aefef470ec89dcd3dbca94ab7"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/phantom.json"
+hash = "842c52c610d837ec60e31b59c3ab97c3e6bd264d5969a7733791b1b6927c0067"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/pig.json"
+hash = "d38010e931597a2ab4407dc53b5cf748e146e8b6e19f7e27945f3f5ac7f42269"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/piglin_brute.json"
+hash = "5b569e103db4280a1206839deaf11120d60d079b3635a34ffe2a14b8eb690676"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/pillager.json"
+hash = "32e8120a19180416827a59b072b69835d6a0e36d043ff5b2b873d0228181e464"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/polar_bear.json"
+hash = "ded812f1d63061440d072d428cbc34e17750eaaa571461a8bc74c64278e20ea2"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/pufferfish.json"
+hash = "59dac96cecd90ef5b38d087156607c1d5dba32bcbe1d831f61c33e04d4eee2c6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/rabbit.json"
+hash = "8711ddc0c94043fb1f9354bce6b5b43ae45ba8a852ccde18027757112eb69489"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/ravager.json"
+hash = "f5f925c5303a5f24d69eb6e1e0b669ac1ebd80af6369a6b8c3fe20eab2968043"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/salmon.json"
+hash = "7e74be8d3eacd6b57dc9a0cc3dfa2055ca1f7fe0cc1f63bcdcb2b60e5ec1c9b3"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/sheep.json"
+hash = "4b835c67f3c85e3541117c6c3baae3bdb003028010a9d3d7691c97bd32816c06"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/shulker.json"
+hash = "fbb4075ad62bf9bf5b45f2b3175684abfa6eb8a7da3efbaa2a85c74830b45351"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/silverfish.json"
+hash = "95bf9a9bdbe0ae9b66f0cfbb407ecdd467259ab894339476b20a45ef5dea2bf3"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/skeleton_horse.json"
+hash = "9d7ef1112bcaf21db66d8b7f20bb4619c2d2f8b66a7fbf2ea36e8a31892ad573"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/slime.json"
+hash = "f635724c02cdb00c3f38b260822726879444cc099abf62b8a72ffe6e17e16795"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/sniffer.json"
+hash = "1af739c68ffb779782635c63deb8ee0bf604c676be7397a0092bf1a6f5428d71"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/snow_golem.json"
+hash = "0dfb5cd08ca75da43b3d6e8be975768df21cda66cbbf8ba4f4795748843b3405"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/spider.json"
+hash = "75e774c636f6253d10f26a85b7887fd0c48d0e0cf73f0f117aa6a5c40299c511"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/squid.json"
+hash = "a6ebc72bb8c4711091e01226f884121592c890f2980e0431e02c62a755c2ca8d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/stray.json"
+hash = "33665674be786d672f7bc29c038ee4327e46ed909230640f7903f0d1037e507a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/strider.json"
+hash = "a37446bd85e984ff465007979f137da05951bed94875d3c6aff7095cb05cdbf0"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/tadpole.json"
+hash = "f8e598d1ebfb96854163a567a08c5cc3d7fb76c969876f96294c13ef001f2aa3"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/trader_llama.json"
+hash = "e648c9add6e9a490f558c4189c21f1654f005cbae5c3984329ea799f28ca449a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/tropical_fish.json"
+hash = "a038843be44ef8a6b3a427188c3c2c69084b303bc3cb254cdfbe9292a6c08c06"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/turtle.json"
+hash = "3c59a681a27ede54a4c0cbe685bd6647eb2cef06cc29ec9cc276dc64bbc4eb48"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/vex.json"
+hash = "84e6f7fac9ca454860bea7e7985f073fb3d71f5fa409f7d96022b041e33e7fb6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/villager.json"
+hash = "d485c2ddefb2fac1bea9f5b604af9c0dda25e6ea77f7d7febfff45431d7062a3"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/vindicator.json"
+hash = "24202f452cb510e1a7bf85f32c6d0404b6fc51b6bd06b0391abff6ca8fd6bd15"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/wandering_trader.json"
+hash = "634eab70afd6d929c45e18366769ca0b06c7b961c62817aae2523c14d9363034"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/warden.json"
+hash = "cfb8483cc7bfb5c7312b32a816462b065e32b5c6292b32d3ad66ff13fc091a69"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/witch.json"
+hash = "f5a92b627c2d0fa3152ede63fa835c95048eeda2c618c10b34e377600ecd7539"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/wither.json"
+hash = "9216d9d1f8fb3d144410b880122490cca41b57e2dd65ffa1e76d6c7e2e70a461"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/wolf.json"
+hash = "d535df6b48802e377769705867f49bac0cc7bbd7b2a77695d19d9057be3897ae"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/zoglin.json"
+hash = "82c2d3b274213df8dd8c0874d28fec2c1279de25e1eb235d418bc05b187d265e"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/zombie_horse.json"
+hash = "cb2ed66abcf22d196ec1e01b324ad70ce7439d5bd155b1288e36d9dc0442161b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/zombie_nautilus.json"
+hash = "ca87b640ffd93a2fb590ffbfc73f44c4e9b441af088012317bf031d2d590a490"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/zombie_villager.json"
+hash = "f3b12b49b75b7dd2f196af266b70c78a59b0e65695c92ad58103429086bbf45a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/more_mob_heads/tags/loot_table/entities/zombified_piglin.json"
+hash = "7acbbf56f5b15b1267ad78e304fa97f2e79f6ade4091802ed389296c5a42ac06"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/allay.json"
 hash = "7b9094a5a6219f59024e36c508633acaecb0302bd5032d2ad76e063b6fe16b60"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/armadillo.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/armadillo.json"
 hash = "d74690f6583699eccbdeaee645a010ec33d9ce663e1ed90ab48696789da5637b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/armor_stand.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/armor_stand.json"
 hash = "363a5bf435bfa38724cb501b177c7288c62835c992ff41f339209e17f37aa2f0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/axolotl.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/axolotl.json"
 hash = "c757b40548024c66e698e33322c2e5a4d55da4794e1abe5269d575bf3e27781c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/bat.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/bat.json"
 hash = "c92757b61e609af1ac4d570750fdd1360535d14e68166bd015009a1c99942420"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/bee.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/bee.json"
 hash = "e5ef9cc8b74cbdb81eb143c28049beb113b24d284885e29d1b2299bba00dd0d0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/blaze.json"
-hash = "d2136cf90740b88c351e0a61b3e43cc4184591a987dcece1b2e6d9ce6a448523"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/blaze.json"
+hash = "faba393037d511eabf9ccc1b44820356f5edc7a66fabc1906a126b83fb9f744e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/bogged.json"
-hash = "fd65d81c85bf3d06f6b03defed22f572759d161c3a150c12ea9632a92b774503"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/bogged.json"
+hash = "53ccacb76ad937e68842f4052bd40555760898f06d5cd8b128889f7867c74db8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/breeze.json"
-hash = "4f7dc94cc122972d1ec95ef773249b480aec937219fe3b6b43b85cf5108b43de"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/breeze.json"
+hash = "de1047f252eade8e8ed24d83bdbfd16a6a71cce8e28ed3ab6baa4e48dbedf117"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/camel.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/camel.json"
 hash = "a445c3f8456eb17b36a3fd52874e1da378dc351435ba6eb60cb23dfe74490867"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/camel_husk.json"
-hash = "d71959b334003379362e0a85a9d0c7b24e71bbd3294a72064fd471e885500d8d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/camel_husk.json"
+hash = "9ed3478a9cffe102dd7141b68efa49a4b26755ed52e1070045e915e985683990"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/cat.json"
-hash = "fd23fc36702ca634dab18deed4357e9773b5e05237e947272a4298fdd1437127"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/cat.json"
+hash = "8232f4e68cf43fb5939d83507ba215bcb2281614f999417b84acca6e91be4b8a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/cave_spider.json"
-hash = "d4ad13333d9bbe03b1ea6ca43faaf8600f9589fc1efb828811de23d5ba4c85a7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/cave_spider.json"
+hash = "ae00440e2b2df2eb9cb0f4b6fa98ddea464640841e7decd9689adcc7aaf92bae"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/chicken.json"
-hash = "543b217521a757bb96e19eb1a6ee6b03b71b3afcdad249bde853d901fdb55ef9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/chicken.json"
+hash = "dfdfa8a9b8f64f4c08e1fd6c758c103f0ec91e068c8bc09c7435db8079b8c6fd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/cod.json"
-hash = "caf333efc49c10d2401d5aaeb6f81eb7298aa8b48c31e721db70f6420df515a3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/cod.json"
+hash = "fadb54445654ea31c1325d1f050d9d7ce68a875db867f0b117f5de7c7d652b48"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/copper_golem.json"
-hash = "1fb62547dd92d9507e8c8afd3dc1fa95f86eddd607498fcff5e8344441bce60f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/copper_golem.json"
+hash = "624395a17adfd1b66a1372fab4f86f0eabbd7b9aa12183a5eef381a1eb2649d4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/cow.json"
-hash = "b4fed92e5c0068f160f28e54bfcf52120dc97646d202244420ebf24600cf5a28"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/cow.json"
+hash = "6011bbab82ceb9f17538e14f8aed374a7cb023f75fb996e3abd1ef3f80b0429c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/creaking.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/creaking.json"
 hash = "fe117515d8b0a692b714a1abd5f477d752048c5d644e128b6ed6d40578f439bf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/creeper.json"
-hash = "e5590328a17d8d3daf939d46c084ab8650c38a9d5a062ca9f0e4f55c5d344d79"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/creeper.json"
+hash = "58a890a4fafc3399d9c33910a2951b505914f7b9720e3ce21460f093194eb002"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/dolphin.json"
-hash = "96ca5f071acd487683e4a6e983a46d168ddc04bbcef7c9b820f90bf4d0b1e6d7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/dolphin.json"
+hash = "ba507813fc9d1e3ef51897b9b3ea7d808cac6490d18db952dda2c773bf6e642b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/donkey.json"
-hash = "ebc1fe4b85d605fbf54a1913e168ec9e37daf0882f757d54aaff87b37070a858"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/donkey.json"
+hash = "4727518325b61fd95cdfffc9fc0c53fad0ad8f4343c9f34d5e82e4ce9110eed1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/drowned.json"
-hash = "ae859561686e0acb692c85adf810f2f16ecb904551eb7c2886d89c0d560356ae"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/drowned.json"
+hash = "cb30af9dc048d5f829e55edd5ee6b874f0fd3f95c968d02c1b5fad1214c302bd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/elder_guardian.json"
-hash = "3eb357d84dbb3db796ce1cf4f85b3f183b2f2fe8d9c5f21719ee6a1340b19ae0"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/elder_guardian.json"
+hash = "4ea7a0d10261e3e31f6557c5895bd21a973f5ceb91ab855fd3bcbed28998d705"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/ender_dragon.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/ender_dragon.json"
 hash = "e8ed8f9054911358b1b587904de71f6f415a51c5dcd851f53f18c5b2b79de157"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/enderman.json"
-hash = "acf985ba4e8306912526d3544c450d3d8fb2bf59f0e454ddc429899804d95658"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/enderman.json"
+hash = "4ec6faa3bf8f353e40741c2136bb5ed74cacd05fef2b8386419ad23bc054b9d8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/endermite.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/endermite.json"
 hash = "a98365a553b2ebbf07f2f281bc0a3922f54be05b723ab60815c53163a402f71b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/evoker.json"
-hash = "58a1c6a9588b972bced6dd9312ac09af384f710ac1a04623c039d3c6cc549d46"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/evoker.json"
+hash = "4c799579447c9b64db84a2aaf7d658acda3c68da16960f8a9e01e9e9de15f38c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/fox.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/fox.json"
 hash = "1639488899680c1463f8224064e91fe777a97f0d026362fdebd776a9520af020"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/frog.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/frog.json"
 hash = "b8ad4e82126d96924a54bba3e36c44f2fbee18c206e8facd1c9e7decfac526bb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/ghast.json"
-hash = "674071a1d1ec6b4d26217c9598e44e54ae68a884f599df547c16bd337134c38d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/ghast.json"
+hash = "d269995677a35968dd365a58bb33654d0cd40a031d8fd443b3163a677913dd31"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/giant.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/giant.json"
 hash = "6e691fda866c0780076228a128c9606ef9ff90605b601cccf32321d7f1be46d8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/glow_squid.json"
-hash = "e90604abe8434183e4c4b0c09a1706466236bd9f3acbdf4dd844f20978484442"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/glow_squid.json"
+hash = "e9112d2423f486ab2091b7ed9a880f4a3587c439dab35aa898d52d8e421b4755"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/goat.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/goat.json"
 hash = "64607c4f134775a9f7fa3a8ff3fc325977bb7119dbd12e693298dad4411e48cb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/guardian.json"
-hash = "c14061db718cddcc0cd9af64225f63182dd740c7dadc21b62ce93c7802c697ec"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/guardian.json"
+hash = "bf8f33eb21f2562ec95aa3746cd7d64390c0349d5b6fbe9f8c455382144c9be3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/happy_ghast.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/happy_ghast.json"
 hash = "ab3ecd324c093d02dbf54dac914aa80fd23923efcc28b0ec581813bcbb901672"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/hoglin.json"
-hash = "9bd4a28d5946a525299f956565f8e22989425fc1a9b510df761572cd48deca9d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/hoglin.json"
+hash = "4272a05acf4b383d695754be8f9e9acdcc9327ea3d680d40b451c198fbb8947a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/horse.json"
-hash = "ec75aaecbfa0191ae31463e83b857674d184697ce1bff38996a83bc915b80e3c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/horse.json"
+hash = "24e2c0b967a774f5145d1ec97ae59874e68616f4a03af6c53e4cf5df7911b9dd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/husk.json"
-hash = "d897865b340cbf5b25bdda435c0bd900bcc96fb113a821673a3bb618fd9393ab"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/husk.json"
+hash = "d5f464fef1e6d4554ed50d9ff1fc334b7f08a2f7bf4b6c177d88d7f80dbde14e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/illusioner.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/illusioner.json"
 hash = "4432d988f5f292aa99b0c66270e71b5038868866d938a7dab4b082afdb9aedd1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/iron_golem.json"
-hash = "9ba05dfe32aa01beb1ad5f829cd5c26091cab9f0e59255eaab414a30e3139b02"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/iron_golem.json"
+hash = "06af84e20a5ce293fe482f07765a15481ca5855b25605ef0bcb6086640ebb3d9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/llama.json"
-hash = "1424adee2ea3a9672cadbdde45ebeb035d7deb0dda2f2b877dabc7f6622f4688"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/llama.json"
+hash = "ec73fdd7515fa2931eb94c527680aff9d0e6b54e67355a2e178bdcc672080637"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/magma_cube.json"
-hash = "2df932e640f2fa5aa2d302019c3db9f6eb99ecd61fd57340cb737fac7eef23cf"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/magma_cube.json"
+hash = "81baae304ec9f5aae03bd4451f085453460cd95315db56622a0301b1244721c4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/mannequin.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/mannequin.json"
 hash = "bba6e46f2cb681688a08bf9233000be2b5c9cc885ceeb496765a7c0b56876f50"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/mooshroom.json"
-hash = "191b9ac7a38b5ec06740bf35805495a8eb48c0b9a13f464cbea59bec87057e27"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/mooshroom.json"
+hash = "cf322bd5c370a3eb2d5c3f7094636bc2c539b652b23a89c26e4395e89e308e4e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/mule.json"
-hash = "7bb092c2125edc0cb9f13b4518bbc44f26e24a352b5a7bd5fe6c98dfac59877d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/mule.json"
+hash = "12db801db6ee975ea671eedd460e53cb85fb55ebd72e130c822647043d763dbe"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/nautilus.json"
-hash = "27e32273f71b1225ccf96a5fd79ad3bc9356266e511fa2812c7b8d699d5e9c77"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/nautilus.json"
+hash = "b95d1d27bba9fafffa5bc5ec26034b64a14f6be6836ef9bdd4cf830f90ff7083"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/ocelot.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/ocelot.json"
 hash = "d2e3e53951495551a20b918425d0316ad1731b96459a90e1b78c145995ecdefb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/panda.json"
-hash = "b1e6fedc9c131a734bd18892cece4fb882b547a4097f9f85a05e7489e5d768df"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/panda.json"
+hash = "0dcae4c3499be99f93e0638318b30dc94e898c685d7e23ace0e233a83f42fd64"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/parched.json"
-hash = "28f7b32df58dab38a6916de0fd1ac731bad8788e5aba4c2a4a40fd6997f67ab4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/parched.json"
+hash = "b1c5b02ebecf135fc53bc1fee229079f61e4b6e396e3dd75b70b7c86bdef6259"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/parrot.json"
-hash = "37b445e0f27fefb1a167575749fa9bd9f67193513c3e236dd17d1bb1c1a6dc81"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/parrot.json"
+hash = "8e7d0378ed2ea03bcb061a69a588e9c4e97a1f0c2d264d1616d9fd9c0bb1da81"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/phantom.json"
-hash = "4c9a765ae123aa7cd232ca3aea16b8e6e74fca109db1e7c19569a7642987733b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/phantom.json"
+hash = "a969c6c62c1a2ac1fa870b7145eec87fc20784521a984a9d95609e0294062ced"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/pig.json"
-hash = "e38231836b8cd3e27358afa87e46e47462da4f9386403edddb37ffe620076bb3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/pig.json"
+hash = "2c863a95a3e925900c73036613e39189fceb3ab18fc314ad3a6ff48bf550f27e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/piglin.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/piglin.json"
 hash = "98a3a84c8a3ddd2fbb434328c0d29b080d86335c0846e0825b2525c1f8cb3f75"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/piglin_brute.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/piglin_brute.json"
 hash = "4b685175c77c4c3fdde21306409385b23beadfcac19a943302be5a37ee960c3e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/pillager.json"
-hash = "1ca8d5a1ca2adde736af03fd664cfef7d7abd53cf33352a020a8f8626e29fb7e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/pillager.json"
+hash = "e1773606310af09999c36c103c8729aaf8f3a56348a1cfab04eb3fdbc0a0652b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/player.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/player.json"
 hash = "62e8cf37f6cf0419f61eea76d5eb2ace0e77a9e17aff22e6ae408398e1ae836f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/polar_bear.json"
-hash = "5aeabea84a9c0e3a8b07eab328b180c73c4231db479a0d98e32644446319f778"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/polar_bear.json"
+hash = "18f4b41127edd4e42b20ef0036de895b24aad073b79487022ce48e15a6715ec6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/pufferfish.json"
-hash = "cdac2736ec480fc524738cb5527047725da321253203379d88a45a8e95b4c7f6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/pufferfish.json"
+hash = "f7ef6dec8f2ac27cc1fb663f789cfa695eb89cbbd2dad34baef0c6b4c017d89d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/rabbit.json"
-hash = "2b7b0c2d0e3cca2c4c30d965f2eeb31d13373c39863b4ce95e79ca0e5ad4ae2a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/rabbit.json"
+hash = "3e41260b56204261a5e12c14d40e30e41df7d5a4f5a6d39dc54d810af8bd44b8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/ravager.json"
-hash = "1d2a3b83bc9c742f9d24c3ece4fdc94a3294e92245f05f6f13ccc0936e385206"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/ravager.json"
+hash = "5c6228e47725df4da5198e9d6837087bc1fa667d737f6f396375854b890b48ac"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/salmon.json"
-hash = "abd3724172a1494f060ecb9ca93078edca55684aef6ca4d30b0c8b7adedab28a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/salmon.json"
+hash = "e3d17c5041996360dfabb9abecefaeb9536a31fff774390c56e5e17749e1a1c2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep.json"
-hash = "9b318fad39f79226914f78c563c7a164bbddec6be0b96e11ad7668c312bf3de6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep.json"
+hash = "a08bd90384b2f2683aea78bc55c0697007d76d87edb1c58f8c1e98514f6bbeff"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/black.json"
-hash = "eacbbc3d125539ca2d792c665fc219e749c12736796bd087a6f73c062a9be31d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/black.json"
+hash = "df48d7dde1247a36837cbe9d4c2b0346822ca70d7200cabd7102442b3d530313"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/blue.json"
-hash = "326ce04f4d7bff591acd7db732d00f856aa83b91c7358f831ccf9de5715b379a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/blue.json"
+hash = "17d804a0a64e1c85320bb7df74dc5f959ef374197d55b7a7fc129c3ed6996df8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/brown.json"
-hash = "f4eb4dc2803d15a316e633a2f7f7cff030d333ad6bf669b18068e120648b42fa"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/brown.json"
+hash = "125ed0774aeb5a3b15fbbc1a077d9b687bd74c202651cc2382308bb57c2da658"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/cyan.json"
-hash = "efcb5599601d6dd32257592ac45af40c8b1047df7a87a340a76e447ba975cc20"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/cyan.json"
+hash = "4788fcc1fd4f81de521dbaa5a33ee9446abafbb378fc5d19cf8eac68a6cbf0f8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/gray.json"
-hash = "f28acd1b4cb8f4be72c7eb2b6060276783c2bf31d676974187323eb83eb5a416"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/gray.json"
+hash = "e37524989e2a146e401f42087dec21b3e67b6f2e3491c76d432c3d8a7c1c96ae"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/green.json"
-hash = "b0590a99110a2493ae277ec7c13784e3b4a22e07c0fb9fc91163b8cb54762f8b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/green.json"
+hash = "bc70426476ba102d28e7e8b9acc50b41e8c930abb75068dd891dbf0926ac9696"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/light_blue.json"
-hash = "6cd693d893c608e523f0ae89a40583ba1e013f05cd8f750e8dee8cc81a0bea8f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/light_blue.json"
+hash = "c80d1917df0afe70051f78c7f702e5e6f565e39c165b0858b88ba3f335d2d0fb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/light_gray.json"
-hash = "52913124a5050a594561df87eb7bf05b21449eaac6da6c244b0eb296f7a4d543"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/light_gray.json"
+hash = "470692ece7d0e7e16eb1d7ac81ddec378e52cfe5dd1d4060d988edb30bd4a4f6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/lime.json"
-hash = "57977fbb7875206786ed6e8b2560f6f2f7f1b594b4caa6edcb60233e44921592"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/lime.json"
+hash = "a6a32dd0c7750b62f358d4764ed2b5a97d2fcc80b40d0949f2435f0b8d32b682"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/magenta.json"
-hash = "051be5a7d861f65133d31ada5c0d04a07bb6a63c37fa9ffb5106f1905fa2db6a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/magenta.json"
+hash = "85dbd368199498c7bbd4fd7d898e19fd9fc0e4de64b5f2d6ec6e157fe7fc4b12"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/orange.json"
-hash = "295808fa7d0ee581715528729adbef34f76c09eaef5d29e4612ded788862e401"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/orange.json"
+hash = "2cccbdf21588f09195f7c41ae290c3fe644447f9d685e9f2961e9ec304a4aa6c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/pink.json"
-hash = "87f2bcacfd0f0840db488370741b1edbe46b100b543027c1e3106a48f418a7a5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/pink.json"
+hash = "ce4deefb3d04f847d9f0fa05aedf55582304c2185a264a272dc94e6c2475e061"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/purple.json"
-hash = "13cebe76ebb10faecf7ee0da42f2e503109da5a83b111560e78f07cd8428ca9e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/purple.json"
+hash = "d8f494f1acf11230448012fbf9255000eb3ce169cb0b2e8c4771de2940547e25"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/red.json"
-hash = "f0290fe3c83547793b1b52c4b60969d4b7072606ea68d577ede18989a705c2c8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/red.json"
+hash = "c9471bd7d54971f680cb80a650a4c787089812ced091be989501120f8d2e9e2b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/white.json"
-hash = "1c13c13f4e007353699e79fcab99dc6d5c3857bd7518b38c2d79fec2b91227a6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/white.json"
+hash = "bbe6bd636e06e5b1afec88da94420626c7282c1ccfb25b88dccfa41a0b605591"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sheep/yellow.json"
-hash = "72de2f1218baa63c769e9fec908fa8d4a16d42d2e3b7b04d1ef0af7db33e4fc5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sheep/yellow.json"
+hash = "b1d637dd867c05cbf57ca5b344ca433f81142128210e3333a139352400a28955"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/shulker.json"
-hash = "d1c4b46dee1c53b8fb98409fb16a2a60035c126567c52135a2cbde86e58e25fd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/shulker.json"
+hash = "beeee80b8df1925ca60b9ffa8878640deb1dfe19586a0558f943a19e786f6c69"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/silverfish.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/silverfish.json"
 hash = "7ef999d0110c03a2b942edcbb4d4632c90b4687ed7ec28de29dd4731a52c8f2e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/skeleton.json"
-hash = "94e5daeb8d5c1ad94694dc1d07c93c1f8c6f7d2b8a9ba4a6e08019cfeaa10116"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/skeleton.json"
+hash = "35afd0f27166cffbef6d79fa2ff745aec72561720dbba66c824691fb2be75e7f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/skeleton_horse.json"
-hash = "0e4c60989ab7b500cdab7663f663d7a834b44e36f91db5421de00c4854b726df"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/skeleton_horse.json"
+hash = "2b216ce86b70c5f07184a81101c0f59f70b92202fb1be9f501dd1d16efdcfd85"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/slime.json"
-hash = "20806b0fe054be2b0aff8395a0b789a4ee4bff6886da495158a2c5ff1a4bb81d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/slime.json"
+hash = "471f9849d87cc142039a464c31258e2caa8f659020f3b56ff40c0d42721f6692"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/sniffer.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/sniffer.json"
 hash = "1fba1370a69cf2c916f63906fab211119f431be0a676878e31a7e46336c80115"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/snow_golem.json"
-hash = "d96c1dae27fdabc87e0e52613a061a4d90ace02a69e7ebfd67564f1079a82229"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/snow_golem.json"
+hash = "73a321e9d1a669c6bfc477892727aaab50f969f830afab278132893d2a686589"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/spider.json"
-hash = "7fbda8071a057bed1bd500cbb6a153963c7e823d2d934f64172f52b9043dbd78"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/spider.json"
+hash = "6ae7cde42cb4f392457b33c2889d6839f6e95a377e4e4568174534447bbf4bc5"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/squid.json"
-hash = "9f54704d492c21e36e676f3cd09167066cd0aec356ebabd70b4533d9187030e8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/squid.json"
+hash = "addbb562ca7d43381a318fb9882f86c90f4ab295085045c8419460972594f7e7"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/stray.json"
-hash = "ad2ca1ac0718f1c95da8108286b3f8db559d5d6537ed9ca0d80a2d93d194fe6e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/stray.json"
+hash = "4c1e65400e18688bc6816e7e614ddd9097b53b5c1e9ad56d9d603e5386d5facc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/strider.json"
-hash = "ac7190bdd71d4c1223e59e725da2cca3acf479e3532e8d9bee0ce602d64d8645"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/strider.json"
+hash = "d3c28c79723b133860688067aa201c0490eae0aa19eb8fc927d5fc16984d250f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/tadpole.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/tadpole.json"
 hash = "e13d7a9f6df2a9d6b84ef2a785f3f892cca12beb0c60f4ff1a3d5e632d628189"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/trader_llama.json"
-hash = "7997eea50f5b6eb2f3efb73f36f0d1922baab4797dd7d02450ca9bd642a4d6cf"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/trader_llama.json"
+hash = "1f7074baa5623b51c607001b2a935d3b14e9fc74b14e8387170f2e3c3eb7d4ad"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/tropical_fish.json"
-hash = "a59c90bd9698e30311a23305d2c6304ba71dc727a7b727cd44a8a3abb3e38d3f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/tropical_fish.json"
+hash = "d9fd3805ca1122fac2e25276e0cd8ec5aff5b55aeffe16196d994cef37aa51d1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/turtle.json"
-hash = "47cdd5690bd0145aeac8bb769b794522141990c7974d2e94461a7ed06c74bb3b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/turtle.json"
+hash = "48e579726872066c8197c8b3c670a195216bea58b42eb36ba57b26b4e937e80a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/vex.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/vex.json"
 hash = "6ecd46b391bcb08d0b58485f15c9441bef74c5c56190407d95ea40a55929881c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/villager.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/villager.json"
 hash = "8bbbd8400953808f9dcc81b0613a86b921daa67b11580f32b0bae99b61b065b9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/vindicator.json"
-hash = "4dd8a76f0a5fb7e837987d9c538efb7d138f9668b673e2bece9e4b0fd98aa664"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/vindicator.json"
+hash = "79a4f655d844685e0843abcbeb36089326ac6422ec820d0a6820c6bb0e59ad90"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/wandering_trader.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/wandering_trader.json"
 hash = "c42fc8fb75f87d56247ff7c22fd55586db7b0665997187b5cc370b84c6dd35c7"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/warden.json"
-hash = "61761eee28eb05fe880aee64bf63db9718a398d965f5ba699edb6ebf7e86b16d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/warden.json"
+hash = "e9ab7af5d569aea32305873aeaeabf8db14fdc3e5d0751afafebe6637bc3ae82"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/witch.json"
-hash = "74f0cc975a2fd43363a303644f492bef4daad470f383351d4d14ee7f76866b13"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/witch.json"
+hash = "945d1f7806d934ee53f22da3c430f59301dcc9acf68a6482df91c829ae1edf8b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/wither.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/wither.json"
 hash = "1297a721efeda080174613734f665b466868b1b482e877a787969d4543e828b1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/wither_skeleton.json"
-hash = "49a4ae7d8d97c3a4fa7dacf762a1627c119671782062eeecc8399ca2f69dce0e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/wither_skeleton.json"
+hash = "5014c4f9d57170ee7d5f52a6b9c3ae99f09434b2e0ac2617937cdf927a60d48e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/wolf.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/wolf.json"
 hash = "8f98077287be09136967e24b7644940844f9cf993696c452473723c9bca6b473"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zoglin.json"
-hash = "6956accd71f9368846a73f266e82fbae9f2954149c2ad6a24faa834c58e02668"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zoglin.json"
+hash = "2cdbf89f46c4e999b83a415770bb2a7b5ae3fdbec4441844528443c1d1f78005"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zombie.json"
-hash = "840adb6056da9c0458f221e96caf4ac4b63ba97ddba448dc233527b39478d0cd"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zombie.json"
+hash = "fb58dda1066385bac494ed5ac78d73af49b5286eee85550dbc4daca1841f2b75"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zombie_horse.json"
-hash = "7a7640e387eb0bc29312b4399b38b00d312e2031351e6696740f6ecb81f764ed"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zombie_horse.json"
+hash = "6690d2eb7fc120719364c17385288f6c98369bdac7498b447ec0a36c5767c85d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zombie_nautilus.json"
-hash = "4e54b614eab1772c79bb5a6d097c6619d59a5ae57563182eaecc281edd50164a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zombie_nautilus.json"
+hash = "d816bade33c57f5c29ef152b364872a5bc2379441960bc6ee4d8a93268949a2e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zombie_villager.json"
-hash = "d9507ed33edd4e8205108fc497d01d7648539b9a3a760502719d9eecda7ed845"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zombie_villager.json"
+hash = "edd91570175c878ecf76d32c87d9aaf087ec6a2f537cbf5f069a2264d92aad7a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanilla/loot_table/entities/zombified_piglin.json"
-hash = "1a7dd93856c780b32187c5ad3bbb4439c089f6cdfa345e4337a53b2b01b0fa33"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanilla/loot_table/entities/zombified_piglin.json"
+hash = "d63cf182a6d2987e78e0a37d9e7b1773eff108917776dfb01dd9c825b7f3a25f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanillatweaks/advancement/more_mob_heads.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/advancement/more_mob_heads.json"
 hash = "f60a9d915586adad6ab8ab2789b583dc7d6bf920d32975dd7b309357d2638e57"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/data/vanillatweaks/advancement/root.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/advancement/root.json"
 hash = "932453fa70ac5369f7fc0435fec16809ca0558378c684670909aa128531b0de9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/minecraft/loot_table/entities/sulfur_cube.json"
-hash = "015319fd51788f19da17d327c79e51feae6343e119c62b0e530c3b24c6b0e40f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/allay.json"
+hash = "8d180b8e0e990e47c4da9dc2e313fe9713f774fcf11b935987efb5d58b00882a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/more_mob_heads/loot_table/entities/sheep.json"
-hash = "0e5abef400db81b74674e7ac1861a0fa26bc2c047f7977569fbd540b88a63317"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/armadillo.json"
+hash = "5bf4b634a431d716b21864ffe3bd083261c4c6c748eb057ee039222c44bf95c3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/more_mob_heads/loot_table/entities/sulfur_cube.json"
-hash = "e454d3dc756a36562390d922ebba4afc5dbaaa5b461dc9da28781d6dfe4958a7"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/axolotl.json"
+hash = "4a9c87eb5f91869ca8abd1cfc0a4f7ca9e75c99083e4755276a2a6c5fedd0ebf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/blaze.json"
-hash = "2873e3095f7f98b1b1acbbd225ad68e0d9317d2490583871c8bfbe094900eb7c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/bat.json"
+hash = "eb84a2c928fe387f1e4ace00779b1c90ec6cd36f7c8c7e83fa8f7ced6a3a0d53"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/bogged.json"
-hash = "8f050b9a0357c7012d30680a616addafae4fb90b3df1c148c58fb0eae6421e2e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/bee.json"
+hash = "b652a3f87edf245a01082e4e657622a4c951c29dba9d9c600b56de7d4e72deea"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/breeze.json"
-hash = "330a9036397a48bc95669f9b7d7efd072cb404a5b6c287be5b85a4ca6e43d609"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/blaze.json"
+hash = "d8aef9a7d15287bca51532b5df74fb40b53a4bee6d42f658a7f5ed5f080a8e6c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/camel_husk.json"
-hash = "ebdb8f99e02f083cbeb462704993a90543d10cefb0cb8965b5d62890c49c90a5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/bogged.json"
+hash = "485dca4b0113723f110e7dfca9dfa4ee07112aa2168a34a353e0f976077edd67"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/cat.json"
-hash = "81937089b72875b01543a01d27c5b4c2d9e3d76f0c1f051bfc6bd61b6dbee74d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/breeze.json"
+hash = "889bc30c5459c21a7159d1c297cd92b959443a331467743e8ad2c67eb514d6ff"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/cave_spider.json"
-hash = "6b2f08609b56f7fe7b78003d2804e9391c13280e4013004ce7b5ba47a59e19e5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/camel.json"
+hash = "130ba44a3b51399c9f76de0c7c9421092b170ce3fa882e23b311de93c6f98bc4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/chicken.json"
-hash = "ec6fe29b2901890b0a24a4e99cb9ad1907269c889600ed595531d79feee18a0b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/camel_husk.json"
+hash = "4d11692a08d9a3ed4739fe016feb3935fc9ed5ebc6baa5d72604b2f396052b44"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/cod.json"
-hash = "7ced42632397e8f6e6897577d70a8d9cf646f7541e03e94ddaa08488af80eda9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/cat.json"
+hash = "58fa4fd297820d01073510c0847449fd34bd55eb25e87f020c889c0c52c87ac8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/copper_golem.json"
-hash = "7353cdff6a727dc9cf694555e237229e0b9c40a28657f30a0ff7d273f4f6fb57"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/cave_spider.json"
+hash = "21a486fc5a7efd53200de4e7fa3a39bbaf3b85728f3cd13132fd038e5c34e5da"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/cow.json"
-hash = "61f27c05263a73ccb2116476d3a2d1f9469f5d4155a6158faa3dceba20a4c61b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/chicken.json"
+hash = "dd0f32138c0fa573f26e935ef1e5d11dde74e8b4a4ab165ff40426bcb3bfe842"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/creeper.json"
-hash = "d5f49bb3ac7765c18bdfb69f839c383639db49f919fbc49cbf15335ee2acc48b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/cod.json"
+hash = "8ce50d0b562f297d6df3f4afe9020a35603c573b5c513a2bb69fa22080d189e4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/dolphin.json"
-hash = "033c904af5a597562565375c26c4616df5b0fc61494e8a5b5c86ae6470435c10"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/copper_golem.json"
+hash = "16f3224cbcdf54d72b54f4576d515ea5812687746a02299b834e2f375bdd3c27"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/donkey.json"
-hash = "e82ca38443ea4416e5998d7869fc9426701d7d586feb5b01d8f18fe470395073"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/cow.json"
+hash = "8986c3b59d911112af6ff5e26d21d781e0d08bb853215693a46dc4af6424c3cf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/drowned.json"
-hash = "0b068abbee647dca027577ca5400b9dcb16288f9382a6fd8816d8e65ca2b20d4"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/creaking.json"
+hash = "077dbcae497dff0c14364e273dc2604c975cef97ab261e61f8fdf1a7ab3e6a42"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/elder_guardian.json"
-hash = "3769581ddb1f3b4e8d87cfa7bb089a7533987f75ed3836177cc19fea90d63231"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/creeper.json"
+hash = "4d895323a488e280645f036adcca549cd5ce3f84d3236f4c40b4c8e0c882ad09"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/enderman.json"
-hash = "e3fbd52beadf7f20ba729104b70f6c82be6902af109b36e92aae435535d589c6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/dolphin.json"
+hash = "145d2d0cd90f312490eca415f53d60430da763a6dee59c90882807f108797b9f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/evoker.json"
-hash = "b558aeac15320dfd66272ef1577d417cbffbdf4daaf80037e5e47da6d0fd23c1"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/donkey.json"
+hash = "08df81fd6ce19aeafb65ebf68dc34dd0113312bf2dc3b336bed5e9abb4918a0a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/ghast.json"
-hash = "73d69d2c69a7265102632ef1e1900ecb905d11b21e169473dee37a6a6a0b43a5"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/drowned.json"
+hash = "1fd6e9b17689041b426017e2c288fa3d4e5acbc34abdf5a3b58206de949cabd4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/glow_squid.json"
-hash = "dbca414ab1ed7b714e2e62c5882baa4133328d4a226875821a9dde0d0ee09879"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/elder_guardian.json"
+hash = "03087672f1119debd486c94b2308c6770a42407c259eec66ef38649b5b2bf60b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/guardian.json"
-hash = "2883c5e4e3284598264ad9177fcc56bbf4c2b541fe9cef615dd3b533b7f68f00"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/enderman.json"
+hash = "d18a9790d3aece1d3097a60457c8ae8d6a7b4919d43f5ff3c4cb40a9ec50591c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/hoglin.json"
-hash = "0405ef07df91d16b430d207766b5014124e224bf78d4848adb04518294653ef3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/endermite.json"
+hash = "afc8d908871622048c7f202e853f817c9339c2d8f3fdaa3d7baea65fc91e3c7b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/horse.json"
-hash = "bdc5ebc75dff9a00a76ef3c4906cc223f823c8eedff1c00ca5fb3941b6ebf76d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/evoker.json"
+hash = "2c3b2d114a4229c8860d3f8b6dc58d5376d09f65ec51653be5881e7303200a61"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/husk.json"
-hash = "366fe3007abd17729e0cf1ae27628067a310cb2b1619dd7db19994ba1bcd776b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/fox.json"
+hash = "267607234ae2fea052a3211824c314efa589468667ccc177846af04c2940ec45"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/iron_golem.json"
-hash = "1f45b9b8c9ec020e0df4052bbe1a9c1dcb534267c8df623ba78bb25111a3ddc2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/frog.json"
+hash = "0c580f368ff0f2875f8d6d9206c57a6b21f61b9fa06041953adfc0ff9947a755"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/llama.json"
-hash = "bf240e71860e29fd8e365a9e78a5a747ac276b48479d49eeed7ca27ce88fd72d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/ghast.json"
+hash = "d5e7335763a215c993909b349c8bed88493df1447961d53218ccbac54b986ed6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/magma_cube.json"
-hash = "8fc039a83fd369ee537926707cbb629034f979c80c28834f59684473786b998b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/glow_squid.json"
+hash = "2836931d2239e51b84ee03b22ae6fd625f5c648ea95e314b044971221ffca284"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/mooshroom.json"
-hash = "db70cb49424f27e4206ca73f9b33cc11bbebeddd520bf3165517c4eb90a13142"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/goat.json"
+hash = "31be51e8be02dba943c4339d83206a5699708a61a2a760101bd924d9e3a4d886"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/mule.json"
-hash = "804732adecbfcb5018560c31d5f7cb3459d1526bdff0e08ae1f38fb749f12db6"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/guardian.json"
+hash = "4d9e3feb80c435aa995d55b341acd58631223703a89f0229729b2bb1260c7f4a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/nautilus.json"
-hash = "a1e8da6e28cbe8a59cdf765a2ad17f9f44b00090fc5d326439142826456d93d9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/happy_ghast.json"
+hash = "da4c4be06b263b7c6456b133a3c9d686fd7add3d9f5e6f5f92da8ffdd0a206bb"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/panda.json"
-hash = "a54f1932d613dd966b7149a30f8a0eac87e49dc461e536dd0a17252941a7d511"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/hoglin.json"
+hash = "68091739445ae6fc73cb9862a76fb78de27732ccea57b46a6554ec88679bf1b4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/parched.json"
-hash = "79d71f78ea0e61f95088fbc1c1d18f050978d9ca132f7e67f9b04d7900712e0e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/horse.json"
+hash = "18e6e7133dd00bb90806be1714c5b9268b8134268168d849653a36312ef54612"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/parrot.json"
-hash = "b319edeb901c1c50b2bcf7e95fc66b92d37598d750efc8a9b9afb3904370d3e2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/husk.json"
+hash = "d5711c3f891436d075ec5edbb27961a22ae7c60847709df66913cd315514cf2e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/phantom.json"
-hash = "206c1773e1a0ed85da1d609dfd4732b7f5d3c3c5822315036c0f0560ba892e13"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/illusioner.json"
+hash = "8acfbd5798a84bd9c76cc5d88605fe7e0a148128519d0b5d17ed170348bd6d15"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/pig.json"
-hash = "76f7d9535952604f9709e39c5f95b91d345780f3d2519c0239e529236f65115f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/iron_golem.json"
+hash = "63e2fb888763469476b2ce1714b003ca44b097d94c1ef94de7b0fe06703dad25"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/pillager.json"
-hash = "6bd8a92675b413a941ec605375a8ead25f1fc117d8dbf1535452b215f61329ab"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/llama.json"
+hash = "8fa703e92c27eb2c730ce88bb048af45e86797b7b7f020e503b94ac241d49cb1"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/polar_bear.json"
-hash = "b015a6d0c2a18fffee714b0cf3c5403a36f108461fa602cc7e310950ef0475ef"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/magma_cube.json"
+hash = "60886cb7188c533dab7144453e99d0a91cef091c66557c2c41331f8947017fcd"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/pufferfish.json"
-hash = "50850cd2afc44c28ae2e3b7fbee44de3677bd5f5001763e31056af9a8c0c585d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/mooshroom.json"
+hash = "db2bfb908da99ef1065a60a25af5b7eb6225fc103ffed500863d731d82f91691"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/rabbit.json"
-hash = "c0fd8cd3725cf6fa9994d82cd311eda15930db8ee5f9250e8f41fec316f2dc99"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/mule.json"
+hash = "369698e005371733d7b73128434a342b1148f775a4dc58e1e9c8e3c270d3905c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/ravager.json"
-hash = "791ff2e2e5bd20f7732a20cfa90841806d18a88b03fdc07f704aacf6601c9469"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/nautilus.json"
+hash = "706750f9100a118bd7aeeb56f0ab5ea59f6795a61934bd304457c15afccc599a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/salmon.json"
-hash = "d01b3df37ba242eaa76dd8e55b93554c19f764d404fcd3119623971ff99c3e30"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/ocelot.json"
+hash = "2955eb01900b85f35e73d7c56dddc5aa4610e3271179e87b09927c96ab017bd2"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep.json"
-hash = "0f563cfc6bb50cc25b0f0f7baa1d04747b70178f154f86f4893baa615a43547f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/panda.json"
+hash = "398230d8e2c798e9e4ac1e07387d3acac3d9d9460969cdb85c7443fed8ba3b6f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/black.json"
-hash = "58f7a1d09d64b09249395e5f25294be3593bd35696071c002148968f87bfb5b9"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/parched.json"
+hash = "9f33c895758f286b3382f589a34773ba931408bc23f288f1b472678f476dc6e4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/blue.json"
-hash = "3630496a1e4b7ba256fb92af6d80d39386c4e97fad0502ba65d5634051f8f1f2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/parrot.json"
+hash = "da93db1aaad7b3820d30fbe13536f1cc24e1b6d77bad4bfc5170502e2a0826c4"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/brown.json"
-hash = "00011ac99534e37f5f7a606e039b566b5c84874f54e187b6b79ba97420a02ec1"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/phantom.json"
+hash = "6b105d30b00c0e8019b0a6ad15e61f31f8b1d72e0b6a558a55a972c43853458a"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/cyan.json"
-hash = "16bc6e4bf26791006255da72b52b49692c59acaea5fd34e7e476ba58f6867302"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/pig.json"
+hash = "f0dc82441091907b54178e9ca8e13aab6f759e9502a543420229def9711f7d11"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/gray.json"
-hash = "66d54387f00055c32f65d3cc63845060bab70e978b6dcd9829499b8498e8226f"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/piglin_brute.json"
+hash = "b3c7c277b0e5c47543981df3860f5b3ab2b2507237ebf1f7342094df26a64463"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/green.json"
-hash = "c3fb78e0c1330328522ddec4ee11e6669529fb83576e896c68fbd932ef4d570e"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/pillager.json"
+hash = "55b0dbb1a57f7bfa93b6d8eaf14dc4f68496b714cf72f4b0173cbe914b533f1d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/light_blue.json"
-hash = "da13775c12f8bcd3308e5d28ad77ef0621441a8a26e88b6d059c17bbc0dd928d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/polar_bear.json"
+hash = "2b21062563ff04b823bc86d7285c6d419cbf5dc4b2eac280dcf79eeb11a52c14"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/light_gray.json"
-hash = "f53eed4acda4fc152732ebbbe603074394296fc9bcd0f57b665269ca9dc9539a"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/pufferfish.json"
+hash = "71603645a4bfb7d9ca35df5c6e942fb9d35ce8b9a7c1c0ec28860a347fc8b68f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/lime.json"
-hash = "608046142d2d9fe3142fc7405eb13679307d98ffe833da38ac3871bec840be94"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/rabbit.json"
+hash = "24e6a9fe62a2a5c3f8d990144ba7a9fdf62de4a090b799de3bbaca1ce562648d"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/magenta.json"
-hash = "429afc7111dd809b3c57a724404c9e93c4449081860ffc768b2c72166c85cfbf"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/ravager.json"
+hash = "5d5d854344bc293c6bf783f49d5dce0062f9e0e961811e12c632cb547908921e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/orange.json"
-hash = "5b18ac1da0949a5bd707aa7b10ff1fb53400d2ba46c0a684a47a09956b72a888"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/salmon.json"
+hash = "a018d125a90ece962e0feebbf157213f0323eeba083c2057f50fcdc4d59bfa31"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/pink.json"
-hash = "ccdbafbc1bdd761003d0119e543dd30541ad1489e796322a86a2b1a5820312ec"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/sheep.json"
+hash = "aa1512179bc57717c29451a0db1ee84c9a36a0c0a227ca3188df1a6968a7d9fa"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/purple.json"
-hash = "9b843058e92d2ef97c45f1bfe5dce909cf20e8337ec124ee3585890cec065ad8"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/shulker.json"
+hash = "9c4bdf11aff32c2368d3b9f27a15a7c302ddbb1c2e5f7be5e59555bb61671766"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/red.json"
-hash = "b1c6c7150ac129848aa13d4388ab8f6075908937634839569b8bd7f8e646ba3d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/silverfish.json"
+hash = "2e31debc29e555d19266291f8245149d69ab4b20b4d9180f70188048f6e4490b"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/white.json"
-hash = "78b71461c7a182077a11ddffa72f0e85e9d5c22fe01f4b52c5bf4158807bdd51"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/skeleton_horse.json"
+hash = "24321284a0de5fd7198ee16af9b98b919ed6a5c9007fff7b4fe486ef8062e1bc"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sheep/yellow.json"
-hash = "baf281907994ada5c1cfb0c772c83845f70b064558eb10c574934b1645a0405b"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/slime.json"
+hash = "0f064d266f8fcd3cd9f7669a49494bebcc5ba8f12bf4e1200d94ae4801d35ff9"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/shulker.json"
-hash = "1cb3eb448126369a2ab540eab99a8a4c2cdd60be9b7bfdb27a824e5c9447d47c"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/sniffer.json"
+hash = "988fa59f0878ea7a6599f60baf78cef98f886bd47096eaf32d354fff4d2de003"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/skeleton.json"
-hash = "25e1d19f4f95e9880a290b688641a7a9840150f78541be3554307fbfdf41bb45"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/snow_golem.json"
+hash = "b0bd2bea6ce5a9cdc2fce7a712b9e8f0c048cb2a4c5cb53b84aa5e74c2890428"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/skeleton_horse.json"
-hash = "15ae87bfb5792bf2cc113a677b61a317181fe034fe25478fc3baabf57fe114d3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/spider.json"
+hash = "cf3868baa885591dec66bcb81980cc80f06efb0704f98a94cebc9900d37c1035"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/slime.json"
-hash = "be281c3c071717eae8d9a744bfc6d296bcd9a7ed158eae2b180ff9011c5d953d"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/squid.json"
+hash = "2c01e990419c02d8d0b14f2a244ff69f90f0fc7d55197bbc916d550ccb4544b8"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/snow_golem.json"
-hash = "0c12737758483e5fe99c91a7b492a1dbd51001375fd0edfcca37d4cc30281f03"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/stray.json"
+hash = "37c49ed9c21ace28a756f8ba0eb008a7bbc8e7065ee821a12eb8d9d8d5c8fd11"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/spider.json"
-hash = "fe581542216e6b4893b69c005718b026bc8cb88980f958f6eddbe6e2c22e5ae3"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/strider.json"
+hash = "e5bf0af9949ad93e0f53ddbffef4c1e7a256c0a06b7826b9a57ee5e2202c5f23"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/squid.json"
-hash = "d79c2a26c77b2a0f0769fa65b240ca8f2e9b0b27c4d0fec9d3607832ec764092"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/tadpole.json"
+hash = "53b561db526d25cf4d88b0f29bab25ab0760c86983cb10389e95fc2f72fc21a6"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/stray.json"
-hash = "2a0bbd3cc6b2c3549c8aed622eff09ef593206f57016b8417f4e8cfe7b0300b2"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/trader_llama.json"
+hash = "2654625809cbfec53554439d038f9e2cda0c3c444da8cdbad36e75439812553c"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/strider.json"
-hash = "995dfe5a88720fbdd38a1ddd2d24736fb4b1e2f2b41c6f9cd0944bb48d1dc116"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/tropical_fish.json"
+hash = "36ac527b44234dd6c4b6c192a1169148ceab848681973f4524eeb07bef5faad3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/sulfur_cube.json"
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/turtle.json"
+hash = "0066c6c76bfdc4474879a0db7227ef25d22ac28834ea6aebab193070dacb736f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/vex.json"
+hash = "af5c1248b290b9b8bcf3761a1e5ecd947c8362be3eac584964b50d4ecd9dedaa"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/villager.json"
+hash = "f7a5662b7c78f806283fa24096624b894fedc48a606fe7d03a6bfcc74cd638ec"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/vindicator.json"
+hash = "d8f42bb367601482a97b7458e29b712a46beca68bf56985b36695c0c06a64ac2"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/wandering_trader.json"
+hash = "d61504b9ef01c24d2ac8c76b59176a248b184584eaf09f2ab99d9c209291a29e"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/warden.json"
+hash = "e0d3d065396b9d65d46cb6d9fb9d77b2748491ee0e54193403ea41b497fcc76f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/witch.json"
+hash = "d68fcbf75316e8d717ee2ae29c17dfd41c0178756b545f9852a2ec69aecc69b7"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/wither.json"
+hash = "8b34bbc9452a1c57363dea189a3da54cb4a816d6561dd4466c5a01848e5c19c9"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/wolf.json"
+hash = "f48aee07bfb41da9680abf23570ca074643a6b91d74229e3b10fa358083e14d4"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/zoglin.json"
+hash = "b8c44a6da60a8ebb922d872cdac6edb763af268edcea9532d9ad1cf52a97ea28"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/zombie_horse.json"
+hash = "6f61dec4c302cd292519848680a2e3ec8d40410dfe8a236e1eb08a8c9b363c36"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/zombie_nautilus.json"
+hash = "dc99959bbe7409a994f651006f64abda74781c512026959c03455207987bb81c"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/zombie_villager.json"
+hash = "921bf5c85a73ee04ca222e737903aab9cac66a675e37537dd5440d71aef00671"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/data/vanillatweaks/tags/loot_table/entities/zombified_piglin.json"
+hash = "835e6a8437c61890df77d7cab7fb1550fb5babcb17bddc11a1deadfad1746a02"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/minecraft/loot_table/entities/sulfur_cube.json"
+hash = "6e96de999769cd16ec2746491d18d5f835abd58c30e58db53d8d57bf4bca17b7"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/more_mob_heads/loot_table/entities/sheep.json"
+hash = "ed9ab7820feb9f3d030adb2ada2b0bf50df258f675f01d83ea6c3a12072938ed"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/more_mob_heads/loot_table/entities/sulfur_cube.json"
+hash = "a3a730fb53c69b46a8bf22cdbe9c86912a42288ffc6b2f9a743d12cde2807aec"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/more_mob_heads/tags/loot_table/entities/sulfur_cube.json"
+hash = "e73ef519ed5c13f435789257d9d5af28eb9941cf82c150c02e9b8063c4b74983"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/blaze.json"
+hash = "57f0fbaaf2a03354a76ea8ae79b3c9c23698001655f1bac8a2443ee15d6635ab"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/bogged.json"
+hash = "0b0cf0ee862ee2ca0846b3231a6630490e6c074fac3489fc93f60804814a9261"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/breeze.json"
+hash = "bbb72e27956a91d81086456c1885e4ee0ff3d8a1c3bd872165059fd57f27fdc0"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/camel_husk.json"
+hash = "e1f0b015022dd3a9e4c3b9f9cccf2623c8125966260fd23dad1bae8cc0fd299c"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/cat.json"
+hash = "0cd9ba16714e206dd5a956aeb164b1c611a45c46beee05c4320bb90ffcf26088"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/cave_spider.json"
+hash = "2f063df8ae902d205b732af50526b0a29250b753eefd7ae464370d56897ea805"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/chicken.json"
+hash = "2fd560973033c869aaafcacc14f2ffa746e2af1e4ac04f5859ee2dbe265f866f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/cod.json"
+hash = "77ef337905e769cbd4f01ae8e732ee21e314224419181489986d2015986dde23"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/copper_golem.json"
+hash = "194156f418fe17589e0adf846af0c5df9b81844e12b2f23b0dd77a8158bc72ba"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/cow.json"
+hash = "1dc38274bd2936dd91d19fce903b9445d5a842c9652381227dc63368cffaca34"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/creeper.json"
+hash = "551e02143ec44dc577802d79eb12aa51793b1c95086b7a246ff9b3c6fe1a1edf"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/dolphin.json"
+hash = "7b7400aa3b11c229e04a503066b9890248d0bfe9406dd6b5775a717d9fc7c012"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/donkey.json"
+hash = "34cc0fc9ece24d3379ccfbd7e855bc4f1d6c9237bf952ee3d5e7cbb63d2d152f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/drowned.json"
+hash = "7a3dd5a20e96d688a80b8d7a007383b4d848459c216a4169438d85ad38f77639"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/elder_guardian.json"
+hash = "0711ca6dc95007d71363c0b49b32c7ba3c9d91b1507783d71c098b81b92b5559"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/enderman.json"
+hash = "5d475827d996678285b4f1c9400207be666021556b9ab77a7dd0b84a73f4770b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/evoker.json"
+hash = "28ca29eacc10ed746f688da133b6972a12e48e38d7a290a2bdcd776da00b7705"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/ghast.json"
+hash = "dd77ddecadd3daad120cb23bd49be8261a18ee3790c08fcc25ef26029c254f05"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/glow_squid.json"
+hash = "f437ab1c18fcf9a99d19a6b4bad4aa5121cd6b2e2aa87842190ce2184226a62b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/guardian.json"
+hash = "4bcb5bef5a0c17aa913661729205bed74570a59ca01fdd80ae421d5b0409c49f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/hoglin.json"
+hash = "4a70198d42960b96f4b4c3507036e1077a965a9c6ba5c24fc0f98e8621def616"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/horse.json"
+hash = "6f24f35eaadab4a011872541b6feb4f7e4296ecc41f1afb086593f56be1627c3"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/husk.json"
+hash = "e79c9c70f6727e6ce6fcf7b881fdb8a280154b2c4499d9f014bcf3e79eb6f7c6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/iron_golem.json"
+hash = "53c41f01c9259a4734e06edfd07ecddcae34e5939d47dca7a43ea7dccc4de94b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/llama.json"
+hash = "4b8563d0b175555781d66c9c20082bc44a74751777391d363cc7eea3d90c1a7e"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/magma_cube.json"
+hash = "d76d58badf2e98845fc84154bb89656e1b97a455e9da1f7ce3d9937a2043a684"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/mooshroom.json"
+hash = "2ba3ae0bb84abef9868ea991a6f0b92ae25c82338c7e7d985bdafc8931c5ef3d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/mule.json"
+hash = "acec404ab63c9bc3a9c95b9241401ff7e9e608cca37a1e9eac05c6faf2d745e8"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/nautilus.json"
+hash = "88f8ef6a411e858fe32348f63acd9a163a32eb53a9c7c572c65146aaf4b5243d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/panda.json"
+hash = "ee8166afde6267bda91ffb16253261beb6a1c08b12a75a3fe06e3e96d8d7c18c"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/parched.json"
+hash = "da5fe17a0f29c92216c733a1a6e74349cacd95d6b41ad20a025b58719cb2d12e"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/parrot.json"
+hash = "651dc04a768f5ac9dd47bd7c4be97c3908463c12d97ade9693b2c2d12faa27bd"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/phantom.json"
+hash = "490b3212fbfbdbbb710d0aef48332ea5f28db4cbb25569838b41a0fd92bfcb52"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/pig.json"
+hash = "88ef157ea788a8ed782ec8cbbdeda0537124c8174d06c8c760c3a58acd7014a8"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/pillager.json"
+hash = "be00c3b779abc6f962af49492f346e637a93a9352d318cf3dc19b0eb32fc0c85"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/polar_bear.json"
+hash = "e10a8643a69bd594940dc30943d209167829e812d65ab968b72fbe1c0a366bc1"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/pufferfish.json"
+hash = "c4dd01fb76543c60a2eb73ed51d369f7a7451e4482a864827ba0448f8f7a235d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/rabbit.json"
+hash = "9b2b99eb15da3cea1b9c12fad6a4351efc009f8daed85852aa68d54ba4492837"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/ravager.json"
+hash = "8744023f24c216d51c7c472669e25c3bfff1fbd92524cd835061aced5a101d6d"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/salmon.json"
+hash = "af323349db4f22dd8c0fceeefeb7ec89e475a8c9ccd7a83035df2857bb318edd"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep.json"
+hash = "ab80acc9787d44facb2a5dbff9402ca2540bd237f0822bf1b79ac0e014933a42"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/black.json"
+hash = "3bb454e613ff5c3ca1e88480d8e8cbd19baccce2f46d5bc95c36311cf078b273"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/blue.json"
+hash = "35bb1a3ce1deff65804e01854f48da527d793d58ce4bd34225a4c8c0faf24a93"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/brown.json"
+hash = "3d57d9885e866e0ecdfde966c237b3c61c30824fd8b37ba5fc7e05d64188dbf4"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/cyan.json"
+hash = "1620a1c9b7ef483e84e3dbe7d758cbb290cb5e93ff760161830518ad7ecd99f6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/gray.json"
+hash = "636c6d09f47abf2f736e853f736d84ee91112b3192ad5ae69b01140e11bba805"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/green.json"
+hash = "b313a5193a0126221c7d6d0e64e20940e9f11310160731e6001785dfeb875de9"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/light_blue.json"
+hash = "4764c7b49dc4b28f0149c8bcfc6a9b5fc1d4e4e56ca3cd27a9708761b7933ab6"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/light_gray.json"
+hash = "ffdb966151293186974cb305a77884003b754972fbf8b56cbfe5ffcfcaef376a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/lime.json"
+hash = "6c5af3542e9d9ff1424dda85077db1bf1c767912e02a78894496d7e53ccc3483"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/magenta.json"
+hash = "69932ad4b48e55375f11459c43511aa497482044cd5d2503398e47f49b735874"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/orange.json"
+hash = "2163526506b7df4eb7f2290ceb234c4a22793691196e541664e0916dc0166469"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/pink.json"
+hash = "cfdfffb8eacf546f51112f819ef79e8dbb15cba3386d805660fd1d88536d7331"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/purple.json"
+hash = "d16f91c9694df19860f82d98604bbbce552ebc85d82387143cd8df26104a8a5a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/red.json"
+hash = "11e9f4d12bbbe5b0bc16f46d0c34d7faa228d096d149b69158f107fc655e7862"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/white.json"
+hash = "fa43e1601662a3ef27e3341709f05ba8f636075f63a93344aef947b2b5e0a608"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sheep/yellow.json"
+hash = "24da0713d6e65030c75b9ce38a8dbcece7fefc212a35640f5fd07fc93b69bb33"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/shulker.json"
+hash = "4d67d04bdb9268e49a84366a4af46b4e96e6b59140462a651e3a1bfc5fce886b"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/skeleton.json"
+hash = "11e637c390cb4000f9462551a1ea675e066c6753ea9358ab2edee746c56b84c8"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/skeleton_horse.json"
+hash = "469f5d7a34661865092d9301cee524edf55bde59ea4960286593419f2ad93b6a"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/slime.json"
+hash = "dab3c85d47822f040b144b8b20588b53175a4f8e14a429c8ca0f6b21d5e68be1"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/snow_golem.json"
+hash = "3219dc6db1b44acf1e57ea62b9d01d3300687a41a02d30079e41b387d9c4853f"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/spider.json"
+hash = "cbb42eab0e59966aefe7281b42f2fc8df28567ac681c351c3fdeeeef93df5625"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/squid.json"
+hash = "cce0f32af3fe4f8ecc139c9494a141571208dc8f9b9913b70e1356cc2a326fad"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/stray.json"
+hash = "d2ed4a15e57e4e9e98305855b00056e05e27651fccc0c1e0623b14bee2f7a6dc"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/strider.json"
+hash = "85a9037869de69e7acdd9d63614c850794873c442c66d9977c37f677f6288674"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/sulfur_cube.json"
 hash = "f33ef0e008bf0a89f16c2f6952be47c47417dc4d5c986fb3b257788e0a90855e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/trader_llama.json"
-hash = "15d5ac8c81f47fa84e0939b26679bef77a95088f86a993453626312305efe73f"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/trader_llama.json"
+hash = "4df9cff40c3ddb46742b633ebe1c023849eb4f74d689056295d6ad1749c8cc5f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/tropical_fish.json"
-hash = "b7a18d1ab136708643dff9e4dc219ec6f3c48dd40732216f90d1118912e215fd"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/tropical_fish.json"
+hash = "131e29e4d9864329757ad75eb1bcc2258ff611b30e33ff87a4ab74dac359bcbf"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/turtle.json"
-hash = "262c143cf3c3f5bc73e659090c7f646666b8621bc5247613f7c4e5b7da5e1e38"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/turtle.json"
+hash = "751a1da1240ff0ab99ef80bb27728a49e5e2244a500b35014112b5922da6c8ec"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/vindicator.json"
-hash = "8d6bf10f5f4f33ccca195086f2a8a5dd40d8dbedfed34f46c379af73dd1dd802"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/vindicator.json"
+hash = "76326ff37ad537bdb0d215f96d2efc32bef8e53a50a3212f48ea6cd87d2a743e"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/warden.json"
-hash = "2079d99f9d1a8c0b55468d3c1bd86aa2e200dc5f2c9352791f6e4af6aa0f19f4"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/warden.json"
+hash = "f1d1fbb098626232d0d1791b2323d6e1ff01febd47de33e68dd92268ad08e775"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/witch.json"
-hash = "76469c04effc3a541f2864b7db404f7144717a4dafd955c60648ff8fd46947e2"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/witch.json"
+hash = "c945f2c164c5fae18925e1b7333362c4211e1517db33493a6192e1b768969dac"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/wither_skeleton.json"
-hash = "f15646d8ad5a5a16e121eee32c892a017f31019fa724cf5202f79ad349ca5368"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/wither_skeleton.json"
+hash = "b0379214e1b03a705aac7670c0500c1d9f631981e3c8acd1c1273dd18ad6d788"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zoglin.json"
-hash = "a1de686101d630f3e5c96e76c128916965707321c59343359325a755b7781157"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zoglin.json"
+hash = "9a78091e53c18e51ee1bf2863a6705f17ce033605401137964c200f779be83b0"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zombie.json"
-hash = "c9ff35509429c80ce7401873045d71f540e0dea8e26d822f70241ec1fb2a9d50"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zombie.json"
+hash = "a7ac64081e19df3276286c835298ca8ed04dfb9aa76770b8c0f2b7b26c8d7aed"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zombie_horse.json"
-hash = "b495bccdb3a222f7856eb7db21c3602345a33545ab2863ff40063a841c97265f"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zombie_horse.json"
+hash = "5f4d9875e1a19c00bd2266066a6c624eb562a02eae504f7bb03c6ee627c0d642"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zombie_nautilus.json"
-hash = "55c26e5291a9f49b4b91236eded8d7686f2ab49eba1155d44a243660005fe69c"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zombie_nautilus.json"
+hash = "8fc55d68c767d35cc361e4dba51b125029d714ba424c2e2b0142344df037bd2f"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zombie_villager.json"
-hash = "00584e49a6442b7882fc288d141d2f2b1e0297c88c70bdb636f4aae1c05b3181"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zombie_villager.json"
+hash = "ffeaab2c98e97e1895280f6e5d30e792f0f57b7265c0aa8b9d9bfb79b47c1289"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/overlay_107_1/data/vanilla/loot_table/entities/zombified_piglin.json"
-hash = "13a0bcc63ad0b48202287cf348b9a84b7b1f73e1ef4822c3f7f4eb7e13733778"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanilla/loot_table/entities/zombified_piglin.json"
+hash = "69cbee3ab71c4b96755ce554f335688654540ffa2308ed304caed85091c25ca3"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/pack.mcmeta"
-hash = "d31b9fbf70f322966e077dace86a94c66b9547a23f51a8ec994a4cfed357d6cb"
+file = "resources/datapack/optional/more mob heads v2.20.1/overlay_107_1/data/vanillatweaks/tags/loot_table/entities/sulfur_cube.json"
+hash = "b5a433678f3d286a2a98da3552f453b036a108c8376f02c525ea80c0443b0c19"
 
 [[files]]
-file = "resources/datapack/optional/more_mob_heads_v2-20-0/pack.png"
+file = "resources/datapack/optional/more mob heads v2.20.1/pack.mcmeta"
+hash = "b8719a8f9750ccfb5e2806311c229b5b4aad2933a8974b1124e9732c05a9cf39"
+
+[[files]]
+file = "resources/datapack/optional/more mob heads v2.20.1/pack.png"
 hash = "be390f39163e45c588cde459c1721f80822d653a2abf20077b1d02afa1af1f36"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/data/minecraft/loot_table/blocks/player_head.json"
-hash = "9e44fa3f5ae4ff5ede34416ea987356af33433fdd97135e2c345d9849fbf5ead"
+file = "resources/datapack/optional/player head drops v1.1.18/data/minecraft/loot_table/blocks/player_head.json"
+hash = "2a08eba6a4543c9cb4aca492a986e2b613e0b0ab0b101cd804ac4f5938c90a37"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/data/minecraft/loot_table/entities/player.json"
-hash = "f160998e1521fd278a9cb7f04036477bcd19644ec2de16b05a4616a119727e8b"
+file = "resources/datapack/optional/player head drops v1.1.18/data/minecraft/loot_table/entities/player.json"
+hash = "5f1d3d53432446c72cfdaea0ee9a7d6d81a4b870cbd895adcd2c579076229bc4"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/data/player_heads/loot_table/entities/player.json"
-hash = "4fd95e4c78f0f3770c21c06cb0583b1956a5538642db089c738ec9e9d8f45154"
+file = "resources/datapack/optional/player head drops v1.1.18/data/player_heads/loot_table/entities/player.json"
+hash = "a8c9bb17156dacaef2c075c4fb1f11d99d4c655af423bbb0d607539f5a224de2"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/data/vanillatweaks/advancement/player_head_drops.json"
+file = "resources/datapack/optional/player head drops v1.1.18/data/player_heads/tags/loot_table/entities/player.json"
+hash = "30779b665db06d3e7a517591e501b7623ef4f23dd6839b05177a1bd31aacd960"
+
+[[files]]
+file = "resources/datapack/optional/player head drops v1.1.18/data/vanillatweaks/advancement/player_head_drops.json"
 hash = "740be2a9254623f858166e8dda16185fdc3ac1dada669be2c1e06e0d94e7d5cd"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/data/vanillatweaks/advancement/root.json"
+file = "resources/datapack/optional/player head drops v1.1.18/data/vanillatweaks/advancement/root.json"
 hash = "932453fa70ac5369f7fc0435fec16809ca0558378c684670909aa128531b0de9"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/pack.mcmeta"
-hash = "53580ef388d8bd726680339c629d6e66ebf8c9649cf1edf457ccaf4fd6e75409"
+file = "resources/datapack/optional/player head drops v1.1.18/data/vanillatweaks/tags/loot_table/entities/player.json"
+hash = "900c8e50fb0308f04ebe4b0cc5bb8e62562f003d8fc9c8a322c792d367a41682"
 
 [[files]]
-file = "resources/datapack/optional/player_head_drops_v1-1-17/pack.png"
+file = "resources/datapack/optional/player head drops v1.1.18/pack.mcmeta"
+hash = "55820e5ef296f7d4a2eb9692ded9a1979fa7932cf4eee6d3f8050e69520e1236"
+
+[[files]]
+file = "resources/datapack/optional/player head drops v1.1.18/pack.png"
 hash = "e79300aafb805857a686d5bbf9b176b63bb5dd8dd3113969b58ac23c4d208ba2"
 
 [[files]]

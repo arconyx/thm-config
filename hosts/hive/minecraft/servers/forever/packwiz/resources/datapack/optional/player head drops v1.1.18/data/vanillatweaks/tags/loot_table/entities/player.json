@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "#player_heads:entities/player",
+      "required": false
+    }
+  ]
+}
