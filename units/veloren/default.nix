@@ -29,7 +29,7 @@ in
       };
 
       serviceConfig = {
-        ExecStart = lib.getExe' pkgs.veloren "veloren-server-cli";
+        ExecStart = lib.getExe' cfg.package "veloren-server-cli";
         Type = "exec";
 
         Restart = "on-failure";
