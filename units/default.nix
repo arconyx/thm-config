@@ -4,6 +4,6 @@
     ./minecraft
     ./space-engineers
     ./wiki
-    ./veloren.nix
+    ./veloren
   ];
 }

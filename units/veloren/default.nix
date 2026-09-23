@@ -10,6 +10,12 @@ in
 {
   options.thm.services.veloren = {
     enable = lib.mkEnableOption "Veloren server";
+    package = lib.mkOption {
+      type = lib.types.package;
+      default = pkgs.callPackage ./package.nix { };
+      example = "pkgs.veloren";
+      description = "Veloren package";
+    };
   };
 
   config = lib.mkIf cfg.enable {

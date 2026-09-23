@@ -96,6 +96,7 @@
             packHash = nixpkgs.lib.fakeHash;
           };
           mediawiki = pkgs.callPackage ./units/wiki/mediawiki.nix { php = pkgs.php83; };
+          veloren = pkgs.callPackage ./units/veloren/package.nix { };
         }
       );
     };
