@@ -1,7 +1,7 @@
 {
   config,
   lib,
-  pkgs,
+  veloren,
   ...
 }:
 let
@@ -12,7 +12,7 @@ in
     enable = lib.mkEnableOption "Veloren server";
     package = lib.mkOption {
       type = lib.types.package;
-      default = pkgs.callPackage ./package.nix { };
+      default = veloren.packages.x86_64-linux.veloren-server-cli;
       example = "pkgs.veloren";
       description = "Veloren package";
     };

@@ -20,6 +20,10 @@
       url = "github:arconyx/thm-modpack";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    veloren = {
+      url = "gitlab:veloren/veloren/weekly";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -30,6 +34,7 @@
       pre-commit-hooks,
       nix-minecraft,
       thm-modpack,
+      veloren,
       ...
     }:
     let
@@ -38,7 +43,10 @@
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
       baseModules = [
         core.nixosModules.default
-        { arcworks.revision = revision; }
+        {
+          arcworks.revision = revision;
+          _module.args = { inherit veloren thm-modpack; };
+        }
       ];
       pkgsForSystem = system: nixpkgs.legacyPackages.${system};
     in
@@ -74,7 +82,6 @@
           ./hosts/hive
           nix-minecraft.nixosModules.minecraft-servers
           {
-            _module.args = { inherit thm-modpack; };
             nixpkgs.overlays = [ nix-minecraft.overlay ];
           }
         ];
@@ -96,7 +103,8 @@
             packHash = nixpkgs.lib.fakeHash;
           };
           mediawiki = pkgs.callPackage ./units/wiki/mediawiki.nix { php = pkgs.php83; };
-          veloren = pkgs.callPackage ./units/veloren/package.nix { };
+          veloren-server = veloren.packages.x86_64-linux.veloren-server-cli;
+          veloren-client = veloren.packages.x86_64-linux.veloren-voxygen;
         }
       );
     };
