@@ -29,9 +29,9 @@
 let
   # Note: use this to get the release metadata
   # https://gitlab.com/api/v4/projects/10174980/repository/tags/v{version}
-  version = "0.18.0";
-  timestamp = "1769191511";
-  rev = "1d12f35edd6cdbfc1fb921c167cdd7beeeffe248";
+  version = "0.18.0-weekly";
+  timestamp = "1789631356";
+  rev = "86808a45a40d2694ff0905642ab12262ae9d9264";
 in
 rustPlatform.buildRustPackage {
   pname = "veloren";
@@ -41,23 +41,16 @@ rustPlatform.buildRustPackage {
     owner = "veloren";
     repo = "veloren";
     inherit rev;
-    hash = "sha256-tngIwFq18kvOU2XwCQoeLWjiVDjrJgOf3XIYz2J2cWs=";
+    hash = "sha256-WSHhRGrBW+feJ/SX8XkiK8WKWMMsHJwLcWdQGFPKHok=";
   };
 
   cargoPatches = [
     ./fix-assets-path.patch
   ];
 
-  cargoHash = "sha256-1qLE1UeP2i0xaOGLniZzdjIkBbme6rctGfcO9Kfoh5E=";
+  cargoHash = "sha256-RAVFlsjUA/vW8OoF0T80E1+pFGntxEyiFbRd2efTzAw=";
 
   postPatch = ''
-    # Fix hashbrown on rust ≥1.95
-    # (https://github.com/rust-lang/hashbrown/pull/662)
-    substituteInPlace "$cargoDepsCopy"/*/hashbrown-0.16.0/src/lib.rs \
-      --replace-fail 'strict_provenance_lints' 'strict_provenance_lints,trivial_clone'
-    substituteInPlace "$cargoDepsCopy"/*/hashbrown-0.16.0/src/raw/mod.rs \
-      --replace-fail 'T: Copy,' 'T: core::clone::TrivialClone,'
-
     # Force vek to build in unstable mode
     tee "$cargoDepsCopy"/*/vek-*/build.rs > /dev/null <<'EOF'
     fn main() {
