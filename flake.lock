@@ -434,11 +434,11 @@
         "parts": "parts"
       },
       "locked": {
-        "lastModified": 1789491623,
-        "narHash": "sha256-WSHhRGrBW+feJ/SX8XkiK8WKWMMsHJwLcWdQGFPKHok=",
+        "lastModified": 1789945376,
+        "narHash": "sha256-ZBs4ckG4Ei7SCwvSC+XStAtQ3MaV69FjpbPtCKoJByI=",
         "owner": "veloren",
         "repo": "veloren",
-        "rev": "86808a45a40d2694ff0905642ab12262ae9d9264",
+        "rev": "b68cd6ea60302bcba0de8fd27bdf8af277789002",
         "type": "gitlab"
       },
       "original": {
