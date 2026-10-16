@@ -146,10 +146,6 @@ in
       liveRoutes = builtins.filter (cfg: cfg.enable) cfg.routes;
 
       baseCfg = {
-        connect = {
-          enabled = true;
-          name = "hive";
-        };
         config = {
           bind = "${cfg.bindAddress}:${toString cfg.publicPort}";
           lite = {
@@ -194,9 +190,6 @@ in
           Type = "exec";
           ExecStart = "${lib.getExe cfg.package}";
           Restart = "always";
-
-          # Used for CONNECT_TOKEN
-          EnvironmentFile = "/etc/gate.env";
 
           # Hardening, sections named after man page sections in systemd.exec
           # Capabilities
