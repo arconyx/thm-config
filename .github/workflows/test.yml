@@ -14,13 +14,13 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v6
+              uses: actions/checkout@v6.1.0
 
             - name: Install nix
-              uses: cachix/install-nix-action@8aa03977d8d733052d78f4e008a241fd1dbf36b3
+              uses: cachix/install-nix-action@v31.10.6
 
             - name: Restore and save Nix store
-              uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569
+              uses: nix-community/cache-nix-action@v7.0.2
               with:
                   primary-key: nix-${{ runner.os }}-${{ hashFiles('**/flake.lock') }}-flake
                   restore-prefixes-first-match: nix-${{ runner.os }}-
