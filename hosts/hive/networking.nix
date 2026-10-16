@@ -7,8 +7,6 @@
   systemd.network.enable = true;
   systemd.network.networks."10-wan" = {
     matchConfig.Name = "eno1";
-    # dhcp is giving us .138 for some reason
-    address = [ "192.168.0.131/24" ];
     networkConfig = {
       # start a DHCP Client for IPv4 Addressing/Routing
       DHCP = "ipv4";
