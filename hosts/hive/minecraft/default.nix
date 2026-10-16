@@ -13,21 +13,9 @@
   # Configure backups
   arcworks.services.backups.global = {
     paths = [
-      "/etc/cloudflare"
       "/etc/minecraft"
       # /srv/minecraft already added by top level conf including all of /srv
     ];
-  };
-
-  # keep dns fresh for server subdomain
-  services.cloudflare-dyndns = {
-    enable = true;
-    frequency = "*:0/15";
-    # subdomains of this are handled with a cname atm
-    domains = [ "mc.thehivemind.gay" ];
-    proxied = false; # no point trying to proxy minecraft
-    deleteMissing = false;
-    apiTokenFile = "/etc/cloudflare/apikey.env";
   };
 
   # this is used for webhooks and stuff
