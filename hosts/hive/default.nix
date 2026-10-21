@@ -27,7 +27,8 @@
   };
 
   thm.services.wiki = {
-    enable = true;
+    # Disabled due to php2shell
+    enable = false;
     domain = "wiki.thehivemind.gay";
     articlePath = "w";
   };
