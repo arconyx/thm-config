@@ -396,6 +396,10 @@ in
       serviceConfig = {
         EnvironmentFile = "/etc/mediawiki/secrets.env";
 
+        # This breaks php-fpm dropping permissions (I expect)
+        # but it is worth it to never run as root
+        User = user;
+        Group = group;
 
         # Permit access to state directory through the hardening
         StateDirectory = "mediawiki";
