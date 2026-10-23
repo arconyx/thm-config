@@ -252,6 +252,7 @@ in
   config = lib.mkIf cfg.enable {
     # give caddy access to socket and images
     systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "mediawiki" ];
+
     services.caddy = {
       enable = true;
       virtualHosts = {
@@ -306,9 +307,6 @@ in
       };
     };
 
-    # eww, phpfpm is run as root and only changes owner of child processes
-    # TODO: See about reimplementing phpfpm services more locked down
-    # This would also allow using StateDirectory instead of systemd-tmpfiles
     services.phpfpm.pools.mediawiki = {
       inherit user group;
       phpEnv.MEDIAWIKI_CONFIG = "${mediawikiConfig}";
@@ -359,11 +357,11 @@ in
       })
     ];
 
+    # Merge into systemd directory config?
     systemd.tmpfiles.rules = [
       "d '${baseStateDir}' 0750 ${user} ${group} - -"
       "d '${stateDir}' 0750 ${user} ${group} - -"
       "d '${dbDir}' 0700 ${user} ${group} - -"
-      "d '${cacheDir}' 0750 ${user} ${group} - -"
       "d '${uploadsDir}' 0750 ${user} ${group} - -"
       "Z '${uploadsDir}' 0750 ${user} ${group} - -"
     ];
@@ -401,7 +399,10 @@ in
 
         # Permit access to state directory through the hardening
         StateDirectory = "mediawiki";
+        StateDirectoryMode = "0750";
         CacheDirectory = "mediawiki";
+        CacheDirectoryMode = "0750";
+        # runtime directory configured by nixos php-fpm module
 
         # Hardening
         CapabilityBoundingSet = "";
