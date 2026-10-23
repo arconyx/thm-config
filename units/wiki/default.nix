@@ -250,6 +250,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    # give caddy access to socket and images
     systemd.services.caddy.serviceConfig.SupplementaryGroups = [ "mediawiki" ];
     services.caddy = {
       enable = true;
@@ -319,9 +320,6 @@ in
         log_errors = 1
       '';
       settings = {
-        "listen.owner" = "caddy";
-        "listen.group" = "caddy";
-
         "catch_workers_output" = true;
         "decorate_workers_output" = false;
 
