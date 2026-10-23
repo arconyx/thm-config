@@ -419,7 +419,7 @@ in
         LockPersonality = true;
         ProtectKernelTunables = true;
         RestrictRealtime = true;
-        ProtectSystem = "strict";
+        ProtectSystem = lib.mkForce "strict";
         SystemCallFilter = "@system-service";
         # Will need non-root user to be effective
         ProtectProc = "invisible";
