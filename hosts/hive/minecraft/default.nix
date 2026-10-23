@@ -111,6 +111,7 @@
     proxy = {
       enable = true;
       openFirewall = true;
+      publicPort = 25560;
       routes =
         let
           servers = config.thm.services.minecraft.servers;
@@ -145,7 +146,6 @@
           }
           {
             host = [
-              "192.168.0.131"
               "forever.mc.thehivemind.gay"
               "*"
             ];
