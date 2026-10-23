@@ -391,7 +391,36 @@ in
       };
     };
 
-    systemd.services.phpfpm-mediawiki.serviceConfig.EnvironmentFile = "/etc/mediawiki/secrets.env";
+    # Lock down phpfpm environment
+    systemd.services.phpfpm-mediawiki = {
+      serviceConfig = {
+        EnvironmentFile = "/etc/mediawiki/secrets.env";
+
+
+        # Permit access to state directory through the hardening
+        StateDirectory = "mediawiki";
+        CacheDirectory = "mediawiki";
+
+        # Hardening
+        CapabilityBoundingSet = "";
+        NoNewPrivileges = true;
+        ProtectClock = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true;
+        ProtectKernelModules = true;
+        SystemCallArchitecture = "native";
+        RestrictNamespaces = true;
+        RestrictSUIDSGID = true;
+        ProtectHostname = true;
+        LockPersonality = true;
+        ProtectKernelTunables = true;
+        RestrictRealtime = true;
+        ProtectSystem = "strict";
+        SystemCallFilter = "@system-service";
+        # Will need non-root user to be effective
+        ProtectProc = "invisible";
+      };
+    };
 
     arcworks.services.backups.backup.backblaze = {
       prepareCommands = "${php}/bin/php ${pkg}/share/mediawiki/maintenance/run.php SqliteMaintenance --backup-to /tmp/wiki.backup --conf ${mediawikiConfig}";
