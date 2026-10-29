@@ -29,7 +29,6 @@ in
               ${pkgs.curl}/bin/curl -F username=${config.networking.hostName} -F content="[${name}] ${msg}" "$DISCORD_WEBHOOK_URL"
             '';
             start-server = pkgs.writeShellScript "start-minecraft-server-from-webhook" ''
-              source ${mcCfg.environmentFile}
               if systemctl is-active --quiet restic-backups-backblaze.service; then
                 ${msg-discord "Backup in progress. Please wait until it is finished to start the server."}
               elif systemctl is-active --quiet ${lib.concatStringsSep " " (lib.remove cfg.serviceName ephemeralServices)}; then
@@ -87,9 +86,17 @@ in
     }) ephemeralServers;
 
     systemd.services = {
-      # access to env file for discord token
+      # Webhook token
+      # TODO: This breaks per-server environment files in
+      # favour of not passing through some values from the file
+      # Find a better solution
       webhook.serviceConfig = {
-        SupplementaryGroups = [ "minecraft" ];
+        EnvironmentFile = "/etc/minecraft/magic.env";
+        UnsetEnvironment = [
+          "DISCORD_BOT_TOKEN"
+          "DISCORD_CHAT_CHANNEL"
+          "DISCORD_CONSOLE_CHANNEL"
+        ];
       };
     }
     // (lib.concatMapAttrs (name: cfg: {
