@@ -38,7 +38,7 @@
       ...
     }:
     let
-      revision = self.rev or self.dirtyRev or self.lastModified or "unknown";
+      revision = self.rev or self.dirtyRev or self.lastModifiedDate or "unknown";
       supportedSystems = [ "x86_64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
       baseModules = [
