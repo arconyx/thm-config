@@ -24,7 +24,7 @@
           stdenv,
           buildPackages,
           callPackage,
-          buildGoLatestModule,
+          buildGo127Module,
           fetchFromGitHub,
           installShellFiles,
           versionCheckHook,
@@ -34,7 +34,7 @@
           nix-update-script,
         }:
 
-        buildGoLatestModule (finalAttrs: {
+        buildGo127Module (finalAttrs: {
           pname = "caddy";
           version = version;
 
