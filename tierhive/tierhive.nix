@@ -287,26 +287,5 @@ in
     GC_FORCE_UNMAP_ON_GCOLLECT = "1";
   };
 
-  environment.defaultPackages = [ ];
-  xdg.mime.enable = false;
-  xdg.icons.enable = false;
-  xdg.sounds.enable = false;
-  fonts.fontconfig.enable = false;
-  services.lvm.enable = false;
-  boot.bcache.enable = false;
-  systemd.suppressedSystemUnits = [
-    "systemd-importd.service"
-    "sys-kernel-config.mount"
-  ];
-  system.tools.nixos-option.enable = false;
-  system.tools.nixos-build-vms.enable = false;
-  system.tools.nixos-install.enable = false;
-  system.tools.nixos-enter.enable = false;
-  security.pam.services.su.forwardXAuth = lib.mkForce false;
-
-  documentation.enable = false;
-  documentation.man.enable = false;
-  documentation.nixos.enable = false;
-
   environment.etc.fstab.mode = "0644";
 }

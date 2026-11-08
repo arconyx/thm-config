@@ -24,14 +24,38 @@
     })
   ];
 
-  # don't care about any of this
+  # We don't need sudo if we only use root
+  security.sudo.enable = false;
+  security.pam.services.su.forwardXAuth = lib.mkForce false;
+
+  environment.defaultPackages = [ ];
+  xdg = {
+    mime.enable = false;
+    icons.enable = false;
+    sounds.enable = false;
+  };
+  fonts.fontconfig.enable = false;
+  services.lvm.enable = false;
+  boot.bcache.enable = false;
+  services.udisks2.enable = false;
   boot.enableContainers = false;
   programs.command-not-found.enable = lib.mkForce false;
-  services.udisks2.enable = false;
 
-  # desktop stuff we don't care about on a headless machine
-  xdg.autostart.enable = false;
+  systemd.suppressedSystemUnits = [
+    "systemd-importd.service"
+    "sys-kernel-config.mount"
+  ];
 
-  # Only use root
-  security.sudo.enable = false;
+  system.tools = {
+    nixos-option.enable = false;
+    nixos-build-vms.enable = false;
+    nixos-install.enable = false;
+    nixos-enter.enable = false;
+  };
+
+  documentation = {
+    enable = false;
+    man.enable = false;
+    nixos.enable = false;
+  };
 }
