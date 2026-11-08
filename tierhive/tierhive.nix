@@ -276,10 +276,10 @@ in
     timerConfig.OnCalendar = "*-*-* *:17:00";
   };
 
-  environment.etc."systemd/journald.conf.d/10-tierhive.conf".text = ''
-    [Journal]
-    SystemMaxUse=50M
-  '';
+  services.journald.settings.Journal = {
+    SystemMaxUse = "100M";
+    RuntimeMaxUse = "10M";
+  };
 
   environment.variables = {
     GC_INITIAL_HEAP_SIZE = "33554432";
