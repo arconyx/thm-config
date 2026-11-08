@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   imports = [
+    ./cloudinit.nix
     ./hardware.nix
     ./nix.nix
     ./tierhive.nix
