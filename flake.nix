@@ -91,6 +91,10 @@
         modules = [ ./hosts/cloud.nix ];
       };
 
+      nixosConfigurations.tierhive = nixpkgs.lib.nixosSystem {
+        modules = [ ./tierhive ];
+      };
+
       packages = forAllSystems (
         system:
         let
