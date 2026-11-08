@@ -11,11 +11,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1792742702,
-        "narHash": "sha256-T5Yfq19QBdGBRaqIbN0kWD9dDvzu6OXbi2R0TPhIo0E=",
+        "lastModified": 1792835167,
+        "narHash": "sha256-kcfeU49GpR0ywkFaVE7PA+1cSV5gFJTDuQypLcRAQUM=",
         "owner": "arconyx",
         "repo": "core",
-        "rev": "a7e15b5ee5a5818276ed6f43d91fd2d4f870b348",
+        "rev": "3f9228617efe6cc8cf143987e4177e1ac18392c0",
         "type": "github"
       },
       "original": {
@@ -197,11 +197,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1789619711,
-        "narHash": "sha256-Bf9+6h25eiMNa6IYHbFUXsBCT6qgWFeHdtNWD10cZt8=",
+        "lastModified": 1794029940,
+        "narHash": "sha256-dbkIISXZyrqgPUCZ5VNeuAembp6sHsh3cTs5svFdcM8=",
         "owner": "Infinidoge",
         "repo": "nix-minecraft",
-        "rev": "ec99d7ee14ad01f15347c228184a6805c143a4db",
+        "rev": "ba50d7d219164e0802b1f1d45665480da8cf5a4d",
         "type": "github"
       },
       "original": {
@@ -212,11 +212,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1793633738,
-        "narHash": "sha256-dKEjuquCf1NEYiTZZr6xrvTrkhAm5Q94JuEwLBzycEs=",
-        "rev": "7dcdd87373d72e7a2173e4db02e20d3d7f495cfd",
+        "lastModified": 1793865203,
+        "narHash": "sha256-4D+5oPvxkOa6tTCWXi4jwRfmWhDXGRSrX4+eOTItLh0=",
+        "rev": "c56a87d8e41ce69bd2af57eb35dcc117a9dfca33",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.13446.7dcdd87373d7/nixexprs.tar.zst?lastModified=1793633738&rev=7dcdd87373d72e7a2173e4db02e20d3d7f495cfd"
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.13627.c56a87d8e41c/nixexprs.tar.zst?lastModified=1793865203&rev=c56a87d8e41ce69bd2af57eb35dcc117a9dfca33"
       },
       "original": {
         "type": "tarball",
@@ -252,11 +252,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789514889,
-        "narHash": "sha256-PFD1nxptCXJyJoiYO1gf/5Vv43yqGpHtMC6LUhl9/pQ=",
+        "lastModified": 1793686154,
+        "narHash": "sha256-Zb/0L3soxrkfcrywpfp0J++0WFLB3tzh0Xtx9up+VNc=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "59f4ca0d063a1a3ec722c88b51a33004862e5379",
+        "rev": "204b6977e00caac19e2313015a598543ca7be150",
         "type": "github"
       },
       "original": {
@@ -388,11 +388,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781341730,
-        "narHash": "sha256-E7wTgocUoGThbexN5tfVTbnH99f5Jpk7dFvOFEWPdAA=",
+        "lastModified": 1792128871,
+        "narHash": "sha256-vsEzC27dQD5817zth7r1vY1JimPIfFbcDIagcFj2Sa4=",
         "owner": "arconyx",
         "repo": "thm-modpack",
-        "rev": "6867fc529af2bc576a6e8e54d3b3147ae5586b71",
+        "rev": "6c1b4b104ae95669fef65ecf76c1098be1ec1869",
         "type": "github"
       },
       "original": {
