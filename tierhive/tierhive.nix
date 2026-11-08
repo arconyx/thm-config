@@ -258,10 +258,6 @@ in
     memoryMax = 536870912;
   };
 
-  networking.hostName = "";
-  networking.useDHCP = false;
-  networking.resolvconf.enable = false;
-  services.resolved.enable = false;
   systemd.oomd.enable = false;
 
   services.timesyncd.enable = false;

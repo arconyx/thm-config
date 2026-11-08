@@ -2,6 +2,7 @@
   imports = [
     ./cloudinit.nix
     ./hardware.nix
+    ./network.nix
     ./nix.nix
     ./tierhive.nix
   ];
