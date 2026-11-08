@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ./hardware.nix
+    ./nix.nix
     ./tierhive.nix
   ];
 
