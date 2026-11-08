@@ -308,16 +308,5 @@ in
   documentation.man.enable = false;
   documentation.nixos.enable = false;
 
-  services.openssh = {
-    enable = true;
-    startWhenNeeded = true;
-    settings.PermitRootLogin = null;
-    settings.PasswordAuthentication = null;
-    settings.KbdInteractiveAuthentication = false;
-    extraConfig = "Include /etc/ssh/sshd_config.d/*.conf";
-  };
-  security.pam.services.sshd.unixAuth = lib.mkForce true;
-  systemd.tmpfiles.rules = [ "d /etc/ssh/sshd_config.d 0755 root root -" ];
-
   environment.etc.fstab.mode = "0644";
 }
