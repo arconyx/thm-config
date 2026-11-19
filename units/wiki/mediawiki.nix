@@ -44,8 +44,8 @@ let
         src = fetchFromGitHub {
           owner = "wikimedia";
           repo = "mediawiki-extensions-WSOAuth";
-          rev = "0fd5fc2300c877ca7ef8f1e3b811caec4acccbf1";
-          hash = "sha256-04VCOKfrgrijrv9CdjXeaExmAsxIEWcWMz8W2KVutGI=";
+          rev = "0446006745db1fc8665587c5304f2d890e8c0fedC";
+          hash = "sha256-kse2OlTbgAPCIiV83/+UTRXg+R+oLM8WPan13z15Q9k=";
         };
 
         patches = [
@@ -60,7 +60,7 @@ let
         # it doesn't like the missing name and description fields
         composerStrictValidation = false;
 
-        vendorHash = "sha256-ewQeiUT4/0FnzCayjDXOKFfXPfFBFOxnzjcuN9kFSsU=";
+        vendorHash = "sha256-P3zSnZdTM1eaFGAXUlv6IMsVEEXVA+E+mssj4O2CqeU=";
       };
     in
     {
@@ -72,14 +72,14 @@ let
       PluggableAuth = fetchFromGitHub {
         owner = "wikimedia";
         repo = "mediawiki-extensions-PluggableAuth";
-        rev = "85e96acd1ac0ebcdaa29c20eae721767a938f426";
-        hash = "sha256-bMVhrg8FsfWhXF605Cj5TgI0A6Jy/MIQ5aaUcLQQ0Ss=";
+        rev = "a4f29ad82ef08112b6b3be64a22646f07f3f77b4";
+        hash = "sha256-o75vLmVgh9XjfW1gJT/OjP94ZJBPHpVqcJrBIOszpYw";
       };
       UserMerge = fetchFromGitHub {
         owner = "wikimedia";
         repo = "mediawiki-extensions-UserMerge";
-        rev = "7c38852e2d2bbd92fe100bd3587768ae5f5115b6";
-        hash = "sha256-LspMbtbDi2e3cS4er/wXuPu5O9MN0cxx0iKEZsPjV8U=";
+        rev = "78058904c084903bfc8d589e6d94cc0300e006fd";
+        hash = "sha256-a26trVZ4kf/mrW1tGXSIlP8LUgWWXYHS4B3Qb1IM+Bw=";
       };
       # composer.lock added in patch
       # generated with `composer update --no-dev` using nixpkgs#php83Packages.composer
