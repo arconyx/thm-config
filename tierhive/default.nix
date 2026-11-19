@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./backup.nix
     ./cloudinit.nix
     ./hardware.nix
     ./network.nix
