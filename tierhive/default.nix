@@ -8,6 +8,4 @@
     ./shrink-closure.nix
     ./tierhive.nix
   ];
-
-  system.stateVersion = "26.05";
 }

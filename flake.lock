@@ -223,6 +223,19 @@
         "url": "https://channels.nixos.org/nixos-26.05/nixexprs.tar.zst"
       }
     },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1795128620,
+        "narHash": "sha256-JprpAuu4+sspUBjXt3jBxMieAXaZ8ZN2a+/gKBx3BlE=",
+        "rev": "c202db0c6a23bcde85ac76a96d49fe52d3d7dfd9",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1125097.c202db0c6a23/nixexprs.tar.zst?lastModified=1795128620&rev=c202db0c6a23bcde85ac76a96d49fe52d3d7dfd9"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-unstable-small/nixexprs.tar.zst"
+      }
+    },
     "parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -316,6 +329,7 @@
         "core": "core",
         "nix-minecraft": "nix-minecraft",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-unstable": "nixpkgs-unstable",
         "pre-commit-hooks": "pre-commit-hooks",
         "thm-modpack": "thm-modpack",
         "veloren": "veloren"

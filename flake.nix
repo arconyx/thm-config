@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "https://channels.nixos.org/nixos-26.05/nixexprs.tar.zst";
+    nixpkgs-unstable.url = "https://channels.nixos.org/nixos-unstable-small/nixexprs.tar.zst";
     pre-commit-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -30,6 +31,7 @@
     {
       self,
       nixpkgs,
+      nixpkgs-unstable,
       core,
       pre-commit-hooks,
       nix-minecraft,
@@ -91,8 +93,8 @@
         modules = [ ./hosts/cloud.nix ];
       };
 
-      nixosConfigurations.tierhive = nixpkgs.lib.nixosSystem {
-        modules = [ ./tierhive ];
+      nixosConfigurations.th-wiki = nixpkgs-unstable.lib.nixosSystem {
+        modules = [ ./hosts/th-wiki ];
       };
 
       packages = forAllSystems (
