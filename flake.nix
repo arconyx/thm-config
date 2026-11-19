@@ -51,6 +51,7 @@
         }
       ];
       pkgsForSystem = system: nixpkgs.legacyPackages.${system};
+      unstablePkgsForSystem = system: nixpkgs-unstable.legacyPackages.${system};
     in
     {
       checks = forAllSystems (system: {
@@ -101,6 +102,7 @@
         system:
         let
           pkgs = pkgsForSystem system;
+          unstablePkgs = unstablePkgsForSystem system;
         in
         {
           nbted = pkgs.callPackage ./units/minecraft/nbted.nix { };
@@ -108,7 +110,9 @@
             src = ./hosts/hive/minecraft/servers/forever/packwiz;
             packHash = nixpkgs.lib.fakeHash;
           };
-          mediawiki = pkgs.callPackage ./units/wiki/mediawiki.nix { php = pkgs.php83; };
+          mediawiki = unstablePkgs.callPackage ./hosts/th-wiki/wiki/mediawiki.nix {
+            php = unstablePkgs.php83;
+          };
           veloren-server = veloren.packages.x86_64-linux.veloren-server-cli;
           veloren-client = veloren.packages.x86_64-linux.veloren-voxygen;
         }

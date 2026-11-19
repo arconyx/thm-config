@@ -26,12 +26,6 @@
     variant = "";
   };
 
-  thm.services.wiki = {
-    enable = true;
-    domain = "wiki.thehivemind.gay";
-    articlePath = "w";
-  };
-
   thm.services.veloren.enable = false;
 
   # This value determines the NixOS release from which the default

@@ -256,8 +256,7 @@ in
     services.caddy = {
       enable = true;
       virtualHosts = {
-        # we expect to behind a cloudflare tunnel that will handle tls termination
-        "${cfg.domain}:80" = {
+        "${cfg.domain}" = {
           extraConfig = ''
             # rewrite domain root to main page
             rewrite / /mediawiki/index.php
@@ -425,14 +424,29 @@ in
       };
     };
 
-    arcworks.services.backups.backup.backblaze = {
-      prepareCommands = "${php}/bin/php ${pkg}/share/mediawiki/maintenance/run.php SqliteMaintenance --backup-to /tmp/wiki.backup --conf ${mediawikiConfig}";
-      cleanupCommands = "rm /tmp/wiki.backup";
-      paths = [
-        "/tmp/wiki.backup"
-        uploadsDir
-        stateDir
-      ];
-    };
+    services.restic.backups.backblaze =
+      let
+        run = "${php}/bin/php ${pkg}/share/mediawiki/maintenance/run.php";
+        dumpDir = "/tmp/mediawiki-dumps";
+      in
+      {
+        backupPrepareCommand = ''
+          mkdir ${dumpDir}
+          chmod 700 ${dumpDir}
+          ${run} SqliteMaintenance --backup-to ${dumpDir}/wiki.backup --conf ${mediawikiConfig}
+          ${run} DumpBackup --conf ${mediawikiConfig} --full > ${dumpDir}/pagedump.xml
+        '';
+        backupCleanupCommand = ''
+          rm -rf ${dumpDir}
+        '';
+        paths = [
+          dumpDir
+          uploadsDir
+        ];
+        exclude = [
+          "${uploadsDir}/thumb"
+          "${uploadsDir}/temp"
+        ];
+      };
   };
 }
