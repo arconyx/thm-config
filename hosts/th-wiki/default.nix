@@ -13,6 +13,19 @@
   services.restic.backups.backblaze.repository =
     "s3:https://s3.us-west-004.backblazeb2.com/thm-wiki-restic";
 
-  system.stateVersion = "26.11";
+  services.caddy = {
+    openFirewall = true;
+    globalConfig = ''
+      servers {
+        listener_wrappers {
+          proxy_protocol {
+            allow 10.0.0.0/24
+            fallback_policy ignore
+          }
+        }
+      }
+    '';
+  };
 
+  system.stateVersion = "26.11";
 }
