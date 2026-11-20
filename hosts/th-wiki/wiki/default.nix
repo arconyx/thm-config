@@ -311,9 +311,6 @@ in
       phpEnv.MEDIAWIKI_CONFIG = "${mediawikiConfig}";
       phpPackage = php;
       phpOptions = {
-        # allow_url_fopen is slightly insecure (only if there are other vulns
-        # (hah)) but is needed for DiscordAuth (line 86 of DiscordAuth.php)
-        allow_url_fopen = 1;
         log_errors = 1;
       };
       settings = {

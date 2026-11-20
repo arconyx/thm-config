@@ -1,5 +1,5 @@
 diff --git a/composer.json b/composer.json
-index 16c27b921a..b4106ce7b2 100644
+index 16c27b9..b4106ce 100644
 --- a/composer.json
 +++ b/composer.json
 @@ -1,7 +1,8 @@
@@ -14,10 +14,10 @@ index 16c27b921a..b4106ce7b2 100644
  		"mediawiki/mediawiki-codesniffer": "48.0.2",
 diff --git a/src/AuthenticationProvider/DiscordAuth.php b/src/AuthenticationProvider/DiscordAuth.php
 new file mode 100644
-index 0000000000..fe42d63e6b
+index 0000000..2e77026
 --- /dev/null
 +++ b/src/AuthenticationProvider/DiscordAuth.php
-@@ -0,0 +1,114 @@
+@@ -0,0 +1,129 @@
 +<?php
 +
 +namespace WSOAuth\AuthenticationProvider;
@@ -95,15 +95,30 @@ index 0000000000..fe42d63e6b
 +
 +			try {
 +				$guildUrl = "https://discord.com/api/v10/guilds/$this->guildId/members/$userId";
-+				$opts = [
-+					'http' => [
-+						'method' => "GET",
-+						'header' => "Authorization: Bot $this->botToken\n" .
-+							"User-Agent: THMWiki (thehivemind.gay, 1)"
-+					]
++				$headers = [
++				    "Authorization: Bot $this->botToken",
++				    "User-Agent: THMWiki (https://thehivemind.gay, 2)"
 +				];
-+				$context = stream_context_create($opts);
-+				$apiCall = file_get_contents($guildUrl, false, $context);
++				$ch = curl_init($guildUrl);
++				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
++				curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
++				$apiCall = curl_exec($ch);
++
++				if ($apiCall === false) {
++				    error_log("Discord API cURL error: " . curl_error($ch));
++				    $errorMessage = 'Discord API error';
++				    curl_close($ch);
++				    return false;
++				}
++
++				$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
++				curl_close($ch);
++
++				if ($httpCode !== 200) {
++				    error_log("Discord API returned HTTP $httpCode: $apiCall");
++				    $errorMessage = 'Discord API returned error code';
++				}
++
 +				$guildMembership = json_decode($apiCall);
 +
 +				if ($guildMembership->user->id != $userId) {
