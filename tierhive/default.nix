@@ -1,7 +1,7 @@
 { ... }: {
   imports = [
     ./backup.nix
-    ./cloudinit.nix
+    # ./cloudinit.nix
     ./hardware.nix
     ./network.nix
     ./nix.nix
