@@ -6,7 +6,7 @@
 
   thm.services.wiki = {
     enable = true;
-    domain = "test.wiki.thehivemind.gay";
+    domain = "wiki.thehivemind.gay";
     articlePath = "w";
   };
 
