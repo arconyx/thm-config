@@ -4,6 +4,9 @@
     useDHCP = false;
     resolvconf.enable = false;
   };
+
+  systemd.network.enable = true;
+
   services.resolved.enable = false;
   environment.etc."resolv.conf".text = ''
     # tailscale DNS won't work
