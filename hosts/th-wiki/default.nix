@@ -22,6 +22,7 @@
             allow 10.0.0.0/24
             fallback_policy ignore
           }
+          tls
         }
       }
     '';
