@@ -88,11 +88,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1794985146,
-        "narHash": "sha256-lgmCpYn3bic+HQDXctepO5WnXUrgTHT+m7++bWv3Mi4=",
+        "lastModified": 1795512708,
+        "narHash": "sha256-2B347tOXnY2+2+A6/8ljfGaigNnE/G6cfBrBWBtwlAo=",
         "owner": "Infinidoge",
         "repo": "nix-minecraft",
-        "rev": "d8984571c086fe76ac4e1a3e412ca801d8303a68",
+        "rev": "75607f45096bea7cb52492de826613d0bffae55b",
         "type": "github"
       },
       "original": {
@@ -103,11 +103,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1794872590,
-        "narHash": "sha256-brwp4mLw1LUBC4FDrBluV5II+2lJRLl+qnpNd1wjPoo=",
-        "rev": "f68407657ad294471eb4b2e65d193df26edf729f",
+        "lastModified": 1795370043,
+        "narHash": "sha256-RThZ6/XvhVczW74iClJaGo9+fXjvfm5mvvzTy6hrcYU=",
+        "rev": "0dc498bfe49baeb18b0f9891e800b53bb2603193",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.14630.f68407657ad2/nixexprs.tar.zst?lastModified=1794872590&rev=f68407657ad294471eb4b2e65d193df26edf729f"
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.15079.0dc498bfe49b/nixexprs.tar.zst?lastModified=1795370043&rev=0dc498bfe49baeb18b0f9891e800b53bb2603193"
       },
       "original": {
         "type": "tarball",
@@ -116,11 +116,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1795469476,
-        "narHash": "sha256-AS5yfibhnlUjwClmuvAbFs+3bWaL/fzakkfThOtHWVY=",
-        "rev": "8ed16af8de06a5941dc797b4e9ed27aae5cf7960",
+        "lastModified": 1795527036,
+        "narHash": "sha256-Qk+sKFcPJbHF1wIwagDYSJdmRCzgBMVHLfg6sL97bMo=",
+        "rev": "52a93865f031ba894c0d19121dda6b75c0f2b2b8",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1128970.8ed16af8de06/nixexprs.tar.zst?lastModified=1795469476&rev=8ed16af8de06a5941dc797b4e9ed27aae5cf7960"
+        "url": "https://releases.nixos.org/nixos/unstable-small/nixos-26.11pre1129347.52a93865f031/nixexprs.tar.zst?lastModified=1795527036&rev=52a93865f031ba894c0d19121dda6b75c0f2b2b8"
       },
       "original": {
         "type": "tarball",
