@@ -26,6 +26,15 @@
     variant = "";
   };
 
+  system.autoUpgrade = {
+    enable = true;
+    flake = "github:arconyx/thm-config";
+    dates = "02:00";
+    fixedRandomDelay = true;
+    randomizedDelaySec = "3h";
+    operation = "switch";
+  };
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
